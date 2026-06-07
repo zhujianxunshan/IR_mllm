@@ -2,6 +2,8 @@
 
 Experiment artifacts for intermediate geometry language, GDP parses, theorem-route generation, and downstream MLLM evaluation.
 
+Chinese README: [`README_zh.md`](README_zh.md)
+
 ## Contents
 
 - `tools/`: training, parsing, data-construction, and downstream evaluation scripts.
