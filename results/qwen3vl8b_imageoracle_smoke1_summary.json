@@ -1,0 +1,63 @@
+{
+  "variants": {
+    "raw": {
+      "n": 0,
+      "complete": 0,
+      "correct": 0,
+      "accuracy_on_complete": 0.0,
+      "errors": 0,
+      "truncated": 0,
+      "missing_answer_line": 0
+    },
+    "image_gdp": {
+      "n": 0,
+      "complete": 0,
+      "correct": 0,
+      "accuracy_on_complete": 0.0,
+      "errors": 0,
+      "truncated": 0,
+      "missing_answer_line": 0
+    },
+    "image_oracle": {
+      "n": 1,
+      "complete": 1,
+      "correct": 1,
+      "accuracy_on_complete": 1.0,
+      "errors": 0,
+      "truncated": 0,
+      "missing_answer_line": 0
+    },
+    "image_focus": {
+      "n": 0,
+      "complete": 0,
+      "correct": 0,
+      "accuracy_on_complete": 0.0,
+      "errors": 0,
+      "truncated": 0,
+      "missing_answer_line": 0
+    }
+  },
+  "pairwise": {
+    "image_gdp_vs_raw": {
+      "variant_win": 0,
+      "variant_loss": 0,
+      "both_correct": 0,
+      "both_wrong": 0,
+      "incomplete_pair": 1
+    },
+    "image_oracle_vs_raw": {
+      "variant_win": 0,
+      "variant_loss": 0,
+      "both_correct": 0,
+      "both_wrong": 0,
+      "incomplete_pair": 1
+    },
+    "image_focus_vs_raw": {
+      "variant_win": 0,
+      "variant_loss": 0,
+      "both_correct": 0,
+      "both_wrong": 0,
+      "incomplete_pair": 1
+    }
+  }
+}

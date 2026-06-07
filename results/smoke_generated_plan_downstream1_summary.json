@@ -1,0 +1,105 @@
+{
+  "variants": {
+    "raw": {
+      "n": 1,
+      "complete": 1,
+      "correct": 1,
+      "accuracy": 1.0,
+      "accuracy_on_complete": 1.0,
+      "avg_duration_s": 6.61501932144165,
+      "errors": 0,
+      "missing_answer_line": 0
+    },
+    "image_gdp": {
+      "n": 1,
+      "complete": 1,
+      "correct": 1,
+      "accuracy": 1.0,
+      "accuracy_on_complete": 1.0,
+      "avg_duration_s": 4.733063697814941,
+      "errors": 0,
+      "missing_answer_line": 0
+    },
+    "generated_construction_plan": {
+      "n": 1,
+      "complete": 1,
+      "correct": 1,
+      "accuracy": 1.0,
+      "accuracy_on_complete": 1.0,
+      "avg_duration_s": 5.395703554153442,
+      "errors": 0,
+      "missing_answer_line": 0
+    },
+    "generated_plan_with_verifier": {
+      "n": 1,
+      "complete": 1,
+      "correct": 1,
+      "accuracy": 1.0,
+      "accuracy_on_complete": 1.0,
+      "avg_duration_s": 5.707276344299316,
+      "errors": 0,
+      "missing_answer_line": 0
+    },
+    "oracle_construction_plan": {
+      "n": 1,
+      "complete": 1,
+      "correct": 1,
+      "accuracy": 1.0,
+      "accuracy_on_complete": 1.0,
+      "avg_duration_s": 6.056299448013306,
+      "errors": 0,
+      "missing_answer_line": 0
+    }
+  },
+  "pairwise_vs_raw": {
+    "image_gdp": {
+      "win": 0,
+      "loss": 0,
+      "net": 0,
+      "both_correct": 1,
+      "both_wrong": 0,
+      "incomplete": 0,
+      "examples": {
+        "win": [],
+        "loss": []
+      }
+    },
+    "generated_construction_plan": {
+      "win": 0,
+      "loss": 0,
+      "net": 0,
+      "both_correct": 1,
+      "both_wrong": 0,
+      "incomplete": 0,
+      "examples": {
+        "win": [],
+        "loss": []
+      }
+    },
+    "generated_plan_with_verifier": {
+      "win": 0,
+      "loss": 0,
+      "net": 0,
+      "both_correct": 1,
+      "both_wrong": 0,
+      "incomplete": 0,
+      "examples": {
+        "win": [],
+        "loss": []
+      }
+    },
+    "oracle_construction_plan": {
+      "win": 0,
+      "loss": 0,
+      "net": 0,
+      "both_correct": 1,
+      "both_wrong": 0,
+      "incomplete": 0,
+      "examples": {
+        "win": [],
+        "loss": []
+      }
+    }
+  },
+  "n_unique_ids": 1
+}

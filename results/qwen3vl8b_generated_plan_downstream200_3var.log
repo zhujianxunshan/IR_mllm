@@ -1,0 +1,780 @@
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:04<00:04,  4.13s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  1.81s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.16s/it]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+PLAN	geometry3k_test_2536	chars=1036	duration_s=27.98
+PLAN	geometry3k_test_2520	chars=1240	duration_s=28.98
+PLAN	geometry3k_test_2984	chars=857	duration_s=20.30
+PLAN	geometry3k_test_2418	chars=980	duration_s=25.81
+PLAN	geometry3k_test_2915	chars=1483	duration_s=38.35
+PLAN	geometry3k_test_2817	chars=1149	duration_s=25.95
+PLAN	geometry3k_test_2924	chars=938	duration_s=20.79
+PLAN	geometry3k_test_2989	chars=1127	duration_s=26.89
+PLAN	geometry3k_test_2663	chars=1179	duration_s=29.27
+PLAN	geometry3k_test_2420	chars=1059	duration_s=25.32
+PLAN	geometry3k_test_2579	chars=1264	duration_s=29.33
+PLAN	geometry3k_test_2776	chars=1328	duration_s=33.23
+PLAN	geometry3k_test_2799	chars=1117	duration_s=30.14
+PLAN	geometry3k_test_2583	chars=1000	duration_s=25.02
+PLAN	geometry3k_test_2572	chars=823	duration_s=18.72
+PLAN	geometry3k_test_2478	chars=1123	duration_s=25.87
+PLAN	geometry3k_test_2650	chars=941	duration_s=23.41
+PLAN	geometry3k_test_2791	chars=1067	duration_s=28.40
+PLAN	geometry3k_test_2885	chars=867	duration_s=20.23
+PLAN	geometry3k_test_2730	chars=1156	duration_s=29.82
+PLAN	geometry3k_test_2745	chars=1036	duration_s=25.90
+PLAN	geometry3k_test_2595	chars=932	duration_s=23.11
+PLAN	geometry3k_test_2796	chars=1190	duration_s=31.71
+PLAN	geometry3k_test_2876	chars=1136	duration_s=26.75
+PLAN	geometry3k_test_2948	chars=864	duration_s=20.32
+PLAN	geometry3k_test_2732	chars=1277	duration_s=31.63
+PLAN	geometry3k_test_2848	chars=969	duration_s=25.71
+PLAN	geometry3k_test_2962	chars=1215	duration_s=28.66
+PLAN	geometry3k_test_2454	chars=956	duration_s=21.76
+PLAN	geometry3k_test_2880	chars=1417	duration_s=36.33
+PLAN	geometry3k_test_2611	chars=1076	duration_s=25.64
+PLAN	geometry3k_test_2465	chars=1211	duration_s=30.78
+PLAN	geometry3k_test_2697	chars=832	duration_s=19.12
+PLAN	geometry3k_test_2544	chars=822	duration_s=18.69
+PLAN	geometry3k_test_2571	chars=1127	duration_s=29.33
+PLAN	geometry3k_test_2613	chars=1212	duration_s=32.40
+PLAN	geometry3k_test_2932	chars=954	duration_s=24.02
+PLAN	geometry3k_test_2464	chars=1031	duration_s=25.12
+PLAN	geometry3k_test_2623	chars=922	duration_s=22.22
+PLAN	geometry3k_test_2993	chars=1483	duration_s=38.32
+PLAN	geometry3k_test_2534	chars=926	duration_s=23.08
+PLAN	geometry3k_test_2469	chars=882	duration_s=20.84
+PLAN	geometry3k_test_2629	chars=1203	duration_s=30.88
+PLAN	geometry3k_test_2471	chars=1090	duration_s=26.62
+PLAN	geometry3k_test_2656	chars=1265	duration_s=29.52
+PLAN	geometry3k_test_2419	chars=1187	duration_s=30.36
+PLAN	geometry3k_test_2923	chars=834	duration_s=19.13
+PLAN	geometry3k_test_2561	chars=1088	duration_s=25.94
+PLAN	geometry3k_test_2501	chars=923	duration_s=22.54
+PLAN	geometry3k_test_2562	chars=1071	duration_s=25.34
+PLAN	geometry3k_test_2934	chars=989	duration_s=23.07
+PLAN	geometry3k_test_2515	chars=883	duration_s=21.64
+PLAN	geometry3k_test_2997	chars=1133	duration_s=28.53
+PLAN	geometry3k_test_2674	chars=1372	duration_s=34.49
+PLAN	geometry3k_test_2981	chars=1230	duration_s=27.93
+PLAN	geometry3k_test_2486	chars=1246	duration_s=31.47
+PLAN	geometry3k_test_2604	chars=836	duration_s=19.24
+PLAN	geometry3k_test_2794	chars=1198	duration_s=28.83
+PLAN	geometry3k_test_2546	chars=1214	duration_s=28.60
+PLAN	geometry3k_test_2442	chars=845	duration_s=19.42
+PLAN	geometry3k_test_2708	chars=1262	duration_s=28.47
+PLAN	geometry3k_test_2414	chars=882	duration_s=20.93
+PLAN	geometry3k_test_2554	chars=912	duration_s=22.30
+PLAN	geometry3k_test_2937	chars=835	duration_s=19.23
+PLAN	geometry3k_test_2416	chars=894	duration_s=22.55
+PLAN	geometry3k_test_2521	chars=924	duration_s=22.09
+PLAN	geometry3k_test_2706	chars=925	duration_s=23.19
+PLAN	geometry3k_test_2423	chars=892	duration_s=20.82
+PLAN	geometry3k_test_2789	chars=1309	duration_s=34.89
+PLAN	geometry3k_test_2942	chars=823	duration_s=18.29
+PLAN	geometry3k_test_2868	chars=903	duration_s=22.12
+PLAN	geometry3k_test_2550	chars=838	duration_s=19.70
+PLAN	geometry3k_test_2698	chars=1157	duration_s=28.08
+PLAN	geometry3k_test_2514	chars=907	duration_s=21.78
+PLAN	geometry3k_test_2627	chars=1118	duration_s=28.34
+PLAN	geometry3k_test_2598	chars=1110	duration_s=26.03
+PLAN	geometry3k_test_2985	chars=1262	duration_s=29.75
+PLAN	geometry3k_test_2807	chars=1070	duration_s=28.75
+PLAN	geometry3k_test_2847	chars=1131	duration_s=29.60
+PLAN	geometry3k_test_2904	chars=1054	duration_s=24.75
+PLAN	geometry3k_test_2918	chars=900	duration_s=21.97
+PLAN	geometry3k_test_2960	chars=964	duration_s=21.86
+PLAN	geometry3k_test_2731	chars=1350	duration_s=32.02
+PLAN	geometry3k_test_2700	chars=1060	duration_s=24.98
+PLAN	geometry3k_test_2790	chars=990	duration_s=24.61
+PLAN	geometry3k_test_2824	chars=983	duration_s=24.84
+PLAN	geometry3k_test_2774	chars=989	duration_s=23.12
+PLAN	geometry3k_test_2417	chars=1159	duration_s=30.07
+PLAN	geometry3k_test_2765	chars=885	duration_s=20.26
+PLAN	geometry3k_test_2947	chars=992	duration_s=23.18
+PLAN	geometry3k_test_2487	chars=1075	duration_s=29.09
+PLAN	geometry3k_test_2443	chars=1052	duration_s=25.89
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:30<01:32, 30.69s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:54<00:53, 26.55s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [01:01<00:17, 17.79s/it]Loading checkpoint shards: 100%|██████████| 4/4 [01:04<00:00, 11.73s/it]Loading checkpoint shards: 100%|██████████| 4/4 [01:04<00:00, 16.04s/it]
+OK	geometry3k_test_2992	raw	pred='B'	gold='B'	complete=True	duration_s=4.42
+OK	geometry3k_test_2992	image_gdp	pred='B'	gold='B'	complete=True	duration_s=4.76
+OK	geometry3k_test_2992	generated_construction_plan	pred='B'	gold='B'	complete=True	duration_s=6.09
+OK	geometry3k_test_2768	raw	pred='B'	gold='B'	complete=True	duration_s=6.72
+OK	geometry3k_test_2768	image_gdp	pred='B'	gold='B'	complete=True	duration_s=8.05
+OK	geometry3k_test_2768	generated_construction_plan	pred='B'	gold='B'	complete=True	duration_s=8.70
+FAIL	geometry3k_test_2637	raw	pred='C'	gold='A'	complete=True	duration_s=6.46
+FAIL	geometry3k_test_2637	image_gdp	pred='C'	gold='A'	complete=True	duration_s=6.74
+FAIL	geometry3k_test_2637	generated_construction_plan	pred='C'	gold='A'	complete=True	duration_s=7.50
+OK	geometry3k_test_2961	raw	pred='D'	gold='D'	complete=True	duration_s=9.00
+OK	geometry3k_test_2961	image_gdp	pred='D'	gold='D'	complete=True	duration_s=9.37
+OK	geometry3k_test_2961	generated_construction_plan	pred='D'	gold='D'	complete=True	duration_s=10.01
+OK	geometry3k_test_2964	raw	pred='A'	gold='A'	complete=True	duration_s=7.37
+FAIL	geometry3k_test_2964	image_gdp	pred='C'	gold='A'	complete=True	duration_s=8.03
+OK	geometry3k_test_2964	generated_construction_plan	pred='A'	gold='A'	complete=True	duration_s=8.98
+OK	geometry3k_test_2587	raw	pred='D'	gold='D'	complete=True	duration_s=5.30
+OK	geometry3k_test_2587	image_gdp	pred='D'	gold='D'	complete=True	duration_s=5.90
+OK	geometry3k_test_2587	generated_construction_plan	pred='D'	gold='D'	complete=True	duration_s=6.60
+OK	geometry3k_test_2873	raw	pred='C'	gold='C'	complete=True	duration_s=4.21
+OK	geometry3k_test_2873	image_gdp	pred='C'	gold='C'	complete=True	duration_s=4.52
+FAIL	geometry3k_test_2873	generated_construction_plan	pred='B'	gold='C'	complete=True	duration_s=5.47
+OK	geometry3k_test_2607	raw	pred='B'	gold='B'	complete=True	duration_s=4.95
+OK	geometry3k_test_2607	image_gdp	pred='B'	gold='B'	complete=True	duration_s=5.48
+OK	geometry3k_test_2607	generated_construction_plan	pred='B'	gold='B'	complete=True	duration_s=6.28
+FAIL	geometry3k_test_2721	raw	pred='C'	gold='D'	complete=True	duration_s=10.98
+FAIL	geometry3k_test_2721	image_gdp	pred='C'	gold='D'	complete=True	duration_s=11.37
+FAIL	geometry3k_test_2721	generated_construction_plan	pred='C'	gold='D'	complete=True	duration_s=12.67
+OK	geometry3k_test_2670	raw	pred='B'	gold='B'	complete=True	duration_s=4.67
+OK	geometry3k_test_2670	image_gdp	pred='B'	gold='B'	complete=True	duration_s=5.63
+OK	geometry3k_test_2670	generated_construction_plan	pred='B'	gold='B'	complete=True	duration_s=6.67
+FAIL	geometry3k_test_2489	raw	pred='B'	gold='A'	complete=True	duration_s=9.66
+FAIL	geometry3k_test_2489	image_gdp	pred='B'	gold='A'	complete=True	duration_s=10.36
+FAIL	geometry3k_test_2489	generated_construction_plan	pred='B'	gold='A'	complete=True	duration_s=11.03
+OK	geometry3k_test_2428	raw	pred='B'	gold='B'	complete=True	duration_s=4.56
+OK	geometry3k_test_2428	image_gdp	pred='B'	gold='B'	complete=True	duration_s=5.15
+OK	geometry3k_test_2428	generated_construction_plan	pred='B'	gold='B'	complete=True	duration_s=6.87
+OK	geometry3k_test_2485	raw	pred='C'	gold='C'	complete=True	duration_s=4.20
+OK	geometry3k_test_2485	image_gdp	pred='C'	gold='C'	complete=True	duration_s=4.77
+OK	geometry3k_test_2485	generated_construction_plan	pred='C'	gold='C'	complete=True	duration_s=5.52
+OK	geometry3k_test_2626	raw	pred='C'	gold='C'	complete=True	duration_s=4.41
+OK	geometry3k_test_2626	image_gdp	pred='C'	gold='C'	complete=True	duration_s=4.99
+OK	geometry3k_test_2626	generated_construction_plan	pred='C'	gold='C'	complete=True	duration_s=6.04
+FAIL	geometry3k_test_2910	raw	pred='C'	gold='D'	complete=True	duration_s=4.32
+FAIL	geometry3k_test_2910	image_gdp	pred='C'	gold='D'	complete=True	duration_s=4.26
+FAIL	geometry3k_test_2910	generated_construction_plan	pred='C'	gold='D'	complete=True	duration_s=5.26
+FAIL	geometry3k_test_2473	raw	pred='B'	gold='A'	complete=True	duration_s=10.35
+FAIL	geometry3k_test_2473	image_gdp	pred='B'	gold='A'	complete=True	duration_s=10.96
+FAIL	geometry3k_test_2473	generated_construction_plan	pred='B'	gold='A'	complete=True	duration_s=12.02
+FAIL	geometry3k_test_2444	raw	pred='C'	gold='A'	complete=True	duration_s=5.75
+FAIL	geometry3k_test_2444	image_gdp	pred='C'	gold='A'	complete=True	duration_s=6.05
+FAIL	geometry3k_test_2444	generated_construction_plan	pred='C'	gold='A'	complete=True	duration_s=7.32
+OK	geometry3k_test_2594	raw	pred='B'	gold='B'	complete=True	duration_s=4.14
+OK	geometry3k_test_2594	image_gdp	pred='B'	gold='B'	complete=True	duration_s=4.67
+OK	geometry3k_test_2594	generated_construction_plan	pred='B'	gold='B'	complete=True	duration_s=5.70
+OK	geometry3k_test_2614	raw	pred='B'	gold='B'	complete=True	duration_s=5.66
+OK	geometry3k_test_2614	image_gdp	pred='B'	gold='B'	complete=True	duration_s=5.96
+OK	geometry3k_test_2614	generated_construction_plan	pred='B'	gold='B'	complete=True	duration_s=6.91
+OK	geometry3k_test_2762	raw	pred='B'	gold='B'	complete=True	duration_s=26.40
+OK	geometry3k_test_2762	image_gdp	pred='B'	gold='B'	complete=True	duration_s=27.06
+OK	geometry3k_test_2762	generated_construction_plan	pred='B'	gold='B'	complete=True	duration_s=27.82
+OK	geometry3k_test_2785	raw	pred='D'	gold='D'	complete=True	duration_s=10.30
+OK	geometry3k_test_2785	image_gdp	pred='D'	gold='D'	complete=True	duration_s=10.95
+OK	geometry3k_test_2785	generated_construction_plan	pred='D'	gold='D'	complete=True	duration_s=11.53
+FAIL	geometry3k_test_2413	raw	pred='C'	gold='B'	complete=True	duration_s=4.11
+FAIL	geometry3k_test_2413	image_gdp	pred='C'	gold='B'	complete=True	duration_s=4.71
+FAIL	geometry3k_test_2413	generated_construction_plan	pred='C'	gold='B'	complete=True	duration_s=5.43
+OK	geometry3k_test_2729	raw	pred='A'	gold='A'	complete=True	duration_s=4.88
+OK	geometry3k_test_2729	image_gdp	pred='A'	gold='A'	complete=True	duration_s=5.79
+OK	geometry3k_test_2729	generated_construction_plan	pred='A'	gold='A'	complete=True	duration_s=6.45
+OK	geometry3k_test_2648	raw	pred='A'	gold='A'	complete=True	duration_s=5.33
+OK	geometry3k_test_2648	image_gdp	pred='A'	gold='A'	complete=True	duration_s=5.89
+OK	geometry3k_test_2648	generated_construction_plan	pred='A'	gold='A'	complete=True	duration_s=6.96
+OK	geometry3k_test_2435	raw	pred='D'	gold='D'	complete=True	duration_s=4.39
+OK	geometry3k_test_2435	image_gdp	pred='D'	gold='D'	complete=True	duration_s=4.28
+OK	geometry3k_test_2435	generated_construction_plan	pred='D'	gold='D'	complete=True	duration_s=5.38
+FAIL	geometry3k_test_2827	raw	pred='C'	gold='A'	complete=True	duration_s=4.12
+FAIL	geometry3k_test_2827	image_gdp	pred='C'	gold='A'	complete=True	duration_s=4.71
+FAIL	geometry3k_test_2827	generated_construction_plan	pred='C'	gold='A'	complete=True	duration_s=5.41
+OK	geometry3k_test_2509	raw	pred='B'	gold='B'	complete=True	duration_s=6.04
+OK	geometry3k_test_2509	image_gdp	pred='B'	gold='B'	complete=True	duration_s=7.40
+OK	geometry3k_test_2509	generated_construction_plan	pred='B'	gold='B'	complete=True	duration_s=8.06
+OK	geometry3k_test_2969	raw	pred='C'	gold='C'	complete=True	duration_s=6.13
+OK	geometry3k_test_2969	image_gdp	pred='C'	gold='C'	complete=True	duration_s=6.72
+OK	geometry3k_test_2969	generated_construction_plan	pred='C'	gold='C'	complete=True	duration_s=7.82
+OK	geometry3k_test_2490	raw	pred='B'	gold='B'	complete=True	duration_s=6.75
+OK	geometry3k_test_2490	image_gdp	pred='B'	gold='B'	complete=True	duration_s=7.38
+OK	geometry3k_test_2490	generated_construction_plan	pred='B'	gold='B'	complete=True	duration_s=8.08
+FAIL	geometry3k_test_2643	raw	pred='B'	gold='D'	complete=True	duration_s=4.94
+FAIL	geometry3k_test_2643	image_gdp	pred='B'	gold='D'	complete=True	duration_s=5.54
+FAIL	geometry3k_test_2643	generated_construction_plan	pred='B'	gold='D'	complete=True	duration_s=6.26
+OK	geometry3k_test_2533	raw	pred='B'	gold='B'	complete=True	duration_s=11.77
+OK	geometry3k_test_2533	image_gdp	pred='B'	gold='B'	complete=True	duration_s=13.11
+OK	geometry3k_test_2533	generated_construction_plan	pred='B'	gold='B'	complete=True	duration_s=13.46
+OK	geometry3k_test_2834	raw	pred='C'	gold='C'	complete=True	duration_s=5.92
+OK	geometry3k_test_2834	image_gdp	pred='C'	gold='C'	complete=True	duration_s=6.23
+OK	geometry3k_test_2834	generated_construction_plan	pred='C'	gold='C'	complete=True	duration_s=6.97
+OK	geometry3k_test_2857	raw	pred='D'	gold='D'	complete=True	duration_s=8.68
+FAIL	geometry3k_test_2857	image_gdp	pred='B'	gold='D'	complete=True	duration_s=9.32
+OK	geometry3k_test_2857	generated_construction_plan	pred='D'	gold='D'	complete=True	duration_s=9.71
+FAIL	geometry3k_test_3001	raw	pred='D'	gold='C'	complete=True	duration_s=8.71
+FAIL	geometry3k_test_3001	image_gdp	pred='D'	gold='C'	complete=True	duration_s=9.06
+FAIL	geometry3k_test_3001	generated_construction_plan	pred='D'	gold='C'	complete=True	duration_s=10.06
+FAIL	geometry3k_test_2691	raw	pred='B'	gold='D'	complete=True	duration_s=9.17
+FAIL	geometry3k_test_2691	image_gdp	pred='B'	gold='D'	complete=True	duration_s=9.54
+FAIL	geometry3k_test_2691	generated_construction_plan	pred='B'	gold='D'	complete=True	duration_s=10.29
+OK	geometry3k_test_2767	raw	pred='C'	gold='C'	complete=True	duration_s=3.83
+OK	geometry3k_test_2767	image_gdp	pred='C'	gold='C'	complete=True	duration_s=4.16
+OK	geometry3k_test_2767	generated_construction_plan	pred='C'	gold='C'	complete=True	duration_s=5.44
+OK	geometry3k_test_2565	raw	pred='A'	gold='A'	complete=True	duration_s=4.20
+FAIL	geometry3k_test_2565	image_gdp	pred='D'	gold='A'	complete=True	duration_s=4.50
+OK	geometry3k_test_2565	generated_construction_plan	pred='A'	gold='A'	complete=True	duration_s=5.43
+OK	geometry3k_test_2412	raw	pred='A'	gold='A'	complete=True	duration_s=4.46
+OK	geometry3k_test_2412	image_gdp	pred='A'	gold='A'	complete=True	duration_s=5.07
+OK	geometry3k_test_2412	generated_construction_plan	pred='A'	gold='A'	complete=True	duration_s=5.78
+FAIL	geometry3k_test_2707	raw	pred='A'	gold='B'	complete=True	duration_s=4.10
+FAIL	geometry3k_test_2707	image_gdp	pred='C'	gold='B'	complete=True	duration_s=4.41
+FAIL	geometry3k_test_2707	generated_construction_plan	pred='A'	gold='B'	complete=True	duration_s=5.72
+OK	geometry3k_test_2979	raw	pred='C'	gold='C'	complete=True	duration_s=4.96
+OK	geometry3k_test_2979	image_gdp	pred='C'	gold='C'	complete=True	duration_s=5.47
+OK	geometry3k_test_2979	generated_construction_plan	pred='C'	gold='C'	complete=True	duration_s=6.57
+OK	geometry3k_test_2681	raw	pred='C'	gold='C'	complete=True	duration_s=4.50
+OK	geometry3k_test_2681	image_gdp	pred='C'	gold='C'	complete=True	duration_s=4.83
+OK	geometry3k_test_2681	generated_construction_plan	pred='C'	gold='C'	complete=True	duration_s=5.82
+FAIL	geometry3k_test_2783	raw	pred='C'	gold='B'	complete=True	duration_s=9.27
+FAIL	geometry3k_test_2783	image_gdp	pred='C'	gold='B'	complete=True	duration_s=9.62
+FAIL	geometry3k_test_2783	generated_construction_plan	pred='C'	gold='B'	complete=True	duration_s=10.93
+OK	geometry3k_test_2508	raw	pred='B'	gold='B'	complete=True	duration_s=6.93
+OK	geometry3k_test_2508	image_gdp	pred='B'	gold='B'	complete=True	duration_s=7.23
+OK	geometry3k_test_2508	generated_construction_plan	pred='B'	gold='B'	complete=True	duration_s=8.19
+OK	geometry3k_test_2828	raw	pred='B'	gold='B'	complete=True	duration_s=21.70
+OK	geometry3k_test_2828	image_gdp	pred='B'	gold='B'	complete=True	duration_s=22.51
+OK	geometry3k_test_2828	generated_construction_plan	pred='B'	gold='B'	complete=True	duration_s=22.98
+FAIL	geometry3k_test_2548	raw	pred='C'	gold='A'	complete=True	duration_s=8.80
+FAIL	geometry3k_test_2548	image_gdp	pred='D'	gold='A'	complete=True	duration_s=9.47
+FAIL	geometry3k_test_2548	generated_construction_plan	pred='C'	gold='A'	complete=True	duration_s=10.47
+FAIL	geometry3k_test_2931	raw	pred='B'	gold='C'	complete=True	duration_s=9.69
+FAIL	geometry3k_test_2931	image_gdp	pred='B'	gold='C'	complete=True	duration_s=10.34
+FAIL	geometry3k_test_2931	generated_construction_plan	pred='B'	gold='C'	complete=True	duration_s=11.01
+OK	geometry3k_test_2556	raw	pred='A'	gold='A'	complete=True	duration_s=4.49
+FAIL	geometry3k_test_2556	image_gdp	pred='B'	gold='A'	complete=True	duration_s=5.07
+OK	geometry3k_test_2556	generated_construction_plan	pred='A'	gold='A'	complete=True	duration_s=6.11
+FAIL	geometry3k_test_2893	raw	pred='C'	gold='A'	complete=True	duration_s=5.78
+FAIL	geometry3k_test_2893	image_gdp	pred='C'	gold='A'	complete=True	duration_s=6.57
+FAIL	geometry3k_test_2893	generated_construction_plan	pred='C'	gold='A'	complete=True	duration_s=7.04
+FAIL	geometry3k_test_2771	raw	pred='B'	gold='A'	complete=True	duration_s=10.05
+FAIL	geometry3k_test_2771	image_gdp	pred='B'	gold='A'	complete=True	duration_s=10.69
+OK	geometry3k_test_2771	generated_construction_plan	pred='A'	gold='A'	complete=True	duration_s=11.36
+FAIL	geometry3k_test_2939	raw	pred='B'	gold='A'	complete=True	duration_s=4.35
+FAIL	geometry3k_test_2939	image_gdp	pred='B'	gold='A'	complete=True	duration_s=5.58
+FAIL	geometry3k_test_2939	generated_construction_plan	pred='B'	gold='A'	complete=True	duration_s=5.69
+OK	geometry3k_test_2666	raw	pred='B'	gold='B'	complete=True	duration_s=12.48
+OK	geometry3k_test_2666	image_gdp	pred='B'	gold='B'	complete=True	duration_s=12.85
+OK	geometry3k_test_2666	generated_construction_plan	pred='B'	gold='B'	complete=True	duration_s=13.81
+FAIL	geometry3k_test_2727	raw	pred='A'	gold='B'	complete=True	duration_s=4.08
+OK	geometry3k_test_2727	image_gdp	pred='B'	gold='B'	complete=True	duration_s=4.69
+FAIL	geometry3k_test_2727	generated_construction_plan	pred='C'	gold='B'	complete=True	duration_s=5.37
+FAIL	geometry3k_test_2955	raw	pred='C'	gold='D'	complete=True	duration_s=4.41
+FAIL	geometry3k_test_2955	image_gdp	pred='C'	gold='D'	complete=True	duration_s=4.97
+FAIL	geometry3k_test_2955	generated_construction_plan	pred='C'	gold='D'	complete=True	duration_s=5.68
+OK	geometry3k_test_2542	raw	pred='B'	gold='B'	complete=True	duration_s=21.22
+OK	geometry3k_test_2542	image_gdp	pred='B'	gold='B'	complete=True	duration_s=21.56
+OK	geometry3k_test_2542	generated_construction_plan	pred='B'	gold='B'	complete=True	duration_s=22.31
+FAIL	geometry3k_test_2500	raw	pred='B'	gold='A'	complete=True	duration_s=12.63
+FAIL	geometry3k_test_2500	image_gdp	pred='B'	gold='A'	complete=True	duration_s=13.33
+FAIL	geometry3k_test_2500	generated_construction_plan	pred='B'	gold='A'	complete=True	duration_s=14.39
+FAIL	geometry3k_test_2644	raw	pred='C'	gold='D'	complete=True	duration_s=10.37
+FAIL	geometry3k_test_2644	image_gdp	pred='B'	gold='D'	complete=True	duration_s=11.10
+FAIL	geometry3k_test_2644	generated_construction_plan	pred='C'	gold='D'	complete=True	duration_s=12.04
+FAIL	geometry3k_test_2668	raw	pred='B'	gold='C'	complete=True	duration_s=4.11
+FAIL	geometry3k_test_2668	image_gdp	pred='B'	gold='C'	complete=True	duration_s=4.39
+FAIL	geometry3k_test_2668	generated_construction_plan	pred='B'	gold='C'	complete=True	duration_s=5.37
+OK	geometry3k_test_2576	raw	pred='B'	gold='B'	complete=True	duration_s=7.63
+OK	geometry3k_test_2576	image_gdp	pred='B'	gold='B'	complete=True	duration_s=8.28
+OK	geometry3k_test_2576	generated_construction_plan	pred='B'	gold='B'	complete=True	duration_s=8.95
+FAIL	geometry3k_test_2977	raw	pred='B'	gold='C'	complete=True	duration_s=18.97
+FAIL	geometry3k_test_2977	image_gdp	pred='B'	gold='C'	complete=True	duration_s=19.62
+FAIL	geometry3k_test_2977	generated_construction_plan	pred='B'	gold='C'	complete=True	duration_s=20.29
+FAIL	geometry3k_test_2564	raw	pred='C'	gold='A'	complete=True	duration_s=4.37
+FAIL	geometry3k_test_2564	image_gdp	pred='C'	gold='A'	complete=True	duration_s=4.93
+FAIL	geometry3k_test_2564	generated_construction_plan	pred='C'	gold='A'	complete=True	duration_s=6.00
+OK	geometry3k_test_2926	raw	pred='C'	gold='C'	complete=True	duration_s=4.40
+OK	geometry3k_test_2926	image_gdp	pred='C'	gold='C'	complete=True	duration_s=4.67
+OK	geometry3k_test_2926	generated_construction_plan	pred='C'	gold='C'	complete=True	duration_s=5.99
+OK	geometry3k_test_2646	raw	pred='B'	gold='B'	complete=True	duration_s=4.21
+OK	geometry3k_test_2646	image_gdp	pred='B'	gold='B'	complete=True	duration_s=4.77
+OK	geometry3k_test_2646	generated_construction_plan	pred='B'	gold='B'	complete=True	duration_s=5.74
+OK	geometry3k_test_2995	raw	pred='B'	gold='B'	complete=True	duration_s=14.68
+OK	geometry3k_test_2995	image_gdp	pred='B'	gold='B'	complete=True	duration_s=15.32
+OK	geometry3k_test_2995	generated_construction_plan	pred='B'	gold='B'	complete=True	duration_s=16.07
+FAIL	geometry3k_test_2841	raw	pred='C'	gold='A'	complete=True	duration_s=4.10
+FAIL	geometry3k_test_2841	image_gdp	pred='C'	gold='A'	complete=True	duration_s=4.71
+FAIL	geometry3k_test_2841	generated_construction_plan	pred='C'	gold='A'	complete=True	duration_s=5.41
+FAIL	geometry3k_test_2549	raw	pred='D'	gold='B'	complete=True	duration_s=4.18
+FAIL	geometry3k_test_2549	image_gdp	pred='D'	gold='B'	complete=True	duration_s=5.01
+FAIL	geometry3k_test_2549	generated_construction_plan	pred='D'	gold='B'	complete=True	duration_s=5.77
+FAIL	geometry3k_test_2971	raw	pred='A'	gold='B'	complete=True	duration_s=13.29
+FAIL	geometry3k_test_2971	image_gdp	pred=''	gold='B'	complete=False	duration_s=16.61
+OK	geometry3k_test_2971	generated_construction_plan	pred='B'	gold='B'	complete=True	duration_s=14.56
+OK	geometry3k_test_2709	raw	pred='B'	gold='B'	complete=True	duration_s=15.15
+OK	geometry3k_test_2709	image_gdp	pred='B'	gold='B'	complete=True	duration_s=15.56
+OK	geometry3k_test_2709	generated_construction_plan	pred='B'	gold='B'	complete=True	duration_s=16.87
+OK	geometry3k_test_2760	raw	pred='A'	gold='A'	complete=True	duration_s=6.93
+OK	geometry3k_test_2760	image_gdp	pred='A'	gold='A'	complete=True	duration_s=7.22
+OK	geometry3k_test_2760	generated_construction_plan	pred='A'	gold='A'	complete=True	duration_s=8.62
+FAIL	geometry3k_test_2823	raw	pred='C'	gold='B'	complete=True	duration_s=8.57
+FAIL	geometry3k_test_2823	image_gdp	pred='C'	gold='B'	complete=True	duration_s=8.98
+FAIL	geometry3k_test_2823	generated_construction_plan	pred='C'	gold='B'	complete=True	duration_s=10.01
+OK	geometry3k_test_2763	raw	pred='A'	gold='A'	complete=True	duration_s=4.96
+OK	geometry3k_test_2763	image_gdp	pred='A'	gold='A'	complete=True	duration_s=5.27
+OK	geometry3k_test_2763	generated_construction_plan	pred='A'	gold='A'	complete=True	duration_s=5.96
+FAIL	geometry3k_test_2928	raw	pred='B'	gold='C'	complete=True	duration_s=4.96
+FAIL	geometry3k_test_2928	image_gdp	pred='B'	gold='C'	complete=True	duration_s=5.31
+FAIL	geometry3k_test_2928	generated_construction_plan	pred='B'	gold='C'	complete=True	duration_s=6.33
+FAIL	geometry3k_test_2715	raw	pred='B'	gold='C'	complete=True	duration_s=3.94
+FAIL	geometry3k_test_2715	image_gdp	pred='B'	gold='C'	complete=True	duration_s=4.52
+FAIL	geometry3k_test_2715	generated_construction_plan	pred='B'	gold='C'	complete=True	duration_s=5.24
+FAIL	geometry3k_test_2903	raw	pred='B'	gold='C'	complete=True	duration_s=4.38
+FAIL	geometry3k_test_2903	image_gdp	pred='B'	gold='C'	complete=True	duration_s=4.95
+FAIL	geometry3k_test_2903	generated_construction_plan	pred='B'	gold='C'	complete=True	duration_s=5.70
+FAIL	geometry3k_test_2950	raw	pred='C'	gold='D'	complete=True	duration_s=4.10
+FAIL	geometry3k_test_2950	image_gdp	pred='C'	gold='D'	complete=True	duration_s=4.70
+FAIL	geometry3k_test_2950	generated_construction_plan	pred='C'	gold='D'	complete=True	duration_s=6.41
+FAIL	geometry3k_test_2983	raw	pred='C'	gold='B'	complete=True	duration_s=19.37
+FAIL	geometry3k_test_2983	image_gdp	pred=''	gold='B'	complete=False	duration_s=22.75
+FAIL	geometry3k_test_2983	generated_construction_plan	pred='C'	gold='B'	complete=True	duration_s=21.71
+FAIL	geometry3k_test_2491	raw	pred='C'	gold='A'	complete=True	duration_s=5.54
+FAIL	geometry3k_test_2491	image_gdp	pred='C'	gold='A'	complete=True	duration_s=5.80
+FAIL	geometry3k_test_2491	generated_construction_plan	pred='C'	gold='A'	complete=True	duration_s=6.84
+FAIL	geometry3k_test_2755	raw	pred='C'	gold='A'	complete=True	duration_s=4.53
+FAIL	geometry3k_test_2755	image_gdp	pred=''	gold='A'	complete=False	duration_s=7.81
+FAIL	geometry3k_test_2755	generated_construction_plan	pred='C'	gold='A'	complete=True	duration_s=5.79
+OK	geometry3k_test_2953	raw	pred='C'	gold='C'	complete=True	duration_s=4.69
+OK	geometry3k_test_2953	image_gdp	pred='C'	gold='C'	complete=True	duration_s=5.29
+OK	geometry3k_test_2953	generated_construction_plan	pred='C'	gold='C'	complete=True	duration_s=6.01
+FAIL	geometry3k_test_2575	raw	pred='C'	gold='D'	complete=True	duration_s=12.06
+FAIL	geometry3k_test_2575	image_gdp	pred='C'	gold='D'	complete=True	duration_s=12.39
+FAIL	geometry3k_test_2575	generated_construction_plan	pred='C'	gold='D'	complete=True	duration_s=13.68
+OK	geometry3k_test_2687	raw	pred='D'	gold='D'	complete=True	duration_s=6.92
+OK	geometry3k_test_2687	image_gdp	pred='D'	gold='D'	complete=True	duration_s=7.30
+OK	geometry3k_test_2687	generated_construction_plan	pred='D'	gold='D'	complete=True	duration_s=8.35
+OK	geometry3k_test_2906	raw	pred='B'	gold='B'	complete=True	duration_s=5.27
+OK	geometry3k_test_2906	image_gdp	pred='B'	gold='B'	complete=True	duration_s=5.88
+OK	geometry3k_test_2906	generated_construction_plan	pred='B'	gold='B'	complete=True	duration_s=6.83
+FAIL	geometry3k_test_2716	raw	pred='D'	gold='C'	complete=True	duration_s=5.31
+FAIL	geometry3k_test_2716	image_gdp	pred='D'	gold='C'	complete=True	duration_s=4.71
+FAIL	geometry3k_test_2716	generated_construction_plan	pred='D'	gold='C'	complete=True	duration_s=6.60
+OK	geometry3k_test_2472	raw	pred='B'	gold='B'	complete=True	duration_s=4.20
+FAIL	geometry3k_test_2472	image_gdp	pred=''	gold='B'	complete=False	duration_s=7.52
+OK	geometry3k_test_2472	generated_construction_plan	pred='B'	gold='B'	complete=True	duration_s=5.81
+OK	geometry3k_test_2861	raw	pred='A'	gold='A'	complete=True	duration_s=5.99
+OK	geometry3k_test_2861	image_gdp	pred='A'	gold='A'	complete=True	duration_s=6.96
+OK	geometry3k_test_2861	generated_construction_plan	pred='A'	gold='A'	complete=True	duration_s=7.66
+OK	geometry3k_test_2603	raw	pred='C'	gold='C'	complete=True	duration_s=14.83
+FAIL	geometry3k_test_2603	image_gdp	pred='B'	gold='C'	complete=True	duration_s=15.79
+OK	geometry3k_test_2603	generated_construction_plan	pred='C'	gold='C'	complete=True	duration_s=16.57
+FAIL	geometry3k_test_2744	raw	pred='C'	gold='D'	complete=True	duration_s=4.51
+FAIL	geometry3k_test_2744	image_gdp	pred='C'	gold='D'	complete=True	duration_s=5.09
+FAIL	geometry3k_test_2744	generated_construction_plan	pred='C'	gold='D'	complete=True	duration_s=5.84
+FAIL	geometry3k_test_2800	raw	pred='B'	gold='C'	complete=True	duration_s=4.39
+FAIL	geometry3k_test_2800	image_gdp	pred='B'	gold='C'	complete=True	duration_s=4.93
+FAIL	geometry3k_test_2800	generated_construction_plan	pred='B'	gold='C'	complete=True	duration_s=6.02
+OK	geometry3k_test_2825	raw	pred='B'	gold='B'	complete=True	duration_s=9.88
+OK	geometry3k_test_2825	image_gdp	pred='B'	gold='B'	complete=True	duration_s=10.82
+OK	geometry3k_test_2825	generated_construction_plan	pred='B'	gold='B'	complete=True	duration_s=11.89
+FAIL	geometry3k_test_2887	raw	pred='A'	gold='D'	complete=True	duration_s=4.23
+OK	geometry3k_test_2887	image_gdp	pred='D'	gold='D'	complete=True	duration_s=5.08
+OK	geometry3k_test_2887	generated_construction_plan	pred='D'	gold='D'	complete=True	duration_s=6.43
+OK	geometry3k_test_2859	raw	pred='C'	gold='C'	complete=True	duration_s=4.42
+OK	geometry3k_test_2859	image_gdp	pred='C'	gold='C'	complete=True	duration_s=4.98
+OK	geometry3k_test_2859	generated_construction_plan	pred='C'	gold='C'	complete=True	duration_s=5.67
+OK	geometry3k_test_2853	raw	pred='D'	gold='D'	complete=True	duration_s=4.14
+OK	geometry3k_test_2853	image_gdp	pred='D'	gold='D'	complete=True	duration_s=4.71
+OK	geometry3k_test_2853	generated_construction_plan	pred='D'	gold='D'	complete=True	duration_s=5.71
+FAIL	geometry3k_test_2589	raw	pred='C'	gold='D'	complete=True	duration_s=5.33
+FAIL	geometry3k_test_2589	image_gdp	pred='C'	gold='D'	complete=True	duration_s=5.93
+FAIL	geometry3k_test_2589	generated_construction_plan	pred='C'	gold='D'	complete=True	duration_s=6.62
+OK	geometry3k_test_2920	raw	pred='C'	gold='C'	complete=True	duration_s=5.98
+OK	geometry3k_test_2920	image_gdp	pred='C'	gold='C'	complete=True	duration_s=6.22
+OK	geometry3k_test_2920	generated_construction_plan	pred='C'	gold='C'	complete=True	duration_s=7.25
+FAIL	geometry3k_test_2741	raw	pred='C'	gold='B'	complete=True	duration_s=6.05
+OK	geometry3k_test_2741	image_gdp	pred='B'	gold='B'	complete=True	duration_s=6.59
+FAIL	geometry3k_test_2741	generated_construction_plan	pred='C'	gold='B'	complete=True	duration_s=7.65
+FAIL	geometry3k_test_2645	raw	pred='C'	gold='A'	complete=True	duration_s=4.10
+FAIL	geometry3k_test_2645	image_gdp	pred='C'	gold='A'	complete=True	duration_s=4.43
+FAIL	geometry3k_test_2645	generated_construction_plan	pred='C'	gold='A'	complete=True	duration_s=5.38
+OK	geometry3k_test_2710	raw	pred='B'	gold='B'	complete=True	duration_s=6.30
+OK	geometry3k_test_2710	image_gdp	pred='B'	gold='B'	complete=True	duration_s=9.07
+OK	geometry3k_test_2710	generated_construction_plan	pred='B'	gold='B'	complete=True	duration_s=8.66
+FAIL	geometry3k_test_2438	raw	pred='A'	gold='B'	complete=True	duration_s=17.59
+FAIL	geometry3k_test_2438	image_gdp	pred='D'	gold='B'	complete=True	duration_s=18.20
+FAIL	geometry3k_test_2438	generated_construction_plan	pred='D'	gold='B'	complete=True	duration_s=19.21
+FAIL	geometry3k_test_2986	raw	pred='B'	gold='C'	complete=True	duration_s=4.96
+FAIL	geometry3k_test_2986	image_gdp	pred='B'	gold='C'	complete=True	duration_s=5.52
+FAIL	geometry3k_test_2986	generated_construction_plan	pred='B'	gold='C'	complete=True	duration_s=6.58
+FAIL	geometry3k_test_2664	raw	pred='B'	gold='A'	complete=True	duration_s=7.28
+FAIL	geometry3k_test_2664	image_gdp	pred='B'	gold='A'	complete=True	duration_s=7.89
+FAIL	geometry3k_test_2664	generated_construction_plan	pred='B'	gold='A'	complete=True	duration_s=8.59
+OK	geometry3k_test_2877	raw	pred='C'	gold='C'	complete=True	duration_s=4.24
+OK	geometry3k_test_2877	image_gdp	pred='C'	gold='C'	complete=True	duration_s=4.54
+OK	geometry3k_test_2877	generated_construction_plan	pred='C'	gold='C'	complete=True	duration_s=5.17
+OK	geometry3k_test_2816	raw	pred='B'	gold='B'	complete=True	duration_s=4.21
+OK	geometry3k_test_2816	image_gdp	pred='B'	gold='B'	complete=True	duration_s=4.80
+OK	geometry3k_test_2816	generated_construction_plan	pred='B'	gold='B'	complete=True	duration_s=5.82
+FAIL	geometry3k_test_2545	raw	pred='C'	gold='B'	complete=True	duration_s=5.44
+FAIL	geometry3k_test_2545	image_gdp	pred='C'	gold='B'	complete=True	duration_s=5.76
+FAIL	geometry3k_test_2545	generated_construction_plan	pred='C'	gold='B'	complete=True	duration_s=7.14
+OK	geometry3k_test_2987	raw	pred='A'	gold='A'	complete=True	duration_s=4.20
+OK	geometry3k_test_2987	image_gdp	pred='A'	gold='A'	complete=True	duration_s=4.78
+OK	geometry3k_test_2987	generated_construction_plan	pred='A'	gold='A'	complete=True	duration_s=5.84
+OK	geometry3k_test_2725	raw	pred='B'	gold='B'	complete=True	duration_s=6.67
+OK	geometry3k_test_2725	image_gdp	pred='B'	gold='B'	complete=True	duration_s=7.59
+OK	geometry3k_test_2725	generated_construction_plan	pred='B'	gold='B'	complete=True	duration_s=8.36
+OK	geometry3k_test_2528	raw	pred='B'	gold='B'	complete=True	duration_s=4.21
+OK	geometry3k_test_2528	image_gdp	pred='B'	gold='B'	complete=True	duration_s=4.54
+OK	geometry3k_test_2528	generated_construction_plan	pred='B'	gold='B'	complete=True	duration_s=5.81
+OK	geometry3k_test_2945	raw	pred='B'	gold='B'	complete=True	duration_s=13.77
+OK	geometry3k_test_2945	image_gdp	pred='B'	gold='B'	complete=True	duration_s=14.41
+OK	geometry3k_test_2945	generated_construction_plan	pred='B'	gold='B'	complete=True	duration_s=15.79
+OK	geometry3k_test_2717	raw	pred='A'	gold='A'	complete=True	duration_s=7.10
+FAIL	geometry3k_test_2717	image_gdp	pred='D'	gold='A'	complete=True	duration_s=8.71
+FAIL	geometry3k_test_2717	generated_construction_plan	pred='D'	gold='A'	complete=True	duration_s=9.10
+FAIL	geometry3k_test_2558	raw	pred='B'	gold='D'	complete=True	duration_s=4.93
+FAIL	geometry3k_test_2558	image_gdp	pred=''	gold='D'	complete=False	duration_s=8.29
+FAIL	geometry3k_test_2558	generated_construction_plan	pred='B'	gold='D'	complete=True	duration_s=6.24
+FAIL	geometry3k_test_2536	raw	pred='B'	gold='A'	complete=True	duration_s=6.73
+FAIL	geometry3k_test_2536	image_gdp	pred='B'	gold='A'	complete=True	duration_s=7.33
+FAIL	geometry3k_test_2536	generated_construction_plan	pred='B'	gold='A'	complete=True	duration_s=8.38
+FAIL	geometry3k_test_2520	raw	pred='B'	gold='A'	complete=True	duration_s=12.01
+FAIL	geometry3k_test_2520	image_gdp	pred='B'	gold='A'	complete=True	duration_s=12.73
+FAIL	geometry3k_test_2520	generated_construction_plan	pred='B'	gold='A'	complete=True	duration_s=13.79
+FAIL	geometry3k_test_2984	raw	pred='B'	gold='A'	complete=True	duration_s=4.53
+FAIL	geometry3k_test_2984	image_gdp	pred=''	gold='A'	complete=False	duration_s=7.82
+FAIL	geometry3k_test_2984	generated_construction_plan	pred='B'	gold='A'	complete=True	duration_s=6.05
+FAIL	geometry3k_test_2418	raw	pred='C'	gold='D'	complete=True	duration_s=4.18
+FAIL	geometry3k_test_2418	image_gdp	pred='C'	gold='D'	complete=True	duration_s=4.79
+FAIL	geometry3k_test_2418	generated_construction_plan	pred='C'	gold='D'	complete=True	duration_s=5.80
+OK	geometry3k_test_2915	raw	pred='B'	gold='B'	complete=True	duration_s=4.78
+OK	geometry3k_test_2915	image_gdp	pred='B'	gold='B'	complete=True	duration_s=5.41
+OK	geometry3k_test_2915	generated_construction_plan	pred='B'	gold='B'	complete=True	duration_s=6.81
+OK	geometry3k_test_2817	raw	pred='C'	gold='C'	complete=True	duration_s=4.18
+OK	geometry3k_test_2817	image_gdp	pred='C'	gold='C'	complete=True	duration_s=4.51
+OK	geometry3k_test_2817	generated_construction_plan	pred='C'	gold='C'	complete=True	duration_s=5.78
+FAIL	geometry3k_test_2924	raw	pred='A'	gold='C'	complete=True	duration_s=7.90
+FAIL	geometry3k_test_2924	image_gdp	pred='A'	gold='C'	complete=True	duration_s=8.25
+FAIL	geometry3k_test_2924	generated_construction_plan	pred='A'	gold='C'	complete=True	duration_s=8.97
+OK	geometry3k_test_2989	raw	pred='B'	gold='B'	complete=True	duration_s=5.75
+OK	geometry3k_test_2989	image_gdp	pred='B'	gold='B'	complete=True	duration_s=6.10
+OK	geometry3k_test_2989	generated_construction_plan	pred='B'	gold='B'	complete=True	duration_s=7.14
+FAIL	geometry3k_test_2663	raw	pred='B'	gold='D'	complete=True	duration_s=4.98
+FAIL	geometry3k_test_2663	image_gdp	pred='B'	gold='D'	complete=True	duration_s=5.54
+FAIL	geometry3k_test_2663	generated_construction_plan	pred='B'	gold='D'	complete=True	duration_s=6.65
+FAIL	geometry3k_test_2420	raw	pred='C'	gold='D'	complete=True	duration_s=5.14
+FAIL	geometry3k_test_2420	image_gdp	pred='C'	gold='D'	complete=True	duration_s=5.78
+FAIL	geometry3k_test_2420	generated_construction_plan	pred='C'	gold='D'	complete=True	duration_s=6.78
+OK	geometry3k_test_2579	raw	pred='A'	gold='A'	complete=True	duration_s=5.32
+OK	geometry3k_test_2579	image_gdp	pred='A'	gold='A'	complete=True	duration_s=5.87
+OK	geometry3k_test_2579	generated_construction_plan	pred='A'	gold='A'	complete=True	duration_s=7.25
+FAIL	geometry3k_test_2776	raw	pred='A'	gold='D'	complete=True	duration_s=4.72
+FAIL	geometry3k_test_2776	image_gdp	pred='A'	gold='D'	complete=True	duration_s=5.65
+FAIL	geometry3k_test_2776	generated_construction_plan	pred='A'	gold='D'	complete=True	duration_s=6.67
+FAIL	geometry3k_test_2799	raw	pred='C'	gold='D'	complete=True	duration_s=4.22
+FAIL	geometry3k_test_2799	image_gdp	pred='C'	gold='D'	complete=True	duration_s=4.82
+FAIL	geometry3k_test_2799	generated_construction_plan	pred='C'	gold='D'	complete=True	duration_s=6.14
+FAIL	geometry3k_test_2583	raw	pred='C'	gold='A'	complete=True	duration_s=14.89
+FAIL	geometry3k_test_2583	image_gdp	pred='B'	gold='A'	complete=True	duration_s=15.81
+FAIL	geometry3k_test_2583	generated_construction_plan	pred='C'	gold='A'	complete=True	duration_s=16.29
+FAIL	geometry3k_test_2572	raw	pred='C'	gold='D'	complete=True	duration_s=10.43
+FAIL	geometry3k_test_2572	image_gdp	pred='C'	gold='D'	complete=True	duration_s=11.09
+FAIL	geometry3k_test_2572	generated_construction_plan	pred='C'	gold='D'	complete=True	duration_s=11.77
+FAIL	geometry3k_test_2478	raw	pred='B'	gold='A'	complete=True	duration_s=7.17
+FAIL	geometry3k_test_2478	image_gdp	pred='B'	gold='A'	complete=True	duration_s=7.59
+FAIL	geometry3k_test_2478	generated_construction_plan	pred='B'	gold='A'	complete=True	duration_s=8.59
+OK	geometry3k_test_2650	raw	pred='B'	gold='B'	complete=True	duration_s=6.32
+OK	geometry3k_test_2650	image_gdp	pred='B'	gold='B'	complete=True	duration_s=6.09
+OK	geometry3k_test_2650	generated_construction_plan	pred='B'	gold='B'	complete=True	duration_s=7.10
+OK	geometry3k_test_2791	raw	pred='D'	gold='D'	complete=True	duration_s=4.39
+OK	geometry3k_test_2791	image_gdp	pred='D'	gold='D'	complete=True	duration_s=5.22
+OK	geometry3k_test_2791	generated_construction_plan	pred='D'	gold='D'	complete=True	duration_s=6.31
+OK	geometry3k_test_2885	raw	pred='B'	gold='B'	complete=True	duration_s=5.84
+OK	geometry3k_test_2885	image_gdp	pred='B'	gold='B'	complete=True	duration_s=6.48
+OK	geometry3k_test_2885	generated_construction_plan	pred='B'	gold='B'	complete=True	duration_s=7.12
+OK	geometry3k_test_2730	raw	pred='A'	gold='A'	complete=True	duration_s=8.70
+OK	geometry3k_test_2730	image_gdp	pred='A'	gold='A'	complete=True	duration_s=9.41
+OK	geometry3k_test_2730	generated_construction_plan	pred='A'	gold='A'	complete=True	duration_s=10.41
+OK	geometry3k_test_2745	raw	pred='A'	gold='A'	complete=True	duration_s=6.79
+OK	geometry3k_test_2745	image_gdp	pred='A'	gold='A'	complete=True	duration_s=7.37
+OK	geometry3k_test_2745	generated_construction_plan	pred='A'	gold='A'	complete=True	duration_s=8.41
+FAIL	geometry3k_test_2595	raw	pred='B'	gold='A'	complete=True	duration_s=15.53
+FAIL	geometry3k_test_2595	image_gdp	pred='B'	gold='A'	complete=True	duration_s=16.16
+FAIL	geometry3k_test_2595	generated_construction_plan	pred='B'	gold='A'	complete=True	duration_s=16.88
+FAIL	geometry3k_test_2796	raw	pred='C'	gold='B'	complete=True	duration_s=7.38
+FAIL	geometry3k_test_2796	image_gdp	pred='C'	gold='B'	complete=True	duration_s=7.57
+FAIL	geometry3k_test_2796	generated_construction_plan	pred='C'	gold='B'	complete=True	duration_s=8.88
+FAIL	geometry3k_test_2876	raw	pred='B'	gold='A'	complete=True	duration_s=5.29
+FAIL	geometry3k_test_2876	image_gdp	pred='B'	gold='A'	complete=True	duration_s=5.58
+FAIL	geometry3k_test_2876	generated_construction_plan	pred='B'	gold='A'	complete=True	duration_s=6.94
+FAIL	geometry3k_test_2948	raw	pred='B'	gold='C'	complete=True	duration_s=6.74
+FAIL	geometry3k_test_2948	image_gdp	pred='B'	gold='C'	complete=True	duration_s=7.38
+FAIL	geometry3k_test_2948	generated_construction_plan	pred='B'	gold='C'	complete=True	duration_s=8.02
+FAIL	geometry3k_test_2732	raw	pred='B'	gold='C'	complete=True	duration_s=6.47
+FAIL	geometry3k_test_2732	image_gdp	pred='B'	gold='C'	complete=True	duration_s=6.77
+FAIL	geometry3k_test_2732	generated_construction_plan	pred='B'	gold='C'	complete=True	duration_s=8.40
+FAIL	geometry3k_test_2848	raw	pred='B'	gold='A'	complete=True	duration_s=13.14
+FAIL	geometry3k_test_2848	image_gdp	pred='B'	gold='A'	complete=True	duration_s=13.82
+FAIL	geometry3k_test_2848	generated_construction_plan	pred='B'	gold='A'	complete=True	duration_s=14.50
+FAIL	geometry3k_test_2962	raw	pred='B'	gold='C'	complete=True	duration_s=4.53
+FAIL	geometry3k_test_2962	image_gdp	pred='B'	gold='C'	complete=True	duration_s=5.07
+FAIL	geometry3k_test_2962	generated_construction_plan	pred='B'	gold='C'	complete=True	duration_s=6.18
+FAIL	geometry3k_test_2454	raw	pred='C'	gold='D'	complete=True	duration_s=5.16
+FAIL	geometry3k_test_2454	image_gdp	pred='B'	gold='D'	complete=True	duration_s=5.04
+FAIL	geometry3k_test_2454	generated_construction_plan	pred='C'	gold='D'	complete=True	duration_s=6.01
+OK	geometry3k_test_2880	raw	pred='D'	gold='D'	complete=True	duration_s=5.30
+OK	geometry3k_test_2880	image_gdp	pred='D'	gold='D'	complete=True	duration_s=5.44
+OK	geometry3k_test_2880	generated_construction_plan	pred='D'	gold='D'	complete=True	duration_s=6.81
+FAIL	geometry3k_test_2611	raw	pred='B'	gold='D'	complete=True	duration_s=8.35
+FAIL	geometry3k_test_2611	image_gdp	pred='B'	gold='D'	complete=True	duration_s=8.72
+FAIL	geometry3k_test_2611	generated_construction_plan	pred='B'	gold='D'	complete=True	duration_s=10.04
+FAIL	geometry3k_test_2465	raw	pred='B'	gold='A'	complete=True	duration_s=7.67
+FAIL	geometry3k_test_2465	image_gdp	pred='B'	gold='A'	complete=True	duration_s=8.62
+FAIL	geometry3k_test_2465	generated_construction_plan	pred='B'	gold='A'	complete=True	duration_s=9.63
+FAIL	geometry3k_test_2697	raw	pred='C'	gold='D'	complete=True	duration_s=10.72
+FAIL	geometry3k_test_2697	image_gdp	pred='C'	gold='D'	complete=True	duration_s=11.37
+FAIL	geometry3k_test_2697	generated_construction_plan	pred='C'	gold='D'	complete=True	duration_s=12.09
+OK	geometry3k_test_2544	raw	pred='A'	gold='A'	complete=True	duration_s=7.68
+OK	geometry3k_test_2544	image_gdp	pred='A'	gold='A'	complete=True	duration_s=8.27
+OK	geometry3k_test_2544	generated_construction_plan	pred='A'	gold='A'	complete=True	duration_s=8.92
+OK	geometry3k_test_2571	raw	pred='B'	gold='B'	complete=True	duration_s=19.01
+OK	geometry3k_test_2571	image_gdp	pred='B'	gold='B'	complete=True	duration_s=19.63
+OK	geometry3k_test_2571	generated_construction_plan	pred='B'	gold='B'	complete=True	duration_s=20.69
+FAIL	geometry3k_test_2613	raw	pred='B'	gold='A'	complete=True	duration_s=4.21
+FAIL	geometry3k_test_2613	image_gdp	pred='B'	gold='A'	complete=True	duration_s=4.78
+FAIL	geometry3k_test_2613	generated_construction_plan	pred='B'	gold='A'	complete=True	duration_s=6.16
+OK	geometry3k_test_2932	raw	pred='B'	gold='B'	complete=True	duration_s=10.80
+OK	geometry3k_test_2932	image_gdp	pred='B'	gold='B'	complete=True	duration_s=11.14
+OK	geometry3k_test_2932	generated_construction_plan	pred='B'	gold='B'	complete=True	duration_s=12.10
+OK	geometry3k_test_2464	raw	pred='B'	gold='B'	complete=True	duration_s=13.43
+OK	geometry3k_test_2464	image_gdp	pred='B'	gold='B'	complete=True	duration_s=14.53
+OK	geometry3k_test_2464	generated_construction_plan	pred='B'	gold='B'	complete=True	duration_s=15.08
+OK	geometry3k_test_2623	raw	pred='C'	gold='C'	complete=True	duration_s=10.75
+OK	geometry3k_test_2623	image_gdp	pred='C'	gold='C'	complete=True	duration_s=11.12
+OK	geometry3k_test_2623	generated_construction_plan	pred='C'	gold='C'	complete=True	duration_s=12.08
+OK	geometry3k_test_2993	raw	pred='B'	gold='B'	complete=True	duration_s=4.82
+OK	geometry3k_test_2993	image_gdp	pred='B'	gold='B'	complete=True	duration_s=5.12
+OK	geometry3k_test_2993	generated_construction_plan	pred='B'	gold='B'	complete=True	duration_s=6.81
+FAIL	geometry3k_test_2534	raw	pred='B'	gold='C'	complete=True	duration_s=12.47
+FAIL	geometry3k_test_2534	image_gdp	pred='B'	gold='C'	complete=True	duration_s=12.88
+FAIL	geometry3k_test_2534	generated_construction_plan	pred='B'	gold='C'	complete=True	duration_s=13.76
+OK	geometry3k_test_2469	raw	pred='B'	gold='B'	complete=True	duration_s=14.97
+OK	geometry3k_test_2469	image_gdp	pred='B'	gold='B'	complete=True	duration_s=15.38
+OK	geometry3k_test_2469	generated_construction_plan	pred='B'	gold='B'	complete=True	duration_s=16.00
+FAIL	geometry3k_test_2629	raw	pred='A'	gold='D'	complete=True	duration_s=6.30
+FAIL	geometry3k_test_2629	image_gdp	pred='A'	gold='D'	complete=True	duration_s=7.60
+FAIL	geometry3k_test_2629	generated_construction_plan	pred='A'	gold='D'	complete=True	duration_s=7.98
+OK	geometry3k_test_2471	raw	pred='C'	gold='C'	complete=True	duration_s=4.53
+OK	geometry3k_test_2471	image_gdp	pred='C'	gold='C'	complete=True	duration_s=4.82
+OK	geometry3k_test_2471	generated_construction_plan	pred='C'	gold='C'	complete=True	duration_s=6.12
+OK	geometry3k_test_2656	raw	pred='B'	gold='B'	complete=True	duration_s=4.22
+OK	geometry3k_test_2656	image_gdp	pred='B'	gold='B'	complete=True	duration_s=4.77
+OK	geometry3k_test_2656	generated_construction_plan	pred='B'	gold='B'	complete=True	duration_s=5.86
+OK	geometry3k_test_2419	raw	pred='B'	gold='B'	complete=True	duration_s=8.72
+OK	geometry3k_test_2419	image_gdp	pred='B'	gold='B'	complete=True	duration_s=9.11
+OK	geometry3k_test_2419	generated_construction_plan	pred='B'	gold='B'	complete=True	duration_s=10.41
+FAIL	geometry3k_test_2923	raw	pred='B'	gold='C'	complete=True	duration_s=4.87
+FAIL	geometry3k_test_2923	image_gdp	pred='D'	gold='C'	complete=True	duration_s=5.19
+FAIL	geometry3k_test_2923	generated_construction_plan	pred='B'	gold='C'	complete=True	duration_s=6.13
+OK	geometry3k_test_2561	raw	pred='C'	gold='C'	complete=True	duration_s=4.20
+OK	geometry3k_test_2561	image_gdp	pred='C'	gold='C'	complete=True	duration_s=4.77
+FAIL	geometry3k_test_2561	generated_construction_plan	pred='D'	gold='C'	complete=True	duration_s=5.81
+OK	geometry3k_test_2501	raw	pred='B'	gold='B'	complete=True	duration_s=17.70
+OK	geometry3k_test_2501	image_gdp	pred='B'	gold='B'	complete=True	duration_s=18.05
+OK	geometry3k_test_2501	generated_construction_plan	pred='B'	gold='B'	complete=True	duration_s=19.10
+OK	geometry3k_test_2562	raw	pred='C'	gold='C'	complete=True	duration_s=4.20
+OK	geometry3k_test_2562	image_gdp	pred='C'	gold='C'	complete=True	duration_s=4.51
+OK	geometry3k_test_2562	generated_construction_plan	pred='C'	gold='C'	complete=True	duration_s=5.77
+OK	geometry3k_test_2934	raw	pred='C'	gold='C'	complete=True	duration_s=4.21
+OK	geometry3k_test_2934	image_gdp	pred='C'	gold='C'	complete=True	duration_s=4.54
+OK	geometry3k_test_2934	generated_construction_plan	pred='C'	gold='C'	complete=True	duration_s=5.49
+OK	geometry3k_test_2515	raw	pred='B'	gold='B'	complete=True	duration_s=17.85
+OK	geometry3k_test_2515	image_gdp	pred='B'	gold='B'	complete=True	duration_s=18.54
+OK	geometry3k_test_2515	generated_construction_plan	pred='B'	gold='B'	complete=True	duration_s=19.25
+FAIL	geometry3k_test_2997	raw	pred='B'	gold='C'	complete=True	duration_s=9.82
+FAIL	geometry3k_test_2997	image_gdp	pred='B'	gold='C'	complete=True	duration_s=10.48
+FAIL	geometry3k_test_2997	generated_construction_plan	pred='B'	gold='C'	complete=True	duration_s=11.47
+FAIL	geometry3k_test_2674	raw	pred='C'	gold='D'	complete=True	duration_s=4.20
+FAIL	geometry3k_test_2674	image_gdp	pred='C'	gold='D'	complete=True	duration_s=4.79
+FAIL	geometry3k_test_2674	generated_construction_plan	pred='C'	gold='D'	complete=True	duration_s=6.19
+OK	geometry3k_test_2981	raw	pred='C'	gold='C'	complete=True	duration_s=4.41
+OK	geometry3k_test_2981	image_gdp	pred='C'	gold='C'	complete=True	duration_s=4.73
+OK	geometry3k_test_2981	generated_construction_plan	pred='C'	gold='C'	complete=True	duration_s=6.01
+OK	geometry3k_test_2486	raw	pred='C'	gold='C'	complete=True	duration_s=4.83
+OK	geometry3k_test_2486	image_gdp	pred='C'	gold='C'	complete=True	duration_s=5.16
+OK	geometry3k_test_2486	generated_construction_plan	pred='C'	gold='C'	complete=True	duration_s=6.49
+FAIL	geometry3k_test_2604	raw	pred='A'	gold='B'	complete=True	duration_s=4.09
+OK	geometry3k_test_2604	image_gdp	pred='B'	gold='B'	complete=True	duration_s=4.80
+OK	geometry3k_test_2604	generated_construction_plan	pred='B'	gold='B'	complete=True	duration_s=5.48
+OK	geometry3k_test_2794	raw	pred='B'	gold='B'	complete=True	duration_s=8.04
+OK	geometry3k_test_2794	image_gdp	pred='B'	gold='B'	complete=True	duration_s=8.41
+OK	geometry3k_test_2794	generated_construction_plan	pred='B'	gold='B'	complete=True	duration_s=9.69
+OK	geometry3k_test_2546	raw	pred='B'	gold='B'	complete=True	duration_s=3.85
+OK	geometry3k_test_2546	image_gdp	pred='B'	gold='B'	complete=True	duration_s=4.21
+OK	geometry3k_test_2546	generated_construction_plan	pred='B'	gold='B'	complete=True	duration_s=5.49
+OK	geometry3k_test_2442	raw	pred='C'	gold='C'	complete=True	duration_s=9.29
+OK	geometry3k_test_2442	image_gdp	pred='C'	gold='C'	complete=True	duration_s=9.61
+OK	geometry3k_test_2442	generated_construction_plan	pred='C'	gold='C'	complete=True	duration_s=10.32
+FAIL	geometry3k_test_2708	raw	pred='B'	gold='C'	complete=True	duration_s=4.24
+FAIL	geometry3k_test_2708	image_gdp	pred='B'	gold='C'	complete=True	duration_s=4.52
+FAIL	geometry3k_test_2708	generated_construction_plan	pred='B'	gold='C'	complete=True	duration_s=5.80
+OK	geometry3k_test_2414	raw	pred='B'	gold='B'	complete=True	duration_s=4.18
+OK	geometry3k_test_2414	image_gdp	pred='B'	gold='B'	complete=True	duration_s=4.55
+OK	geometry3k_test_2414	generated_construction_plan	pred='B'	gold='B'	complete=True	duration_s=5.46
+OK	geometry3k_test_2554	raw	pred='D'	gold='D'	complete=True	duration_s=5.35
+OK	geometry3k_test_2554	image_gdp	pred='D'	gold='D'	complete=True	duration_s=4.73
+OK	geometry3k_test_2554	generated_construction_plan	pred='D'	gold='D'	complete=True	duration_s=5.74
+OK	geometry3k_test_2937	raw	pred='C'	gold='C'	complete=True	duration_s=4.17
+OK	geometry3k_test_2937	image_gdp	pred='C'	gold='C'	complete=True	duration_s=4.52
+OK	geometry3k_test_2937	generated_construction_plan	pred='C'	gold='C'	complete=True	duration_s=5.15
+OK	geometry3k_test_2416	raw	pred='B'	gold='B'	complete=True	duration_s=4.42
+OK	geometry3k_test_2416	image_gdp	pred='B'	gold='B'	complete=True	duration_s=5.00
+OK	geometry3k_test_2416	generated_construction_plan	pred='B'	gold='B'	complete=True	duration_s=5.74
+FAIL	geometry3k_test_2521	raw	pred='B'	gold='C'	complete=True	duration_s=6.01
+FAIL	geometry3k_test_2521	image_gdp	pred=''	gold='C'	complete=False	duration_s=9.07
+FAIL	geometry3k_test_2521	generated_construction_plan	pred='B'	gold='C'	complete=True	duration_s=7.36
+FAIL	geometry3k_test_2706	raw	pred='B'	gold='A'	complete=True	duration_s=4.51
+FAIL	geometry3k_test_2706	image_gdp	pred='B'	gold='A'	complete=True	duration_s=5.13
+FAIL	geometry3k_test_2706	generated_construction_plan	pred='B'	gold='A'	complete=True	duration_s=5.82
+OK	geometry3k_test_2423	raw	pred='C'	gold='C'	complete=True	duration_s=11.99
+OK	geometry3k_test_2423	image_gdp	pred='C'	gold='C'	complete=True	duration_s=12.36
+OK	geometry3k_test_2423	generated_construction_plan	pred='C'	gold='C'	complete=True	duration_s=13.32
+OK	geometry3k_test_2789	raw	pred='B'	gold='B'	complete=True	duration_s=4.21
+OK	geometry3k_test_2789	image_gdp	pred='B'	gold='B'	complete=True	duration_s=4.78
+OK	geometry3k_test_2789	generated_construction_plan	pred='B'	gold='B'	complete=True	duration_s=6.16
+OK	geometry3k_test_2942	raw	pred='B'	gold='B'	complete=True	duration_s=7.87
+OK	geometry3k_test_2942	image_gdp	pred='B'	gold='B'	complete=True	duration_s=8.18
+OK	geometry3k_test_2942	generated_construction_plan	pred='B'	gold='B'	complete=True	duration_s=9.15
+OK	geometry3k_test_2868	raw	pred='B'	gold='B'	complete=True	duration_s=9.60
+OK	geometry3k_test_2868	image_gdp	pred='B'	gold='B'	complete=True	duration_s=10.02
+OK	geometry3k_test_2868	generated_construction_plan	pred='B'	gold='B'	complete=True	duration_s=10.53
+FAIL	geometry3k_test_2550	raw	pred='C'	gold='D'	complete=True	duration_s=4.18
+FAIL	geometry3k_test_2550	image_gdp	pred=''	gold='D'	complete=False	duration_s=7.24
+FAIL	geometry3k_test_2550	generated_construction_plan	pred='C'	gold='D'	complete=True	duration_s=5.47
+OK	geometry3k_test_2698	raw	pred='C'	gold='C'	complete=True	duration_s=10.90
+OK	geometry3k_test_2698	image_gdp	pred='C'	gold='C'	complete=True	duration_s=11.56
+OK	geometry3k_test_2698	generated_construction_plan	pred='C'	gold='C'	complete=True	duration_s=12.61
+FAIL	geometry3k_test_2514	raw	pred='C'	gold='A'	complete=True	duration_s=4.12
+FAIL	geometry3k_test_2514	image_gdp	pred='C'	gold='A'	complete=True	duration_s=4.43
+FAIL	geometry3k_test_2514	generated_construction_plan	pred='C'	gold='A'	complete=True	duration_s=5.38
+FAIL	geometry3k_test_2627	raw	pred='B'	gold='A'	complete=True	duration_s=10.42
+FAIL	geometry3k_test_2627	image_gdp	pred='B'	gold='A'	complete=True	duration_s=11.38
+FAIL	geometry3k_test_2627	generated_construction_plan	pred='B'	gold='A'	complete=True	duration_s=12.38
+OK	geometry3k_test_2598	raw	pred='A'	gold='A'	complete=True	duration_s=5.62
+OK	geometry3k_test_2598	image_gdp	pred='A'	gold='A'	complete=True	duration_s=5.89
+OK	geometry3k_test_2598	generated_construction_plan	pred='A'	gold='A'	complete=True	duration_s=7.23
+FAIL	geometry3k_test_2985	raw	pred='A'	gold='B'	complete=True	duration_s=6.05
+FAIL	geometry3k_test_2985	image_gdp	pred='A'	gold='B'	complete=True	duration_s=6.45
+FAIL	geometry3k_test_2985	generated_construction_plan	pred='A'	gold='B'	complete=True	duration_s=7.74
+FAIL	geometry3k_test_2807	raw	pred='B'	gold='A'	complete=True	duration_s=4.50
+FAIL	geometry3k_test_2807	image_gdp	pred='B'	gold='A'	complete=True	duration_s=5.07
+FAIL	geometry3k_test_2807	generated_construction_plan	pred='B'	gold='A'	complete=True	duration_s=6.12
+FAIL	geometry3k_test_2847	raw	pred='B'	gold='C'	complete=True	duration_s=11.05
+FAIL	geometry3k_test_2847	image_gdp	pred='B'	gold='C'	complete=True	duration_s=11.67
+FAIL	geometry3k_test_2847	generated_construction_plan	pred='B'	gold='C'	complete=True	duration_s=13.06
+OK	geometry3k_test_2904	raw	pred='D'	gold='D'	complete=True	duration_s=4.19
+OK	geometry3k_test_2904	image_gdp	pred='D'	gold='D'	complete=True	duration_s=4.49
+OK	geometry3k_test_2904	generated_construction_plan	pred='D'	gold='D'	complete=True	duration_s=5.78
+FAIL	geometry3k_test_2918	raw	pred='B'	gold='C'	complete=True	duration_s=4.78
+FAIL	geometry3k_test_2918	image_gdp	pred='B'	gold='C'	complete=True	duration_s=5.63
+FAIL	geometry3k_test_2918	generated_construction_plan	pred='B'	gold='C'	complete=True	duration_s=6.10
+OK	geometry3k_test_2960	raw	pred='C'	gold='C'	complete=True	duration_s=4.39
+OK	geometry3k_test_2960	image_gdp	pred='C'	gold='C'	complete=True	duration_s=4.74
+OK	geometry3k_test_2960	generated_construction_plan	pred='C'	gold='C'	complete=True	duration_s=5.67
+OK	geometry3k_test_2731	raw	pred='B'	gold='B'	complete=True	duration_s=4.37
+OK	geometry3k_test_2731	image_gdp	pred='B'	gold='B'	complete=True	duration_s=4.95
+OK	geometry3k_test_2731	generated_construction_plan	pred='B'	gold='B'	complete=True	duration_s=6.35
+OK	geometry3k_test_2700	raw	pred='C'	gold='C'	complete=True	duration_s=4.18
+OK	geometry3k_test_2700	image_gdp	pred='C'	gold='C'	complete=True	duration_s=4.52
+OK	geometry3k_test_2700	generated_construction_plan	pred='C'	gold='C'	complete=True	duration_s=5.78
+FAIL	geometry3k_test_2790	raw	pred='B'	gold='C'	complete=True	duration_s=21.76
+OK	geometry3k_test_2790	image_gdp	pred='C'	gold='C'	complete=True	duration_s=22.48
+OK	geometry3k_test_2790	generated_construction_plan	pred='C'	gold='C'	complete=True	duration_s=23.16
+OK	geometry3k_test_2824	raw	pred='B'	gold='B'	complete=True	duration_s=14.99
+OK	geometry3k_test_2824	image_gdp	pred='B'	gold='B'	complete=True	duration_s=15.61
+OK	geometry3k_test_2824	generated_construction_plan	pred='B'	gold='B'	complete=True	duration_s=16.37
+FAIL	geometry3k_test_2774	raw	pred='B'	gold='A'	complete=True	duration_s=6.38
+FAIL	geometry3k_test_2774	image_gdp	pred='B'	gold='A'	complete=True	duration_s=7.27
+FAIL	geometry3k_test_2774	generated_construction_plan	pred='B'	gold='A'	complete=True	duration_s=7.70
+FAIL	geometry3k_test_2417	raw	pred='B'	gold='C'	complete=True	duration_s=12.00
+FAIL	geometry3k_test_2417	image_gdp	pred='B'	gold='C'	complete=True	duration_s=12.69
+FAIL	geometry3k_test_2417	generated_construction_plan	pred='B'	gold='C'	complete=True	duration_s=13.76
+OK	geometry3k_test_2765	raw	pred='D'	gold='D'	complete=True	duration_s=15.71
+OK	geometry3k_test_2765	image_gdp	pred='D'	gold='D'	complete=True	duration_s=16.34
+OK	geometry3k_test_2765	generated_construction_plan	pred='D'	gold='D'	complete=True	duration_s=17.07
+OK	geometry3k_test_2947	raw	pred='B'	gold='B'	complete=True	duration_s=5.42
+OK	geometry3k_test_2947	image_gdp	pred='B'	gold='B'	complete=True	duration_s=5.07
+OK	geometry3k_test_2947	generated_construction_plan	pred='B'	gold='B'	complete=True	duration_s=5.85
+FAIL	geometry3k_test_2487	raw	pred='B'	gold='C'	complete=True	duration_s=5.23
+FAIL	geometry3k_test_2487	image_gdp	pred='B'	gold='C'	complete=True	duration_s=5.81
+FAIL	geometry3k_test_2487	generated_construction_plan	pred='B'	gold='C'	complete=True	duration_s=6.87
+FAIL	geometry3k_test_2443	raw	pred='B'	gold='C'	complete=True	duration_s=14.87
+FAIL	geometry3k_test_2443	image_gdp	pred='B'	gold='C'	complete=True	duration_s=15.82
+FAIL	geometry3k_test_2443	generated_construction_plan	pred='B'	gold='C'	complete=True	duration_s=16.24
+{
+  "variants": {
+    "raw": {
+      "n": 200,
+      "complete": 200,
+      "correct": 106,
+      "accuracy": 0.53,
+      "accuracy_on_complete": 0.53,
+      "avg_duration_s": 7.414886561632156,
+      "errors": 0,
+      "missing_answer_line": 0
+    },
+    "image_gdp": {
+      "n": 200,
+      "complete": 192,
+      "correct": 104,
+      "accuracy": 0.52,
+      "accuracy_on_complete": 0.5416666666666666,
+      "avg_duration_s": 8.06364907860756,
+      "errors": 0,
+      "missing_answer_line": 8
+    },
+    "generated_construction_plan": {
+      "n": 200,
+      "complete": 200,
+      "correct": 108,
+      "accuracy": 0.54,
+      "accuracy_on_complete": 0.54,
+      "avg_duration_s": 8.907244275808335,
+      "errors": 0,
+      "missing_answer_line": 0
+    }
+  },
+  "pairwise_vs_raw": {
+    "image_gdp": {
+      "win": 5,
+      "loss": 6,
+      "net": -1,
+      "both_correct": 99,
+      "both_wrong": 82,
+      "incomplete": 8,
+      "examples": {
+        "win": [
+          "geometry3k_test_2727",
+          "geometry3k_test_2887",
+          "geometry3k_test_2741",
+          "geometry3k_test_2604",
+          "geometry3k_test_2790"
+        ],
+        "loss": [
+          "geometry3k_test_2964",
+          "geometry3k_test_2857",
+          "geometry3k_test_2565",
+          "geometry3k_test_2556",
+          "geometry3k_test_2603",
+          "geometry3k_test_2717"
+        ]
+      }
+    },
+    "generated_construction_plan": {
+      "win": 5,
+      "loss": 3,
+      "net": 2,
+      "both_correct": 103,
+      "both_wrong": 89,
+      "incomplete": 0,
+      "examples": {
+        "win": [
+          "geometry3k_test_2771",
+          "geometry3k_test_2971",
+          "geometry3k_test_2887",
+          "geometry3k_test_2604",
+          "geometry3k_test_2790"
+        ],
+        "loss": [
+          "geometry3k_test_2873",
+          "geometry3k_test_2717",
+          "geometry3k_test_2561"
+        ]
+      }
+    }
+  },
+  "n_unique_ids": 200
+}

@@ -1,0 +1,11 @@
+{
+  "variant": "image_gdp",
+  "n": 300,
+  "complete": 292,
+  "correct": 154,
+  "accuracy": 0.5133333333333333,
+  "accuracy_on_complete": 0.5273972602739726,
+  "errors": 0,
+  "missing_answer_line": 8,
+  "avg_duration_s": 6.372171150843302
+}

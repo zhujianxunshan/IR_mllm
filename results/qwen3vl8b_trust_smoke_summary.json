@@ -1,0 +1,112 @@
+{
+  "variants": {
+    "oracle_topk6_cautious": {
+      "n": 1,
+      "complete": 1,
+      "correct": 1,
+      "accuracy_on_complete": 1.0,
+      "all_sample_accuracy": 1.0,
+      "errors": 0,
+      "truncated": 0,
+      "missing_answer_line": 0
+    },
+    "oracle_topk3_trusted": {
+      "n": 1,
+      "complete": 1,
+      "correct": 1,
+      "accuracy_on_complete": 1.0,
+      "all_sample_accuracy": 1.0,
+      "errors": 0,
+      "truncated": 0,
+      "missing_answer_line": 0
+    },
+    "oracle_topk6_trusted": {
+      "n": 1,
+      "complete": 1,
+      "correct": 1,
+      "accuracy_on_complete": 1.0,
+      "all_sample_accuracy": 1.0,
+      "errors": 0,
+      "truncated": 0,
+      "missing_answer_line": 0
+    },
+    "oracle_corrupt_warned": {
+      "n": 1,
+      "complete": 1,
+      "correct": 1,
+      "accuracy_on_complete": 1.0,
+      "all_sample_accuracy": 1.0,
+      "errors": 0,
+      "truncated": 0,
+      "missing_answer_line": 0
+    },
+    "oracle_corrupt_trusted": {
+      "n": 1,
+      "complete": 1,
+      "correct": 1,
+      "accuracy_on_complete": 1.0,
+      "all_sample_accuracy": 1.0,
+      "errors": 0,
+      "truncated": 0,
+      "missing_answer_line": 0
+    }
+  },
+  "pairwise_vs_raw": {
+    "oracle_topk6_cautious": {
+      "variant_win": 0,
+      "variant_loss": 0,
+      "both_correct": 0,
+      "both_wrong": 0,
+      "incomplete_pair": 1,
+      "examples": {
+        "variant_win": [],
+        "variant_loss": []
+      }
+    },
+    "oracle_topk3_trusted": {
+      "variant_win": 0,
+      "variant_loss": 0,
+      "both_correct": 0,
+      "both_wrong": 0,
+      "incomplete_pair": 1,
+      "examples": {
+        "variant_win": [],
+        "variant_loss": []
+      }
+    },
+    "oracle_topk6_trusted": {
+      "variant_win": 0,
+      "variant_loss": 0,
+      "both_correct": 0,
+      "both_wrong": 0,
+      "incomplete_pair": 1,
+      "examples": {
+        "variant_win": [],
+        "variant_loss": []
+      }
+    },
+    "oracle_corrupt_warned": {
+      "variant_win": 0,
+      "variant_loss": 0,
+      "both_correct": 0,
+      "both_wrong": 0,
+      "incomplete_pair": 1,
+      "examples": {
+        "variant_win": [],
+        "variant_loss": []
+      }
+    },
+    "oracle_corrupt_trusted": {
+      "variant_win": 0,
+      "variant_loss": 0,
+      "both_correct": 0,
+      "both_wrong": 0,
+      "incomplete_pair": 1,
+      "examples": {
+        "variant_win": [],
+        "variant_loss": []
+      }
+    }
+  },
+  "n_unique_ids": 1
+}

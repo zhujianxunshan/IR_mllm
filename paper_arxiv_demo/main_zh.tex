@@ -1,0 +1,464 @@
+\documentclass[UTF8,11pt]{ctexart}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{amsmath,amssymb}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{subcaption}
+\usepackage{listings}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,fit,shapes.misc}
+\hypersetup{colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue}
+\lstset{basicstyle=\ttfamily\footnotesize,breaklines=true,columns=fullflexible,frame=single,framerule=0.3pt}
+
+\title{面向多模态大模型的可信校准几何中间语言\\
+\large Geometry3K 与 MathVista 实验的中文 arXiv Demo 报告}
+\author{Anonymous Demo Draft}
+\date{2026 年 6 月}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+几何题中的中间结构化语言常被认为可以连接“图形感知”和“符号推理”。我们的实验显示，结论要更谨慎：结构化语言不是天然有用，关键在于它是否可靠、是否和目标相关，以及模型是否应该相信它。在 300 题 Geometry3K 子集上，给 Qwen3-VL-8B 添加 GDP-4B 自动几何语言后，准确率从 raw 的 52.67\% 降到 51.33\%；而使用基于 Geometry3K 标注和规则生成的 construction-aware oracle 语言，准确率提高到 55.67\%。但在完整 601 题 Geometry3K 测试集上，即使是 Geometry3K oracle formal predicates 也不能稳定提升模型：full oracle structure 为 52.91\%，低于 raw 的 54.08\%；经过筛选的 cautious top-6 版本也只是与 raw 持平。压力测试进一步说明，若把错误结构化语言包装成“可信事实”，模型会严重被带偏：错误答案引导条件下准确率降到 7.5\%，模型约 90\% 的时候会跟随错误结构。因此，最新实验从“更长的结构描述”转向“更紧凑的定理路线提示”：我们用 FormalGeo 的 theorem sequence 监督训练 Qwen3-1.7B LoRA route generator，让它从 GDP-4B 自动解析生成可能的定理路线，再把原始图像、题干和 generated route 一起输入 Qwen3-VL。在 Geometry3K-150 上，generated theorem route 把准确率从 raw 的 50.67\% 提高到 54.67\%，修正 16 个 raw 错误，同时破坏 10 个 raw 原本正确的样例。FormalGeo-200 当前 checkpoint 也显示同方向提升，但尚未完成。当前结论更具体：定理路线先验有潜力，但必须配合生成可靠性和信任校准，减少结构语言带来的错误引导。
+\end{abstract}
+
+\section{研究动机}
+几何视觉问答同时需要图形感知和数学推理。多模态大模型不仅要识别点、线、角、圆、切线、平行、垂直等视觉关系，还要判断题目目标、选择合适定理并完成计算。因此，一个自然假设是：如果先用图形解析器输出中间结构化语言，再让 MLLM 解题，模型可能更容易推理。
+
+我们的结果只在严格条件下支持这个假设。目前表现最好的语言是 \texttt{construction\_plan}，它不是普通的图形描述，而是利用 Geometry3K oracle 标注，通过规则生成“已知事实、辅助构造候选、定理路线和执行约束”。在同一组 Geometry3K-300 上，它把准确率从 raw 的 52.67\% 提高到 55.67\%。相反，GDP-4B 自动结构和几种简单结构化格式并不能稳定提升。pairwise flips 可以解释这个现象：有用结构能修正一部分 raw 错误，但噪声结构或被过度信任的结构也会破坏原本正确的视觉答案。
+
+因此，更值得研究的方向不是继续堆更长的中间语言，而是\textbf{可信校准的几何中间语言}：每条结构事实都应该带有可靠性、目标相关性，以及是否与图像或题干冲突的判断。
+
+\section{实验中的中间语言}
+我们比较了原始图像输入和多种结构化语言。除 text-only probe 外，所有结构化条件都包含原始图像、题干和选项。
+
+\paragraph{Raw.} 模型只接收原始题图、题干和选项。这是判断结构化语言是否真的有帮助的基线。
+
+\paragraph{GDP 自动语言.} GDP-4B 自动把图形解析为几何结构事实，然后 Qwen3-VL 接收“图像 + 题干 + 选项 + GDP 输出”。这是我们最接近论文中“GDP language 可以提升 MLLM”的复现实验。
+
+\paragraph{Structured facts.} 使用 Geometry3K oracle formal predicates，并按目标相关性和关系类型做排序与压缩。它测试的是：干净符号事实本身是否足够有用。
+
+\paragraph{Perception graph.} 把 oracle predicates 分组为目标、可见对象、数值标签、空间关系等，形式更接近感知图。
+
+\paragraph{Construction plan.} 在 oracle predicates 基础上加入辅助构造候选和定理路线提示。它由 Geometry3K 标注和手写规则生成，不是模型输出。目前这是效果最好的结构语言，但仍然依赖 oracle。
+
+\paragraph{GeoGuide-style variants.} 参考近期几何推理论文中的 solver-like prompt，设计了一个更强推理框架和一个更谨慎的冲突处理框架。
+
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}[node distance=0.8cm and 0.8cm, every node/.style={font=\small}]
+\node[draw, rounded corners, align=center, minimum width=2.1cm, minimum height=0.8cm] (img) {题图\\+ 题干};
+\node[draw, rounded corners, align=center, right=of img, minimum width=2.3cm, minimum height=0.8cm] (parser) {解析器 / oracle\\结构来源};
+\node[draw, rounded corners, align=center, right=of parser, minimum width=2.5cm, minimum height=0.8cm] (trust) {可信筛选\\相关性 + 置信度};
+\node[draw, rounded corners, align=center, right=of trust, minimum width=2.1cm, minimum height=0.8cm] (mllm) {MLLM\\求解器};
+\node[draw, rounded corners, align=center, below=of trust, minimum width=3.0cm, minimum height=0.8cm, fill=gray!8] (future) {后续工作：\\训练自动生成器};
+\draw[-{Latex}] (img) -- (parser);
+\draw[-{Latex}] (parser) -- (trust);
+\draw[-{Latex}] (trust) -- (mllm);
+\draw[-{Latex}, dashed] (future) -- (trust);
+\end{tikzpicture}
+\caption{可信校准中间语言的概念流程。当前最好结果来自 oracle-guided construction plan。下一步应训练能自动产生可靠、目标相关 construction language 的模型，并校准 MLLM 应该相信多少。}
+\label{fig:pipeline-zh}
+\end{figure}
+
+\section{\texttt{construction\_plan} 如何产生}
+当前的 \texttt{construction\_plan} 来自 Geometry3K 标注和手写规则，不是模型直接输出。它读取题目文本、dissolved-text 和 diagram logic forms，按目标重叠度和关系类型排序 predicates，然后补充辅助构造候选和定理路线提示。
+
+\begin{lstlisting}[caption={construction-aware intermediate language 的模板。}]
+Construction-aware intermediate language.
+
+[KNOWN FACTS]
+- shortened/ranked Geometry3K predicates
+
+[AUXILIARY CONSTRUCTION CANDIDATES]
+- Circle construction: connect center to tangent point/chord endpoint...
+- Similarity construction: identify corresponding vertices...
+- Right-triangle construction: drop or identify a perpendicular...
+
+[THEOREM ROUTE]
+- Check right-triangle, perpendicular-angle, Pythagorean, or trig relations.
+- Use circle angle, radius, chord, tangent, or arc rules.
+
+[EXECUTION]
+- Pick at most one useful construction; do not invent unsupported geometry.
+- After each visual/theorem step, re-check the relevant image mark or label.
+- Form the equation or comparison, compute the target, then choose one option.
+\end{lstlisting}
+
+它与 GDP 语言有两个核心区别。第一，GDP 是自动 parser 输出，可能漏检关系或产生幻觉关系；\texttt{construction\_plan} 当前由 oracle 标注和规则生成，事实来源更干净。第二，GDP 主要描述检测到的对象和关系，而 \texttt{construction\_plan} 是目标条件化、定理导向的：它不仅告诉模型“图里有什么”，还提示“这题可能需要哪类辅助构造和定理路线”，同时要求模型重新检查图像证据。
+
+\section{主要实验结果}
+\begin{table}[t]
+\centering
+\caption{Geometry3K-300 主结果。}
+\label{tab:main-geometry300-zh}
+\small
+\begin{tabular}{lccc}
+\toprule
+条件 & 正确数 & 总数 & 准确率 \\
+\midrule
+raw & 158 & 300 & 52.67\% \\
+image+GDP & 154 & 300 & 51.33\% \\
+construction\_plan & 167 & 300 & 55.67\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.88\linewidth]{figures/main_geometry300_accuracy.pdf}
+\caption{Geometry3K-300 主结果。GDP-4B 自动结构低于 raw，而 oracle-guided construction-aware language 比 raw 高 3.00 个百分点，比 image+GDP 高 4.34 个百分点。}
+\label{fig:main-geometry300-zh}
+\end{figure}
+
+\begin{table}[t]
+\centering
+\caption{相对 raw 的 pairwise flips。}
+\label{tab:pairwise-geometry300-zh}
+\small
+\begin{tabular}{lccc}
+\toprule
+条件 & 修正 raw 错误 & 破坏 raw 正确 & 净变化 \\
+\midrule
+image+GDP & 10 & 14 & -4 \\
+construction\_plan & 19 & 10 & +9 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+在同一组 300 道 Geometry3K 题上，\texttt{construction\_plan} 得到 167/300，raw 为 158/300，image+GDP 为 154/300。pairwise 结果比平均准确率更有解释力：\texttt{construction\_plan} 修正了 19 个 raw 错误，但也破坏了 10 个 raw 原本正确的问题，净收益为 +9；GDP 则相反，修正 10 个但破坏 14 个，净收益为 -4。
+
+跨数据集结果更弱。在 Geometry3K-300 加 MathVista-MC-300 的组合上，raw 总体准确率为 62.00\%，\texttt{construction\_plan} 为 62.50\%。但单独看 MathVista-MC-300，raw 为 71.33\%，\texttt{construction\_plan} 为 69.33\%。这说明 construction-aware structure 更适合几何专门任务，尤其是 oracle predicates 和定理提示能与题目目标匹配的情况。
+
+\section{可信校准实验}
+\begin{table}[t]
+\centering
+\caption{完整 Geometry3K-601 上的可信校准实验。}
+\label{tab:trust601-zh}
+\small
+\begin{tabular}{lccc}
+\toprule
+条件 & 正确数 & 总数 & 准确率 \\
+\midrule
+raw & 325 & 601 & 54.08\% \\
+oracle\_full & 318 & 601 & 52.91\% \\
+oracle\_topk6\_cautious & 325 & 601 & 54.08\% \\
+oracle\_corrupt\_trusted & 314 & 601 & 52.25\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.86\linewidth]{figures/trust601_accuracy.pdf}
+\caption{完整 Geometry3K 信任实验。干净 oracle predicates 并不自动提升 Qwen3-VL；谨慎筛选版本与 raw 持平；被包装成可信的错误结构伤害最大。}
+\label{fig:trust601-zh}
+\end{figure}
+
+这个实验覆盖 601 道 Geometry3K 测试题。核心结果是负面的，但很有价值：full oracle structure 并不是 plug-and-play 的提升方案，它得到 318/601，低于 raw 的 325/601。top-6 cautious 版本与 raw 持平，并优于 full oracle structure，说明筛选和冲突提示有帮助。然而，corrupted trusted structure 降到 314/601，并且破坏 23 个 raw-correct case，只修正 12 个 raw-wrong case。
+
+这支持一个更窄但更扎实的结论：结构事实在被正确筛选和正确包装时可能有用，但 MLLM 很容易过度相信结构化文本。因此，一个真正有用的系统应该判断“每条事实是否值得相信”，而不是简单追加所有事实。
+
+\section{答案诱导压力测试}
+\begin{table}[t]
+\centering
+\caption{Answer-steering stress test。}
+\label{tab:steer200-zh}
+\small
+\begin{tabular}{lccc}
+\toprule
+条件 & 正确数 & 总数 & 准确率 \\
+\midrule
+raw & 102 & 200 & 51.0\% \\
+clean\_topk6\_cautious & 103 & 200 & 51.5\% \\
+steer\_wrong\_trusted & 15 & 200 & 7.5\% \\
+self\_verify\_wrong & 63 & 200 & 31.5\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.9\linewidth]{figures/answer_steering.pdf}
+\caption{答案诱导压力测试。当结构化语言强烈暗示某个选项时，Qwen3-VL 经常跟随它。错误 trusted steering 条件下，模型约 90\% 跟随错误结构，准确率降到 7.5\%。}
+\label{fig:steering-zh}
+\end{figure}
+
+该实验测试结构化语言是否会把 MLLM 带向某个选项。结果非常明显：当 trusted structure 暗示 A/B/C/D 时，模型跟随率约为 91--96\%；当这个 trusted structure 被故意设为错误答案时，准确率降到 7.5\%。加入 self-verification 后，跟随率降到 49.5\%，准确率恢复到 31.5\%，但仍远低于 raw。这说明结构化语言在“可信事实”的包装下可以覆盖模型自身的视觉判断。
+
+\section{定性案例}
+\begin{figure}[t]
+\centering
+\begin{subfigure}{0.23\linewidth}
+\includegraphics[width=\linewidth]{figures/geometry3k_2783.png}
+\caption{2783：弧长。raw 错，construction plan 对。}
+\end{subfigure}\hfill
+\begin{subfigure}{0.23\linewidth}
+\includegraphics[width=\linewidth]{figures/geometry3k_2556.png}
+\caption{2556：切线长度。构造提示有帮助。}
+\end{subfigure}\hfill
+\begin{subfigure}{0.23\linewidth}
+\includegraphics[width=\linewidth]{figures/geometry3k_2565.png}
+\caption{2565：正切比。raw 对，结构提示可能干扰。}
+\end{subfigure}\hfill
+\begin{subfigure}{0.23\linewidth}
+\includegraphics[width=\linewidth]{figures/geometry3k_2539.png}
+\caption{2539：弧/弦关系。多个结构版本有害。}
+\end{subfigure}
+\caption{flip analysis 中的 Geometry3K 样例。相同类型的结构信息可能有帮助，也可能有害，取决于被选中的事实是否匹配题目的目标定理路线。}
+\label{fig:cases-zh}
+\end{figure}
+
+在题 2783 中，目标是弧 $\widehat{JK}$ 的长度，oracle logic 包含圆心和角度信息，construction-aware route 能把模型引向弧长公式。题 2556 中，题干说明可见切线段可视为切线，construction cue 会提示等切线长和半径垂直切线等关系，因此有帮助。相反，题 2565 要求 $\tan X$，raw 视觉推理本来正确，但额外结构可能让模型转向错误比值。题 2539 是更复杂的圆关系，部分结构事实会使模型误用弧/弦定理，从而破坏 raw-correct 答案。
+
+\section{当前证据支持什么}
+实验支持四个具体结论。
+
+\begin{enumerate}[leftmargin=*]
+\item \textbf{GDP-style 自动结构在我们的复现设置中不够。} Geometry3K-300 上，image+GDP 为 51.33\%，低于 raw 的 52.67\%。
+\item \textbf{目标条件化 construction plan 有潜力。} 同一数据上，\texttt{construction\_plan} 达到 55.67\%，相对 raw 的 pairwise net 为 +9。
+\item \textbf{oracle 结构本身也不充分。} 完整 601 题上，Geometry3K oracle formal logic 低于 raw，说明瓶颈不只是缺少符号事实。
+\item \textbf{可信校准是核心。} corrupted 或 answer-steering 结构化语言会强烈带偏 Qwen3-VL，因此后续系统需要 fact-level verification、relevance scoring 和 conflict handling。
+\end{enumerate}
+
+\section{从 oracle plan 到自动生成}
+当前效果最好的语言依赖 oracle 标注。要把它变成真实方法，下一步需要训练一个自动 generator/parser，从图像、题干和选项预测 construction-aware intermediate language。
+
+\paragraph{训练目标。} 使用 Geometry3K 标注生成 pseudo-label，包括结构事实、辅助构造候选、定理路线和 trust metadata。目标格式应包含 predicate 文本，以及简洁的来源、置信度、目标相关性和冲突标志。
+
+\paragraph{模型候选。} 可以训练轻量 seq2seq parser，也可以使用“两阶段系统”：先做视觉关系检测，再用 LLM planner 组织定理路线。实际远程服务器方案是：微调一个 2B--7B VLM 或 adapter 生成 pseudo-label，再用冻结的 Qwen3-VL 做下游求解评测。
+
+\paragraph{评测协议。} 后续实验应保持相同 raw baseline，并比较 raw、GDP automatic、oracle construction plan、generated construction plan、generated plan with trust filter、generated plan with conflict self-verification。主指标除了准确率，还必须看相对 raw 的 pairwise flips。一个 generated 方法只有在保留 construction-plan wins、同时减少 structure-induced losses 时才算有说服力。
+
+\paragraph{风险控制。} 当前证据表明模型很容易被误导文本带偏，所以 generator 不应该只优化“输出更多 predicates”。更合理的目标是 calibrated selective exposure：少量、更可靠的事实，比长而噪声多的语言更有价值。
+
+\section{自动生成器原型}
+我们实现的第一步自动化是一个 text-to-text generator：
+\[
+\text{question + choices + GDP parse} \rightarrow \text{construction-aware intermediate language}.
+\]
+输入使用 GDP-4B 自动 diagram parse，而不是 Geometry3K oracle predicates。训练目标是上文规则生成的 oracle-derived \texttt{construction\_plan} pseudo-label。因此，这个模型本质上是一个“从噪声自动 parser 输出到定理导向 construction language 的翻译与修复器”。
+
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}[node distance=0.65cm and 0.55cm, every node/.style={font=\small}]
+\node[draw, rounded corners, align=center, minimum width=1.9cm, minimum height=0.7cm] (img) {Geometry3K\\题图};
+\node[draw, rounded corners, align=center, right=of img, minimum width=1.9cm, minimum height=0.7cm] (gdp) {GDP-4B\\自动解析};
+\node[draw, rounded corners, align=center, right=of gdp, minimum width=2.1cm, minimum height=0.7cm] (gen) {Qwen3-1.7B\\LoRA 生成器};
+\node[draw, rounded corners, align=center, right=of gen, minimum width=2.3cm, minimum height=0.7cm] (plan) {generated\\construction plan};
+\node[draw, rounded corners, align=center, below=of gen, minimum width=2.2cm, minimum height=0.7cm, fill=gray!8] (oracle) {oracle pseudo-label\\来自标注};
+\node[draw, rounded corners, align=center, below=of plan, minimum width=2.3cm, minimum height=0.7cm, fill=gray!8] (verifier) {轻量\\事实校验器};
+\node[draw, rounded corners, align=center, right=of plan, minimum width=1.8cm, minimum height=0.7cm] (mllm) {Qwen3-VL\\求解};
+\draw[-{Latex}] (img) -- (gdp);
+\draw[-{Latex}] (gdp) -- (gen);
+\draw[-{Latex}] (gen) -- (plan);
+\draw[-{Latex}] (plan) -- (mllm);
+\draw[-{Latex}, dashed] (oracle) -- node[left, font=\scriptsize]{SFT target} (gen);
+\draw[-{Latex}, dashed] (plan) -- (verifier);
+\draw[-{Latex}, dashed] (verifier) -- (mllm);
+\end{tikzpicture}
+\caption{自动化原型流程。模型从 GDP 自动解析学习生成 oracle-derived construction-plan pseudo-label。下游评测在同一 200 题上比较 raw、GDP 和 generated plan。}
+\label{fig:generator-pipeline-zh}
+\end{figure}
+
+\begin{table}[t]
+\centering
+\caption{远程 T4 服务器上的生成器训练设置。}
+\label{tab:generator-training-zh}
+\small
+\begin{tabular}{ll}
+\toprule
+项目 & 设置 \\
+\midrule
+基础模型 & Qwen3-1.7B causal LM \\
+适配方式 & 4-bit LoRA，17.4M 可训练参数 \\
+输入 & question + choices + GDP-4B automatic parse \\
+目标 & oracle-derived \texttt{construction\_plan} pseudo-label \\
+训练划分 & 264 train / 36 validation \\
+优化步数 & 264 \\
+最终验证 loss / perplexity & 0.213 / 1.237 \\
+最佳记录验证 loss & step 90 左右为 0.137 \\
+held-out 格式完整性 & 30 例上 section completeness = 1.000 \\
+held-out 定理 cue overlap & 30 例上 0.902 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.82\linewidth]{figures/generator_training_curve.pdf}
+\caption{GDP-to-plan LoRA generator 的训练曲线。模型很快学会分 section 的 construction-plan 格式。后期训练 loss 继续下降，但 validation loss 略有过拟合，因此后续可以比较 final checkpoint 和更早 checkpoint 的下游效果。}
+\label{fig:generator-curve-zh}
+\end{figure}
+
+\paragraph{观察到的行为。} 训练后的 generator 能稳定输出 known facts、auxiliary construction candidates、theorem route 和 execution guard 等 section，也会根据题型调整定理提示，例如圆/切线题会给出 circle/tangent cues，直角三角形题会给出 perpendicular/Pythagorean cues。但定性样例也显示，事实级细节仍可能出错：点名、边长和关系参数可能以看似合理但错误的形式被复制。这正是 trust experiments 预测的失败模式，所以后续应加入轻量 verifier，在暴露给 Qwen3-VL 前删除不被标签或度量支持的可疑事实。
+
+\section{Generated Plan 下游评测}
+\begin{table}[t]
+\centering
+\caption{200 道 Geometry3K 题上的下游评测。}
+\label{tab:downstream200-zh}
+\small
+\begin{tabular}{lccc}
+\toprule
+条件 & 正确数 & 总数 & 准确率 \\
+\midrule
+raw & 106 & 200 & 53.0\% \\
+image+GDP & 104 & 200 & 52.0\% \\
+image+generated construction plan & 108 & 200 & 54.0\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.78\linewidth]{figures/downstream200_accuracy.pdf}
+\caption{200 道 Geometry3K 题上的 Qwen3-VL 准确率。自动生成的 construction plan 是我们实验中第一个在同一 split 上略高于 raw 和 GDP 的非 oracle 结构语言。}
+\label{fig:downstream200-acc-zh}
+\end{figure}
+
+\begin{table}[t]
+\centering
+\caption{generated plan 与 GDP 相对 raw 的 pairwise flips。}
+\label{tab:downstream200-pairwise-zh}
+\small
+\begin{tabular}{lccc}
+\toprule
+条件 & 修正 raw 错误 & 破坏 raw 正确 & 净变化 \\
+\midrule
+image+GDP & 5 & 6 & -1 \\
+generated construction plan & 5 & 3 & +2 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.78\linewidth]{figures/downstream200_pairwise.pdf}
+\caption{相对 raw 的 pairwise flips。GDP 的净变化为负；generated construction plan 修正 5 个 raw 错误，只破坏 3 个 raw 正确样例。}
+\label{fig:downstream200-pairwise-zh}
+\end{figure}
+
+我们在同一 200 道有 GDP parse 的 Geometry3K 题上比较三个条件：raw image-question input、image+GDP、image+generated construction plan。generated plan 得到 108/200 = 54.0\%，高于 raw 的 106/200 = 53.0\% 和 GDP 的 104/200 = 52.0\%。pairwise flips 比 1 个百分点的平均提升更有解释力：GDP 修正 5 个 raw 错误，但破坏 6 个 raw 正确答案；generated plan 同样修正 5 个 raw 错误，但只破坏 3 个 raw 正确答案。因此，当前 generator 还没有复现 oracle construction-plan 的更强提升，但它确实把 GDP 信号从轻微有害变成了轻微有益。
+
+\paragraph{例子。} Generated construction plans 修正了一些 raw 错误，包括：
+\texttt{2771}、\texttt{2971}、\texttt{2887}。它也仍会伤害一些 raw-correct case，
+包括：\texttt{2873}、\texttt{2717}、\texttt{2561}。这与定性观察一致：
+generator 通常能给出有用的 theorem-route guidance，但偶尔会加入看似合理的错误事实，
+从而把 MLLM 引向错误方向。
+
+\section{GDP 到定理路线生成器}
+Construction-plan 的结果说明，有用的中间语言不一定是更长的图形事实列表。真正有帮助的部分可能是更紧凑的 theorem-route prior：这道题大概率需要哪些关系和定理。于是我们实现了第二套自动流程：
+\[
+\text{题图} \rightarrow \text{GDP-4B 自动解析},\qquad
+\text{题干 + GDP parse} \rightarrow \text{定理路线},\qquad
+\text{图像 + 题干 + route} \rightarrow \text{Qwen3-VL 答案}.
+\]
+Route generator 使用 FormalGeo 训练，因为 FormalGeo 中包含形式化题目描述和 theorem sequence。训练时，输入是题干加 GDP-4B 对图像的自动解析；目标是把数据集 theorem sequence 转换成简洁的 theorem-route prompt。下游测试时，Qwen3-VL 仍然接收原始图像。Generated route 只被包装成“求解假设”，prompt 中明确要求模型根据图像和题干验证路线，而不是盲信路线。
+
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}[node distance=0.6cm and 0.5cm, every node/.style={font=\small}]
+\node[draw, rounded corners, align=center, minimum width=1.8cm, minimum height=0.7cm] (fgimg) {FormalGeo\\题图};
+\node[draw, rounded corners, align=center, right=of fgimg, minimum width=1.9cm, minimum height=0.7cm] (gdp2) {GDP-4B\\自动解析};
+\node[draw, rounded corners, align=center, right=of gdp2, minimum width=2.2cm, minimum height=0.7cm] (routegen) {Qwen3-1.7B\\LoRA route generator};
+\node[draw, rounded corners, align=center, below=of routegen, minimum width=2.5cm, minimum height=0.7cm, fill=gray!8] (seq) {FormalGeo\\theorem sequence};
+\node[draw, rounded corners, align=center, right=of routegen, minimum width=2.1cm, minimum height=0.7cm] (route) {generated\\theorem route};
+\node[draw, rounded corners, align=center, right=of route, minimum width=1.9cm, minimum height=0.7cm] (qwen) {Qwen3-VL\\图像求解};
+\draw[-{Latex}] (fgimg) -- (gdp2);
+\draw[-{Latex}] (gdp2) -- (routegen);
+\draw[-{Latex}, dashed] (seq) -- node[left, font=\scriptsize]{SFT target} (routegen);
+\draw[-{Latex}] (routegen) -- (route);
+\draw[-{Latex}] (route) -- (qwen);
+\end{tikzpicture}
+\caption{自动定理路线流程。GDP-4B 提供自动 parse；小型 LoRA 模型把 parse 和题干映射为可能的 theorem route；Qwen3-VL 接收原图和该 route 进行解题。}
+\label{fig:gdp-route-pipeline-zh}
+\end{figure}
+
+\begin{table}[t]
+\centering
+\caption{GDP-to-theorem-route generator 训练设置。}
+\label{tab:gdp-route-training-zh}
+\small
+\begin{tabular}{ll}
+\toprule
+项目 & 设置 \\
+\midrule
+训练来源 & FormalGeo theorem sequences \\
+已解析图像 & 900 张 FormalGeo 图由 GDP-4B 自动解析 \\
+基础模型 & Qwen3-1.7B causal LM \\
+适配方式 & LoRA SFT \\
+输入 & question + GDP-4B automatic parse \\
+目标 & concise theorem route + raw theorem sequence \\
+数据划分 & 600 train / 100 validation / 200 downstream test \\
+训练步数 & 150 \\
+最终验证 loss / perplexity & 0.138 / 1.148 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[t]
+\centering
+\caption{Geometry3K-150 上 generated theorem route 的下游结果。该实验已经完成。}
+\label{tab:geometry3k-route150-zh}
+\small
+\begin{tabular}{lcccc}
+\toprule
+条件 & 正确数 & 总数 & 准确率 & 平均耗时 \\
+\midrule
+image only & 76 & 150 & 50.67\% & 7.89s \\
+image + generated theorem route & 82 & 150 & 54.67\% & 8.67s \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Pairwise 结果更关键：generated theorem route 修正 16 个 raw 错误，破坏 10 个 raw 原本正确的样例，66 题两者都正确，58 题两者都错误，净收益为 +6。相比前面的 200 题 generated construction-plan 结果，这个信号更清楚，因为 route generator 使用的是显式 theorem-sequence 监督，而不仅是规则生成的 pseudo-label。
+
+\begin{table}[t]
+\centering
+\caption{FormalGeo-200 下游测试 checkpoint。写作时该 run 仍在运行，因此这里是约 70 题完成时的 partial numbers，不是最终结果。}
+\label{tab:formalgeo-route200-partial-zh}
+\small
+\begin{tabular}{lccc}
+\toprule
+条件 & 正确数 & 已完成数 & 准确率 \\
+\midrule
+image only & 15 & 70 & 21.43\% \\
+image + generated theorem route & 23 & 69 & 33.33\% \\
+image + oracle theorem route & 22 & 69 & 31.88\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+FormalGeo checkpoint 与 Geometry3K-150 指向同一方向，但必须谨慎解读，因为实验尚未完成。它当前的价值是诊断性的：generated route 在下游阶段并不是直接复制 oracle route，而且在更难的 formal geometry 题上也可能优于 image-only。等远程 run 完成后，应把这张表替换成 200 题最终汇总。
+
+\paragraph{具体例子。} 在 \texttt{geometry3k\_test\_2721} 中，题目为：若 \(PR \parallel KL\)，\(KN=9\)，\(LN=16\)，且 \(PM=2KP\)，求 \(KM\)。选项为 A. 5，B. 9，C. 12，D. 15，正确答案为 D。GDP-4B 解析出点 \(L,N,K,R,M,P,Q\)，共线关系包括 \(L,N,K\)、\(R,Q,P\)、\(K,P,M\)、\(N,Q,M\)、\(L,R,M\)，并给出 \(KM \perp LM\) at \(M\)、\(LK \perp NM\) at \(N\) 等语义关系。Route generator 输出：
+
+\begin{lstlisting}[caption={\texttt{geometry3k\_test\_2721} 的 generated theorem route。}]
+The following theorem route is a hypothesis for solving the geometry problem.
+
+[THEOREM ROUTE]
+1. Use parallel corresponding angle.
+2. Use line addition.
+
+[RAW THEOREM SEQUENCE]
+1. parallel_property_corresponding_angle(1,PR,KL,M)
+2. line_addition(1,KN,NM)
+
+[USE POLICY]
+- Verify each theorem against the diagram and problem text.
+- Do not output the final numeric answer.
+\end{lstlisting}
+
+在 raw image-only 输入下，Qwen3-VL 回答 C；加入 generated theorem route 后，同一张图和同一题干下 Qwen3-VL 回答 D。这个例子说明中间语言并没有直接给出答案，而是把搜索空间收缩到 parallel-angle 和 segment-addition 这条更相关的路线。
+
+\section{局限性}
+这些仍是 demo-stage 实验。当前最强的 construction language 依赖 oracle 标注和规则生成 pseudo-label；第一个自动 construction-plan generator 只用了 264 个 GDP-to-plan 训练样例。新的 theorem-route generator 使用了更强的 FormalGeo theorem-sequence 监督，但下游测试仍然较小：Geometry3K-150 已完成，FormalGeo-200 在写作时仍是 checkpoint。部分结果文件只保存 correctness，没有完整模型输出，限制了更细的错误重构。GDP 复现实验也不能保证和原论文条件完全一致，包括模型选择、prompt、parser 版本和数据预处理。最后，MathVista 结果说明，几何专门的 construction cues 不一定能迁移到更广泛的视觉推理任务。
+
+\section{结论}
+当前最重要的结论不是“中间几何语言总能提升 MLLM”。相反，我们看到：朴素结构和自动结构经常失败，完整 oracle formal logic 也可能有害，而被包装成可信事实的错误结构会强烈误导模型。正向信号更具体：当结构语言是目标条件化、定理导向，并且来自可靠标注或 theorem-sequence 监督时，它才可能提升准确率。第一个 GDP-to-construction-plan generator 在 Geometry3K-200 上只有 +1.0 个百分点的小幅收益；新的 GDP-to-theorem-route generator 在 Geometry3K-150 上给出更清楚的 +4.0 个百分点收益，修正 16 个 raw 错误，同时破坏 10 个 raw 正确样例；FormalGeo 当前 checkpoint 也显示同方向提升。下一步应把重点放在 fact-faithful 和 trust-calibrated theorem-route generation 上，让模型保留路线提示的收益，同时减少结构语言诱发的错误。
+
+\end{document}

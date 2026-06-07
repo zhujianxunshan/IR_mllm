@@ -1,0 +1,567 @@
+{
+  "variants": {
+    "raw": {
+      "n": 200,
+      "complete": 200,
+      "correct": 102,
+      "accuracy_on_complete": 0.51,
+      "all_sample_accuracy": 0.51,
+      "errors": 0,
+      "truncated": 0,
+      "missing_answer_line": 0,
+      "avg_duration_s": 7.88341819524765
+    },
+    "clean_topk6_cautious": {
+      "n": 200,
+      "complete": 199,
+      "correct": 103,
+      "accuracy_on_complete": 0.5175879396984925,
+      "all_sample_accuracy": 0.515,
+      "errors": 0,
+      "truncated": 1,
+      "missing_answer_line": 1,
+      "avg_duration_s": 8.492239910364152
+    },
+    "clean_topk6_trusted": {
+      "n": 200,
+      "complete": 199,
+      "correct": 98,
+      "accuracy_on_complete": 0.49246231155778897,
+      "all_sample_accuracy": 0.49,
+      "errors": 0,
+      "truncated": 1,
+      "missing_answer_line": 1,
+      "avg_duration_s": 8.420921406745911
+    },
+    "clean_topk6_selfverify": {
+      "n": 200,
+      "complete": 199,
+      "correct": 101,
+      "accuracy_on_complete": 0.507537688442211,
+      "all_sample_accuracy": 0.505,
+      "errors": 0,
+      "truncated": 1,
+      "missing_answer_line": 1,
+      "avg_duration_s": 8.448502782583237
+    },
+    "confidence_gated_topk6": {
+      "n": 200,
+      "complete": 200,
+      "correct": 100,
+      "accuracy_on_complete": 0.5,
+      "all_sample_accuracy": 0.5,
+      "errors": 0,
+      "truncated": 0,
+      "missing_answer_line": 0,
+      "avg_duration_s": 8.989550726413727
+    },
+    "irrelevant_trusted": {
+      "n": 200,
+      "complete": 199,
+      "correct": 102,
+      "accuracy_on_complete": 0.5125628140703518,
+      "all_sample_accuracy": 0.51,
+      "errors": 0,
+      "truncated": 1,
+      "missing_answer_line": 1,
+      "avg_duration_s": 8.446455638408661
+    },
+    "irrelevant_warned": {
+      "n": 200,
+      "complete": 200,
+      "correct": 102,
+      "accuracy_on_complete": 0.51,
+      "all_sample_accuracy": 0.51,
+      "errors": 0,
+      "truncated": 0,
+      "missing_answer_line": 0,
+      "avg_duration_s": 8.459951584339143
+    },
+    "corrupt_trusted": {
+      "n": 200,
+      "complete": 199,
+      "correct": 99,
+      "accuracy_on_complete": 0.49748743718592964,
+      "all_sample_accuracy": 0.495,
+      "errors": 0,
+      "truncated": 1,
+      "missing_answer_line": 1,
+      "avg_duration_s": 8.44765947341919
+    },
+    "corrupt_warned": {
+      "n": 200,
+      "complete": 200,
+      "correct": 101,
+      "accuracy_on_complete": 0.505,
+      "all_sample_accuracy": 0.505,
+      "errors": 0,
+      "truncated": 0,
+      "missing_answer_line": 0,
+      "avg_duration_s": 8.459096947908401
+    },
+    "contradictory_trusted": {
+      "n": 200,
+      "complete": 200,
+      "correct": 99,
+      "accuracy_on_complete": 0.495,
+      "all_sample_accuracy": 0.495,
+      "errors": 0,
+      "truncated": 0,
+      "missing_answer_line": 0,
+      "avg_duration_s": 8.501628119945526
+    },
+    "contradictory_selfverify": {
+      "n": 200,
+      "complete": 200,
+      "correct": 102,
+      "accuracy_on_complete": 0.51,
+      "all_sample_accuracy": 0.51,
+      "errors": 0,
+      "truncated": 0,
+      "missing_answer_line": 0,
+      "avg_duration_s": 8.455665210485458
+    }
+  },
+  "pairwise_vs_raw": {
+    "clean_topk6_cautious": {
+      "other_win": 3,
+      "other_loss": 2,
+      "both_correct": 100,
+      "both_wrong": 94,
+      "incomplete_pair": 1,
+      "net": 1,
+      "examples": {
+        "other_win": [
+          "geometry3k_test_2407",
+          "geometry3k_test_2463",
+          "geometry3k_test_2558"
+        ],
+        "other_loss": [
+          "geometry3k_test_2539",
+          "geometry3k_test_2568"
+        ]
+      }
+    },
+    "clean_topk6_trusted": {
+      "other_win": 1,
+      "other_loss": 5,
+      "both_correct": 97,
+      "both_wrong": 96,
+      "incomplete_pair": 1,
+      "net": -4,
+      "examples": {
+        "other_win": [
+          "geometry3k_test_2463"
+        ],
+        "other_loss": [
+          "geometry3k_test_2440",
+          "geometry3k_test_2486",
+          "geometry3k_test_2539",
+          "geometry3k_test_2556",
+          "geometry3k_test_2568"
+        ]
+      }
+    },
+    "clean_topk6_selfverify": {
+      "other_win": 3,
+      "other_loss": 4,
+      "both_correct": 98,
+      "both_wrong": 94,
+      "incomplete_pair": 1,
+      "net": -1,
+      "examples": {
+        "other_win": [
+          "geometry3k_test_2407",
+          "geometry3k_test_2463",
+          "geometry3k_test_2558"
+        ],
+        "other_loss": [
+          "geometry3k_test_2474",
+          "geometry3k_test_2539",
+          "geometry3k_test_2556",
+          "geometry3k_test_2568"
+        ]
+      }
+    },
+    "confidence_gated_topk6": {
+      "other_win": 3,
+      "other_loss": 5,
+      "both_correct": 97,
+      "both_wrong": 95,
+      "incomplete_pair": 0,
+      "net": -2,
+      "examples": {
+        "other_win": [
+          "geometry3k_test_2463",
+          "geometry3k_test_2558",
+          "geometry3k_test_2569"
+        ],
+        "other_loss": [
+          "geometry3k_test_2440",
+          "geometry3k_test_2486",
+          "geometry3k_test_2539",
+          "geometry3k_test_2561",
+          "geometry3k_test_2568"
+        ]
+      }
+    },
+    "irrelevant_trusted": {
+      "other_win": 5,
+      "other_loss": 5,
+      "both_correct": 97,
+      "both_wrong": 92,
+      "incomplete_pair": 1,
+      "net": 0,
+      "examples": {
+        "other_win": [
+          "geometry3k_test_2418",
+          "geometry3k_test_2452",
+          "geometry3k_test_2516",
+          "geometry3k_test_2527",
+          "geometry3k_test_2558"
+        ],
+        "other_loss": [
+          "geometry3k_test_2483",
+          "geometry3k_test_2522",
+          "geometry3k_test_2539",
+          "geometry3k_test_2561",
+          "geometry3k_test_2568"
+        ]
+      }
+    },
+    "irrelevant_warned": {
+      "other_win": 4,
+      "other_loss": 4,
+      "both_correct": 98,
+      "both_wrong": 94,
+      "incomplete_pair": 0,
+      "net": 0,
+      "examples": {
+        "other_win": [
+          "geometry3k_test_2418",
+          "geometry3k_test_2516",
+          "geometry3k_test_2527",
+          "geometry3k_test_2558"
+        ],
+        "other_loss": [
+          "geometry3k_test_2539",
+          "geometry3k_test_2556",
+          "geometry3k_test_2561",
+          "geometry3k_test_2568"
+        ]
+      }
+    },
+    "corrupt_trusted": {
+      "other_win": 7,
+      "other_loss": 10,
+      "both_correct": 92,
+      "both_wrong": 90,
+      "incomplete_pair": 1,
+      "net": -3,
+      "examples": {
+        "other_win": [
+          "geometry3k_test_2421",
+          "geometry3k_test_2463",
+          "geometry3k_test_2499",
+          "geometry3k_test_2513",
+          "geometry3k_test_2518",
+          "geometry3k_test_2527",
+          "geometry3k_test_2558"
+        ],
+        "other_loss": [
+          "geometry3k_test_2409",
+          "geometry3k_test_2427",
+          "geometry3k_test_2483",
+          "geometry3k_test_2539",
+          "geometry3k_test_2556",
+          "geometry3k_test_2565",
+          "geometry3k_test_2568",
+          "geometry3k_test_2570"
+        ]
+      }
+    },
+    "corrupt_warned": {
+      "other_win": 3,
+      "other_loss": 4,
+      "both_correct": 98,
+      "both_wrong": 95,
+      "incomplete_pair": 0,
+      "net": -1,
+      "examples": {
+        "other_win": [
+          "geometry3k_test_2418",
+          "geometry3k_test_2463",
+          "geometry3k_test_2558"
+        ],
+        "other_loss": [
+          "geometry3k_test_2539",
+          "geometry3k_test_2565",
+          "geometry3k_test_2568",
+          "geometry3k_test_2570"
+        ]
+      }
+    },
+    "contradictory_trusted": {
+      "other_win": 8,
+      "other_loss": 11,
+      "both_correct": 91,
+      "both_wrong": 90,
+      "incomplete_pair": 0,
+      "net": -3,
+      "examples": {
+        "other_win": [
+          "geometry3k_test_2421",
+          "geometry3k_test_2463",
+          "geometry3k_test_2499",
+          "geometry3k_test_2513",
+          "geometry3k_test_2518",
+          "geometry3k_test_2527",
+          "geometry3k_test_2534",
+          "geometry3k_test_2558"
+        ],
+        "other_loss": [
+          "geometry3k_test_2409",
+          "geometry3k_test_2427",
+          "geometry3k_test_2483",
+          "geometry3k_test_2522",
+          "geometry3k_test_2539",
+          "geometry3k_test_2556",
+          "geometry3k_test_2561",
+          "geometry3k_test_2565"
+        ]
+      }
+    },
+    "contradictory_selfverify": {
+      "other_win": 6,
+      "other_loss": 6,
+      "both_correct": 96,
+      "both_wrong": 92,
+      "incomplete_pair": 0,
+      "net": 0,
+      "examples": {
+        "other_win": [
+          "geometry3k_test_2418",
+          "geometry3k_test_2463",
+          "geometry3k_test_2499",
+          "geometry3k_test_2527",
+          "geometry3k_test_2534",
+          "geometry3k_test_2558"
+        ],
+        "other_loss": [
+          "geometry3k_test_2474",
+          "geometry3k_test_2522",
+          "geometry3k_test_2539",
+          "geometry3k_test_2556",
+          "geometry3k_test_2565",
+          "geometry3k_test_2568"
+        ]
+      }
+    }
+  },
+  "direct_comparisons": {
+    "corrupt_warned_vs_corrupt_trusted": {
+      "other_win": 7,
+      "other_loss": 5,
+      "both_correct": 94,
+      "both_wrong": 93,
+      "incomplete_pair": 1,
+      "net": 2,
+      "examples": {
+        "other_win": [
+          "geometry3k_test_2409",
+          "geometry3k_test_2418",
+          "geometry3k_test_2427",
+          "geometry3k_test_2483",
+          "geometry3k_test_2556",
+          "geometry3k_test_2592",
+          "geometry3k_test_2598"
+        ],
+        "other_loss": [
+          "geometry3k_test_2421",
+          "geometry3k_test_2499",
+          "geometry3k_test_2513",
+          "geometry3k_test_2518",
+          "geometry3k_test_2527"
+        ]
+      }
+    },
+    "contradictory_selfverify_vs_contradictory_trusted": {
+      "other_win": 7,
+      "other_loss": 4,
+      "both_correct": 95,
+      "both_wrong": 94,
+      "incomplete_pair": 0,
+      "net": 3,
+      "examples": {
+        "other_win": [
+          "geometry3k_test_2409",
+          "geometry3k_test_2418",
+          "geometry3k_test_2427",
+          "geometry3k_test_2483",
+          "geometry3k_test_2561",
+          "geometry3k_test_2570",
+          "geometry3k_test_2592"
+        ],
+        "other_loss": [
+          "geometry3k_test_2421",
+          "geometry3k_test_2474",
+          "geometry3k_test_2513",
+          "geometry3k_test_2518"
+        ]
+      }
+    },
+    "irrelevant_warned_vs_irrelevant_trusted": {
+      "other_win": 2,
+      "other_loss": 2,
+      "both_correct": 100,
+      "both_wrong": 95,
+      "incomplete_pair": 1,
+      "net": 0,
+      "examples": {
+        "other_win": [
+          "geometry3k_test_2483",
+          "geometry3k_test_2522"
+        ],
+        "other_loss": [
+          "geometry3k_test_2452",
+          "geometry3k_test_2556"
+        ]
+      }
+    },
+    "confidence_gated_topk6_vs_clean_topk6_cautious": {
+      "other_win": 1,
+      "other_loss": 4,
+      "both_correct": 99,
+      "both_wrong": 95,
+      "incomplete_pair": 1,
+      "net": -3,
+      "examples": {
+        "other_win": [
+          "geometry3k_test_2569"
+        ],
+        "other_loss": [
+          "geometry3k_test_2407",
+          "geometry3k_test_2440",
+          "geometry3k_test_2486",
+          "geometry3k_test_2561"
+        ]
+      }
+    },
+    "clean_topk6_selfverify_vs_clean_topk6_cautious": {
+      "other_win": 0,
+      "other_loss": 2,
+      "both_correct": 101,
+      "both_wrong": 96,
+      "incomplete_pair": 1,
+      "net": -2,
+      "examples": {
+        "other_win": [],
+        "other_loss": [
+          "geometry3k_test_2474",
+          "geometry3k_test_2556"
+        ]
+      }
+    },
+    "clean_topk6_trusted_vs_clean_topk6_cautious": {
+      "other_win": 0,
+      "other_loss": 4,
+      "both_correct": 98,
+      "both_wrong": 96,
+      "incomplete_pair": 2,
+      "net": -4,
+      "examples": {
+        "other_win": [],
+        "other_loss": [
+          "geometry3k_test_2407",
+          "geometry3k_test_2440",
+          "geometry3k_test_2486",
+          "geometry3k_test_2556"
+        ]
+      }
+    },
+    "corrupt_trusted_vs_clean_topk6_trusted": {
+      "other_win": 7,
+      "other_loss": 7,
+      "both_correct": 91,
+      "both_wrong": 93,
+      "incomplete_pair": 2,
+      "net": 0,
+      "examples": {
+        "other_win": [
+          "geometry3k_test_2421",
+          "geometry3k_test_2440",
+          "geometry3k_test_2486",
+          "geometry3k_test_2499",
+          "geometry3k_test_2513",
+          "geometry3k_test_2518",
+          "geometry3k_test_2527"
+        ],
+        "other_loss": [
+          "geometry3k_test_2409",
+          "geometry3k_test_2427",
+          "geometry3k_test_2483",
+          "geometry3k_test_2565",
+          "geometry3k_test_2570",
+          "geometry3k_test_2592",
+          "geometry3k_test_2598"
+        ]
+      }
+    },
+    "irrelevant_trusted_vs_clean_topk6_trusted": {
+      "other_win": 7,
+      "other_loss": 4,
+      "both_correct": 94,
+      "both_wrong": 93,
+      "incomplete_pair": 2,
+      "net": 3,
+      "examples": {
+        "other_win": [
+          "geometry3k_test_2418",
+          "geometry3k_test_2440",
+          "geometry3k_test_2452",
+          "geometry3k_test_2486",
+          "geometry3k_test_2516",
+          "geometry3k_test_2527",
+          "geometry3k_test_2556"
+        ],
+        "other_loss": [
+          "geometry3k_test_2463",
+          "geometry3k_test_2483",
+          "geometry3k_test_2522",
+          "geometry3k_test_2561"
+        ]
+      }
+    },
+    "contradictory_trusted_vs_clean_topk6_trusted": {
+      "other_win": 8,
+      "other_loss": 8,
+      "both_correct": 90,
+      "both_wrong": 93,
+      "incomplete_pair": 1,
+      "net": 0,
+      "examples": {
+        "other_win": [
+          "geometry3k_test_2421",
+          "geometry3k_test_2440",
+          "geometry3k_test_2486",
+          "geometry3k_test_2499",
+          "geometry3k_test_2513",
+          "geometry3k_test_2518",
+          "geometry3k_test_2527",
+          "geometry3k_test_2534"
+        ],
+        "other_loss": [
+          "geometry3k_test_2409",
+          "geometry3k_test_2427",
+          "geometry3k_test_2483",
+          "geometry3k_test_2522",
+          "geometry3k_test_2561",
+          "geometry3k_test_2565",
+          "geometry3k_test_2570",
+          "geometry3k_test_2592"
+        ]
+      }
+    }
+  },
+  "n_unique_ids": 200
+}

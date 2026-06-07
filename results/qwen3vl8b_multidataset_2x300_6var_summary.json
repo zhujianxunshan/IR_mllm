@@ -1,0 +1,399 @@
+{
+  "datasets": {
+    "Geometry3K-300": {
+      "variants": {
+        "raw": {
+          "n": 300,
+          "complete": 299,
+          "correct": 158,
+          "accuracy": 0.5266666666666666,
+          "avg_duration_s": 7.453552222251892,
+          "errors": 0
+        },
+        "structured_facts": {
+          "n": 300,
+          "complete": 300,
+          "correct": 161,
+          "accuracy": 0.5366666666666666,
+          "avg_duration_s": 7.948917527198791,
+          "errors": 0
+        },
+        "perception_graph": {
+          "n": 300,
+          "complete": 300,
+          "correct": 158,
+          "accuracy": 0.5266666666666666,
+          "avg_duration_s": 8.355728429158528,
+          "errors": 0
+        },
+        "construction_plan": {
+          "n": 300,
+          "complete": 300,
+          "correct": 167,
+          "accuracy": 0.5566666666666666,
+          "avg_duration_s": 8.812071359157562,
+          "errors": 0
+        },
+        "geoguide_solver": {
+          "n": 300,
+          "complete": 298,
+          "correct": 160,
+          "accuracy": 0.5333333333333333,
+          "avg_duration_s": 8.52884303410848,
+          "errors": 0
+        },
+        "geoguide_cautious": {
+          "n": 300,
+          "complete": 297,
+          "correct": 157,
+          "accuracy": 0.5233333333333333,
+          "avg_duration_s": 8.909360141754151,
+          "errors": 0
+        }
+      },
+      "pairwise_vs_raw": {
+        "structured_facts": {
+          "win": 9,
+          "loss": 6,
+          "net": 3,
+          "both_correct": 152,
+          "both_wrong": 132,
+          "incomplete": 1,
+          "examples": {
+            "win": [
+              "geometry3k_test_2834",
+              "geometry3k_test_2727",
+              "geometry3k_test_2971",
+              "geometry3k_test_2953",
+              "geometry3k_test_2645",
+              "geometry3k_test_2534"
+            ],
+            "loss": [
+              "geometry3k_test_2964",
+              "geometry3k_test_2565",
+              "geometry3k_test_2955",
+              "geometry3k_test_2644",
+              "geometry3k_test_2440",
+              "geometry3k_test_2522"
+            ]
+          }
+        },
+        "perception_graph": {
+          "win": 11,
+          "loss": 12,
+          "net": -1,
+          "both_correct": 146,
+          "both_wrong": 130,
+          "incomplete": 1,
+          "examples": {
+            "win": [
+              "geometry3k_test_2783",
+              "geometry3k_test_2771",
+              "geometry3k_test_2971",
+              "geometry3k_test_2983",
+              "geometry3k_test_2887",
+              "geometry3k_test_2645"
+            ],
+            "loss": [
+              "geometry3k_test_2873",
+              "geometry3k_test_2565",
+              "geometry3k_test_2603",
+              "geometry3k_test_2717",
+              "geometry3k_test_2791",
+              "geometry3k_test_2561"
+            ]
+          }
+        },
+        "construction_plan": {
+          "win": 19,
+          "loss": 10,
+          "net": 9,
+          "both_correct": 148,
+          "both_wrong": 122,
+          "incomplete": 1,
+          "examples": {
+            "win": [
+              "geometry3k_test_2783",
+              "geometry3k_test_2556",
+              "geometry3k_test_2771",
+              "geometry3k_test_2971",
+              "geometry3k_test_2983",
+              "geometry3k_test_2645"
+            ],
+            "loss": [
+              "geometry3k_test_2626",
+              "geometry3k_test_2565",
+              "geometry3k_test_2955",
+              "geometry3k_test_2709",
+              "geometry3k_test_2603",
+              "geometry3k_test_2717"
+            ]
+          }
+        },
+        "geoguide_solver": {
+          "win": 12,
+          "loss": 10,
+          "net": 2,
+          "both_correct": 148,
+          "both_wrong": 128,
+          "incomplete": 2,
+          "examples": {
+            "win": [
+              "geometry3k_test_2783",
+              "geometry3k_test_2771",
+              "geometry3k_test_2928",
+              "geometry3k_test_2983",
+              "geometry3k_test_2645",
+              "geometry3k_test_2520"
+            ],
+            "loss": [
+              "geometry3k_test_2565",
+              "geometry3k_test_2955",
+              "geometry3k_test_2709",
+              "geometry3k_test_2603",
+              "geometry3k_test_2868",
+              "geometry3k_test_2598"
+            ]
+          }
+        },
+        "geoguide_cautious": {
+          "win": 18,
+          "loss": 18,
+          "net": 0,
+          "both_correct": 139,
+          "both_wrong": 122,
+          "incomplete": 3,
+          "examples": {
+            "win": [
+              "geometry3k_test_2721",
+              "geometry3k_test_2783",
+              "geometry3k_test_2556",
+              "geometry3k_test_2727",
+              "geometry3k_test_2971",
+              "geometry3k_test_2950"
+            ],
+            "loss": [
+              "geometry3k_test_2768",
+              "geometry3k_test_2670",
+              "geometry3k_test_2626",
+              "geometry3k_test_2565",
+              "geometry3k_test_2709",
+              "geometry3k_test_2603"
+            ]
+          }
+        }
+      }
+    },
+    "MathVista-MC-300": {
+      "variants": {
+        "raw": {
+          "n": 300,
+          "complete": 292,
+          "correct": 214,
+          "accuracy": 0.7133333333333334,
+          "avg_duration_s": 13.403251581192016,
+          "errors": 5
+        },
+        "structured_facts": {
+          "n": 300,
+          "complete": 294,
+          "correct": 209,
+          "accuracy": 0.6966666666666667,
+          "avg_duration_s": 13.626923398971558,
+          "errors": 5
+        },
+        "perception_graph": {
+          "n": 300,
+          "complete": 294,
+          "correct": 206,
+          "accuracy": 0.6866666666666666,
+          "avg_duration_s": 14.2240376718839,
+          "errors": 5
+        },
+        "construction_plan": {
+          "n": 300,
+          "complete": 292,
+          "correct": 208,
+          "accuracy": 0.6933333333333334,
+          "avg_duration_s": 14.319267228444417,
+          "errors": 5
+        },
+        "geoguide_solver": {
+          "n": 300,
+          "complete": 291,
+          "correct": 212,
+          "accuracy": 0.7066666666666667,
+          "avg_duration_s": 14.095770782629648,
+          "errors": 5
+        },
+        "geoguide_cautious": {
+          "n": 300,
+          "complete": 293,
+          "correct": 207,
+          "accuracy": 0.69,
+          "avg_duration_s": 14.37782329082489,
+          "errors": 5
+        }
+      },
+      "pairwise_vs_raw": {
+        "structured_facts": {
+          "win": 1,
+          "loss": 6,
+          "net": -5,
+          "both_correct": 208,
+          "both_wrong": 77,
+          "incomplete": 8,
+          "examples": {
+            "win": [
+              "MathVista-MC-300_897"
+            ],
+            "loss": [
+              "MathVista-MC-300_381",
+              "MathVista-MC-300_498",
+              "MathVista-MC-300_119",
+              "MathVista-MC-300_510",
+              "MathVista-MC-300_726",
+              "MathVista-MC-300_992"
+            ]
+          }
+        },
+        "perception_graph": {
+          "win": 8,
+          "loss": 16,
+          "net": -8,
+          "both_correct": 198,
+          "both_wrong": 70,
+          "incomplete": 8,
+          "examples": {
+            "win": [
+              "MathVista-MC-300_921",
+              "MathVista-MC-300_707",
+              "MathVista-MC-300_897",
+              "MathVista-MC-300_342",
+              "MathVista-MC-300_95",
+              "MathVista-MC-300_543"
+            ],
+            "loss": [
+              "MathVista-MC-300_381",
+              "MathVista-MC-300_498",
+              "MathVista-MC-300_119",
+              "MathVista-MC-300_413",
+              "MathVista-MC-300_443",
+              "MathVista-MC-300_485"
+            ]
+          }
+        },
+        "construction_plan": {
+          "win": 6,
+          "loss": 12,
+          "net": -6,
+          "both_correct": 202,
+          "both_wrong": 71,
+          "incomplete": 9,
+          "examples": {
+            "win": [
+              "MathVista-MC-300_921",
+              "MathVista-MC-300_897",
+              "MathVista-MC-300_342",
+              "MathVista-MC-300_95",
+              "MathVista-MC-300_621",
+              "MathVista-MC-300_378"
+            ],
+            "loss": [
+              "MathVista-MC-300_381",
+              "MathVista-MC-300_498",
+              "MathVista-MC-300_119",
+              "MathVista-MC-300_6",
+              "MathVista-MC-300_870",
+              "MathVista-MC-300_656"
+            ]
+          }
+        },
+        "geoguide_solver": {
+          "win": 8,
+          "loss": 10,
+          "net": -2,
+          "both_correct": 204,
+          "both_wrong": 68,
+          "incomplete": 10,
+          "examples": {
+            "win": [
+              "MathVista-MC-300_334",
+              "MathVista-MC-300_921",
+              "MathVista-MC-300_492",
+              "MathVista-MC-300_897",
+              "MathVista-MC-300_95",
+              "MathVista-MC-300_543"
+            ],
+            "loss": [
+              "MathVista-MC-300_381",
+              "MathVista-MC-300_498",
+              "MathVista-MC-300_119",
+              "MathVista-MC-300_6",
+              "MathVista-MC-300_870",
+              "MathVista-MC-300_957"
+            ]
+          }
+        },
+        "geoguide_cautious": {
+          "win": 7,
+          "loss": 14,
+          "net": -7,
+          "both_correct": 200,
+          "both_wrong": 70,
+          "incomplete": 9,
+          "examples": {
+            "win": [
+              "MathVista-MC-300_921",
+              "MathVista-MC-300_492",
+              "MathVista-MC-300_897",
+              "MathVista-MC-300_342",
+              "MathVista-MC-300_95",
+              "MathVista-MC-300_621"
+            ],
+            "loss": [
+              "MathVista-MC-300_381",
+              "MathVista-MC-300_498",
+              "MathVista-MC-300_762",
+              "MathVista-MC-300_119",
+              "MathVista-MC-300_726",
+              "MathVista-MC-300_413"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "overall": {
+    "raw": {
+      "n": 600,
+      "correct": 372,
+      "accuracy": 0.62
+    },
+    "structured_facts": {
+      "n": 600,
+      "correct": 370,
+      "accuracy": 0.6166666666666667
+    },
+    "perception_graph": {
+      "n": 600,
+      "correct": 364,
+      "accuracy": 0.6066666666666667
+    },
+    "construction_plan": {
+      "n": 600,
+      "correct": 375,
+      "accuracy": 0.625
+    },
+    "geoguide_solver": {
+      "n": 600,
+      "correct": 372,
+      "accuracy": 0.62
+    },
+    "geoguide_cautious": {
+      "n": 600,
+      "correct": 364,
+      "accuracy": 0.6066666666666667
+    }
+  }
+}

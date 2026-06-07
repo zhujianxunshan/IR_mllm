@@ -1,0 +1,84 @@
+{
+  "variants": {
+    "raw": {
+      "n": 200,
+      "complete": 200,
+      "correct": 106,
+      "accuracy": 0.53,
+      "accuracy_on_complete": 0.53,
+      "avg_duration_s": 7.414886561632156,
+      "errors": 0,
+      "missing_answer_line": 0
+    },
+    "image_gdp": {
+      "n": 200,
+      "complete": 192,
+      "correct": 104,
+      "accuracy": 0.52,
+      "accuracy_on_complete": 0.5416666666666666,
+      "avg_duration_s": 8.06364907860756,
+      "errors": 0,
+      "missing_answer_line": 8
+    },
+    "generated_construction_plan": {
+      "n": 200,
+      "complete": 200,
+      "correct": 108,
+      "accuracy": 0.54,
+      "accuracy_on_complete": 0.54,
+      "avg_duration_s": 8.907244275808335,
+      "errors": 0,
+      "missing_answer_line": 0
+    }
+  },
+  "pairwise_vs_raw": {
+    "image_gdp": {
+      "win": 5,
+      "loss": 6,
+      "net": -1,
+      "both_correct": 99,
+      "both_wrong": 82,
+      "incomplete": 8,
+      "examples": {
+        "win": [
+          "geometry3k_test_2727",
+          "geometry3k_test_2887",
+          "geometry3k_test_2741",
+          "geometry3k_test_2604",
+          "geometry3k_test_2790"
+        ],
+        "loss": [
+          "geometry3k_test_2964",
+          "geometry3k_test_2857",
+          "geometry3k_test_2565",
+          "geometry3k_test_2556",
+          "geometry3k_test_2603",
+          "geometry3k_test_2717"
+        ]
+      }
+    },
+    "generated_construction_plan": {
+      "win": 5,
+      "loss": 3,
+      "net": 2,
+      "both_correct": 103,
+      "both_wrong": 89,
+      "incomplete": 0,
+      "examples": {
+        "win": [
+          "geometry3k_test_2771",
+          "geometry3k_test_2971",
+          "geometry3k_test_2887",
+          "geometry3k_test_2604",
+          "geometry3k_test_2790"
+        ],
+        "loss": [
+          "geometry3k_test_2873",
+          "geometry3k_test_2717",
+          "geometry3k_test_2561"
+        ]
+      }
+    }
+  },
+  "n_unique_ids": 200
+}

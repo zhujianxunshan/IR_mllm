@@ -1,0 +1,68 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:06<00:18,  6.13s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:13<00:13,  6.70s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:20<00:07,  7.07s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:25<00:00,  6.04s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:25<00:00,  6.30s/it]
+CALL geometry3k_test_2401 image_oracle
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+OK	geometry3k_test_2401	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+{
+  "variants": {
+    "raw": {
+      "n": 0,
+      "complete": 0,
+      "correct": 0,
+      "accuracy_on_complete": 0.0,
+      "errors": 0,
+      "truncated": 0,
+      "missing_answer_line": 0
+    },
+    "image_gdp": {
+      "n": 0,
+      "complete": 0,
+      "correct": 0,
+      "accuracy_on_complete": 0.0,
+      "errors": 0,
+      "truncated": 0,
+      "missing_answer_line": 0
+    },
+    "image_oracle": {
+      "n": 1,
+      "complete": 1,
+      "correct": 1,
+      "accuracy_on_complete": 1.0,
+      "errors": 0,
+      "truncated": 0,
+      "missing_answer_line": 0
+    },
+    "image_focus": {
+      "n": 0,
+      "complete": 0,
+      "correct": 0,
+      "accuracy_on_complete": 0.0,
+      "errors": 0,
+      "truncated": 0,
+      "missing_answer_line": 0
+    }
+  },
+  "pairwise": {
+    "image_gdp_vs_raw": {
+      "variant_win": 0,
+      "variant_loss": 0,
+      "both_correct": 0,
+      "both_wrong": 0,
+      "incomplete_pair": 1
+    },
+    "image_oracle_vs_raw": {
+      "variant_win": 0,
+      "variant_loss": 0,
+      "both_correct": 0,
+      "both_wrong": 0,
+      "incomplete_pair": 1
+    },
+    "image_focus_vs_raw": {
+      "variant_win": 0,
+      "variant_loss": 0,
+      "both_correct": 0,
+      "both_wrong": 0,
+      "incomplete_pair": 1
+    }
+  }
+}

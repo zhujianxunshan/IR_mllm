@@ -1,0 +1,74 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:05<00:16,  5.54s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:12<00:12,  6.39s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:19<00:06,  6.71s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:22<00:00,  5.02s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:22<00:00,  5.51s/it]
+CALL Geometry3K-150 geometry3k_test_2992 raw
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+OK	Geometry3K-150	geometry3k_test_2992	raw	pred='B'	gold='B'	complete=True	duration_s=5.00
+CALL Geometry3K-150 geometry3k_test_2992 structured_facts
+OK	Geometry3K-150	geometry3k_test_2992	structured_facts	pred='B'	gold='B'	complete=True	duration_s=5.09
+CALL Geometry3K-150 geometry3k_test_2992 geoguide_solver
+OK	Geometry3K-150	geometry3k_test_2992	geoguide_solver	pred='B'	gold='B'	complete=True	duration_s=6.06
+CALL Geometry3K-150 geometry3k_test_2992 geoguide_cautious
+OK	Geometry3K-150	geometry3k_test_2992	geoguide_cautious	pred='B'	gold='B'	complete=True	duration_s=5.81
+CALL Geometry3K-150 geometry3k_test_2768 raw
+OK	Geometry3K-150	geometry3k_test_2768	raw	pred='B'	gold='B'	complete=True	duration_s=6.74
+CALL Geometry3K-150 geometry3k_test_2768 structured_facts
+OK	Geometry3K-150	geometry3k_test_2768	structured_facts	pred='B'	gold='B'	complete=True	duration_s=7.69
+CALL Geometry3K-150 geometry3k_test_2768 geoguide_solver
+OK	Geometry3K-150	geometry3k_test_2768	geoguide_solver	pred='B'	gold='B'	complete=True	duration_s=8.05
+CALL Geometry3K-150 geometry3k_test_2768 geoguide_cautious
+FAIL	Geometry3K-150	geometry3k_test_2768	geoguide_cautious	pred='D'	gold='B'	complete=True	duration_s=8.63
+CALL Geometry3K-150 geometry3k_test_2637 raw
+FAIL	Geometry3K-150	geometry3k_test_2637	raw	pred='C'	gold='A'	complete=True	duration_s=6.49
+CALL Geometry3K-150 geometry3k_test_2637 structured_facts
+FAIL	Geometry3K-150	geometry3k_test_2637	structured_facts	pred='C'	gold='A'	complete=True	duration_s=6.77
+CALL Geometry3K-150 geometry3k_test_2637 geoguide_solver
+FAIL	Geometry3K-150	geometry3k_test_2637	geoguide_solver	pred='C'	gold='A'	complete=True	duration_s=7.25
+CALL Geometry3K-150 geometry3k_test_2637 geoguide_cautious
+FAIL	Geometry3K-150	geometry3k_test_2637	geoguide_cautious	pred='C'	gold='A'	complete=True	duration_s=7.76
+CALL Geometry3K-150 geometry3k_test_2961 raw
+OK	Geometry3K-150	geometry3k_test_2961	raw	pred='D'	gold='D'	complete=True	duration_s=8.99
+CALL Geometry3K-150 geometry3k_test_2961 structured_facts
+OK	Geometry3K-150	geometry3k_test_2961	structured_facts	pred='D'	gold='D'	complete=True	duration_s=9.34
+CALL Geometry3K-150 geometry3k_test_2961 geoguide_solver
+OK	Geometry3K-150	geometry3k_test_2961	geoguide_solver	pred='D'	gold='D'	complete=True	duration_s=9.74
+CALL Geometry3K-150 geometry3k_test_2961 geoguide_cautious
+OK	Geometry3K-150	geometry3k_test_2961	geoguide_cautious	pred='D'	gold='D'	complete=True	duration_s=10.00
+CALL Geometry3K-150 geometry3k_test_2964 raw
+OK	Geometry3K-150	geometry3k_test_2964	raw	pred='A'	gold='A'	complete=True	duration_s=7.44
+CALL Geometry3K-150 geometry3k_test_2964 structured_facts
+FAIL	Geometry3K-150	geometry3k_test_2964	structured_facts	pred='C'	gold='A'	complete=True	duration_s=8.05
+CALL Geometry3K-150 geometry3k_test_2964 geoguide_solver
+OK	Geometry3K-150	geometry3k_test_2964	geoguide_solver	pred='A'	gold='A'	complete=True	duration_s=8.68
+CALL Geometry3K-150 geometry3k_test_2964 geoguide_cautious
+OK	Geometry3K-150	geometry3k_test_2964	geoguide_cautious	pred='A'	gold='A'	complete=True	duration_s=9.09
+CALL Geometry3K-150 geometry3k_test_2587 raw
+OK	Geometry3K-150	geometry3k_test_2587	raw	pred='D'	gold='D'	complete=True	duration_s=5.33
+CALL Geometry3K-150 geometry3k_test_2587 structured_facts
+OK	Geometry3K-150	geometry3k_test_2587	structured_facts	pred='D'	gold='D'	complete=True	duration_s=5.94
+CALL Geometry3K-150 geometry3k_test_2587 geoguide_solver
+OK	Geometry3K-150	geometry3k_test_2587	geoguide_solver	pred='D'	gold='D'	complete=True	duration_s=6.87
+CALL Geometry3K-150 geometry3k_test_2587 geoguide_cautious
+OK	Geometry3K-150	geometry3k_test_2587	geoguide_cautious	pred='D'	gold='D'	complete=True	duration_s=6.91
+CALL Geometry3K-150 geometry3k_test_2873 raw
+OK	Geometry3K-150	geometry3k_test_2873	raw	pred='C'	gold='C'	complete=True	duration_s=4.17
+CALL Geometry3K-150 geometry3k_test_2873 structured_facts
+OK	Geometry3K-150	geometry3k_test_2873	structured_facts	pred='C'	gold='C'	complete=True	duration_s=4.51
+CALL Geometry3K-150 geometry3k_test_2873 geoguide_solver
+OK	Geometry3K-150	geometry3k_test_2873	geoguide_solver	pred='C'	gold='C'	complete=True	duration_s=4.81
+CALL Geometry3K-150 geometry3k_test_2873 geoguide_cautious
+OK	Geometry3K-150	geometry3k_test_2873	geoguide_cautious	pred='C'	gold='C'	complete=True	duration_s=5.16
+CALL Geometry3K-150 geometry3k_test_2607 raw
+OK	Geometry3K-150	geometry3k_test_2607	raw	pred='B'	gold='B'	complete=True	duration_s=4.96
+CALL Geometry3K-150 geometry3k_test_2607 structured_facts
+OK	Geometry3K-150	geometry3k_test_2607	structured_facts	pred='B'	gold='B'	complete=True	duration_s=5.53
+CALL Geometry3K-150 geometry3k_test_2607 geoguide_solver
+OK	Geometry3K-150	geometry3k_test_2607	geoguide_solver	pred='B'	gold='B'	complete=True	duration_s=5.89
+CALL Geometry3K-150 geometry3k_test_2607 geoguide_cautious
+OK	Geometry3K-150	geometry3k_test_2607	geoguide_cautious	pred='B'	gold='B'	complete=True	duration_s=6.52
+CALL Geometry3K-150 geometry3k_test_2721 raw
+FAIL	Geometry3K-150	geometry3k_test_2721	raw	pred='C'	gold='D'	complete=True	duration_s=11.00
+CALL Geometry3K-150 geometry3k_test_2721 structured_facts
+FAIL	Geometry3K-150	geometry3k_test_2721	structured_facts	pred='C'	gold='D'	complete=True	duration_s=11.38
+CALL Geometry3K-150 geometry3k_test_2721 geoguide_solver
+FAIL	Geometry3K-150	geometry3k_test_2721	geoguide_solver	pred='C'	gold='D'	complete=True	duration_s=12.07
+CALL Geometry3K-150 geometry3k_test_2721 geoguide_cautious

@@ -1,0 +1,1209 @@
+{
+  "dataset_name": "formalgeo7k_v2",
+  "total_rows": 7000,
+  "train": 600,
+  "val": 100,
+  "test": 200,
+  "gdp_rows": 0,
+  "require_gdp": false,
+  "train_buckets": {
+    "len1": 200,
+    "len2_3": 200,
+    "len4plus": 200
+  },
+  "val_buckets": {
+    "len1": 30,
+    "len2_3": 34,
+    "len4plus": 36
+  },
+  "test_buckets": {
+    "len1": 67,
+    "len2_3": 67,
+    "len4plus": 66
+  }
+}
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:24<00:24, 24.68s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:32<00:00, 14.70s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:32<00:00, 16.20s/it]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+OK	1/900	5	tokens=74	duration_s=28.98
+OK	2/900	14	tokens=84	duration_s=29.30
+OK	3/900	21	tokens=57	duration_s=26.61
+OK	4/900	52	tokens=104	duration_s=30.89
+OK	5/900	83	tokens=99	duration_s=30.56
+OK	6/900	85	tokens=45	duration_s=25.43
+OK	7/900	88	tokens=78	duration_s=28.53
+OK	8/900	91	tokens=64	duration_s=27.17
+OK	9/900	103	tokens=75	duration_s=28.19
+OK	10/900	104	tokens=66	duration_s=27.43
+OK	11/900	106	tokens=76	duration_s=28.37
+OK	12/900	115	tokens=91	duration_s=29.83
+OK	13/900	125	tokens=114	duration_s=31.85
+OK	14/900	130	tokens=93	duration_s=29.87
+OK	15/900	131	tokens=91	duration_s=29.69
+OK	16/900	136	tokens=75	duration_s=28.27
+OK	17/900	138	tokens=76	duration_s=28.33
+OK	18/900	156	tokens=82	duration_s=29.05
+OK	19/900	167	tokens=63	duration_s=27.29
+OK	20/900	169	tokens=78	duration_s=28.66
+OK	21/900	187	tokens=60	duration_s=26.90
+OK	22/900	194	tokens=76	duration_s=28.47
+OK	23/900	196	tokens=67	duration_s=27.64
+OK	24/900	210	tokens=114	duration_s=32.04
+OK	25/900	214	tokens=61	duration_s=27.04
+OK	26/900	216	tokens=50	duration_s=26.03
+OK	27/900	222	tokens=62	duration_s=27.09
+OK	28/900	237	tokens=73	duration_s=28.28
+OK	29/900	261	tokens=67	duration_s=27.65
+OK	30/900	264	tokens=62	duration_s=27.20
+OK	31/900	265	tokens=94	duration_s=30.13
+OK	32/900	279	tokens=93	duration_s=30.10
+OK	33/900	282	tokens=79	duration_s=28.77
+OK	34/900	288	tokens=69	duration_s=27.77
+OK	35/900	297	tokens=61	duration_s=27.01
+OK	36/900	303	tokens=70	duration_s=27.92
+OK	37/900	316	tokens=110	duration_s=31.69
+OK	38/900	326	tokens=62	duration_s=27.14
+OK	39/900	339	tokens=87	duration_s=29.49
+OK	40/900	371	tokens=70	duration_s=27.91
+OK	41/900	372	tokens=97	duration_s=30.52
+OK	42/900	382	tokens=93	duration_s=30.12
+OK	43/900	409	tokens=62	duration_s=27.14
+OK	44/900	423	tokens=76	duration_s=28.37
+OK	45/900	442	tokens=75	duration_s=28.21
+OK	46/900	446	tokens=73	duration_s=28.00
+OK	47/900	463	tokens=59	duration_s=26.74
+OK	48/900	467	tokens=76	duration_s=28.32
+OK	49/900	485	tokens=77	duration_s=28.42
+OK	50/900	486	tokens=58	duration_s=26.72
+OK	51/900	493	tokens=85	duration_s=29.18
+OK	52/900	499	tokens=63	duration_s=27.21
+OK	53/900	503	tokens=70	duration_s=27.74
+OK	54/900	504	tokens=96	duration_s=30.20
+OK	55/900	505	tokens=65	duration_s=27.27
+OK	56/900	519	tokens=82	duration_s=28.87
+OK	57/900	525	tokens=78	duration_s=28.42
+OK	58/900	530	tokens=71	duration_s=27.99
+OK	59/900	535	tokens=73	duration_s=28.05
+OK	60/900	538	tokens=64	duration_s=27.19
+OK	61/900	550	tokens=79	duration_s=28.66
+OK	62/900	561	tokens=61	duration_s=26.92
+OK	63/900	563	tokens=72	duration_s=27.97
+OK	64/900	569	tokens=72	duration_s=27.98
+OK	65/900	574	tokens=80	duration_s=28.69
+OK	66/900	606	tokens=60	duration_s=26.84
+OK	67/900	613	tokens=65	duration_s=27.25
+OK	68/900	616	tokens=129	duration_s=33.31
+OK	69/900	620	tokens=66	duration_s=27.38
+OK	70/900	622	tokens=77	duration_s=28.45
+OK	71/900	630	tokens=64	duration_s=27.16
+OK	72/900	631	tokens=103	duration_s=30.90
+OK	73/900	636	tokens=95	duration_s=30.02
+OK	74/900	644	tokens=69	duration_s=27.69
+OK	75/900	657	tokens=75	duration_s=28.20
+OK	76/900	667	tokens=98	duration_s=30.47
+OK	77/900	669	tokens=91	duration_s=29.77
+OK	78/900	677	tokens=75	duration_s=28.19
+OK	79/900	684	tokens=141	duration_s=34.53
+OK	80/900	689	tokens=100	duration_s=30.47
+OK	81/900	691	tokens=61	duration_s=26.96
+OK	82/900	739	tokens=63	duration_s=27.12
+OK	83/900	741	tokens=75	duration_s=28.19
+OK	84/900	747	tokens=69	duration_s=27.74
+OK	85/900	753	tokens=67	duration_s=27.51
+OK	86/900	775	tokens=61	duration_s=26.90
+OK	87/900	779	tokens=93	duration_s=29.98
+OK	88/900	781	tokens=92	duration_s=29.89
+OK	89/900	783	tokens=76	duration_s=28.37
+OK	90/900	789	tokens=74	duration_s=28.18
+OK	91/900	801	tokens=100	duration_s=30.65
+OK	92/900	805	tokens=55	duration_s=26.37
+OK	93/900	806	tokens=99	duration_s=30.56
+OK	94/900	809	tokens=96	duration_s=30.23
+OK	95/900	820	tokens=95	duration_s=30.10
+OK	96/900	871	tokens=61	duration_s=27.01
+OK	97/900	876	tokens=87	duration_s=29.42
+OK	98/900	894	tokens=64	duration_s=27.18
+OK	99/900	900	tokens=67	duration_s=27.47
+OK	100/900	901	tokens=67	duration_s=27.60
+OK	101/900	902	tokens=93	duration_s=29.87
+OK	102/900	904	tokens=60	duration_s=26.83
+OK	103/900	910	tokens=55	duration_s=26.44
+OK	104/900	914	tokens=81	duration_s=28.83
+OK	105/900	986	tokens=56	duration_s=26.37
+OK	106/900	993	tokens=67	duration_s=27.55
+OK	107/900	1011	tokens=56	duration_s=26.47
+OK	108/900	1017	tokens=53	duration_s=26.15
+OK	109/900	1035	tokens=60	duration_s=26.81
+OK	110/900	1069	tokens=64	duration_s=27.24
+OK	111/900	1078	tokens=87	duration_s=29.35
+OK	112/900	1079	tokens=78	duration_s=28.49
+OK	113/900	1080	tokens=80	duration_s=28.75
+OK	114/900	1097	tokens=95	duration_s=30.14
+OK	115/900	1118	tokens=66	duration_s=27.44
+OK	116/900	1119	tokens=92	duration_s=29.90
+OK	117/900	1124	tokens=54	duration_s=26.31
+OK	118/900	1142	tokens=89	duration_s=29.68
+OK	119/900	1148	tokens=66	duration_s=27.46
+OK	120/900	1172	tokens=48	duration_s=25.78
+OK	121/900	1179	tokens=74	duration_s=28.14
+OK	122/900	1188	tokens=53	duration_s=26.32
+OK	123/900	1189	tokens=74	duration_s=28.23
+OK	124/900	1190	tokens=77	duration_s=28.52
+OK	125/900	1199	tokens=60	duration_s=26.94
+OK	126/900	1200	tokens=98	duration_s=30.62
+OK	127/900	1226	tokens=75	duration_s=28.31
+OK	128/900	1232	tokens=93	duration_s=30.05
+OK	129/900	1245	tokens=82	duration_s=29.04
+OK	130/900	1275	tokens=52	duration_s=26.16
+OK	131/900	1278	tokens=69	duration_s=27.74
+OK	132/900	1287	tokens=86	duration_s=29.38
+OK	133/900	1289	tokens=91	duration_s=29.82
+OK	134/900	1292	tokens=64	duration_s=27.30
+OK	135/900	1306	tokens=81	duration_s=28.92
+OK	136/900	1309	tokens=75	duration_s=28.34
+OK	137/900	1313	tokens=75	duration_s=28.34
+OK	138/900	1336	tokens=80	duration_s=28.86
+OK	139/900	1369	tokens=59	duration_s=26.79
+OK	140/900	1377	tokens=81	duration_s=28.84
+OK	141/900	1391	tokens=60	duration_s=26.78
+OK	142/900	1393	tokens=69	duration_s=27.67
+OK	143/900	1394	tokens=75	duration_s=28.17
+OK	144/900	1403	tokens=80	duration_s=28.93
+OK	145/900	1423	tokens=58	duration_s=26.69
+OK	146/900	1440	tokens=93	duration_s=30.11
+OK	147/900	1441	tokens=109	duration_s=31.60
+OK	148/900	1448	tokens=80	duration_s=28.86
+OK	149/900	1464	tokens=100	duration_s=30.66
+OK	150/900	1469	tokens=83	duration_s=29.09
+OK	151/900	1477	tokens=66	duration_s=27.47
+OK	152/900	1488	tokens=55	duration_s=26.43
+OK	153/900	1490	tokens=112	duration_s=31.85
+OK	154/900	1503	tokens=88	duration_s=29.52
+OK	155/900	1513	tokens=74	duration_s=28.27
+OK	156/900	1527	tokens=76	duration_s=28.46
+OK	157/900	1539	tokens=96	duration_s=30.31
+OK	158/900	1549	tokens=88	duration_s=29.67
+OK	159/900	1559	tokens=86	duration_s=29.40
+OK	160/900	1566	tokens=83	duration_s=29.16
+OK	161/900	1570	tokens=61	duration_s=27.06
+OK	162/900	1577	tokens=71	duration_s=28.03
+OK	163/900	1588	tokens=110	duration_s=31.60
+OK	164/900	1595	tokens=71	duration_s=28.02
+OK	165/900	1608	tokens=61	duration_s=26.98
+OK	166/900	1612	tokens=62	duration_s=27.17
+OK	167/900	1614	tokens=85	duration_s=29.23
+OK	168/900	1617	tokens=64	duration_s=27.26
+OK	169/900	1619	tokens=58	duration_s=26.70
+OK	170/900	1622	tokens=64	duration_s=27.31
+OK	171/900	1632	tokens=98	duration_s=30.53
+OK	172/900	1638	tokens=73	duration_s=28.19
+OK	173/900	1651	tokens=62	duration_s=27.08
+OK	174/900	1664	tokens=85	duration_s=29.34
+OK	175/900	1687	tokens=66	duration_s=27.45
+OK	176/900	1689	tokens=78	duration_s=28.59
+OK	177/900	1702	tokens=64	duration_s=27.28
+OK	178/900	1718	tokens=107	duration_s=31.40
+OK	179/900	1720	tokens=62	duration_s=27.08
+OK	180/900	1725	tokens=53	duration_s=26.24
+OK	181/900	1726	tokens=62	duration_s=27.13
+OK	182/900	1743	tokens=77	duration_s=28.55
+OK	183/900	1755	tokens=61	duration_s=27.01
+OK	184/900	1756	tokens=81	duration_s=28.99
+OK	185/900	1757	tokens=61	duration_s=27.00
+OK	186/900	1770	tokens=99	duration_s=30.65
+OK	187/900	1786	tokens=83	duration_s=29.05
+OK	188/900	1792	tokens=91	duration_s=29.84
+OK	189/900	1794	tokens=80	duration_s=28.75
+OK	190/900	1801	tokens=88	duration_s=29.56
+OK	191/900	1816	tokens=68	duration_s=27.63
+OK	192/900	1834	tokens=75	duration_s=28.34
+OK	193/900	1837	tokens=64	duration_s=27.28
+OK	194/900	1849	tokens=74	duration_s=28.30
+OK	195/900	1854	tokens=62	duration_s=27.10
+OK	196/900	1862	tokens=73	duration_s=28.09
+OK	197/900	1864	tokens=85	duration_s=29.24
+OK	198/900	1866	tokens=109	duration_s=31.56
+OK	199/900	1868	tokens=75	duration_s=28.29
+OK	200/900	1883	tokens=85	duration_s=29.30
+OK	201/900	1892	tokens=93	duration_s=29.99
+OK	202/900	1901	tokens=80	duration_s=28.86
+OK	203/900	1903	tokens=70	duration_s=27.85
+OK	204/900	1906	tokens=75	duration_s=28.35
+OK	205/900	1913	tokens=91	duration_s=29.81
+OK	206/900	1941	tokens=116	duration_s=32.18
+OK	207/900	1955	tokens=84	duration_s=29.20
+OK	208/900	1958	tokens=99	duration_s=30.65
+OK	209/900	1975	tokens=90	duration_s=29.68
+OK	210/900	2001	tokens=64	duration_s=27.32
+OK	211/900	2014	tokens=91	duration_s=29.84
+OK	212/900	2019	tokens=61	duration_s=27.01
+OK	213/900	2029	tokens=86	duration_s=29.41
+OK	214/900	2033	tokens=69	duration_s=27.82
+OK	215/900	2034	tokens=59	duration_s=26.76
+OK	216/900	2054	tokens=69	duration_s=27.59
+OK	217/900	2098	tokens=76	duration_s=28.31
+OK	218/900	2101	tokens=61	duration_s=26.97
+OK	219/900	2131	tokens=60	duration_s=26.83
+OK	220/900	2135	tokens=85	duration_s=29.20
+OK	221/900	2146	tokens=64	duration_s=27.15
+OK	222/900	2157	tokens=78	duration_s=28.54
+OK	223/900	2161	tokens=64	duration_s=27.19
+OK	224/900	2184	tokens=85	duration_s=29.24
+OK	225/900	2185	tokens=59	duration_s=26.73
+OK	226/900	2191	tokens=74	duration_s=28.11
+OK	227/900	2192	tokens=54	duration_s=26.29
+OK	228/900	2200	tokens=75	duration_s=28.23
+OK	229/900	2219	tokens=63	duration_s=27.13
+OK	230/900	2225	tokens=76	duration_s=28.27
+OK	231/900	2242	tokens=68	duration_s=27.56
+OK	232/900	2246	tokens=78	duration_s=28.46
+OK	233/900	2249	tokens=86	duration_s=29.27
+OK	234/900	2288	tokens=87	duration_s=29.28
+OK	235/900	2291	tokens=83	duration_s=28.97
+OK	236/900	2293	tokens=70	duration_s=27.80
+OK	237/900	2305	tokens=59	duration_s=26.75
+OK	238/900	2308	tokens=90	duration_s=29.69
+OK	239/900	2315	tokens=61	duration_s=26.87
+OK	240/900	2323	tokens=62	duration_s=27.18
+OK	241/900	2350	tokens=68	duration_s=27.65
+OK	242/900	2353	tokens=89	duration_s=29.72
+OK	243/900	2361	tokens=80	duration_s=28.74
+OK	244/900	2379	tokens=125	duration_s=32.98
+OK	245/900	2395	tokens=80	duration_s=28.77
+OK	246/900	2396	tokens=58	duration_s=26.65
+OK	247/900	2398	tokens=65	duration_s=27.29
+OK	248/900	2401	tokens=94	duration_s=30.05
+OK	249/900	2406	tokens=56	duration_s=26.43
+OK	250/900	2430	tokens=74	duration_s=28.28
+OK	251/900	2437	tokens=76	duration_s=28.27
+OK	252/900	2465	tokens=63	duration_s=27.13
+OK	253/900	2472	tokens=60	duration_s=26.87
+OK	254/900	2473	tokens=67	duration_s=27.50
+OK	255/900	2484	tokens=93	duration_s=29.91
+OK	256/900	2489	tokens=131	duration_s=33.52
+OK	257/900	2509	tokens=101	duration_s=30.71
+OK	258/900	2532	tokens=62	duration_s=27.07
+OK	259/900	2558	tokens=83	duration_s=29.00
+OK	260/900	2566	tokens=140	duration_s=34.34
+OK	261/900	2569	tokens=63	duration_s=27.25
+OK	262/900	2577	tokens=92	duration_s=29.88
+OK	263/900	2580	tokens=61	duration_s=26.96
+OK	264/900	2590	tokens=71	duration_s=27.97
+OK	265/900	2595	tokens=65	duration_s=27.26
+OK	266/900	2600	tokens=141	duration_s=34.56
+OK	267/900	2602	tokens=66	duration_s=27.41
+OK	268/900	2614	tokens=92	duration_s=29.86
+OK	269/900	2621	tokens=77	duration_s=28.48
+OK	270/900	2631	tokens=114	duration_s=31.95
+OK	271/900	2645	tokens=64	duration_s=27.30
+OK	272/900	2646	tokens=72	duration_s=28.01
+OK	273/900	2647	tokens=68	duration_s=27.52
+OK	274/900	2657	tokens=91	duration_s=29.70
+OK	275/900	2668	tokens=75	duration_s=28.22
+OK	276/900	2669	tokens=75	duration_s=28.28
+OK	277/900	2672	tokens=71	duration_s=27.86
+OK	278/900	2687	tokens=96	duration_s=30.26
+OK	279/900	2689	tokens=73	duration_s=28.05
+OK	280/900	2707	tokens=63	duration_s=27.08
+OK	281/900	2718	tokens=80	duration_s=28.65
+OK	282/900	2733	tokens=67	duration_s=27.48
+OK	283/900	2738	tokens=93	duration_s=29.87
+OK	284/900	2745	tokens=73	duration_s=28.04
+OK	285/900	2747	tokens=54	duration_s=26.19
+OK	286/900	2754	tokens=80	duration_s=28.68
+OK	287/900	2777	tokens=46	duration_s=25.47
+OK	288/900	2780	tokens=75	duration_s=28.24
+OK	289/900	2798	tokens=62	duration_s=27.08
+OK	290/900	2805	tokens=66	duration_s=27.41
+OK	291/900	2814	tokens=80	duration_s=28.72
+OK	292/900	2819	tokens=62	duration_s=27.06
+OK	293/900	2825	tokens=63	duration_s=27.13
+OK	294/900	2831	tokens=66	duration_s=27.43
+OK	295/900	2866	tokens=75	duration_s=28.14
+OK	296/900	2872	tokens=66	duration_s=27.38
+OK	297/900	2882	tokens=79	duration_s=28.62
+OK	298/900	2883	tokens=56	duration_s=26.48
+OK	299/900	2886	tokens=80	duration_s=28.67
+OK	300/900	2889	tokens=57	duration_s=26.51
+OK	301/900	2893	tokens=64	duration_s=27.17
+OK	302/900	2909	tokens=59	duration_s=26.68
+OK	303/900	2913	tokens=60	duration_s=26.80
+OK	304/900	2949	tokens=71	duration_s=27.86
+OK	305/900	2950	tokens=73	duration_s=28.05
+OK	306/900	2977	tokens=95	duration_s=30.08
+OK	307/900	2986	tokens=71	duration_s=27.85
+OK	308/900	3000	tokens=78	duration_s=28.51
+OK	309/900	3001	tokens=69	duration_s=27.65
+OK	310/900	3036	tokens=60	duration_s=26.86
+OK	311/900	3059	tokens=72	duration_s=27.94
+OK	312/900	3063	tokens=65	duration_s=27.21
+OK	313/900	3074	tokens=69	duration_s=27.52
+OK	314/900	3083	tokens=74	duration_s=28.15
+OK	315/900	3090	tokens=65	duration_s=27.28
+OK	316/900	3097	tokens=65	duration_s=27.21
+OK	317/900	3105	tokens=68	duration_s=27.54
+OK	318/900	3107	tokens=66	duration_s=27.38
+OK	319/900	3123	tokens=72	duration_s=28.03
+OK	320/900	3135	tokens=60	duration_s=26.75
+OK	321/900	3206	tokens=32	duration_s=24.18
+OK	322/900	3235	tokens=70	duration_s=27.81
+OK	323/900	3242	tokens=70	duration_s=27.72
+OK	324/900	3247	tokens=57	duration_s=26.50
+OK	325/900	3248	tokens=59	duration_s=26.69
+OK	326/900	3257	tokens=64	duration_s=27.13
+OK	327/900	3261	tokens=78	duration_s=28.46
+OK	328/900	3278	tokens=82	duration_s=28.82
+OK	329/900	3279	tokens=83	duration_s=28.93
+OK	330/900	3312	tokens=64	duration_s=27.23
+OK	331/900	3345	tokens=67	duration_s=27.54
+OK	332/900	3349	tokens=49	duration_s=25.86
+OK	333/900	3371	tokens=88	duration_s=29.46
+OK	334/900	3425	tokens=75	duration_s=28.24
+OK	335/900	3433	tokens=77	duration_s=28.44
+OK	336/900	3449	tokens=86	duration_s=29.21
+OK	337/900	3470	tokens=55	duration_s=26.36
+OK	338/900	3474	tokens=87	duration_s=29.34
+OK	339/900	3479	tokens=63	duration_s=27.08
+OK	340/900	3487	tokens=71	duration_s=27.91
+OK	341/900	3502	tokens=61	duration_s=26.94
+OK	342/900	3506	tokens=59	duration_s=26.84
+OK	343/900	3511	tokens=51	duration_s=25.98
+OK	344/900	3517	tokens=53	duration_s=26.25
+OK	345/900	3527	tokens=74	duration_s=28.11
+OK	346/900	3541	tokens=80	duration_s=28.68
+OK	347/900	3571	tokens=46	duration_s=25.56
+OK	348/900	3590	tokens=94	duration_s=30.02
+OK	349/900	3630	tokens=83	duration_s=29.00
+OK	350/900	3648	tokens=71	duration_s=27.86
+OK	351/900	3652	tokens=82	duration_s=28.82
+OK	352/900	3661	tokens=69	duration_s=27.69
+OK	353/900	3671	tokens=101	duration_s=30.65
+OK	354/900	3711	tokens=87	duration_s=29.42
+OK	355/900	3718	tokens=77	duration_s=28.32
+OK	356/900	3739	tokens=66	duration_s=27.37
+OK	357/900	3756	tokens=75	duration_s=28.21
+OK	358/900	3760	tokens=79	duration_s=28.65
+OK	359/900	3761	tokens=59	duration_s=26.69
+OK	360/900	3777	tokens=77	duration_s=28.42
+OK	361/900	3784	tokens=59	duration_s=26.70
+OK	362/900	3821	tokens=71	duration_s=27.83
+OK	363/900	3827	tokens=78	duration_s=28.54
+OK	364/900	3830	tokens=67	duration_s=27.51
+OK	365/900	3837	tokens=67	duration_s=27.46
+OK	366/900	3863	tokens=75	duration_s=28.20
+OK	367/900	3874	tokens=79	duration_s=28.61
+OK	368/900	3895	tokens=85	duration_s=29.31
+OK	369/900	3899	tokens=79	duration_s=28.70
+OK	370/900	3932	tokens=82	duration_s=28.99
+OK	371/900	3937	tokens=93	duration_s=30.02
+OK	372/900	3939	tokens=93	duration_s=30.05
+OK	373/900	4008	tokens=97	duration_s=30.36
+OK	374/900	4012	tokens=101	duration_s=30.80
+OK	375/900	4014	tokens=71	duration_s=27.95
+OK	376/900	4022	tokens=54	duration_s=26.31
+OK	377/900	4024	tokens=71	duration_s=27.81
+OK	378/900	4056	tokens=81	duration_s=28.98
+OK	379/900	4091	tokens=73	duration_s=28.16
+OK	380/900	4099	tokens=52	duration_s=26.20
+OK	381/900	4103	tokens=40	duration_s=25.05
+OK	382/900	4108	tokens=56	duration_s=26.48
+OK	383/900	4154	tokens=67	duration_s=27.53
+OK	384/900	4160	tokens=57	duration_s=26.64
+OK	385/900	4162	tokens=56	duration_s=26.54
+OK	386/900	4163	tokens=53	duration_s=26.33
+OK	387/900	4166	tokens=56	duration_s=26.59
+OK	388/900	4176	tokens=56	duration_s=26.51
+OK	389/900	4189	tokens=56	duration_s=26.63
+OK	390/900	4194	tokens=56	duration_s=26.52
+OK	391/900	4197	tokens=46	duration_s=25.53
+OK	392/900	4198	tokens=46	duration_s=25.62
+OK	393/900	4201	tokens=56	duration_s=26.54
+OK	394/900	4206	tokens=56	duration_s=26.57
+OK	395/900	4218	tokens=67	duration_s=27.45
+OK	396/900	4231	tokens=71	duration_s=27.80
+OK	397/900	4247	tokens=83	duration_s=28.99
+OK	398/900	4259	tokens=90	duration_s=29.61
+OK	399/900	4266	tokens=79	duration_s=28.64
+OK	400/900	4278	tokens=69	duration_s=27.57
+OK	401/900	4286	tokens=77	duration_s=28.33
+OK	402/900	4292	tokens=70	duration_s=27.73
+OK	403/900	4309	tokens=84	duration_s=29.10
+OK	404/900	4428	tokens=79	duration_s=28.57
+OK	405/900	4439	tokens=79	duration_s=28.55
+OK	406/900	4469	tokens=70	duration_s=27.74
+OK	407/900	4477	tokens=102	duration_s=30.74
+OK	408/900	4479	tokens=84	duration_s=29.10
+OK	409/900	4489	tokens=76	duration_s=28.34
+OK	410/900	4491	tokens=81	duration_s=28.81
+OK	411/900	4538	tokens=71	duration_s=27.77
+OK	412/900	4541	tokens=70	duration_s=27.74
+OK	413/900	4557	tokens=95	duration_s=30.09
+OK	414/900	4567	tokens=74	duration_s=28.22
+OK	415/900	4575	tokens=68	duration_s=27.55
+OK	416/900	4599	tokens=102	duration_s=30.70
+OK	417/900	4609	tokens=78	duration_s=28.47
+OK	418/900	4616	tokens=55	duration_s=26.32
+OK	419/900	4628	tokens=78	duration_s=28.53
+OK	420/900	4635	tokens=69	duration_s=27.63
+OK	421/900	4690	tokens=71	duration_s=27.81
+OK	422/900	4695	tokens=92	duration_s=29.79
+OK	423/900	4696	tokens=71	duration_s=27.89
+OK	424/900	4711	tokens=77	duration_s=28.47
+OK	425/900	4712	tokens=74	duration_s=28.05
+OK	426/900	4713	tokens=83	duration_s=28.94
+OK	427/900	4729	tokens=86	duration_s=29.28
+OK	428/900	4751	tokens=66	duration_s=27.37
+OK	429/900	4760	tokens=87	duration_s=29.33
+OK	430/900	4764	tokens=78	duration_s=28.45
+OK	431/900	4766	tokens=67	duration_s=27.50
+OK	432/900	4767	tokens=65	duration_s=27.36
+OK	433/900	4790	tokens=63	duration_s=27.03
+OK	434/900	4809	tokens=86	duration_s=29.18
+OK	435/900	4849	tokens=64	duration_s=27.14
+OK	436/900	4854	tokens=71	duration_s=27.86
+OK	437/900	4855	tokens=71	duration_s=27.88
+OK	438/900	4858	tokens=76	duration_s=28.26
+OK	439/900	4866	tokens=71	duration_s=27.89
+OK	440/900	4957	tokens=57	duration_s=26.55
+OK	441/900	4961	tokens=66	duration_s=27.37
+OK	442/900	5001	tokens=56	duration_s=26.51
+OK	443/900	5005	tokens=76	duration_s=28.20
+OK	444/900	5019	tokens=85	duration_s=29.13
+OK	445/900	5026	tokens=71	duration_s=27.85
+OK	446/900	5028	tokens=61	duration_s=26.89
+OK	447/900	5043	tokens=67	duration_s=27.55
+OK	448/900	5046	tokens=70	duration_s=27.78
+OK	449/900	5053	tokens=59	duration_s=26.75
+OK	450/900	5055	tokens=58	duration_s=26.60
+OK	451/900	5074	tokens=67	duration_s=27.54
+OK	452/900	5080	tokens=57	duration_s=26.51
+OK	453/900	5120	tokens=76	duration_s=28.29
+OK	454/900	5135	tokens=70	duration_s=27.90
+OK	455/900	5136	tokens=86	duration_s=29.38
+OK	456/900	5143	tokens=88	duration_s=29.64
+OK	457/900	5144	tokens=60	duration_s=26.89
+OK	458/900	5162	tokens=77	duration_s=28.53
+OK	459/900	5185	tokens=68	duration_s=27.66
+OK	460/900	5197	tokens=77	duration_s=28.46
+OK	461/900	5203	tokens=75	duration_s=28.24
+OK	462/900	5220	tokens=89	duration_s=29.55
+OK	463/900	5224	tokens=48	duration_s=25.77
+OK	464/900	5238	tokens=49	duration_s=25.77
+OK	465/900	5240	tokens=75	duration_s=28.18
+OK	466/900	5246	tokens=72	duration_s=27.97
+OK	467/900	5251	tokens=49	duration_s=25.76
+OK	468/900	5278	tokens=53	duration_s=26.17
+OK	469/900	5283	tokens=64	duration_s=27.21
+OK	470/900	5289	tokens=47	duration_s=25.61
+OK	471/900	5292	tokens=79	duration_s=28.64
+OK	472/900	5303	tokens=89	duration_s=29.51
+OK	473/900	5311	tokens=58	duration_s=26.62
+OK	474/900	5336	tokens=69	duration_s=27.70
+OK	475/900	5361	tokens=62	duration_s=27.06
+OK	476/900	5364	tokens=61	duration_s=26.91
+OK	477/900	5373	tokens=65	duration_s=27.24
+OK	478/900	5401	tokens=55	duration_s=26.39
+OK	479/900	5405	tokens=60	duration_s=26.76
+OK	480/900	5419	tokens=61	duration_s=26.96
+OK	481/900	5421	tokens=84	duration_s=29.01
+OK	482/900	5423	tokens=89	duration_s=29.52
+OK	483/900	5426	tokens=82	duration_s=29.00
+OK	484/900	5432	tokens=66	duration_s=27.54
+OK	485/900	5434	tokens=77	duration_s=28.51
+OK	486/900	5456	tokens=61	duration_s=26.98
+OK	487/900	5469	tokens=89	duration_s=29.66
+OK	488/900	5471	tokens=70	duration_s=27.84
+OK	489/900	5506	tokens=79	duration_s=28.61
+OK	490/900	5521	tokens=60	duration_s=26.96
+OK	491/900	5539	tokens=40	duration_s=25.04
+OK	492/900	5552	tokens=68	duration_s=27.69
+OK	493/900	5555	tokens=73	duration_s=28.18
+OK	494/900	5558	tokens=73	duration_s=28.14
+OK	495/900	5593	tokens=65	duration_s=27.32
+OK	496/900	5603	tokens=70	duration_s=27.88
+OK	497/900	5650	tokens=51	duration_s=26.00
+OK	498/900	5654	tokens=58	duration_s=26.73
+OK	499/900	5668	tokens=62	duration_s=27.16
+OK	500/900	5748	tokens=89	duration_s=29.64
+OK	501/900	5781	tokens=40	duration_s=24.98
+OK	502/900	5814	tokens=64	duration_s=27.26
+OK	503/900	5819	tokens=66	duration_s=27.48
+OK	504/900	5832	tokens=51	duration_s=25.97
+OK	505/900	5841	tokens=49	duration_s=25.91
+OK	506/900	5844	tokens=85	duration_s=29.29
+OK	507/900	5847	tokens=75	duration_s=28.32
+OK	508/900	5849	tokens=55	duration_s=26.49
+OK	509/900	5852	tokens=49	duration_s=25.88
+OK	510/900	5855	tokens=49	duration_s=25.86
+OK	511/900	5862	tokens=67	duration_s=27.54
+OK	512/900	5869	tokens=66	duration_s=27.45
+OK	513/900	5882	tokens=51	duration_s=26.04
+OK	514/900	5887	tokens=67	duration_s=27.65
+OK	515/900	5897	tokens=56	duration_s=26.55
+OK	516/900	5910	tokens=94	duration_s=30.12
+OK	517/900	5914	tokens=58	duration_s=26.82
+OK	518/900	5936	tokens=77	duration_s=28.53
+OK	519/900	5938	tokens=75	duration_s=28.30
+OK	520/900	5939	tokens=65	duration_s=27.47
+OK	521/900	5947	tokens=62	duration_s=27.10
+OK	522/900	5948	tokens=60	duration_s=26.97
+OK	523/900	5960	tokens=77	duration_s=28.58
+OK	524/900	5971	tokens=77	duration_s=28.41
+OK	525/900	5980	tokens=93	duration_s=29.88
+OK	526/900	5999	tokens=67	duration_s=27.49
+OK	527/900	6013	tokens=71	duration_s=27.83
+OK	528/900	6031	tokens=75	duration_s=28.27
+OK	529/900	6052	tokens=78	duration_s=28.56
+OK	530/900	6076	tokens=101	duration_s=30.61
+OK	531/900	6097	tokens=79	duration_s=28.53
+OK	532/900	6126	tokens=72	duration_s=27.96
+OK	533/900	6134	tokens=81	duration_s=28.74
+OK	534/900	6140	tokens=64	duration_s=27.16
+OK	535/900	6148	tokens=59	duration_s=26.67
+OK	536/900	6153	tokens=79	duration_s=28.60
+OK	537/900	6172	tokens=79	duration_s=28.51
+OK	538/900	6174	tokens=79	duration_s=28.56
+OK	539/900	6181	tokens=75	duration_s=28.19
+OK	540/900	6201	tokens=79	duration_s=28.55
+OK	541/900	6205	tokens=72	duration_s=27.98
+OK	542/900	6229	tokens=102	duration_s=30.68
+OK	543/900	6240	tokens=58	duration_s=26.66
+OK	544/900	6247	tokens=76	duration_s=28.34
+OK	545/900	6255	tokens=68	duration_s=27.50
+OK	546/900	6259	tokens=73	duration_s=28.16
+OK	547/900	6273	tokens=73	duration_s=27.99
+OK	548/900	6276	tokens=67	duration_s=27.47
+OK	549/900	6289	tokens=112	duration_s=31.63
+OK	550/900	6292	tokens=42	duration_s=25.17
+OK	551/900	6296	tokens=121	duration_s=32.50
+OK	552/900	6312	tokens=72	duration_s=27.97
+OK	553/900	6355	tokens=62	duration_s=27.01
+OK	554/900	6359	tokens=71	duration_s=27.93
+OK	555/900	6370	tokens=91	duration_s=29.75
+OK	556/900	6374	tokens=60	duration_s=26.84
+OK	557/900	6379	tokens=80	duration_s=28.77
+OK	558/900	6387	tokens=72	duration_s=27.94
+OK	559/900	6424	tokens=77	duration_s=28.36
+OK	560/900	6425	tokens=77	duration_s=28.52
+OK	561/900	6433	tokens=63	duration_s=27.17
+OK	562/900	6438	tokens=68	duration_s=27.59
+OK	563/900	6460	tokens=61	duration_s=26.91
+OK	564/900	6461	tokens=60	duration_s=26.88
+OK	565/900	6462	tokens=80	duration_s=28.73
+OK	566/900	6466	tokens=59	duration_s=26.82
+OK	567/900	6475	tokens=55	duration_s=26.42
+OK	568/900	6493	tokens=70	duration_s=27.80
+OK	569/900	6502	tokens=47	duration_s=25.58
+OK	570/900	6507	tokens=71	duration_s=27.91
+OK	571/900	6526	tokens=59	duration_s=26.72
+OK	572/900	6575	tokens=63	duration_s=27.23
+OK	573/900	6596	tokens=71	duration_s=27.83
+OK	574/900	6598	tokens=80	duration_s=28.74
+OK	575/900	6604	tokens=82	duration_s=29.00
+OK	576/900	6631	tokens=68	duration_s=27.78
+OK	577/900	6639	tokens=63	duration_s=27.19
+OK	578/900	6658	tokens=74	duration_s=28.22
+OK	579/900	6661	tokens=67	duration_s=27.49
+OK	580/900	6681	tokens=75	duration_s=28.31
+OK	581/900	6711	tokens=75	duration_s=28.30
+OK	582/900	6726	tokens=76	duration_s=28.46
+OK	583/900	6735	tokens=75	duration_s=28.32
+OK	584/900	6760	tokens=71	duration_s=27.89
+OK	585/900	6772	tokens=87	duration_s=29.33
+OK	586/900	6814	tokens=51	duration_s=26.03
+OK	587/900	6818	tokens=66	duration_s=27.52
+OK	588/900	6858	tokens=88	duration_s=29.47
+OK	589/900	6862	tokens=98	duration_s=30.45
+OK	590/900	6879	tokens=77	duration_s=28.48
+OK	591/900	6884	tokens=67	duration_s=27.54
+OK	592/900	6901	tokens=80	duration_s=28.83
+OK	593/900	6917	tokens=94	duration_s=30.14
+OK	594/900	6925	tokens=71	duration_s=27.88
+OK	595/900	6954	tokens=87	duration_s=29.43
+OK	596/900	6960	tokens=79	duration_s=28.68
+OK	597/900	6965	tokens=64	duration_s=27.23
+OK	598/900	6972	tokens=78	duration_s=28.55
+OK	599/900	6978	tokens=86	duration_s=29.29
+OK	600/900	6991	tokens=75	duration_s=28.25
+OK	601/900	10	tokens=81	duration_s=28.83
+OK	602/900	17	tokens=68	duration_s=27.65
+OK	603/900	18	tokens=88	duration_s=29.56
+OK	604/900	24	tokens=67	duration_s=27.57
+OK	605/900	34	tokens=61	duration_s=27.03
+OK	606/900	207	tokens=79	duration_s=28.71
+OK	607/900	224	tokens=116	duration_s=32.31
+OK	608/900	301	tokens=69	duration_s=27.79
+OK	609/900	319	tokens=76	duration_s=28.44
+OK	610/900	337	tokens=106	duration_s=31.17
+OK	611/900	377	tokens=72	duration_s=27.84
+OK	612/900	421	tokens=44	duration_s=25.30
+OK	613/900	440	tokens=64	duration_s=27.19
+OK	614/900	451	tokens=59	duration_s=26.83
+OK	615/900	452	tokens=83	duration_s=29.02
+OK	616/900	487	tokens=61	duration_s=26.91
+OK	617/900	587	tokens=61	duration_s=26.82
+OK	618/900	769	tokens=90	duration_s=29.67
+OK	619/900	825	tokens=75	duration_s=28.21
+OK	620/900	829	tokens=71	duration_s=27.90
+OK	621/900	831	tokens=121	duration_s=32.51
+OK	622/900	845	tokens=84	duration_s=29.08
+OK	623/900	875	tokens=154	duration_s=35.57
+OK	624/900	1047	tokens=76	duration_s=28.31
+OK	625/900	1082	tokens=84	duration_s=29.07
+OK	626/900	1284	tokens=87	duration_s=29.31
+OK	627/900	1361	tokens=78	duration_s=28.51
+OK	628/900	1530	tokens=63	duration_s=27.19
+OK	629/900	1537	tokens=75	duration_s=28.23
+OK	630/900	1567	tokens=54	duration_s=26.23
+OK	631/900	1585	tokens=81	duration_s=28.75
+OK	632/900	1621	tokens=101	duration_s=30.58
+OK	633/900	1764	tokens=82	duration_s=28.88
+OK	634/900	1840	tokens=59	duration_s=26.69
+OK	635/900	1944	tokens=84	duration_s=29.12
+OK	636/900	1990	tokens=65	duration_s=27.38
+OK	637/900	2057	tokens=108	duration_s=31.33
+OK	638/900	2170	tokens=78	duration_s=28.48
+OK	639/900	2228	tokens=77	duration_s=28.47
+OK	640/900	2356	tokens=85	duration_s=29.21
+OK	641/900	2544	tokens=50	duration_s=25.86
+OK	642/900	2601	tokens=124	duration_s=32.81
+OK	643/900	2719	tokens=62	duration_s=26.99
+OK	644/900	2910	tokens=60	duration_s=26.89
+OK	645/900	3139	tokens=88	duration_s=29.43
+OK	646/900	3148	tokens=79	duration_s=28.66
+OK	647/900	3201	tokens=87	duration_s=29.25
+OK	648/900	3295	tokens=79	duration_s=28.64
+OK	649/900	3304	tokens=57	duration_s=26.57
+OK	650/900	3625	tokens=77	duration_s=28.44
+OK	651/900	3636	tokens=70	duration_s=27.82
+OK	652/900	3675	tokens=48	duration_s=25.71
+OK	653/900	3678	tokens=71	duration_s=27.83
+OK	654/900	3751	tokens=70	duration_s=27.82
+OK	655/900	3796	tokens=76	duration_s=28.35
+OK	656/900	3886	tokens=90	duration_s=29.65
+OK	657/900	3901	tokens=71	duration_s=27.81
+OK	658/900	3978	tokens=80	duration_s=28.73
+OK	659/900	4282	tokens=79	duration_s=28.65
+OK	660/900	4436	tokens=75	duration_s=28.22
+OK	661/900	4486	tokens=80	duration_s=28.74
+OK	662/900	4510	tokens=87	duration_s=29.36
+OK	663/900	4600	tokens=74	duration_s=28.10
+OK	664/900	4625	tokens=58	duration_s=26.60
+OK	665/900	4815	tokens=68	duration_s=27.57
+OK	666/900	4876	tokens=72	duration_s=27.99
+OK	667/900	4997	tokens=56	duration_s=26.43
+OK	668/900	5059	tokens=53	duration_s=26.20
+OK	669/900	5099	tokens=37	duration_s=24.65
+OK	670/900	5149	tokens=64	duration_s=27.16
+OK	671/900	5225	tokens=118	duration_s=32.27
+OK	672/900	5250	tokens=46	duration_s=25.56
+OK	673/900	5299	tokens=76	duration_s=28.22
+OK	674/900	5320	tokens=92	duration_s=29.81
+OK	675/900	5455	tokens=74	duration_s=28.07
+OK	676/900	5570	tokens=64	duration_s=27.16
+OK	677/900	5605	tokens=57	duration_s=26.54
+OK	678/900	5623	tokens=51	duration_s=25.94
+OK	679/900	5877	tokens=66	duration_s=27.35
+OK	680/900	6050	tokens=64	duration_s=27.19
+OK	681/900	6133	tokens=71	duration_s=27.82
+OK	682/900	6138	tokens=90	duration_s=29.65
+OK	683/900	6214	tokens=75	duration_s=28.17
+OK	684/900	6319	tokens=77	duration_s=28.41
+OK	685/900	6328	tokens=64	duration_s=27.20
+OK	686/900	6360	tokens=66	duration_s=27.39
+OK	687/900	6381	tokens=61	duration_s=26.86
+OK	688/900	6412	tokens=47	duration_s=25.62
+OK	689/900	6435	tokens=51	duration_s=26.04
+OK	690/900	6449	tokens=60	duration_s=26.86
+OK	691/900	6458	tokens=87	duration_s=29.36
+OK	692/900	6591	tokens=54	duration_s=26.22
+OK	693/900	6613	tokens=79	duration_s=28.71
+OK	694/900	6754	tokens=66	duration_s=27.33
+OK	695/900	6766	tokens=71	duration_s=27.78
+OK	696/900	6825	tokens=53	duration_s=26.19
+OK	697/900	6851	tokens=56	duration_s=26.39
+OK	698/900	6887	tokens=84	duration_s=29.02
+OK	699/900	6895	tokens=75	duration_s=28.23
+OK	700/900	6940	tokens=94	duration_s=29.95
+OK	701/900	1	tokens=97	duration_s=30.31
+OK	702/900	19	tokens=87	duration_s=29.43
+OK	703/900	42	tokens=76	duration_s=28.27
+OK	704/900	43	tokens=95	duration_s=30.06
+OK	705/900	76	tokens=83	duration_s=28.91
+OK	706/900	148	tokens=59	duration_s=26.76
+OK	707/900	150	tokens=90	duration_s=29.56
+OK	708/900	178	tokens=64	duration_s=27.18
+OK	709/900	215	tokens=102	duration_s=30.75
+OK	710/900	227	tokens=75	duration_s=28.28
+OK	711/900	283	tokens=71	duration_s=27.76
+OK	712/900	330	tokens=63	duration_s=27.11
+OK	713/900	356	tokens=62	duration_s=27.00
+OK	714/900	360	tokens=62	duration_s=27.05
+OK	715/900	368	tokens=91	duration_s=29.77
+OK	716/900	375	tokens=68	duration_s=27.58
+OK	717/900	419	tokens=85	duration_s=29.17
+OK	718/900	502	tokens=62	duration_s=27.02
+OK	719/900	512	tokens=104	duration_s=30.92
+OK	720/900	517	tokens=77	duration_s=28.46
+OK	721/900	537	tokens=63	duration_s=27.16
+OK	722/900	575	tokens=85	duration_s=29.33
+OK	723/900	652	tokens=67	duration_s=27.55
+OK	724/900	659	tokens=68	duration_s=27.73
+OK	725/900	680	tokens=85	duration_s=29.36
+OK	726/900	688	tokens=63	duration_s=27.23
+OK	727/900	721	tokens=64	duration_s=27.25
+OK	728/900	791	tokens=82	duration_s=29.04
+OK	729/900	792	tokens=101	duration_s=30.86
+OK	730/900	868	tokens=64	duration_s=27.38
+OK	731/900	887	tokens=105	duration_s=31.18
+OK	732/900	889	tokens=53	duration_s=26.17
+OK	733/900	931	tokens=99	duration_s=30.60
+OK	734/900	934	tokens=61	duration_s=26.94
+OK	735/900	938	tokens=78	duration_s=28.63
+OK	736/900	1027	tokens=89	duration_s=29.72
+OK	737/900	1053	tokens=74	duration_s=28.14
+OK	738/900	1090	tokens=78	duration_s=28.73
+OK	739/900	1156	tokens=87	duration_s=29.49
+OK	740/900	1216	tokens=56	duration_s=26.58
+OK	741/900	1229	tokens=61	duration_s=27.02
+OK	742/900	1249	tokens=64	duration_s=27.28
+OK	743/900	1256	tokens=125	duration_s=32.97
+OK	744/900	1261	tokens=70	duration_s=27.89
+OK	745/900	1266	tokens=71	duration_s=27.99
+OK	746/900	1267	tokens=62	duration_s=27.13
+OK	747/900	1322	tokens=136	duration_s=34.06
+OK	748/900	1333	tokens=72	duration_s=28.08
+OK	749/900	1344	tokens=104	duration_s=31.06
+OK	750/900	1349	tokens=79	duration_s=28.80
+OK	751/900	1396	tokens=91	duration_s=29.84
+OK	752/900	1404	tokens=75	duration_s=28.35
+OK	753/900	1405	tokens=75	duration_s=28.34
+OK	754/900	1407	tokens=79	duration_s=28.73
+OK	755/900	1428	tokens=149	duration_s=35.29
+OK	756/900	1467	tokens=66	duration_s=27.53
+OK	757/900	1478	tokens=64	duration_s=27.39
+OK	758/900	1593	tokens=76	duration_s=28.46
+OK	759/900	1618	tokens=108	duration_s=31.48
+OK	760/900	1665	tokens=79	duration_s=28.72
+OK	761/900	1686	tokens=81	duration_s=28.94
+OK	762/900	1699	tokens=72	duration_s=28.10
+OK	763/900	1822	tokens=64	duration_s=27.35
+OK	764/900	1832	tokens=87	duration_s=29.45
+OK	765/900	1839	tokens=96	duration_s=30.27
+OK	766/900	1847	tokens=65	duration_s=27.36
+OK	767/900	1850	tokens=67	duration_s=27.51
+OK	768/900	1853	tokens=68	duration_s=27.72
+OK	769/900	1874	tokens=94	duration_s=30.14
+OK	770/900	1921	tokens=59	duration_s=26.83
+OK	771/900	1931	tokens=62	duration_s=26.93
+OK	772/900	1934	tokens=73	duration_s=28.01
+OK	773/900	1939	tokens=59	duration_s=26.73
+OK	774/900	1989	tokens=136	duration_s=33.90
+OK	775/900	2025	tokens=62	duration_s=26.95
+OK	776/900	2082	tokens=72	duration_s=27.90
+OK	777/900	2093	tokens=69	duration_s=27.60
+OK	778/900	2122	tokens=96	duration_s=30.22
+OK	779/900	2124	tokens=64	duration_s=27.19
+OK	780/900	2147	tokens=60	duration_s=26.78
+OK	781/900	2151	tokens=66	duration_s=27.36
+OK	782/900	2197	tokens=88	duration_s=29.42
+OK	783/900	2275	tokens=93	duration_s=29.94
+OK	784/900	2360	tokens=89	duration_s=29.50
+OK	785/900	2370	tokens=68	duration_s=27.55
+OK	786/900	2387	tokens=58	duration_s=26.64
+OK	787/900	2429	tokens=86	duration_s=29.21
+OK	788/900	2444	tokens=100	duration_s=30.54
+OK	789/900	2447	tokens=72	duration_s=27.95
+OK	790/900	2448	tokens=84	duration_s=29.25
+OK	791/900	2462	tokens=94	duration_s=30.17
+OK	792/900	2483	tokens=77	duration_s=28.53
+OK	793/900	2524	tokens=86	duration_s=29.35
+OK	794/900	2574	tokens=68	duration_s=27.57
+OK	795/900	2575	tokens=69	duration_s=27.78
+OK	796/900	2670	tokens=86	duration_s=29.40
+OK	797/900	2671	tokens=62	duration_s=27.07
+OK	798/900	2692	tokens=64	duration_s=27.35
+OK	799/900	2698	tokens=62	duration_s=27.11
+OK	800/900	2714	tokens=89	duration_s=29.70
+OK	801/900	2720	tokens=64	duration_s=27.26
+OK	802/900	2730	tokens=64	duration_s=27.38
+OK	803/900	2746	tokens=63	duration_s=27.15
+OK	804/900	2752	tokens=88	duration_s=29.48
+OK	805/900	2784	tokens=86	duration_s=29.35
+OK	806/900	2795	tokens=64	duration_s=27.26
+OK	807/900	2810	tokens=66	duration_s=27.47
+OK	808/900	2818	tokens=74	duration_s=28.37
+OK	809/900	2827	tokens=76	duration_s=28.50
+OK	810/900	2839	tokens=88	duration_s=29.60
+OK	811/900	2842	tokens=105	duration_s=31.16
+OK	812/900	2859	tokens=77	duration_s=28.53
+OK	813/900	2938	tokens=75	duration_s=28.42
+OK	814/900	2942	tokens=79	duration_s=28.75
+OK	815/900	3019	tokens=77	duration_s=28.46
+OK	816/900	3034	tokens=73	duration_s=28.13
+OK	817/900	3112	tokens=84	duration_s=29.13
+OK	818/900	3130	tokens=54	duration_s=26.37
+OK	819/900	3143	tokens=79	duration_s=28.63
+OK	820/900	3158	tokens=65	duration_s=27.27
+OK	821/900	3191	tokens=88	duration_s=29.39
+OK	822/900	3262	tokens=55	duration_s=26.39
+OK	823/900	3341	tokens=71	duration_s=27.89
+OK	824/900	3375	tokens=76	duration_s=28.41
+OK	825/900	3378	tokens=59	duration_s=26.78
+OK	826/900	3398	tokens=55	duration_s=26.41
+OK	827/900	3426	tokens=69	duration_s=27.78
+OK	828/900	3440	tokens=73	duration_s=28.11
+OK	829/900	3467	tokens=85	duration_s=29.23
+OK	830/900	3491	tokens=36	duration_s=24.73
+OK	831/900	3522	tokens=68	duration_s=27.59
+OK	832/900	3544	tokens=72	duration_s=28.02
+OK	833/900	3572	tokens=66	duration_s=27.44
+OK	834/900	3576	tokens=79	duration_s=28.77
+OK	835/900	3596	tokens=83	duration_s=29.09
+OK	836/900	3602	tokens=59	duration_s=26.82
+OK	837/900	3643	tokens=73	duration_s=28.15
+OK	838/900	3670	tokens=79	duration_s=28.70
+OK	839/900	3725	tokens=81	duration_s=28.87
+OK	840/900	3762	tokens=36	duration_s=24.55
+OK	841/900	3803	tokens=75	duration_s=28.30
+OK	842/900	3833	tokens=89	duration_s=29.57
+OK	843/900	3920	tokens=76	duration_s=28.37
+OK	844/900	3960	tokens=84	duration_s=29.09
+OK	845/900	4003	tokens=75	duration_s=28.35
+OK	846/900	4092	tokens=79	duration_s=28.76
+OK	847/900	4097	tokens=69	duration_s=27.76
+OK	848/900	4106	tokens=44	duration_s=25.43
+OK	849/900	4131	tokens=56	duration_s=26.51
+OK	850/900	4300	tokens=70	duration_s=27.88
+OK	851/900	4360	tokens=79	duration_s=28.64
+OK	852/900	4408	tokens=71	duration_s=27.91
+OK	853/900	4431	tokens=79	duration_s=28.62
+OK	854/900	4496	tokens=74	duration_s=28.18
+OK	855/900	4526	tokens=70	duration_s=27.75
+OK	856/900	4527	tokens=85	duration_s=29.17
+OK	857/900	4536	tokens=60	duration_s=26.68
+OK	858/900	4564	tokens=78	duration_s=28.51
+OK	859/900	4801	tokens=81	duration_s=28.82
+OK	860/900	4911	tokens=86	duration_s=29.29
+OK	861/900	4985	tokens=66	duration_s=27.36
+OK	862/900	5006	tokens=55	duration_s=26.79
+OK	863/900	5130	tokens=39	duration_s=25.36
+OK	864/900	5147	tokens=46	duration_s=25.58
+OK	865/900	5163	tokens=92	duration_s=29.87
+OK	866/900	5173	tokens=67	duration_s=27.57
+OK	867/900	5236	tokens=88	duration_s=29.46
+OK	868/900	5270	tokens=81	duration_s=28.94
+OK	869/900	5277	tokens=56	duration_s=26.49
+OK	870/900	5279	tokens=41	duration_s=25.03
+OK	871/900	5342	tokens=80	duration_s=28.82
+OK	872/900	5374	tokens=71	duration_s=27.90
+OK	873/900	5449	tokens=68	duration_s=27.63
+OK	874/900	5453	tokens=57	duration_s=26.64
+OK	875/900	5553	tokens=42	duration_s=25.21
+OK	876/900	5674	tokens=70	duration_s=27.83
+OK	877/900	5817	tokens=61	duration_s=26.87
+OK	878/900	5822	tokens=77	duration_s=28.52
+OK	879/900	5843	tokens=58	duration_s=26.68
+OK	880/900	5854	tokens=49	duration_s=25.81
+OK	881/900	6101	tokens=64	duration_s=27.27
+OK	882/900	6137	tokens=64	duration_s=27.20
+OK	883/900	6142	tokens=71	duration_s=27.87
+OK	884/900	6157	tokens=96	duration_s=30.26
+OK	885/900	6215	tokens=75	duration_s=28.28
+OK	886/900	6237	tokens=76	duration_s=28.40
+OK	887/900	6453	tokens=34	duration_s=24.39
+OK	888/900	6534	tokens=60	duration_s=26.87
+OK	889/900	6542	tokens=65	duration_s=27.39
+OK	890/900	6558	tokens=71	duration_s=27.93
+OK	891/900	6593	tokens=69	duration_s=27.67
+OK	892/900	6602	tokens=78	duration_s=28.59
+OK	893/900	6660	tokens=75	duration_s=28.21
+OK	894/900	6797	tokens=52	duration_s=26.06
+OK	895/900	6828	tokens=56	duration_s=26.50
+OK	896/900	6869	tokens=67	duration_s=27.53
+OK	897/900	6874	tokens=81	duration_s=28.84
+OK	898/900	6904	tokens=81	duration_s=28.87
+OK	899/900	6956	tokens=92	duration_s=29.80
+OK	900/900	6996	tokens=77	duration_s=28.47
+{
+  "dataset_name": "formalgeo7k_v2",
+  "total_rows": 900,
+  "train": 600,
+  "val": 100,
+  "test": 200,
+  "gdp_rows": 900,
+  "require_gdp": true,
+  "train_buckets": {
+    "len1": 200,
+    "len2_3": 200,
+    "len4plus": 200
+  },
+  "val_buckets": {
+    "len1": 30,
+    "len2_3": 34,
+    "len4plus": 36
+  },
+  "test_buckets": {
+    "len1": 67,
+    "len2_3": 67,
+    "len4plus": 66
+  }
+}
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:15<00:15, 15.45s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:15<00:00,  6.47s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:15<00:00,  7.82s/it]
+trainable params: 17,432,576 || all params: 1,738,007,552 || trainable%: 1.0030
+/home/ubuntu/miniforge3/envs/qwen/lib/python3.11/site-packages/torch/_dynamo/eval_frame.py:632: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.5 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+{"step": 5, "epoch": 1, "train_loss": 22.19224672317505, "lr": 0.00014285714285714287, "elapsed_s": 66.9}
+{"step": 10, "epoch": 1, "train_loss": 11.500032687187195, "lr": 0.0001997828884284126, "elapsed_s": 134.7}
+{"step": 15, "epoch": 1, "train_loss": 5.414123743772507, "lr": 0.00019845950802266585, "elapsed_s": 205.0}
+{"step": 20, "epoch": 1, "train_loss": 3.0916211284697055, "lr": 0.00019594929736144976, "elapsed_s": 275.5}
+{"step": 25, "epoch": 1, "train_loss": 2.727399055659771, "lr": 0.00019228251450739494, "elapsed_s": 350.1}
+{"step": 30, "epoch": 1, "train_loss": 2.035383756458759, "lr": 0.00018750335883665947, "elapsed_s": 418.4}
+{"step": 35, "epoch": 1, "train_loss": 1.571228139102459, "lr": 0.00018166943825994217, "elapsed_s": 483.5}
+{"step": 40, "epoch": 1, "train_loss": 1.4118673615157604, "lr": 0.00017485107481711012, "elapsed_s": 550.5}
+{"step": 45, "epoch": 1, "train_loss": 1.5005274083465339, "lr": 0.00016713045701579704, "elapsed_s": 617.3}
+{"step": 50, "epoch": 1, "train_loss": 1.460814292728901, "lr": 0.00015860064913167862, "elapsed_s": 687.3}
+{"step": 50, "val_loss": 0.19172668568789958, "val_ppl": 1.211339395323267}
+{"step": 55, "epoch": 1, "train_loss": 1.6745926544070244, "lr": 0.00014936446941231187, "elapsed_s": 775.5}
+{"step": 60, "epoch": 1, "train_loss": 1.3202816236764192, "lr": 0.00013953325070666214, "elapsed_s": 846.4}
+{"step": 65, "epoch": 1, "train_loss": 1.3441895093768834, "lr": 0.00012922549845968172, "elapsed_s": 918.3}
+{"step": 70, "epoch": 1, "train_loss": 0.9054047375917434, "lr": 0.00011856546224846355, "elapsed_s": 985.3}
+{"step": 75, "epoch": 1, "train_loss": 1.1695069482550025, "lr": 0.0001076816380786647, "elapsed_s": 1051.9}
+{"step": 80, "epoch": 2, "train_loss": 1.0693233773112296, "lr": 9.670521949450794e-05, "elapsed_s": 1120.3}
+{"step": 85, "epoch": 2, "train_loss": 0.9804068341851234, "lr": 8.57685161726715e-05, "elapsed_s": 1188.0}
+{"step": 90, "epoch": 2, "train_loss": 1.0075742684304714, "lr": 7.500335906232545e-05, "elapsed_s": 1261.2}
+{"step": 95, "epoch": 2, "train_loss": 1.1777798812836409, "lr": 6.453951129574644e-05, "elapsed_s": 1332.0}
+{"step": 100, "epoch": 2, "train_loss": 0.9195205876603723, "lr": 5.4503104024383525e-05, "elapsed_s": 1402.3}
+{"step": 100, "val_loss": 0.1407004188746214, "val_ppl": 1.1510797545572722}
+{"step": 105, "epoch": 2, "train_loss": 0.8762279182672501, "lr": 4.5015116034796526e-05, "elapsed_s": 1488.2}
+{"step": 110, "epoch": 2, "train_loss": 0.9584234679117799, "lr": 3.618991547116693e-05, "elapsed_s": 1559.3}
+{"step": 115, "epoch": 2, "train_loss": 0.7704469410702586, "lr": 2.813388124244778e-05, "elapsed_s": 1624.5}
+{"step": 120, "epoch": 2, "train_loss": 0.88880476038903, "lr": 2.09441207317019e-05, "elapsed_s": 1697.0}
+{"step": 125, "epoch": 2, "train_loss": 0.8250706639140845, "lr": 1.4707299264351915e-05, "elapsed_s": 1763.7}
+{"step": 130, "epoch": 2, "train_loss": 0.7719199113547802, "lr": 9.49859544492332e-06, "elapsed_s": 1831.8}
+{"step": 135, "epoch": 2, "train_loss": 0.9456750370562077, "lr": 5.3807949546451404e-06, "elapsed_s": 1900.1}
+{"step": 140, "epoch": 2, "train_loss": 0.9851841909810901, "lr": 2.4035337332655506e-06, "elapsed_s": 1972.9}
+{"step": 145, "epoch": 2, "train_loss": 0.9182510789949447, "lr": 6.026996677640062e-07, "elapsed_s": 2039.7}
+{"step": 150, "epoch": 2, "train_loss": 0.7226292586885392, "lr": 0.0, "elapsed_s": 2107.2}
+{"step": 150, "val_loss": 0.1367868241854012, "val_ppl": 1.1465836985519688}
+{"done": true, "global_step": 150, "final_val_loss": 0.1379556040535681, "final_val_ppl": 1.1479245859444567, "train_rows": 600, "val_rows": 100}
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:04<00:04,  4.12s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  1.81s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.15s/it]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+ROUTE	1	chars=325
+ROUTE	19	chars=330
+ROUTE	42	chars=568
+ROUTE	43	chars=330
+ROUTE	76	chars=330
+ROUTE	148	chars=278
+ROUTE	150	chars=1075
+ROUTE	178	chars=332
+ROUTE	215	chars=1075
+ROUTE	227	chars=317
+ROUTE	283	chars=278
+ROUTE	330	chars=299
+ROUTE	356	chars=278
+ROUTE	360	chars=282
+ROUTE	368	chars=314
+ROUTE	375	chars=282
+ROUTE	419	chars=560
+ROUTE	502	chars=278
+ROUTE	512	chars=346
+ROUTE	517	chars=278
+ROUTE	537	chars=327
+ROUTE	575	chars=310
+ROUTE	652	chars=476
+ROUTE	659	chars=774
+ROUTE	680	chars=330
+ROUTE	688	chars=278
+ROUTE	721	chars=334
+ROUTE	791	chars=335
+ROUTE	792	chars=299
+ROUTE	868	chars=297
+ROUTE	887	chars=857
+ROUTE	889	chars=314
+ROUTE	931	chars=282
+ROUTE	934	chars=278
+ROUTE	938	chars=897
+ROUTE	1027	chars=379
+ROUTE	1053	chars=335
+ROUTE	1090	chars=342
+ROUTE	1156	chars=519
+ROUTE	1216	chars=315
+ROUTE	1229	chars=475
+ROUTE	1249	chars=335
+ROUTE	1256	chars=323
+ROUTE	1261	chars=774
+ROUTE	1266	chars=299
+ROUTE	1267	chars=282
+ROUTE	1322	chars=335
+ROUTE	1333	chars=286
+ROUTE	1344	chars=335
+ROUTE	1349	chars=394
+ROUTE	1396	chars=424
+ROUTE	1404	chars=344
+ROUTE	1405	chars=379
+ROUTE	1407	chars=345
+ROUTE	1428	chars=330
+ROUTE	1467	chars=327
+ROUTE	1478	chars=335
+ROUTE	1593	chars=331
+ROUTE	1618	chars=309
+ROUTE	1665	chars=408
+ROUTE	1686	chars=774
+ROUTE	1699	chars=351
+ROUTE	1822	chars=487
+ROUTE	1832	chars=426
+ROUTE	1839	chars=330
+ROUTE	1847	chars=306
+ROUTE	1850	chars=278
+ROUTE	1853	chars=310
+ROUTE	1874	chars=459
+ROUTE	1921	chars=278
+ROUTE	1931	chars=475
+ROUTE	1934	chars=299
+ROUTE	1939	chars=315
+ROUTE	1989	chars=1053
+ROUTE	2025	chars=282
+ROUTE	2082	chars=351
+ROUTE	2093	chars=299
+ROUTE	2122	chars=282
+ROUTE	2124	chars=774
+ROUTE	2147	chars=384
+ROUTE	2151	chars=282
+ROUTE	2197	chars=329
+ROUTE	2275	chars=787
+ROUTE	2360	chars=332
+ROUTE	2370	chars=903
+ROUTE	2387	chars=403
+ROUTE	2429	chars=310
+ROUTE	2444	chars=332
+ROUTE	2447	chars=366
+ROUTE	2448	chars=428
+ROUTE	2462	chars=379
+ROUTE	2483	chars=1054
+ROUTE	2524	chars=1054
+ROUTE	2574	chars=286
+ROUTE	2575	chars=330
+ROUTE	2670	chars=314
+ROUTE	2671	chars=299
+ROUTE	2692	chars=794
+ROUTE	2698	chars=282
+ROUTE	2714	chars=335
+ROUTE	2720	chars=550
+ROUTE	2730	chars=854
+ROUTE	2746	chars=282
+ROUTE	2752	chars=795
+ROUTE	2784	chars=330
+ROUTE	2795	chars=368
+ROUTE	2810	chars=317
+ROUTE	2818	chars=616
+ROUTE	2827	chars=314
+ROUTE	2839	chars=379
+ROUTE	2842	chars=341
+ROUTE	2859	chars=762
+ROUTE	2938	chars=498
+ROUTE	2942	chars=679
+ROUTE	3019	chars=335
+ROUTE	3034	chars=335
+ROUTE	3112	chars=327
+ROUTE	3130	chars=384
+ROUTE	3143	chars=485
+ROUTE	3158	chars=331
+ROUTE	3191	chars=508
+ROUTE	3262	chars=457
+ROUTE	3341	chars=1038
+ROUTE	3375	chars=515
+ROUTE	3378	chars=408
+ROUTE	3398	chars=636
+ROUTE	3426	chars=559
+ROUTE	3440	chars=1054
+ROUTE	3467	chars=551
+ROUTE	3491	chars=299
+ROUTE	3522	chars=392
+ROUTE	3544	chars=331
+ROUTE	3572	chars=383
+ROUTE	3576	chars=335
+ROUTE	3596	chars=491
+ROUTE	3602	chars=314
+ROUTE	3643	chars=500
+ROUTE	3670	chars=335
+ROUTE	3725	chars=335
+ROUTE	3762	chars=412
+ROUTE	3803	chars=1054
+ROUTE	3833	chars=297
+ROUTE	3920	chars=392
+ROUTE	3960	chars=489
+ROUTE	4003	chars=435
+ROUTE	4092	chars=1054
+ROUTE	4097	chars=436
+ROUTE	4106	chars=384
+ROUTE	4131	chars=384
+ROUTE	4300	chars=392
+ROUTE	4360	chars=392
+ROUTE	4408	chars=392
+ROUTE	4431	chars=489
+ROUTE	4496	chars=392
+ROUTE	4526	chars=1054
+ROUTE	4527	chars=392
+ROUTE	4536	chars=392
+ROUTE	4564	chars=787
+ROUTE	4801	chars=551
+ROUTE	4911	chars=551
+ROUTE	4985	chars=568
+ROUTE	5006	chars=790
+ROUTE	5130	chars=282
+ROUTE	5147	chars=774
+ROUTE	5163	chars=444
+ROUTE	5173	chars=774
+ROUTE	5236	chars=518
+ROUTE	5270	chars=403
+ROUTE	5277	chars=379
+ROUTE	5279	chars=314
+ROUTE	5342	chars=408
+ROUTE	5374	chars=578
+ROUTE	5449	chars=567
+ROUTE	5453	chars=282
+ROUTE	5553	chars=315
+ROUTE	5674	chars=378
+ROUTE	5817	chars=568
+ROUTE	5822	chars=633
+ROUTE	5843	chars=278
+ROUTE	5854	chars=282
+ROUTE	6101	chars=329
+ROUTE	6137	chars=392
+ROUTE	6142	chars=392
+ROUTE	6157	chars=1054
+ROUTE	6215	chars=856
+ROUTE	6237	chars=774
+ROUTE	6453	chars=791
+ROUTE	6534	chars=1059
+ROUTE	6542	chars=782
+ROUTE	6558	chars=850
+ROUTE	6593	chars=390
+ROUTE	6602	chars=1054
+ROUTE	6660	chars=485
+ROUTE	6797	chars=403
+ROUTE	6828	chars=335
+ROUTE	6869	chars=392
+ROUTE	6874	chars=728
+ROUTE	6904	chars=568
+ROUTE	6956	chars=583
+ROUTE	6996	chars=488
+`torch_dtype` is deprecated! Use `dtype` instead!
+Traceback (most recent call last):
+  File "/home/ubuntu/topic_results/tools/qwen3vl_formalgeo_generated_route_eval.py", line 289, in <module>
+    main()
+  File "/home/ubuntu/topic_results/tools/qwen3vl_formalgeo_generated_route_eval.py", line 221, in main
+    vlm = Qwen3VLForConditionalGeneration.from_pretrained(model_name, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniforge3/envs/qwen/lib/python3.11/site-packages/transformers/modeling_utils.py", line 277, in _wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniforge3/envs/qwen/lib/python3.11/site-packages/transformers/modeling_utils.py", line 5029, in from_pretrained
+    device_map = _get_device_map(model, device_map, max_memory, hf_quantizer, dtype, keep_in_fp32_regex)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniforge3/envs/qwen/lib/python3.11/site-packages/transformers/modeling_utils.py", line 1365, in _get_device_map
+    hf_quantizer.validate_environment(device_map=device_map)
+  File "/home/ubuntu/miniforge3/envs/qwen/lib/python3.11/site-packages/transformers/quantizers/quantizer_bnb_4bit.py", line 127, in validate_environment
+    raise ValueError(
+ValueError: Some modules are dispatched on the CPU or the disk. Make sure you have enough GPU RAM to fit the quantized model. If you want to dispatch the model on the CPU or the disk while keeping these modules in 32-bit, you need to set `llm_int8_enable_fp32_cpu_offload=True` and pass a custom `device_map` to `from_pretrained`. Check https://huggingface.co/docs/transformers/main/en/main_classes/quantization#offload-between-cpu-and-gpu for more details. 

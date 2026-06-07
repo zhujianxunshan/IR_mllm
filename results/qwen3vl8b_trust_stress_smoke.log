@@ -1,0 +1,383 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:05<00:16,  5.66s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:12<00:12,  6.42s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:19<00:06,  6.72s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:22<00:00,  5.02s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:22<00:00,  5.52s/it]
+CALL geometry3k_test_2401 raw
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+OK	geometry3k_test_2401	raw	pred='B'	gold='B'	complete=True	new_tokens=2	duration_s=5.01
+CALL geometry3k_test_2401 clean_topk6_cautious
+OK	geometry3k_test_2401	clean_topk6_cautious	pred='B'	gold='B'	complete=True	new_tokens=2	duration_s=4.74
+CALL geometry3k_test_2401 clean_topk6_trusted
+OK	geometry3k_test_2401	clean_topk6_trusted	pred='B'	gold='B'	complete=True	new_tokens=2	duration_s=4.72
+CALL geometry3k_test_2401 clean_topk6_selfverify
+OK	geometry3k_test_2401	clean_topk6_selfverify	pred='B'	gold='B'	complete=True	new_tokens=2	duration_s=4.76
+CALL geometry3k_test_2401 confidence_gated_topk6
+OK	geometry3k_test_2401	confidence_gated_topk6	pred='B'	gold='B'	complete=True	new_tokens=2	duration_s=5.41
+CALL geometry3k_test_2401 irrelevant_trusted
+OK	geometry3k_test_2401	irrelevant_trusted	pred='B'	gold='B'	complete=True	new_tokens=2	duration_s=4.74
+CALL geometry3k_test_2401 irrelevant_warned
+OK	geometry3k_test_2401	irrelevant_warned	pred='B'	gold='B'	complete=True	new_tokens=2	duration_s=4.77
+CALL geometry3k_test_2401 corrupt_trusted
+OK	geometry3k_test_2401	corrupt_trusted	pred='B'	gold='B'	complete=True	new_tokens=2	duration_s=4.74
+CALL geometry3k_test_2401 corrupt_warned
+OK	geometry3k_test_2401	corrupt_warned	pred='B'	gold='B'	complete=True	new_tokens=2	duration_s=4.75
+CALL geometry3k_test_2401 contradictory_trusted
+OK	geometry3k_test_2401	contradictory_trusted	pred='B'	gold='B'	complete=True	new_tokens=2	duration_s=4.78
+CALL geometry3k_test_2401 contradictory_selfverify
+OK	geometry3k_test_2401	contradictory_selfverify	pred='B'	gold='B'	complete=True	new_tokens=2	duration_s=4.74
+{
+  "variants": {
+    "raw": {
+      "n": 1,
+      "complete": 1,
+      "correct": 1,
+      "accuracy_on_complete": 1.0,
+      "all_sample_accuracy": 1.0,
+      "errors": 0,
+      "truncated": 0,
+      "missing_answer_line": 0,
+      "avg_duration_s": 5.014937400817871
+    },
+    "clean_topk6_cautious": {
+      "n": 1,
+      "complete": 1,
+      "correct": 1,
+      "accuracy_on_complete": 1.0,
+      "all_sample_accuracy": 1.0,
+      "errors": 0,
+      "truncated": 0,
+      "missing_answer_line": 0,
+      "avg_duration_s": 4.736212253570557
+    },
+    "clean_topk6_trusted": {
+      "n": 1,
+      "complete": 1,
+      "correct": 1,
+      "accuracy_on_complete": 1.0,
+      "all_sample_accuracy": 1.0,
+      "errors": 0,
+      "truncated": 0,
+      "missing_answer_line": 0,
+      "avg_duration_s": 4.71671199798584
+    },
+    "clean_topk6_selfverify": {
+      "n": 1,
+      "complete": 1,
+      "correct": 1,
+      "accuracy_on_complete": 1.0,
+      "all_sample_accuracy": 1.0,
+      "errors": 0,
+      "truncated": 0,
+      "missing_answer_line": 0,
+      "avg_duration_s": 4.759991884231567
+    },
+    "confidence_gated_topk6": {
+      "n": 1,
+      "complete": 1,
+      "correct": 1,
+      "accuracy_on_complete": 1.0,
+      "all_sample_accuracy": 1.0,
+      "errors": 0,
+      "truncated": 0,
+      "missing_answer_line": 0,
+      "avg_duration_s": 5.414489269256592
+    },
+    "irrelevant_trusted": {
+      "n": 1,
+      "complete": 1,
+      "correct": 1,
+      "accuracy_on_complete": 1.0,
+      "all_sample_accuracy": 1.0,
+      "errors": 0,
+      "truncated": 0,
+      "missing_answer_line": 0,
+      "avg_duration_s": 4.736573219299316
+    },
+    "irrelevant_warned": {
+      "n": 1,
+      "complete": 1,
+      "correct": 1,
+      "accuracy_on_complete": 1.0,
+      "all_sample_accuracy": 1.0,
+      "errors": 0,
+      "truncated": 0,
+      "missing_answer_line": 0,
+      "avg_duration_s": 4.770888090133667
+    },
+    "corrupt_trusted": {
+      "n": 1,
+      "complete": 1,
+      "correct": 1,
+      "accuracy_on_complete": 1.0,
+      "all_sample_accuracy": 1.0,
+      "errors": 0,
+      "truncated": 0,
+      "missing_answer_line": 0,
+      "avg_duration_s": 4.744638919830322
+    },
+    "corrupt_warned": {
+      "n": 1,
+      "complete": 1,
+      "correct": 1,
+      "accuracy_on_complete": 1.0,
+      "all_sample_accuracy": 1.0,
+      "errors": 0,
+      "truncated": 0,
+      "missing_answer_line": 0,
+      "avg_duration_s": 4.753652811050415
+    },
+    "contradictory_trusted": {
+      "n": 1,
+      "complete": 1,
+      "correct": 1,
+      "accuracy_on_complete": 1.0,
+      "all_sample_accuracy": 1.0,
+      "errors": 0,
+      "truncated": 0,
+      "missing_answer_line": 0,
+      "avg_duration_s": 4.783584833145142
+    },
+    "contradictory_selfverify": {
+      "n": 1,
+      "complete": 1,
+      "correct": 1,
+      "accuracy_on_complete": 1.0,
+      "all_sample_accuracy": 1.0,
+      "errors": 0,
+      "truncated": 0,
+      "missing_answer_line": 0,
+      "avg_duration_s": 4.740905046463013
+    }
+  },
+  "pairwise_vs_raw": {
+    "clean_topk6_cautious": {
+      "other_win": 0,
+      "other_loss": 0,
+      "both_correct": 1,
+      "both_wrong": 0,
+      "incomplete_pair": 0,
+      "net": 0,
+      "examples": {
+        "other_win": [],
+        "other_loss": []
+      }
+    },
+    "clean_topk6_trusted": {
+      "other_win": 0,
+      "other_loss": 0,
+      "both_correct": 1,
+      "both_wrong": 0,
+      "incomplete_pair": 0,
+      "net": 0,
+      "examples": {
+        "other_win": [],
+        "other_loss": []
+      }
+    },
+    "clean_topk6_selfverify": {
+      "other_win": 0,
+      "other_loss": 0,
+      "both_correct": 1,
+      "both_wrong": 0,
+      "incomplete_pair": 0,
+      "net": 0,
+      "examples": {
+        "other_win": [],
+        "other_loss": []
+      }
+    },
+    "confidence_gated_topk6": {
+      "other_win": 0,
+      "other_loss": 0,
+      "both_correct": 1,
+      "both_wrong": 0,
+      "incomplete_pair": 0,
+      "net": 0,
+      "examples": {
+        "other_win": [],
+        "other_loss": []
+      }
+    },
+    "irrelevant_trusted": {
+      "other_win": 0,
+      "other_loss": 0,
+      "both_correct": 1,
+      "both_wrong": 0,
+      "incomplete_pair": 0,
+      "net": 0,
+      "examples": {
+        "other_win": [],
+        "other_loss": []
+      }
+    },
+    "irrelevant_warned": {
+      "other_win": 0,
+      "other_loss": 0,
+      "both_correct": 1,
+      "both_wrong": 0,
+      "incomplete_pair": 0,
+      "net": 0,
+      "examples": {
+        "other_win": [],
+        "other_loss": []
+      }
+    },
+    "corrupt_trusted": {
+      "other_win": 0,
+      "other_loss": 0,
+      "both_correct": 1,
+      "both_wrong": 0,
+      "incomplete_pair": 0,
+      "net": 0,
+      "examples": {
+        "other_win": [],
+        "other_loss": []
+      }
+    },
+    "corrupt_warned": {
+      "other_win": 0,
+      "other_loss": 0,
+      "both_correct": 1,
+      "both_wrong": 0,
+      "incomplete_pair": 0,
+      "net": 0,
+      "examples": {
+        "other_win": [],
+        "other_loss": []
+      }
+    },
+    "contradictory_trusted": {
+      "other_win": 0,
+      "other_loss": 0,
+      "both_correct": 1,
+      "both_wrong": 0,
+      "incomplete_pair": 0,
+      "net": 0,
+      "examples": {
+        "other_win": [],
+        "other_loss": []
+      }
+    },
+    "contradictory_selfverify": {
+      "other_win": 0,
+      "other_loss": 0,
+      "both_correct": 1,
+      "both_wrong": 0,
+      "incomplete_pair": 0,
+      "net": 0,
+      "examples": {
+        "other_win": [],
+        "other_loss": []
+      }
+    }
+  },
+  "direct_comparisons": {
+    "corrupt_warned_vs_corrupt_trusted": {
+      "other_win": 0,
+      "other_loss": 0,
+      "both_correct": 1,
+      "both_wrong": 0,
+      "incomplete_pair": 0,
+      "net": 0,
+      "examples": {
+        "other_win": [],
+        "other_loss": []
+      }
+    },
+    "contradictory_selfverify_vs_contradictory_trusted": {
+      "other_win": 0,
+      "other_loss": 0,
+      "both_correct": 1,
+      "both_wrong": 0,
+      "incomplete_pair": 0,
+      "net": 0,
+      "examples": {
+        "other_win": [],
+        "other_loss": []
+      }
+    },
+    "irrelevant_warned_vs_irrelevant_trusted": {
+      "other_win": 0,
+      "other_loss": 0,
+      "both_correct": 1,
+      "both_wrong": 0,
+      "incomplete_pair": 0,
+      "net": 0,
+      "examples": {
+        "other_win": [],
+        "other_loss": []
+      }
+    },
+    "confidence_gated_topk6_vs_clean_topk6_cautious": {
+      "other_win": 0,
+      "other_loss": 0,
+      "both_correct": 1,
+      "both_wrong": 0,
+      "incomplete_pair": 0,
+      "net": 0,
+      "examples": {
+        "other_win": [],
+        "other_loss": []
+      }
+    },
+    "clean_topk6_selfverify_vs_clean_topk6_cautious": {
+      "other_win": 0,
+      "other_loss": 0,
+      "both_correct": 1,
+      "both_wrong": 0,
+      "incomplete_pair": 0,
+      "net": 0,
+      "examples": {
+        "other_win": [],
+        "other_loss": []
+      }
+    },
+    "clean_topk6_trusted_vs_clean_topk6_cautious": {
+      "other_win": 0,
+      "other_loss": 0,
+      "both_correct": 1,
+      "both_wrong": 0,
+      "incomplete_pair": 0,
+      "net": 0,
+      "examples": {
+        "other_win": [],
+        "other_loss": []
+      }
+    },
+    "corrupt_trusted_vs_clean_topk6_trusted": {
+      "other_win": 0,
+      "other_loss": 0,
+      "both_correct": 1,
+      "both_wrong": 0,
+      "incomplete_pair": 0,
+      "net": 0,
+      "examples": {
+        "other_win": [],
+        "other_loss": []
+      }
+    },
+    "irrelevant_trusted_vs_clean_topk6_trusted": {
+      "other_win": 0,
+      "other_loss": 0,
+      "both_correct": 1,
+      "both_wrong": 0,
+      "incomplete_pair": 0,
+      "net": 0,
+      "examples": {
+        "other_win": [],
+        "other_loss": []
+      }
+    },
+    "contradictory_trusted_vs_clean_topk6_trusted": {
+      "other_win": 0,
+      "other_loss": 0,
+      "both_correct": 1,
+      "both_wrong": 0,
+      "incomplete_pair": 0,
+      "net": 0,
+      "examples": {
+        "other_win": [],
+        "other_loss": []
+      }
+    }
+  },
+  "n_unique_ids": 1
+}

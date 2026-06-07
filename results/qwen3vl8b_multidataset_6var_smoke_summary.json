@@ -1,0 +1,388 @@
+{
+  "datasets": {
+    "Geometry3K-150": {
+      "variants": {
+        "raw": {
+          "n": 1,
+          "complete": 1,
+          "correct": 1,
+          "accuracy": 1.0,
+          "avg_duration_s": 4.945945978164673,
+          "errors": 0
+        },
+        "structured_facts": {
+          "n": 1,
+          "complete": 1,
+          "correct": 1,
+          "accuracy": 1.0,
+          "avg_duration_s": 5.038775682449341,
+          "errors": 0
+        },
+        "perception_graph": {
+          "n": 1,
+          "complete": 1,
+          "correct": 1,
+          "accuracy": 1.0,
+          "avg_duration_s": 5.380494594573975,
+          "errors": 0
+        },
+        "construction_plan": {
+          "n": 1,
+          "complete": 1,
+          "correct": 1,
+          "accuracy": 1.0,
+          "avg_duration_s": 5.724859952926636,
+          "errors": 0
+        },
+        "geoguide_solver": {
+          "n": 1,
+          "complete": 1,
+          "correct": 1,
+          "accuracy": 1.0,
+          "avg_duration_s": 6.028650522232056,
+          "errors": 0
+        },
+        "geoguide_cautious": {
+          "n": 1,
+          "complete": 1,
+          "correct": 1,
+          "accuracy": 1.0,
+          "avg_duration_s": 5.715694189071655,
+          "errors": 0
+        }
+      },
+      "pairwise_vs_raw": {
+        "structured_facts": {
+          "win": 0,
+          "loss": 0,
+          "net": 0,
+          "both_correct": 1,
+          "both_wrong": 0,
+          "incomplete": 0,
+          "examples": {
+            "win": [],
+            "loss": []
+          }
+        },
+        "perception_graph": {
+          "win": 0,
+          "loss": 0,
+          "net": 0,
+          "both_correct": 1,
+          "both_wrong": 0,
+          "incomplete": 0,
+          "examples": {
+            "win": [],
+            "loss": []
+          }
+        },
+        "construction_plan": {
+          "win": 0,
+          "loss": 0,
+          "net": 0,
+          "both_correct": 1,
+          "both_wrong": 0,
+          "incomplete": 0,
+          "examples": {
+            "win": [],
+            "loss": []
+          }
+        },
+        "geoguide_solver": {
+          "win": 0,
+          "loss": 0,
+          "net": 0,
+          "both_correct": 1,
+          "both_wrong": 0,
+          "incomplete": 0,
+          "examples": {
+            "win": [],
+            "loss": []
+          }
+        },
+        "geoguide_cautious": {
+          "win": 0,
+          "loss": 0,
+          "net": 0,
+          "both_correct": 1,
+          "both_wrong": 0,
+          "incomplete": 0,
+          "examples": {
+            "win": [],
+            "loss": []
+          }
+        }
+      }
+    },
+    "MathVista-Geometry-150": {
+      "variants": {
+        "raw": {
+          "n": 1,
+          "complete": 1,
+          "correct": 1,
+          "accuracy": 1.0,
+          "avg_duration_s": 7.583658933639526,
+          "errors": 0
+        },
+        "structured_facts": {
+          "n": 1,
+          "complete": 1,
+          "correct": 1,
+          "accuracy": 1.0,
+          "avg_duration_s": 7.88830041885376,
+          "errors": 0
+        },
+        "perception_graph": {
+          "n": 1,
+          "complete": 1,
+          "correct": 1,
+          "accuracy": 1.0,
+          "avg_duration_s": 8.82004976272583,
+          "errors": 0
+        },
+        "construction_plan": {
+          "n": 1,
+          "complete": 1,
+          "correct": 1,
+          "accuracy": 1.0,
+          "avg_duration_s": 8.827746152877808,
+          "errors": 0
+        },
+        "geoguide_solver": {
+          "n": 1,
+          "complete": 1,
+          "correct": 1,
+          "accuracy": 1.0,
+          "avg_duration_s": 8.249622821807861,
+          "errors": 0
+        },
+        "geoguide_cautious": {
+          "n": 1,
+          "complete": 1,
+          "correct": 1,
+          "accuracy": 1.0,
+          "avg_duration_s": 8.869072437286377,
+          "errors": 0
+        }
+      },
+      "pairwise_vs_raw": {
+        "structured_facts": {
+          "win": 0,
+          "loss": 0,
+          "net": 0,
+          "both_correct": 1,
+          "both_wrong": 0,
+          "incomplete": 0,
+          "examples": {
+            "win": [],
+            "loss": []
+          }
+        },
+        "perception_graph": {
+          "win": 0,
+          "loss": 0,
+          "net": 0,
+          "both_correct": 1,
+          "both_wrong": 0,
+          "incomplete": 0,
+          "examples": {
+            "win": [],
+            "loss": []
+          }
+        },
+        "construction_plan": {
+          "win": 0,
+          "loss": 0,
+          "net": 0,
+          "both_correct": 1,
+          "both_wrong": 0,
+          "incomplete": 0,
+          "examples": {
+            "win": [],
+            "loss": []
+          }
+        },
+        "geoguide_solver": {
+          "win": 0,
+          "loss": 0,
+          "net": 0,
+          "both_correct": 1,
+          "both_wrong": 0,
+          "incomplete": 0,
+          "examples": {
+            "win": [],
+            "loss": []
+          }
+        },
+        "geoguide_cautious": {
+          "win": 0,
+          "loss": 0,
+          "net": 0,
+          "both_correct": 1,
+          "both_wrong": 0,
+          "incomplete": 0,
+          "examples": {
+            "win": [],
+            "loss": []
+          }
+        }
+      }
+    },
+    "MathVista-MixedNonGeometry-150": {
+      "variants": {
+        "raw": {
+          "n": 1,
+          "complete": 1,
+          "correct": 1,
+          "accuracy": 1.0,
+          "avg_duration_s": 14.660027503967285,
+          "errors": 0
+        },
+        "structured_facts": {
+          "n": 1,
+          "complete": 1,
+          "correct": 0,
+          "accuracy": 0.0,
+          "avg_duration_s": 14.709472417831421,
+          "errors": 0
+        },
+        "perception_graph": {
+          "n": 1,
+          "complete": 1,
+          "correct": 0,
+          "accuracy": 0.0,
+          "avg_duration_s": 15.304944038391113,
+          "errors": 0
+        },
+        "construction_plan": {
+          "n": 1,
+          "complete": 1,
+          "correct": 0,
+          "accuracy": 0.0,
+          "avg_duration_s": 15.30303692817688,
+          "errors": 0
+        },
+        "geoguide_solver": {
+          "n": 1,
+          "complete": 1,
+          "correct": 0,
+          "accuracy": 0.0,
+          "avg_duration_s": 15.275668144226074,
+          "errors": 0
+        },
+        "geoguide_cautious": {
+          "n": 1,
+          "complete": 1,
+          "correct": 0,
+          "accuracy": 0.0,
+          "avg_duration_s": 15.364552021026611,
+          "errors": 0
+        }
+      },
+      "pairwise_vs_raw": {
+        "structured_facts": {
+          "win": 0,
+          "loss": 1,
+          "net": -1,
+          "both_correct": 0,
+          "both_wrong": 0,
+          "incomplete": 0,
+          "examples": {
+            "win": [],
+            "loss": [
+              "MathVista-MixedNonGeometry-150_381"
+            ]
+          }
+        },
+        "perception_graph": {
+          "win": 0,
+          "loss": 1,
+          "net": -1,
+          "both_correct": 0,
+          "both_wrong": 0,
+          "incomplete": 0,
+          "examples": {
+            "win": [],
+            "loss": [
+              "MathVista-MixedNonGeometry-150_381"
+            ]
+          }
+        },
+        "construction_plan": {
+          "win": 0,
+          "loss": 1,
+          "net": -1,
+          "both_correct": 0,
+          "both_wrong": 0,
+          "incomplete": 0,
+          "examples": {
+            "win": [],
+            "loss": [
+              "MathVista-MixedNonGeometry-150_381"
+            ]
+          }
+        },
+        "geoguide_solver": {
+          "win": 0,
+          "loss": 1,
+          "net": -1,
+          "both_correct": 0,
+          "both_wrong": 0,
+          "incomplete": 0,
+          "examples": {
+            "win": [],
+            "loss": [
+              "MathVista-MixedNonGeometry-150_381"
+            ]
+          }
+        },
+        "geoguide_cautious": {
+          "win": 0,
+          "loss": 1,
+          "net": -1,
+          "both_correct": 0,
+          "both_wrong": 0,
+          "incomplete": 0,
+          "examples": {
+            "win": [],
+            "loss": [
+              "MathVista-MixedNonGeometry-150_381"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "overall": {
+    "raw": {
+      "n": 3,
+      "correct": 3,
+      "accuracy": 1.0
+    },
+    "structured_facts": {
+      "n": 3,
+      "correct": 2,
+      "accuracy": 0.6666666666666666
+    },
+    "perception_graph": {
+      "n": 3,
+      "correct": 2,
+      "accuracy": 0.6666666666666666
+    },
+    "construction_plan": {
+      "n": 3,
+      "correct": 2,
+      "accuracy": 0.6666666666666666
+    },
+    "geoguide_solver": {
+      "n": 3,
+      "correct": 2,
+      "accuracy": 0.6666666666666666
+    },
+    "geoguide_cautious": {
+      "n": 3,
+      "correct": 2,
+      "accuracy": 0.6666666666666666
+    }
+  }
+}

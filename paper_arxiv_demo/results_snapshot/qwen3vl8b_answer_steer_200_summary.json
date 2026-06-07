@@ -1,0 +1,333 @@
+{
+  "variants": {
+    "raw": {
+      "n": 200,
+      "complete": 200,
+      "correct": 102,
+      "accuracy_on_complete": 0.51,
+      "all_sample_accuracy": 0.51,
+      "errors": 0,
+      "truncated": 0,
+      "missing_answer_line": 0,
+      "avg_duration_s": 7.908621948957443,
+      "steer_follow_rate": null,
+      "raw_correct_steered_wrong": 0
+    },
+    "clean_topk6_cautious": {
+      "n": 200,
+      "complete": 199,
+      "correct": 103,
+      "accuracy_on_complete": 0.5175879396984925,
+      "all_sample_accuracy": 0.515,
+      "errors": 0,
+      "truncated": 1,
+      "missing_answer_line": 1,
+      "avg_duration_s": 8.47855920433998,
+      "steer_follow_rate": null,
+      "raw_correct_steered_wrong": 0
+    },
+    "steer_A_trusted": {
+      "n": 200,
+      "complete": 200,
+      "correct": 58,
+      "accuracy_on_complete": 0.29,
+      "all_sample_accuracy": 0.29,
+      "errors": 0,
+      "truncated": 0,
+      "missing_answer_line": 0,
+      "avg_duration_s": 8.547595766782761,
+      "steer_follow_rate": 0.91,
+      "raw_correct_steered_wrong": 73
+    },
+    "steer_B_trusted": {
+      "n": 200,
+      "complete": 200,
+      "correct": 69,
+      "accuracy_on_complete": 0.345,
+      "all_sample_accuracy": 0.345,
+      "errors": 0,
+      "truncated": 0,
+      "missing_answer_line": 0,
+      "avg_duration_s": 8.456629234552384,
+      "steer_follow_rate": 0.96,
+      "raw_correct_steered_wrong": 50
+    },
+    "steer_C_trusted": {
+      "n": 200,
+      "complete": 200,
+      "correct": 60,
+      "accuracy_on_complete": 0.3,
+      "all_sample_accuracy": 0.3,
+      "errors": 0,
+      "truncated": 0,
+      "missing_answer_line": 0,
+      "avg_duration_s": 8.482754017114639,
+      "steer_follow_rate": 0.92,
+      "raw_correct_steered_wrong": 59
+    },
+    "steer_D_trusted": {
+      "n": 200,
+      "complete": 200,
+      "correct": 54,
+      "accuracy_on_complete": 0.27,
+      "all_sample_accuracy": 0.27,
+      "errors": 0,
+      "truncated": 0,
+      "missing_answer_line": 0,
+      "avg_duration_s": 8.53856505393982,
+      "steer_follow_rate": 0.92,
+      "raw_correct_steered_wrong": 78
+    },
+    "steer_wrong_trusted": {
+      "n": 200,
+      "complete": 200,
+      "correct": 15,
+      "accuracy_on_complete": 0.075,
+      "all_sample_accuracy": 0.075,
+      "errors": 0,
+      "truncated": 0,
+      "missing_answer_line": 0,
+      "avg_duration_s": 8.505302973985671,
+      "steer_follow_rate": 0.9,
+      "raw_correct_steered_wrong": 85
+    },
+    "steer_wrong_selfverify": {
+      "n": 200,
+      "complete": 200,
+      "correct": 63,
+      "accuracy_on_complete": 0.315,
+      "all_sample_accuracy": 0.315,
+      "errors": 0,
+      "truncated": 0,
+      "missing_answer_line": 0,
+      "avg_duration_s": 8.579054163694382,
+      "steer_follow_rate": 0.495,
+      "raw_correct_steered_wrong": 41
+    }
+  },
+  "pairwise_vs_raw": {
+    "clean_topk6_cautious": {
+      "other_win": 3,
+      "other_loss": 2,
+      "both_correct": 100,
+      "both_wrong": 94,
+      "incomplete_pair": 1,
+      "net": 1,
+      "examples": {
+        "other_win": [
+          "geometry3k_test_2407",
+          "geometry3k_test_2463",
+          "geometry3k_test_2558"
+        ],
+        "other_loss": [
+          "geometry3k_test_2539",
+          "geometry3k_test_2568"
+        ]
+      }
+    },
+    "steer_A_trusted": {
+      "other_win": 31,
+      "other_loss": 75,
+      "both_correct": 27,
+      "both_wrong": 67,
+      "incomplete_pair": 0,
+      "net": -44,
+      "examples": {
+        "other_win": [
+          "geometry3k_test_2403",
+          "geometry3k_test_2406",
+          "geometry3k_test_2415",
+          "geometry3k_test_2424",
+          "geometry3k_test_2444",
+          "geometry3k_test_2447",
+          "geometry3k_test_2451",
+          "geometry3k_test_2453"
+        ],
+        "other_loss": [
+          "geometry3k_test_2401",
+          "geometry3k_test_2409",
+          "geometry3k_test_2414",
+          "geometry3k_test_2416",
+          "geometry3k_test_2419",
+          "geometry3k_test_2423",
+          "geometry3k_test_2425",
+          "geometry3k_test_2426"
+        ]
+      }
+    },
+    "steer_B_trusted": {
+      "other_win": 17,
+      "other_loss": 50,
+      "both_correct": 52,
+      "both_wrong": 81,
+      "incomplete_pair": 0,
+      "net": -33,
+      "examples": {
+        "other_win": [
+          "geometry3k_test_2404",
+          "geometry3k_test_2411",
+          "geometry3k_test_2413",
+          "geometry3k_test_2422",
+          "geometry3k_test_2437",
+          "geometry3k_test_2438",
+          "geometry3k_test_2441",
+          "geometry3k_test_2452"
+        ],
+        "other_loss": [
+          "geometry3k_test_2402",
+          "geometry3k_test_2409",
+          "geometry3k_test_2412",
+          "geometry3k_test_2423",
+          "geometry3k_test_2426",
+          "geometry3k_test_2427",
+          "geometry3k_test_2431",
+          "geometry3k_test_2432"
+        ]
+      }
+    },
+    "steer_C_trusted": {
+      "other_win": 18,
+      "other_loss": 60,
+      "both_correct": 42,
+      "both_wrong": 80,
+      "incomplete_pair": 0,
+      "net": -42,
+      "examples": {
+        "other_win": [
+          "geometry3k_test_2407",
+          "geometry3k_test_2408",
+          "geometry3k_test_2417",
+          "geometry3k_test_2421",
+          "geometry3k_test_2429",
+          "geometry3k_test_2443",
+          "geometry3k_test_2457",
+          "geometry3k_test_2466"
+        ],
+        "other_loss": [
+          "geometry3k_test_2402",
+          "geometry3k_test_2412",
+          "geometry3k_test_2414",
+          "geometry3k_test_2416",
+          "geometry3k_test_2419",
+          "geometry3k_test_2425",
+          "geometry3k_test_2427",
+          "geometry3k_test_2432"
+        ]
+      }
+    },
+    "steer_D_trusted": {
+      "other_win": 32,
+      "other_loss": 80,
+      "both_correct": 22,
+      "both_wrong": 66,
+      "incomplete_pair": 0,
+      "net": -48,
+      "examples": {
+        "other_win": [
+          "geometry3k_test_2405",
+          "geometry3k_test_2410",
+          "geometry3k_test_2418",
+          "geometry3k_test_2420",
+          "geometry3k_test_2430",
+          "geometry3k_test_2436",
+          "geometry3k_test_2454",
+          "geometry3k_test_2458"
+        ],
+        "other_loss": [
+          "geometry3k_test_2402",
+          "geometry3k_test_2409",
+          "geometry3k_test_2412",
+          "geometry3k_test_2414",
+          "geometry3k_test_2416",
+          "geometry3k_test_2419",
+          "geometry3k_test_2423",
+          "geometry3k_test_2425"
+        ]
+      }
+    },
+    "steer_wrong_trusted": {
+      "other_win": 0,
+      "other_loss": 87,
+      "both_correct": 15,
+      "both_wrong": 98,
+      "incomplete_pair": 0,
+      "net": -87,
+      "examples": {
+        "other_win": [],
+        "other_loss": [
+          "geometry3k_test_2402",
+          "geometry3k_test_2409",
+          "geometry3k_test_2412",
+          "geometry3k_test_2414",
+          "geometry3k_test_2416",
+          "geometry3k_test_2419",
+          "geometry3k_test_2423",
+          "geometry3k_test_2425"
+        ]
+      }
+    },
+    "steer_wrong_selfverify": {
+      "other_win": 6,
+      "other_loss": 45,
+      "both_correct": 57,
+      "both_wrong": 92,
+      "incomplete_pair": 0,
+      "net": -39,
+      "examples": {
+        "other_win": [
+          "geometry3k_test_2418",
+          "geometry3k_test_2463",
+          "geometry3k_test_2499",
+          "geometry3k_test_2550",
+          "geometry3k_test_2558",
+          "geometry3k_test_2572"
+        ],
+        "other_loss": [
+          "geometry3k_test_2402",
+          "geometry3k_test_2416",
+          "geometry3k_test_2423",
+          "geometry3k_test_2425",
+          "geometry3k_test_2427",
+          "geometry3k_test_2439",
+          "geometry3k_test_2440",
+          "geometry3k_test_2449"
+        ]
+      }
+    }
+  },
+  "steering": {
+    "steer_A_trusted": {
+      "target_label": "A",
+      "follow_count": 182,
+      "n_complete": 200,
+      "follow_rate": 0.91,
+      "target_is_wrong_count": 152,
+      "wrong_target_follow_count": 136
+    },
+    "steer_B_trusted": {
+      "target_label": "B",
+      "follow_count": 192,
+      "n_complete": 200,
+      "follow_rate": 0.96,
+      "target_is_wrong_count": 139,
+      "wrong_target_follow_count": 131
+    },
+    "steer_C_trusted": {
+      "target_label": "C",
+      "follow_count": 184,
+      "n_complete": 200,
+      "follow_rate": 0.92,
+      "target_is_wrong_count": 153,
+      "wrong_target_follow_count": 137
+    },
+    "steer_D_trusted": {
+      "target_label": "D",
+      "follow_count": 184,
+      "n_complete": 200,
+      "follow_rate": 0.92,
+      "target_is_wrong_count": 156,
+      "wrong_target_follow_count": 140
+    }
+  },
+  "n_unique_ids": 200
+}

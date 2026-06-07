@@ -1,0 +1,18 @@
+\begin{table}[t]
+\centering
+\caption{Pairwise flips against raw on Geometry3K-300. A win fixes a raw error; a loss breaks a raw correct answer.}
+\label{tab:pairwise-geometry300}
+\small
+\begin{tabular}{lrrrr}
+\toprule
+Variant & Wins & Losses & Net & Both correct \\
+\midrule
+image+GDP & 10 & 14 & -4 & -- \\
+structured\_facts & 9 & 6 & +3 & 152 \\
+perception\_graph & 11 & 12 & -1 & 146 \\
+construction\_plan & 19 & 10 & +9 & 148 \\
+geoguide\_solver & 12 & 10 & +2 & 148 \\
+geoguide\_cautious & 18 & 18 & 0 & 139 \\
+\bottomrule
+\end{tabular}
+\end{table}

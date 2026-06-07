@@ -1,0 +1,29 @@
+{
+  "generated_wins": [
+    "geometry3k_test_2771",
+    "geometry3k_test_2971",
+    "geometry3k_test_2887",
+    "geometry3k_test_2604",
+    "geometry3k_test_2790"
+  ],
+  "generated_losses": [
+    "geometry3k_test_2873",
+    "geometry3k_test_2717",
+    "geometry3k_test_2561"
+  ],
+  "gdp_wins": [
+    "geometry3k_test_2727",
+    "geometry3k_test_2887",
+    "geometry3k_test_2741",
+    "geometry3k_test_2604",
+    "geometry3k_test_2790"
+  ],
+  "gdp_losses": [
+    "geometry3k_test_2964",
+    "geometry3k_test_2857",
+    "geometry3k_test_2565",
+    "geometry3k_test_2556",
+    "geometry3k_test_2603",
+    "geometry3k_test_2717"
+  ]
+}

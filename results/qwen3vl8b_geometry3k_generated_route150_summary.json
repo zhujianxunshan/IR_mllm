@@ -1,0 +1,33 @@
+{
+  "variants": {
+    "image_only": {
+      "n": 150,
+      "complete": 150,
+      "correct": 76,
+      "accuracy": 0.5066666666666667,
+      "accuracy_on_complete": 0.5066666666666667,
+      "avg_duration_s": 7.889863848686218,
+      "errors": 0
+    },
+    "image_generated_theorem_route": {
+      "n": 150,
+      "complete": 150,
+      "correct": 82,
+      "accuracy": 0.5466666666666666,
+      "accuracy_on_complete": 0.5466666666666666,
+      "avg_duration_s": 8.67172891139984,
+      "errors": 0
+    }
+  },
+  "pairwise_vs_image_only": {
+    "image_generated_theorem_route": {
+      "win": 16,
+      "loss": 10,
+      "net": 6,
+      "both_correct": 66,
+      "both_wrong": 58,
+      "incomplete": 0
+    }
+  },
+  "n_unique_ids": 150
+}

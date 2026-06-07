@@ -1,0 +1,578 @@
+Waiting for plan_generator_runs/formalgeo_route_qwen17b_lora/final ...
+Sun Jun  7 01:20:24 CST 2026
+Sun Jun  7 01:25:24 CST 2026
+Sun Jun  7 01:30:24 CST 2026
+Sun Jun  7 01:35:24 CST 2026
+Sun Jun  7 01:40:24 CST 2026
+Sun Jun  7 01:45:24 CST 2026
+Sun Jun  7 01:50:24 CST 2026
+Sun Jun  7 01:55:24 CST 2026
+Sun Jun  7 02:00:24 CST 2026
+Sun Jun  7 02:05:24 CST 2026
+Sun Jun  7 02:10:24 CST 2026
+Sun Jun  7 02:15:24 CST 2026
+Sun Jun  7 02:20:24 CST 2026
+Sun Jun  7 02:25:24 CST 2026
+Sun Jun  7 02:30:24 CST 2026
+Sun Jun  7 02:35:24 CST 2026
+Sun Jun  7 02:40:24 CST 2026
+Sun Jun  7 02:45:24 CST 2026
+Sun Jun  7 02:50:24 CST 2026
+Sun Jun  7 02:55:24 CST 2026
+Sun Jun  7 03:00:24 CST 2026
+Sun Jun  7 03:05:24 CST 2026
+Sun Jun  7 03:10:24 CST 2026
+Sun Jun  7 03:15:24 CST 2026
+Sun Jun  7 03:20:24 CST 2026
+Sun Jun  7 03:25:24 CST 2026
+Sun Jun  7 03:30:24 CST 2026
+Sun Jun  7 03:35:24 CST 2026
+Sun Jun  7 03:40:24 CST 2026
+Sun Jun  7 03:45:24 CST 2026
+Sun Jun  7 03:50:24 CST 2026
+Sun Jun  7 03:55:24 CST 2026
+Sun Jun  7 04:00:24 CST 2026
+Sun Jun  7 04:05:24 CST 2026
+Sun Jun  7 04:10:24 CST 2026
+Sun Jun  7 04:15:24 CST 2026
+Sun Jun  7 04:20:24 CST 2026
+Sun Jun  7 04:25:24 CST 2026
+Sun Jun  7 04:30:24 CST 2026
+Sun Jun  7 04:35:24 CST 2026
+Sun Jun  7 04:40:24 CST 2026
+Sun Jun  7 04:45:24 CST 2026
+Sun Jun  7 04:50:24 CST 2026
+Sun Jun  7 04:55:24 CST 2026
+Sun Jun  7 05:00:24 CST 2026
+Sun Jun  7 05:05:24 CST 2026
+Sun Jun  7 05:10:24 CST 2026
+Sun Jun  7 05:15:24 CST 2026
+Sun Jun  7 05:20:24 CST 2026
+Sun Jun  7 05:25:24 CST 2026
+Sun Jun  7 05:30:24 CST 2026
+Sun Jun  7 05:35:24 CST 2026
+Sun Jun  7 05:40:24 CST 2026
+Sun Jun  7 05:45:24 CST 2026
+Sun Jun  7 05:50:24 CST 2026
+Sun Jun  7 05:55:24 CST 2026
+Sun Jun  7 06:00:24 CST 2026
+Sun Jun  7 06:05:24 CST 2026
+Sun Jun  7 06:10:24 CST 2026
+Sun Jun  7 06:15:24 CST 2026
+Sun Jun  7 06:20:24 CST 2026
+Sun Jun  7 06:25:24 CST 2026
+Sun Jun  7 06:30:25 CST 2026
+Sun Jun  7 06:35:25 CST 2026
+Sun Jun  7 06:40:25 CST 2026
+Sun Jun  7 06:45:25 CST 2026
+Sun Jun  7 06:50:25 CST 2026
+Sun Jun  7 06:55:25 CST 2026
+Sun Jun  7 07:00:25 CST 2026
+Sun Jun  7 07:05:25 CST 2026
+Sun Jun  7 07:10:25 CST 2026
+Sun Jun  7 07:15:25 CST 2026
+Sun Jun  7 07:20:25 CST 2026
+Sun Jun  7 07:25:25 CST 2026
+Sun Jun  7 07:30:25 CST 2026
+Sun Jun  7 07:35:25 CST 2026
+Sun Jun  7 07:40:25 CST 2026
+Sun Jun  7 07:45:25 CST 2026
+Sun Jun  7 07:50:25 CST 2026
+Sun Jun  7 07:55:25 CST 2026
+Sun Jun  7 08:00:25 CST 2026
+Sun Jun  7 08:05:25 CST 2026
+Sun Jun  7 08:10:25 CST 2026
+Sun Jun  7 08:15:25 CST 2026
+Sun Jun  7 08:20:25 CST 2026
+Sun Jun  7 08:25:25 CST 2026
+Sun Jun  7 08:30:25 CST 2026
+Sun Jun  7 08:35:25 CST 2026
+Sun Jun  7 08:40:25 CST 2026
+Adapter found. Starting Geometry3K generated-route downstream eval.
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:05<00:05,  5.08s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:05<00:00,  2.21s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:05<00:00,  2.64s/it]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+ROUTE	geometry3k_test_2992	chars=329
+ROUTE	geometry3k_test_2768	chars=310
+ROUTE	geometry3k_test_2637	chars=281
+ROUTE	geometry3k_test_2961	chars=282
+ROUTE	geometry3k_test_2964	chars=358
+ROUTE	geometry3k_test_2587	chars=299
+ROUTE	geometry3k_test_2873	chars=277
+ROUTE	geometry3k_test_2607	chars=426
+ROUTE	geometry3k_test_2721	chars=371
+ROUTE	geometry3k_test_2670	chars=294
+ROUTE	geometry3k_test_2489	chars=314
+ROUTE	geometry3k_test_2428	chars=321
+ROUTE	geometry3k_test_2485	chars=332
+ROUTE	geometry3k_test_2626	chars=317
+ROUTE	geometry3k_test_2910	chars=384
+ROUTE	geometry3k_test_2473	chars=379
+ROUTE	geometry3k_test_2444	chars=282
+ROUTE	geometry3k_test_2594	chars=278
+ROUTE	geometry3k_test_2614	chars=367
+ROUTE	geometry3k_test_2762	chars=321
+ROUTE	geometry3k_test_2785	chars=329
+ROUTE	geometry3k_test_2413	chars=506
+ROUTE	geometry3k_test_2729	chars=330
+ROUTE	geometry3k_test_2648	chars=299
+ROUTE	geometry3k_test_2435	chars=299
+ROUTE	geometry3k_test_2827	chars=495
+ROUTE	geometry3k_test_2509	chars=281
+ROUTE	geometry3k_test_2969	chars=328
+ROUTE	geometry3k_test_2490	chars=329
+ROUTE	geometry3k_test_2643	chars=335
+ROUTE	geometry3k_test_2533	chars=307
+ROUTE	geometry3k_test_2834	chars=774
+ROUTE	geometry3k_test_2857	chars=338
+ROUTE	geometry3k_test_3001	chars=385
+ROUTE	geometry3k_test_2691	chars=282
+ROUTE	geometry3k_test_2767	chars=299
+ROUTE	geometry3k_test_2565	chars=276
+ROUTE	geometry3k_test_2412	chars=314
+ROUTE	geometry3k_test_2707	chars=317
+ROUTE	geometry3k_test_2979	chars=310
+ROUTE	geometry3k_test_2681	chars=774
+ROUTE	geometry3k_test_2783	chars=278
+ROUTE	geometry3k_test_2508	chars=299
+ROUTE	geometry3k_test_2828	chars=321
+ROUTE	geometry3k_test_2548	chars=314
+ROUTE	geometry3k_test_2931	chars=330
+ROUTE	geometry3k_test_2556	chars=479
+ROUTE	geometry3k_test_2893	chars=282
+ROUTE	geometry3k_test_2771	chars=1075
+ROUTE	geometry3k_test_2939	chars=278
+ROUTE	geometry3k_test_2666	chars=1075
+ROUTE	geometry3k_test_2727	chars=299
+ROUTE	geometry3k_test_2955	chars=310
+ROUTE	geometry3k_test_2542	chars=284
+ROUTE	geometry3k_test_2500	chars=316
+ROUTE	geometry3k_test_2644	chars=774
+ROUTE	geometry3k_test_2668	chars=282
+ROUTE	geometry3k_test_2576	chars=321
+ROUTE	geometry3k_test_2977	chars=1075
+ROUTE	geometry3k_test_2564	chars=291
+ROUTE	geometry3k_test_2926	chars=299
+ROUTE	geometry3k_test_2646	chars=278
+ROUTE	geometry3k_test_2995	chars=325
+ROUTE	geometry3k_test_2841	chars=282
+ROUTE	geometry3k_test_2549	chars=774
+ROUTE	geometry3k_test_2971	chars=330
+ROUTE	geometry3k_test_2709	chars=343
+ROUTE	geometry3k_test_2760	chars=464
+ROUTE	geometry3k_test_2823	chars=479
+ROUTE	geometry3k_test_2763	chars=390
+ROUTE	geometry3k_test_2928	chars=1075
+ROUTE	geometry3k_test_2715	chars=332
+ROUTE	geometry3k_test_2903	chars=278
+ROUTE	geometry3k_test_2950	chars=392
+ROUTE	geometry3k_test_2983	chars=317
+ROUTE	geometry3k_test_2491	chars=282
+ROUTE	geometry3k_test_2755	chars=314
+ROUTE	geometry3k_test_2953	chars=299
+ROUTE	geometry3k_test_2575	chars=299
+ROUTE	geometry3k_test_2687	chars=354
+ROUTE	geometry3k_test_2906	chars=330
+ROUTE	geometry3k_test_2716	chars=384
+ROUTE	geometry3k_test_2472	chars=325
+ROUTE	geometry3k_test_2861	chars=698
+ROUTE	geometry3k_test_2603	chars=828
+ROUTE	geometry3k_test_2744	chars=314
+ROUTE	geometry3k_test_2800	chars=317
+ROUTE	geometry3k_test_2825	chars=329
+ROUTE	geometry3k_test_2887	chars=316
+ROUTE	geometry3k_test_2859	chars=509
+ROUTE	geometry3k_test_2853	chars=282
+ROUTE	geometry3k_test_2589	chars=465
+ROUTE	geometry3k_test_2920	chars=340
+ROUTE	geometry3k_test_2741	chars=317
+ROUTE	geometry3k_test_2645	chars=315
+ROUTE	geometry3k_test_2710	chars=294
+ROUTE	geometry3k_test_2438	chars=459
+ROUTE	geometry3k_test_2986	chars=476
+ROUTE	geometry3k_test_2664	chars=314
+ROUTE	geometry3k_test_2877	chars=311
+ROUTE	geometry3k_test_2816	chars=774
+ROUTE	geometry3k_test_2545	chars=291
+ROUTE	geometry3k_test_2987	chars=774
+ROUTE	geometry3k_test_2725	chars=315
+ROUTE	geometry3k_test_2528	chars=290
+ROUTE	geometry3k_test_2945	chars=314
+ROUTE	geometry3k_test_2717	chars=335
+ROUTE	geometry3k_test_2558	chars=325
+ROUTE	geometry3k_test_2536	chars=315
+ROUTE	geometry3k_test_2520	chars=321
+ROUTE	geometry3k_test_2984	chars=299
+ROUTE	geometry3k_test_2418	chars=332
+ROUTE	geometry3k_test_2915	chars=1054
+ROUTE	geometry3k_test_2817	chars=306
+ROUTE	geometry3k_test_2924	chars=282
+ROUTE	geometry3k_test_2989	chars=335
+ROUTE	geometry3k_test_2663	chars=299
+ROUTE	geometry3k_test_2420	chars=774
+ROUTE	geometry3k_test_2579	chars=317
+ROUTE	geometry3k_test_2776	chars=335
+ROUTE	geometry3k_test_2799	chars=323
+ROUTE	geometry3k_test_2583	chars=1075
+ROUTE	geometry3k_test_2572	chars=286
+ROUTE	geometry3k_test_2478	chars=418
+ROUTE	geometry3k_test_2650	chars=384
+ROUTE	geometry3k_test_2791	chars=282
+ROUTE	geometry3k_test_2885	chars=333
+ROUTE	geometry3k_test_2730	chars=333
+ROUTE	geometry3k_test_2745	chars=330
+ROUTE	geometry3k_test_2595	chars=426
+ROUTE	geometry3k_test_2796	chars=314
+ROUTE	geometry3k_test_2876	chars=418
+ROUTE	geometry3k_test_2948	chars=546
+ROUTE	geometry3k_test_2732	chars=492
+ROUTE	geometry3k_test_2848	chars=1075
+ROUTE	geometry3k_test_2962	chars=295
+ROUTE	geometry3k_test_2454	chars=277
+ROUTE	geometry3k_test_2880	chars=424
+ROUTE	geometry3k_test_2611	chars=286
+ROUTE	geometry3k_test_2465	chars=339
+ROUTE	geometry3k_test_2697	chars=335
+ROUTE	geometry3k_test_2544	chars=332
+ROUTE	geometry3k_test_2571	chars=314
+ROUTE	geometry3k_test_2613	chars=317
+ROUTE	geometry3k_test_2932	chars=438
+ROUTE	geometry3k_test_2464	chars=341
+ROUTE	geometry3k_test_2623	chars=340
+ROUTE	geometry3k_test_2993	chars=1054
+ROUTE	geometry3k_test_2534	chars=323
+ROUTE	geometry3k_test_2469	chars=475
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:30<01:31, 30.43s/it]Loading checkpoint shards:  50%|█████     | 2/4 [01:18<01:22, 41.08s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [03:08<01:12, 72.15s/it]Loading checkpoint shards: 100%|██████████| 4/4 [03:47<00:00, 59.09s/it]Loading checkpoint shards: 100%|██████████| 4/4 [03:47<00:00, 56.79s/it]
+OK	geometry3k_test_2992	image_only	pred=B	gold=B	duration_s=6.22
+OK	geometry3k_test_2992	image_generated_theorem_route	pred=B	gold=B	duration_s=5.73
+OK	geometry3k_test_2768	image_only	pred=B	gold=B	duration_s=10.49
+OK	geometry3k_test_2768	image_generated_theorem_route	pred=B	gold=B	duration_s=11.46
+FAIL	geometry3k_test_2637	image_only	pred=C	gold=A	duration_s=9.71
+FAIL	geometry3k_test_2637	image_generated_theorem_route	pred=C	gold=A	duration_s=9.71
+OK	geometry3k_test_2961	image_only	pred=D	gold=D	duration_s=9.79
+OK	geometry3k_test_2961	image_generated_theorem_route	pred=D	gold=D	duration_s=10.60
+OK	geometry3k_test_2964	image_only	pred=A	gold=A	duration_s=8.06
+OK	geometry3k_test_2964	image_generated_theorem_route	pred=A	gold=A	duration_s=9.28
+OK	geometry3k_test_2587	image_only	pred=D	gold=D	duration_s=5.81
+OK	geometry3k_test_2587	image_generated_theorem_route	pred=D	gold=D	duration_s=6.98
+OK	geometry3k_test_2873	image_only	pred=C	gold=C	duration_s=4.69
+OK	geometry3k_test_2873	image_generated_theorem_route	pred=C	gold=C	duration_s=5.45
+OK	geometry3k_test_2607	image_only	pred=B	gold=B	duration_s=5.46
+OK	geometry3k_test_2607	image_generated_theorem_route	pred=B	gold=B	duration_s=6.93
+FAIL	geometry3k_test_2721	image_only	pred=C	gold=D	duration_s=16.67
+OK	geometry3k_test_2721	image_generated_theorem_route	pred=D	gold=D	duration_s=17.63
+OK	geometry3k_test_2670	image_only	pred=B	gold=B	duration_s=5.20
+OK	geometry3k_test_2670	image_generated_theorem_route	pred=B	gold=B	duration_s=6.32
+FAIL	geometry3k_test_2489	image_only	pred=B	gold=A	duration_s=10.47
+FAIL	geometry3k_test_2489	image_generated_theorem_route	pred=B	gold=A	duration_s=11.32
+OK	geometry3k_test_2428	image_only	pred=B	gold=B	duration_s=5.28
+OK	geometry3k_test_2428	image_generated_theorem_route	pred=B	gold=B	duration_s=6.20
+OK	geometry3k_test_2485	image_only	pred=C	gold=C	duration_s=4.72
+OK	geometry3k_test_2485	image_generated_theorem_route	pred=C	gold=C	duration_s=5.58
+OK	geometry3k_test_2626	image_only	pred=C	gold=C	duration_s=4.92
+FAIL	geometry3k_test_2626	image_generated_theorem_route	pred=D	gold=C	duration_s=6.06
+FAIL	geometry3k_test_2910	image_only	pred=C	gold=D	duration_s=4.86
+OK	geometry3k_test_2910	image_generated_theorem_route	pred=D	gold=D	duration_s=5.72
+FAIL	geometry3k_test_2473	image_only	pred=B	gold=A	duration_s=11.27
+FAIL	geometry3k_test_2473	image_generated_theorem_route	pred=B	gold=A	duration_s=12.82
+FAIL	geometry3k_test_2444	image_only	pred=C	gold=A	duration_s=6.32
+FAIL	geometry3k_test_2444	image_generated_theorem_route	pred=C	gold=A	duration_s=7.19
+OK	geometry3k_test_2594	image_only	pred=B	gold=B	duration_s=4.61
+OK	geometry3k_test_2594	image_generated_theorem_route	pred=B	gold=B	duration_s=5.45
+OK	geometry3k_test_2614	image_only	pred=B	gold=B	duration_s=6.28
+OK	geometry3k_test_2614	image_generated_theorem_route	pred=B	gold=B	duration_s=7.31
+OK	geometry3k_test_2762	image_only	pred=B	gold=B	duration_s=39.81
+OK	geometry3k_test_2762	image_generated_theorem_route	pred=B	gold=B	duration_s=29.14
+OK	geometry3k_test_2785	image_only	pred=D	gold=D	duration_s=11.50
+OK	geometry3k_test_2785	image_generated_theorem_route	pred=D	gold=D	duration_s=11.78
+FAIL	geometry3k_test_2413	image_only	pred=C	gold=B	duration_s=4.63
+FAIL	geometry3k_test_2413	image_generated_theorem_route	pred=C	gold=B	duration_s=6.27
+OK	geometry3k_test_2729	image_only	pred=A	gold=A	duration_s=5.35
+OK	geometry3k_test_2729	image_generated_theorem_route	pred=A	gold=A	duration_s=6.82
+OK	geometry3k_test_2648	image_only	pred=A	gold=A	duration_s=8.01
+OK	geometry3k_test_2648	image_generated_theorem_route	pred=A	gold=A	duration_s=9.20
+OK	geometry3k_test_2435	image_only	pred=D	gold=D	duration_s=6.57
+OK	geometry3k_test_2435	image_generated_theorem_route	pred=D	gold=D	duration_s=6.72
+FAIL	geometry3k_test_2827	image_only	pred=C	gold=A	duration_s=6.38
+FAIL	geometry3k_test_2827	image_generated_theorem_route	pred=B	gold=A	duration_s=7.79
+OK	geometry3k_test_2509	image_only	pred=B	gold=B	duration_s=9.02
+OK	geometry3k_test_2509	image_generated_theorem_route	pred=B	gold=B	duration_s=9.91
+OK	geometry3k_test_2969	image_only	pred=C	gold=C	duration_s=9.16
+FAIL	geometry3k_test_2969	image_generated_theorem_route	pred=B	gold=C	duration_s=9.91
+OK	geometry3k_test_2490	image_only	pred=B	gold=B	duration_s=7.49
+OK	geometry3k_test_2490	image_generated_theorem_route	pred=B	gold=B	duration_s=8.27
+FAIL	geometry3k_test_2643	image_only	pred=B	gold=D	duration_s=5.70
+FAIL	geometry3k_test_2643	image_generated_theorem_route	pred=B	gold=D	duration_s=6.60
+OK	geometry3k_test_2533	image_only	pred=B	gold=B	duration_s=12.86
+OK	geometry3k_test_2533	image_generated_theorem_route	pred=B	gold=B	duration_s=13.71
+OK	geometry3k_test_2834	image_only	pred=C	gold=C	duration_s=6.61
+FAIL	geometry3k_test_2834	image_generated_theorem_route	pred=A	gold=C	duration_s=8.63
+OK	geometry3k_test_2857	image_only	pred=D	gold=D	duration_s=9.53
+OK	geometry3k_test_2857	image_generated_theorem_route	pred=D	gold=D	duration_s=10.49
+FAIL	geometry3k_test_3001	image_only	pred=D	gold=C	duration_s=9.55
+FAIL	geometry3k_test_3001	image_generated_theorem_route	pred=D	gold=C	duration_s=10.45
+FAIL	geometry3k_test_2691	image_only	pred=B	gold=D	duration_s=10.00
+FAIL	geometry3k_test_2691	image_generated_theorem_route	pred=B	gold=D	duration_s=14.98
+OK	geometry3k_test_2767	image_only	pred=C	gold=C	duration_s=4.36
+OK	geometry3k_test_2767	image_generated_theorem_route	pred=C	gold=C	duration_s=5.39
+OK	geometry3k_test_2565	image_only	pred=A	gold=A	duration_s=4.73
+FAIL	geometry3k_test_2565	image_generated_theorem_route	pred=D	gold=A	duration_s=5.88
+OK	geometry3k_test_2412	image_only	pred=A	gold=A	duration_s=6.67
+OK	geometry3k_test_2412	image_generated_theorem_route	pred=A	gold=A	duration_s=7.56
+FAIL	geometry3k_test_2707	image_only	pred=A	gold=B	duration_s=6.13
+FAIL	geometry3k_test_2707	image_generated_theorem_route	pred=A	gold=B	duration_s=7.36
+OK	geometry3k_test_2979	image_only	pred=C	gold=C	duration_s=7.67
+OK	geometry3k_test_2979	image_generated_theorem_route	pred=C	gold=C	duration_s=6.61
+OK	geometry3k_test_2681	image_only	pred=C	gold=C	duration_s=5.06
+OK	geometry3k_test_2681	image_generated_theorem_route	pred=C	gold=C	duration_s=6.92
+FAIL	geometry3k_test_2783	image_only	pred=C	gold=B	duration_s=10.16
+OK	geometry3k_test_2783	image_generated_theorem_route	pred=B	gold=B	duration_s=10.98
+OK	geometry3k_test_2508	image_only	pred=B	gold=B	duration_s=7.63
+OK	geometry3k_test_2508	image_generated_theorem_route	pred=B	gold=B	duration_s=8.41
+OK	geometry3k_test_2828	image_only	pred=B	gold=B	duration_s=23.30
+OK	geometry3k_test_2828	image_generated_theorem_route	pred=B	gold=B	duration_s=24.48
+FAIL	geometry3k_test_2548	image_only	pred=C	gold=A	duration_s=9.95
+FAIL	geometry3k_test_2548	image_generated_theorem_route	pred=C	gold=A	duration_s=11.01
+FAIL	geometry3k_test_2931	image_only	pred=B	gold=C	duration_s=13.89
+FAIL	geometry3k_test_2931	image_generated_theorem_route	pred=B	gold=C	duration_s=10.35
+FAIL	geometry3k_test_2556	image_only	pred=B	gold=A	duration_s=4.50
+OK	geometry3k_test_2556	image_generated_theorem_route	pred=A	gold=A	duration_s=5.37
+FAIL	geometry3k_test_2893	image_only	pred=C	gold=A	duration_s=5.75
+FAIL	geometry3k_test_2893	image_generated_theorem_route	pred=B	gold=A	duration_s=6.34
+FAIL	geometry3k_test_2771	image_only	pred=B	gold=A	duration_s=9.97
+FAIL	geometry3k_test_2771	image_generated_theorem_route	pred=B	gold=A	duration_s=11.35
+FAIL	geometry3k_test_2939	image_only	pred=B	gold=A	duration_s=4.37
+FAIL	geometry3k_test_2939	image_generated_theorem_route	pred=B	gold=A	duration_s=4.95
+OK	geometry3k_test_2666	image_only	pred=B	gold=B	duration_s=12.44
+OK	geometry3k_test_2666	image_generated_theorem_route	pred=B	gold=B	duration_s=13.72
+FAIL	geometry3k_test_2727	image_only	pred=A	gold=B	duration_s=4.06
+OK	geometry3k_test_2727	image_generated_theorem_route	pred=B	gold=B	duration_s=4.93
+FAIL	geometry3k_test_2955	image_only	pred=C	gold=D	duration_s=4.36
+OK	geometry3k_test_2955	image_generated_theorem_route	pred=D	gold=D	duration_s=5.19
+OK	geometry3k_test_2542	image_only	pred=B	gold=B	duration_s=21.02
+OK	geometry3k_test_2542	image_generated_theorem_route	pred=B	gold=B	duration_s=21.64
+FAIL	geometry3k_test_2500	image_only	pred=B	gold=A	duration_s=12.53
+FAIL	geometry3k_test_2500	image_generated_theorem_route	pred=B	gold=A	duration_s=13.15
+OK	geometry3k_test_2644	image_only	pred=D	gold=D	duration_s=10.33
+FAIL	geometry3k_test_2644	image_generated_theorem_route	pred=C	gold=D	duration_s=11.93
+FAIL	geometry3k_test_2668	image_only	pred=B	gold=C	duration_s=4.03
+FAIL	geometry3k_test_2668	image_generated_theorem_route	pred=B	gold=C	duration_s=4.64
+OK	geometry3k_test_2576	image_only	pred=B	gold=B	duration_s=7.64
+OK	geometry3k_test_2576	image_generated_theorem_route	pred=B	gold=B	duration_s=8.53
+FAIL	geometry3k_test_2977	image_only	pred=B	gold=C	duration_s=18.84
+FAIL	geometry3k_test_2977	image_generated_theorem_route	pred=B	gold=C	duration_s=20.19
+FAIL	geometry3k_test_2564	image_only	pred=C	gold=A	duration_s=4.32
+FAIL	geometry3k_test_2564	image_generated_theorem_route	pred=B	gold=A	duration_s=5.19
+OK	geometry3k_test_2926	image_only	pred=C	gold=C	duration_s=4.35
+OK	geometry3k_test_2926	image_generated_theorem_route	pred=C	gold=C	duration_s=5.16
+OK	geometry3k_test_2646	image_only	pred=B	gold=B	duration_s=4.13
+OK	geometry3k_test_2646	image_generated_theorem_route	pred=B	gold=B	duration_s=4.95
+OK	geometry3k_test_2995	image_only	pred=B	gold=B	duration_s=14.61
+OK	geometry3k_test_2995	image_generated_theorem_route	pred=B	gold=B	duration_s=15.25
+FAIL	geometry3k_test_2841	image_only	pred=C	gold=A	duration_s=4.06
+FAIL	geometry3k_test_2841	image_generated_theorem_route	pred=B	gold=A	duration_s=4.89
+FAIL	geometry3k_test_2549	image_only	pred=D	gold=B	duration_s=4.15
+FAIL	geometry3k_test_2549	image_generated_theorem_route	pred=D	gold=B	duration_s=5.71
+FAIL	geometry3k_test_2971	image_only	pred=A	gold=B	duration_s=13.16
+OK	geometry3k_test_2971	image_generated_theorem_route	pred=B	gold=B	duration_s=14.06
+OK	geometry3k_test_2709	image_only	pred=B	gold=B	duration_s=15.07
+FAIL	geometry3k_test_2709	image_generated_theorem_route	pred=A	gold=B	duration_s=15.98
+OK	geometry3k_test_2760	image_only	pred=A	gold=A	duration_s=6.89
+OK	geometry3k_test_2760	image_generated_theorem_route	pred=A	gold=A	duration_s=7.83
+FAIL	geometry3k_test_2823	image_only	pred=C	gold=B	duration_s=8.31
+FAIL	geometry3k_test_2823	image_generated_theorem_route	pred=C	gold=B	duration_s=9.07
+OK	geometry3k_test_2763	image_only	pred=A	gold=A	duration_s=4.89
+OK	geometry3k_test_2763	image_generated_theorem_route	pred=A	gold=A	duration_s=5.51
+FAIL	geometry3k_test_2928	image_only	pred=B	gold=C	duration_s=4.88
+FAIL	geometry3k_test_2928	image_generated_theorem_route	pred=B	gold=C	duration_s=6.19
+FAIL	geometry3k_test_2715	image_only	pred=B	gold=C	duration_s=3.90
+FAIL	geometry3k_test_2715	image_generated_theorem_route	pred=B	gold=C	duration_s=4.50
+FAIL	geometry3k_test_2903	image_only	pred=B	gold=C	duration_s=4.35
+FAIL	geometry3k_test_2903	image_generated_theorem_route	pred=B	gold=C	duration_s=5.16
+FAIL	geometry3k_test_2950	image_only	pred=C	gold=D	duration_s=4.08
+OK	geometry3k_test_2950	image_generated_theorem_route	pred=D	gold=D	duration_s=4.92
+FAIL	geometry3k_test_2983	image_only	pred=C	gold=B	duration_s=19.39
+OK	geometry3k_test_2983	image_generated_theorem_route	pred=B	gold=B	duration_s=20.04
+FAIL	geometry3k_test_2491	image_only	pred=C	gold=A	duration_s=5.46
+FAIL	geometry3k_test_2491	image_generated_theorem_route	pred=C	gold=A	duration_s=6.02
+FAIL	geometry3k_test_2755	image_only	pred=C	gold=A	duration_s=4.43
+FAIL	geometry3k_test_2755	image_generated_theorem_route	pred=C	gold=A	duration_s=5.26
+OK	geometry3k_test_2953	image_only	pred=C	gold=C	duration_s=4.61
+FAIL	geometry3k_test_2953	image_generated_theorem_route	pred=B	gold=C	duration_s=5.43
+FAIL	geometry3k_test_2575	image_only	pred=C	gold=D	duration_s=11.91
+FAIL	geometry3k_test_2575	image_generated_theorem_route	pred=C	gold=D	duration_s=12.50
+OK	geometry3k_test_2687	image_only	pred=D	gold=D	duration_s=6.68
+OK	geometry3k_test_2687	image_generated_theorem_route	pred=D	gold=D	duration_s=7.54
+OK	geometry3k_test_2906	image_only	pred=B	gold=B	duration_s=5.19
+OK	geometry3k_test_2906	image_generated_theorem_route	pred=B	gold=B	duration_s=6.05
+FAIL	geometry3k_test_2716	image_only	pred=D	gold=C	duration_s=5.23
+FAIL	geometry3k_test_2716	image_generated_theorem_route	pred=D	gold=C	duration_s=5.20
+OK	geometry3k_test_2472	image_only	pred=B	gold=B	duration_s=4.16
+OK	geometry3k_test_2472	image_generated_theorem_route	pred=B	gold=B	duration_s=4.98
+OK	geometry3k_test_2861	image_only	pred=A	gold=A	duration_s=5.91
+OK	geometry3k_test_2861	image_generated_theorem_route	pred=A	gold=A	duration_s=7.20
+OK	geometry3k_test_2603	image_only	pred=C	gold=C	duration_s=14.74
+FAIL	geometry3k_test_2603	image_generated_theorem_route	pred=B	gold=C	duration_s=16.35
+FAIL	geometry3k_test_2744	image_only	pred=C	gold=D	duration_s=4.43
+FAIL	geometry3k_test_2744	image_generated_theorem_route	pred=C	gold=D	duration_s=5.31
+FAIL	geometry3k_test_2800	image_only	pred=B	gold=C	duration_s=4.32
+FAIL	geometry3k_test_2800	image_generated_theorem_route	pred=B	gold=C	duration_s=5.19
+OK	geometry3k_test_2825	image_only	pred=B	gold=B	duration_s=9.80
+OK	geometry3k_test_2825	image_generated_theorem_route	pred=B	gold=B	duration_s=10.67
+FAIL	geometry3k_test_2887	image_only	pred=A	gold=D	duration_s=4.12
+OK	geometry3k_test_2887	image_generated_theorem_route	pred=D	gold=D	duration_s=4.98
+OK	geometry3k_test_2859	image_only	pred=C	gold=C	duration_s=4.33
+OK	geometry3k_test_2859	image_generated_theorem_route	pred=C	gold=C	duration_s=4.95
+OK	geometry3k_test_2853	image_only	pred=D	gold=D	duration_s=4.08
+OK	geometry3k_test_2853	image_generated_theorem_route	pred=D	gold=D	duration_s=4.91
+FAIL	geometry3k_test_2589	image_only	pred=C	gold=D	duration_s=5.26
+FAIL	geometry3k_test_2589	image_generated_theorem_route	pred=C	gold=D	duration_s=5.34
+OK	geometry3k_test_2920	image_only	pred=C	gold=C	duration_s=5.89
+FAIL	geometry3k_test_2920	image_generated_theorem_route	pred=B	gold=C	duration_s=6.76
+FAIL	geometry3k_test_2741	image_only	pred=C	gold=B	duration_s=5.93
+OK	geometry3k_test_2741	image_generated_theorem_route	pred=B	gold=B	duration_s=6.55
+FAIL	geometry3k_test_2645	image_only	pred=C	gold=A	duration_s=4.07
+FAIL	geometry3k_test_2645	image_generated_theorem_route	pred=C	gold=A	duration_s=4.66
+OK	geometry3k_test_2710	image_only	pred=B	gold=B	duration_s=6.26
+OK	geometry3k_test_2710	image_generated_theorem_route	pred=B	gold=B	duration_s=6.84
+FAIL	geometry3k_test_2438	image_only	pred=A	gold=B	duration_s=17.38
+FAIL	geometry3k_test_2438	image_generated_theorem_route	pred=D	gold=B	duration_s=18.32
+FAIL	geometry3k_test_2986	image_only	pred=B	gold=C	duration_s=4.87
+FAIL	geometry3k_test_2986	image_generated_theorem_route	pred=B	gold=C	duration_s=5.21
+FAIL	geometry3k_test_2664	image_only	pred=B	gold=A	duration_s=7.23
+FAIL	geometry3k_test_2664	image_generated_theorem_route	pred=B	gold=A	duration_s=8.08
+OK	geometry3k_test_2877	image_only	pred=C	gold=C	duration_s=4.12
+OK	geometry3k_test_2877	image_generated_theorem_route	pred=C	gold=C	duration_s=4.98
+OK	geometry3k_test_2816	image_only	pred=B	gold=B	duration_s=4.14
+OK	geometry3k_test_2816	image_generated_theorem_route	pred=B	gold=B	duration_s=5.41
+FAIL	geometry3k_test_2545	image_only	pred=C	gold=B	duration_s=5.39
+OK	geometry3k_test_2545	image_generated_theorem_route	pred=B	gold=B	duration_s=5.97
+OK	geometry3k_test_2987	image_only	pred=A	gold=A	duration_s=4.11
+OK	geometry3k_test_2987	image_generated_theorem_route	pred=A	gold=A	duration_s=5.66
+OK	geometry3k_test_2725	image_only	pred=B	gold=B	duration_s=6.71
+OK	geometry3k_test_2725	image_generated_theorem_route	pred=B	gold=B	duration_s=7.56
+OK	geometry3k_test_2528	image_only	pred=B	gold=B	duration_s=4.16
+OK	geometry3k_test_2528	image_generated_theorem_route	pred=B	gold=B	duration_s=5.00
+OK	geometry3k_test_2945	image_only	pred=B	gold=B	duration_s=13.61
+OK	geometry3k_test_2945	image_generated_theorem_route	pred=B	gold=B	duration_s=14.48
+OK	geometry3k_test_2717	image_only	pred=A	gold=A	duration_s=7.03
+OK	geometry3k_test_2717	image_generated_theorem_route	pred=A	gold=A	duration_s=7.91
+FAIL	geometry3k_test_2558	image_only	pred=B	gold=D	duration_s=5.01
+FAIL	geometry3k_test_2558	image_generated_theorem_route	pred=B	gold=D	duration_s=5.71
+FAIL	geometry3k_test_2536	image_only	pred=B	gold=A	duration_s=6.65
+FAIL	geometry3k_test_2536	image_generated_theorem_route	pred=B	gold=A	duration_s=7.54
+FAIL	geometry3k_test_2520	image_only	pred=B	gold=A	duration_s=11.94
+FAIL	geometry3k_test_2520	image_generated_theorem_route	pred=B	gold=A	duration_s=12.95
+FAIL	geometry3k_test_2984	image_only	pred=B	gold=A	duration_s=4.45
+FAIL	geometry3k_test_2984	image_generated_theorem_route	pred=B	gold=A	duration_s=5.07
+FAIL	geometry3k_test_2418	image_only	pred=C	gold=D	duration_s=4.12
+OK	geometry3k_test_2418	image_generated_theorem_route	pred=D	gold=D	duration_s=4.99
+OK	geometry3k_test_2915	image_only	pred=B	gold=B	duration_s=4.74
+OK	geometry3k_test_2915	image_generated_theorem_route	pred=B	gold=B	duration_s=6.07
+OK	geometry3k_test_2817	image_only	pred=C	gold=C	duration_s=4.13
+OK	geometry3k_test_2817	image_generated_theorem_route	pred=C	gold=C	duration_s=4.99
+FAIL	geometry3k_test_2924	image_only	pred=A	gold=C	duration_s=7.92
+FAIL	geometry3k_test_2924	image_generated_theorem_route	pred=A	gold=C	duration_s=8.55
+OK	geometry3k_test_2989	image_only	pred=B	gold=B	duration_s=5.71
+OK	geometry3k_test_2989	image_generated_theorem_route	pred=B	gold=B	duration_s=6.05
+FAIL	geometry3k_test_2663	image_only	pred=B	gold=D	duration_s=4.91
+FAIL	geometry3k_test_2663	image_generated_theorem_route	pred=B	gold=D	duration_s=5.53
+FAIL	geometry3k_test_2420	image_only	pred=C	gold=D	duration_s=5.07
+FAIL	geometry3k_test_2420	image_generated_theorem_route	pred=C	gold=D	duration_s=6.40
+OK	geometry3k_test_2579	image_only	pred=A	gold=A	duration_s=5.26
+OK	geometry3k_test_2579	image_generated_theorem_route	pred=A	gold=A	duration_s=6.09
+FAIL	geometry3k_test_2776	image_only	pred=A	gold=D	duration_s=4.64
+FAIL	geometry3k_test_2776	image_generated_theorem_route	pred=A	gold=D	duration_s=5.48
+FAIL	geometry3k_test_2799	image_only	pred=C	gold=D	duration_s=4.15
+FAIL	geometry3k_test_2799	image_generated_theorem_route	pred=C	gold=D	duration_s=5.00
+FAIL	geometry3k_test_2583	image_only	pred=C	gold=A	duration_s=14.76
+FAIL	geometry3k_test_2583	image_generated_theorem_route	pred=C	gold=A	duration_s=16.01
+FAIL	geometry3k_test_2572	image_only	pred=C	gold=D	duration_s=10.34
+FAIL	geometry3k_test_2572	image_generated_theorem_route	pred=C	gold=D	duration_s=11.27
+FAIL	geometry3k_test_2478	image_only	pred=B	gold=A	duration_s=7.14
+FAIL	geometry3k_test_2478	image_generated_theorem_route	pred=B	gold=A	duration_s=7.84
+OK	geometry3k_test_2650	image_only	pred=B	gold=B	duration_s=6.25
+OK	geometry3k_test_2650	image_generated_theorem_route	pred=B	gold=B	duration_s=6.30
+OK	geometry3k_test_2791	image_only	pred=D	gold=D	duration_s=4.33
+OK	geometry3k_test_2791	image_generated_theorem_route	pred=D	gold=D	duration_s=5.19
+OK	geometry3k_test_2885	image_only	pred=B	gold=B	duration_s=5.74
+OK	geometry3k_test_2885	image_generated_theorem_route	pred=B	gold=B	duration_s=6.62
+OK	geometry3k_test_2730	image_only	pred=A	gold=A	duration_s=8.66
+OK	geometry3k_test_2730	image_generated_theorem_route	pred=A	gold=A	duration_s=9.30
+OK	geometry3k_test_2745	image_only	pred=A	gold=A	duration_s=6.71
+OK	geometry3k_test_2745	image_generated_theorem_route	pred=A	gold=A	duration_s=7.61
+FAIL	geometry3k_test_2595	image_only	pred=B	gold=A	duration_s=15.34
+FAIL	geometry3k_test_2595	image_generated_theorem_route	pred=B	gold=A	duration_s=16.27
+FAIL	geometry3k_test_2796	image_only	pred=C	gold=B	duration_s=7.35
+OK	geometry3k_test_2796	image_generated_theorem_route	pred=B	gold=B	duration_s=7.48
+FAIL	geometry3k_test_2876	image_only	pred=B	gold=A	duration_s=5.18
+OK	geometry3k_test_2876	image_generated_theorem_route	pred=A	gold=A	duration_s=6.12
+FAIL	geometry3k_test_2948	image_only	pred=B	gold=C	duration_s=6.73
+FAIL	geometry3k_test_2948	image_generated_theorem_route	pred=B	gold=C	duration_s=7.94
+FAIL	geometry3k_test_2732	image_only	pred=B	gold=C	duration_s=6.40
+FAIL	geometry3k_test_2732	image_generated_theorem_route	pred=B	gold=C	duration_s=7.34
+FAIL	geometry3k_test_2848	image_only	pred=B	gold=A	duration_s=12.98
+FAIL	geometry3k_test_2848	image_generated_theorem_route	pred=B	gold=A	duration_s=14.28
+FAIL	geometry3k_test_2962	image_only	pred=B	gold=C	duration_s=4.46
+FAIL	geometry3k_test_2962	image_generated_theorem_route	pred=B	gold=C	duration_s=5.28
+FAIL	geometry3k_test_2454	image_only	pred=C	gold=D	duration_s=5.05
+FAIL	geometry3k_test_2454	image_generated_theorem_route	pred=B	gold=D	duration_s=5.20
+OK	geometry3k_test_2880	image_only	pred=D	gold=D	duration_s=5.25
+OK	geometry3k_test_2880	image_generated_theorem_route	pred=D	gold=D	duration_s=5.42
+FAIL	geometry3k_test_2611	image_only	pred=B	gold=D	duration_s=8.36
+FAIL	geometry3k_test_2611	image_generated_theorem_route	pred=B	gold=D	duration_s=9.26
+FAIL	geometry3k_test_2465	image_only	pred=B	gold=A	duration_s=7.63
+FAIL	geometry3k_test_2465	image_generated_theorem_route	pred=B	gold=A	duration_s=8.27
+FAIL	geometry3k_test_2697	image_only	pred=C	gold=D	duration_s=10.58
+OK	geometry3k_test_2697	image_generated_theorem_route	pred=D	gold=D	duration_s=11.54
+OK	geometry3k_test_2544	image_only	pred=A	gold=A	duration_s=7.61
+OK	geometry3k_test_2544	image_generated_theorem_route	pred=A	gold=A	duration_s=8.50
+OK	geometry3k_test_2571	image_only	pred=B	gold=B	duration_s=18.79
+OK	geometry3k_test_2571	image_generated_theorem_route	pred=B	gold=B	duration_s=19.46
+FAIL	geometry3k_test_2613	image_only	pred=B	gold=A	duration_s=4.13
+FAIL	geometry3k_test_2613	image_generated_theorem_route	pred=B	gold=A	duration_s=4.98
+OK	geometry3k_test_2932	image_only	pred=B	gold=B	duration_s=10.68
+OK	geometry3k_test_2932	image_generated_theorem_route	pred=B	gold=B	duration_s=11.62
+OK	geometry3k_test_2464	image_only	pred=B	gold=B	duration_s=13.25
+OK	geometry3k_test_2464	image_generated_theorem_route	pred=B	gold=B	duration_s=14.16
+OK	geometry3k_test_2623	image_only	pred=C	gold=C	duration_s=10.65
+FAIL	geometry3k_test_2623	image_generated_theorem_route	pred=B	gold=C	duration_s=11.30
+OK	geometry3k_test_2993	image_only	pred=B	gold=B	duration_s=4.73
+OK	geometry3k_test_2993	image_generated_theorem_route	pred=B	gold=B	duration_s=6.04
+FAIL	geometry3k_test_2534	image_only	pred=B	gold=C	duration_s=12.38
+FAIL	geometry3k_test_2534	image_generated_theorem_route	pred=B	gold=C	duration_s=13.01
+OK	geometry3k_test_2469	image_only	pred=B	gold=B	duration_s=14.84
+OK	geometry3k_test_2469	image_generated_theorem_route	pred=B	gold=B	duration_s=15.74
+{
+  "variants": {
+    "image_only": {
+      "n": 150,
+      "complete": 150,
+      "correct": 76,
+      "accuracy": 0.5066666666666667,
+      "accuracy_on_complete": 0.5066666666666667,
+      "avg_duration_s": 7.889863848686218,
+      "errors": 0
+    },
+    "image_generated_theorem_route": {
+      "n": 150,
+      "complete": 150,
+      "correct": 82,
+      "accuracy": 0.5466666666666666,
+      "accuracy_on_complete": 0.5466666666666666,
+      "avg_duration_s": 8.67172891139984,
+      "errors": 0
+    }
+  },
+  "pairwise_vs_image_only": {
+    "image_generated_theorem_route": {
+      "win": 16,
+      "loss": 10,
+      "net": 6,
+      "both_correct": 66,
+      "both_wrong": 58,
+      "incomplete": 0
+    }
+  },
+  "n_unique_ids": 150
+}

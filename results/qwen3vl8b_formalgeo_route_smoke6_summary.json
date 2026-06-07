@@ -1,0 +1,39 @@
+{
+  "variants": {
+    "image_only": {
+      "n": 6,
+      "complete": 4,
+      "correct": 0,
+      "accuracy": 0.0,
+      "accuracy_on_complete": 0.0,
+      "avg_duration_s": 28.462924520174663,
+      "errors": 0,
+      "missing_numeric_answer": 2
+    },
+    "image_oracle_theorem_route": {
+      "n": 6,
+      "complete": 5,
+      "correct": 2,
+      "accuracy": 0.3333333333333333,
+      "accuracy_on_complete": 0.4,
+      "avg_duration_s": 28.828646461168926,
+      "errors": 0,
+      "missing_numeric_answer": 1
+    }
+  },
+  "pairwise_vs_image_only": {
+    "image_oracle_theorem_route": {
+      "win": 0,
+      "loss": 0,
+      "net": 0,
+      "both_correct": 0,
+      "both_wrong": 3,
+      "incomplete": 3,
+      "examples": {
+        "win": [],
+        "loss": []
+      }
+    }
+  },
+  "n_unique_ids": 6
+}

@@ -1,0 +1,20 @@
+\begin{table}[t]
+\centering
+\caption{Answer-steering stress test on 200 Geometry3K problems. Trusted answer-implying structure is followed at high rates and can sharply reduce accuracy.}
+\label{tab:steering}
+\small
+\begin{tabular}{lrrr}
+\toprule
+Variant & Correct / N & Acc. & Follow rate \\
+\midrule
+raw & 102 / 200 & 51.00 & -- \\
+clean\_topk6\_cautious & 103 / 200 & 51.50 & -- \\
+steer\_A\_trusted & 58 / 200 & 29.00 & 91.0 \\
+steer\_B\_trusted & 69 / 200 & 34.50 & 96.0 \\
+steer\_C\_trusted & 60 / 200 & 30.00 & 92.0 \\
+steer\_D\_trusted & 54 / 200 & 27.00 & 92.0 \\
+steer\_wrong\_trusted & 15 / 200 & 7.50 & 90.0 \\
+steer\_wrong\_selfverify & 63 / 200 & 31.50 & 49.5 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,1268 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:05<00:17,  5.92s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:14<00:14,  7.36s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:23<00:08,  8.01s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:25<00:00,  5.82s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:25<00:00,  6.38s/it]
+CALL geometry3k_test_2401 image_oracle
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+OK	geometry3k_test_2401	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2402 image_oracle
+OK	geometry3k_test_2402	image_oracle	pred='A'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2403 image_oracle
+FAIL	geometry3k_test_2403	image_oracle	pred='B'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2404 image_oracle
+FAIL	geometry3k_test_2404	image_oracle	pred='A'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2405 image_oracle
+FAIL	geometry3k_test_2405	image_oracle	pred='C'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2406 image_oracle
+FAIL	geometry3k_test_2406	image_oracle	pred='B'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2407 image_oracle
+FAIL	geometry3k_test_2407	image_oracle	pred='B'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2408 image_oracle
+FAIL	geometry3k_test_2408	image_oracle	pred='B'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2409 image_oracle
+OK	geometry3k_test_2409	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2410 image_oracle
+FAIL	geometry3k_test_2410	image_oracle	pred='C'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2411 image_oracle
+FAIL	geometry3k_test_2411	image_oracle	pred='C'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2412 image_oracle
+OK	geometry3k_test_2412	image_oracle	pred='A'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2413 image_oracle
+FAIL	geometry3k_test_2413	image_oracle	pred='C'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2414 image_oracle
+OK	geometry3k_test_2414	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2415 image_oracle
+FAIL	geometry3k_test_2415	image_oracle	pred='B'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2416 image_oracle
+OK	geometry3k_test_2416	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2417 image_oracle
+FAIL	geometry3k_test_2417	image_oracle	pred='B'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2418 image_oracle
+FAIL	geometry3k_test_2418	image_oracle	pred='C'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2419 image_oracle
+OK	geometry3k_test_2419	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2420 image_oracle
+FAIL	geometry3k_test_2420	image_oracle	pred='C'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2421 image_oracle
+OK	geometry3k_test_2421	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2422 image_oracle
+FAIL	geometry3k_test_2422	image_oracle	pred='C'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2423 image_oracle
+OK	geometry3k_test_2423	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2424 image_oracle
+FAIL	geometry3k_test_2424	image_oracle	pred='B'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2425 image_oracle
+OK	geometry3k_test_2425	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=8
+CALL geometry3k_test_2426 image_oracle
+OK	geometry3k_test_2426	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2427 image_oracle
+OK	geometry3k_test_2427	image_oracle	pred='A'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2428 image_oracle
+OK	geometry3k_test_2428	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2429 image_oracle
+FAIL	geometry3k_test_2429	image_oracle	pred='B'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2430 image_oracle
+FAIL	geometry3k_test_2430	image_oracle	pred='B'	gold='D'	complete=True	new_tokens=6
+CALL geometry3k_test_2431 image_oracle
+OK	geometry3k_test_2431	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2432 image_oracle
+OK	geometry3k_test_2432	image_oracle	pred='D'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2433 image_oracle
+OK	geometry3k_test_2433	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2434 image_oracle
+OK	geometry3k_test_2434	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2435 image_oracle
+OK	geometry3k_test_2435	image_oracle	pred='D'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2436 image_oracle
+FAIL	geometry3k_test_2436	image_oracle	pred='B'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2437 image_oracle
+FAIL	geometry3k_test_2437	image_oracle	pred='C'	gold='B'	complete=True	new_tokens=7
+CALL geometry3k_test_2438 image_oracle
+FAIL	geometry3k_test_2438	image_oracle	pred='A'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2439 image_oracle
+OK	geometry3k_test_2439	image_oracle	pred='A'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2440 image_oracle
+OK	geometry3k_test_2440	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2441 image_oracle
+FAIL	geometry3k_test_2441	image_oracle	pred='C'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2442 image_oracle
+OK	geometry3k_test_2442	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2443 image_oracle
+FAIL	geometry3k_test_2443	image_oracle	pred='B'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2444 image_oracle
+FAIL	geometry3k_test_2444	image_oracle	pred='C'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2445 image_oracle
+OK	geometry3k_test_2445	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2446 image_oracle
+OK	geometry3k_test_2446	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2447 image_oracle
+FAIL	geometry3k_test_2447	image_oracle	pred='B'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2448 image_oracle
+FAIL	geometry3k_test_2448	image_oracle	pred='C'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2449 image_oracle
+OK	geometry3k_test_2449	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2450 image_oracle
+OK	geometry3k_test_2450	image_oracle	pred='D'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2451 image_oracle
+FAIL	geometry3k_test_2451	image_oracle	pred='B'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2452 image_oracle
+OK	geometry3k_test_2452	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2453 image_oracle
+FAIL	geometry3k_test_2453	image_oracle	pred='B'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2454 image_oracle
+FAIL	geometry3k_test_2454	image_oracle	pred='B'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2455 image_oracle
+FAIL	geometry3k_test_2455	image_oracle	pred='A'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2456 image_oracle
+OK	geometry3k_test_2456	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2457 image_oracle
+FAIL	geometry3k_test_2457	image_oracle	pred='B'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2458 image_oracle
+FAIL	geometry3k_test_2458	image_oracle	pred='B'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2459 image_oracle
+FAIL	geometry3k_test_2459	image_oracle	pred='C'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2460 image_oracle
+FAIL	geometry3k_test_2460	image_oracle	pred='B'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2461 image_oracle
+OK	geometry3k_test_2461	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2462 image_oracle
+OK	geometry3k_test_2462	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2463 image_oracle
+FAIL	geometry3k_test_2463	image_oracle	pred='C'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2464 image_oracle
+OK	geometry3k_test_2464	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2465 image_oracle
+FAIL	geometry3k_test_2465	image_oracle	pred='B'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2466 image_oracle
+FAIL	geometry3k_test_2466	image_oracle	pred='A'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2467 image_oracle
+OK	geometry3k_test_2467	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2468 image_oracle
+OK	geometry3k_test_2468	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2469 image_oracle
+OK	geometry3k_test_2469	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2470 image_oracle
+OK	geometry3k_test_2470	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2471 image_oracle
+OK	geometry3k_test_2471	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2472 image_oracle
+OK	geometry3k_test_2472	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2473 image_oracle
+FAIL	geometry3k_test_2473	image_oracle	pred='B'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2474 image_oracle
+OK	geometry3k_test_2474	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2475 image_oracle
+FAIL	geometry3k_test_2475	image_oracle	pred='C'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2476 image_oracle
+FAIL	geometry3k_test_2476	image_oracle	pred='C'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2477 image_oracle
+OK	geometry3k_test_2477	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2478 image_oracle
+FAIL	geometry3k_test_2478	image_oracle	pred='B'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2479 image_oracle
+OK	geometry3k_test_2479	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2480 image_oracle
+FAIL	geometry3k_test_2480	image_oracle	pred='B'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2481 image_oracle
+FAIL	geometry3k_test_2481	image_oracle	pred='C'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2482 image_oracle
+OK	geometry3k_test_2482	image_oracle	pred='A'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2483 image_oracle
+OK	geometry3k_test_2483	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2484 image_oracle
+OK	geometry3k_test_2484	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=11
+CALL geometry3k_test_2485 image_oracle
+OK	geometry3k_test_2485	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2486 image_oracle
+OK	geometry3k_test_2486	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2487 image_oracle
+FAIL	geometry3k_test_2487	image_oracle	pred='B'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2488 image_oracle
+FAIL	geometry3k_test_2488	image_oracle	pred='B'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2489 image_oracle
+FAIL	geometry3k_test_2489	image_oracle	pred='B'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2490 image_oracle
+OK	geometry3k_test_2490	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2491 image_oracle
+FAIL	geometry3k_test_2491	image_oracle	pred='C'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2492 image_oracle
+OK	geometry3k_test_2492	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2493 image_oracle
+OK	geometry3k_test_2493	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2494 image_oracle
+OK	geometry3k_test_2494	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2495 image_oracle
+OK	geometry3k_test_2495	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2496 image_oracle
+OK	geometry3k_test_2496	image_oracle	pred='A'	gold='A'	complete=True	new_tokens=5
+CALL geometry3k_test_2497 image_oracle
+FAIL	geometry3k_test_2497	image_oracle	pred='C'	gold='D'	complete=True	new_tokens=8
+CALL geometry3k_test_2498 image_oracle
+OK	geometry3k_test_2498	image_oracle	pred='D'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2499 image_oracle
+FAIL	geometry3k_test_2499	image_oracle	pred='C'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2500 image_oracle
+FAIL	geometry3k_test_2500	image_oracle	pred='B'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2501 image_oracle
+OK	geometry3k_test_2501	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2502 image_oracle
+FAIL	geometry3k_test_2502	image_oracle	pred='B'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2503 image_oracle
+FAIL	geometry3k_test_2503	image_oracle	pred='B'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2504 image_oracle
+FAIL	geometry3k_test_2504	image_oracle	pred='C'	gold='D'	complete=True	new_tokens=9
+CALL geometry3k_test_2505 image_oracle
+FAIL	geometry3k_test_2505	image_oracle	pred='B'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2506 image_oracle
+FAIL	geometry3k_test_2506	image_oracle	pred='C'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2507 image_oracle
+FAIL	geometry3k_test_2507	image_oracle	pred='B'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2508 image_oracle
+OK	geometry3k_test_2508	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2509 image_oracle
+OK	geometry3k_test_2509	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2510 image_oracle
+OK	geometry3k_test_2510	image_oracle	pred='A'	gold='A'	complete=True	new_tokens=5
+CALL geometry3k_test_2511 image_oracle
+OK	geometry3k_test_2511	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=8
+CALL geometry3k_test_2512 image_oracle
+OK	geometry3k_test_2512	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2513 image_oracle
+FAIL	geometry3k_test_2513	image_oracle	pred='C'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2514 image_oracle
+FAIL	geometry3k_test_2514	image_oracle	pred='B'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2515 image_oracle
+OK	geometry3k_test_2515	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2516 image_oracle
+FAIL	geometry3k_test_2516	image_oracle	pred='B'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2517 image_oracle
+FAIL	geometry3k_test_2517	image_oracle	pred='C'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2518 image_oracle
+FAIL	geometry3k_test_2518	image_oracle	pred='C'	gold='A'	complete=True	new_tokens=8
+CALL geometry3k_test_2519 image_oracle
+OK	geometry3k_test_2519	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2520 image_oracle
+FAIL	geometry3k_test_2520	image_oracle	pred='B'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2521 image_oracle
+FAIL	geometry3k_test_2521	image_oracle	pred='B'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2522 image_oracle
+OK	geometry3k_test_2522	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2523 image_oracle
+OK	geometry3k_test_2523	image_oracle	pred='D'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2524 image_oracle
+FAIL	geometry3k_test_2524	image_oracle	pred='B'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2525 image_oracle
+FAIL	geometry3k_test_2525	image_oracle	pred='B'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2526 image_oracle
+FAIL	geometry3k_test_2526	image_oracle	pred='C'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2527 image_oracle
+OK	geometry3k_test_2527	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2528 image_oracle
+OK	geometry3k_test_2528	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2529 image_oracle
+OK	geometry3k_test_2529	image_oracle	pred='D'	gold='D'	complete=True	new_tokens=12
+CALL geometry3k_test_2530 image_oracle
+OK	geometry3k_test_2530	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2531 image_oracle
+FAIL	geometry3k_test_2531	image_oracle	pred='C'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2532 image_oracle
+OK	geometry3k_test_2532	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2533 image_oracle
+OK	geometry3k_test_2533	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2534 image_oracle
+FAIL	geometry3k_test_2534	image_oracle	pred='B'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2535 image_oracle
+FAIL	geometry3k_test_2535	image_oracle	pred='C'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2536 image_oracle
+FAIL	geometry3k_test_2536	image_oracle	pred=''	gold='A'	complete=False	new_tokens=2
+CALL geometry3k_test_2537 image_oracle
+OK	geometry3k_test_2537	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2538 image_oracle
+FAIL	geometry3k_test_2538	image_oracle	pred='C'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2539 image_oracle
+FAIL	geometry3k_test_2539	image_oracle	pred='D'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2540 image_oracle
+FAIL	geometry3k_test_2540	image_oracle	pred='C'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2541 image_oracle
+OK	geometry3k_test_2541	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2542 image_oracle
+OK	geometry3k_test_2542	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2543 image_oracle
+OK	geometry3k_test_2543	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2544 image_oracle
+OK	geometry3k_test_2544	image_oracle	pred='A'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2545 image_oracle
+FAIL	geometry3k_test_2545	image_oracle	pred='C'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2546 image_oracle
+OK	geometry3k_test_2546	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2547 image_oracle
+OK	geometry3k_test_2547	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2548 image_oracle
+FAIL	geometry3k_test_2548	image_oracle	pred='C'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2549 image_oracle
+FAIL	geometry3k_test_2549	image_oracle	pred='C'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2550 image_oracle
+FAIL	geometry3k_test_2550	image_oracle	pred='C'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2551 image_oracle
+OK	geometry3k_test_2551	image_oracle	pred='D'	gold='D'	complete=True	new_tokens=6
+CALL geometry3k_test_2552 image_oracle
+FAIL	geometry3k_test_2552	image_oracle	pred='D'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2553 image_oracle
+FAIL	geometry3k_test_2553	image_oracle	pred='B'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2554 image_oracle
+OK	geometry3k_test_2554	image_oracle	pred='D'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2555 image_oracle
+OK	geometry3k_test_2555	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2556 image_oracle
+OK	geometry3k_test_2556	image_oracle	pred='A'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2557 image_oracle
+FAIL	geometry3k_test_2557	image_oracle	pred='C'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2558 image_oracle
+FAIL	geometry3k_test_2558	image_oracle	pred='B'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2559 image_oracle
+OK	geometry3k_test_2559	image_oracle	pred='A'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2560 image_oracle
+OK	geometry3k_test_2560	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2561 image_oracle
+FAIL	geometry3k_test_2561	image_oracle	pred='D'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2562 image_oracle
+OK	geometry3k_test_2562	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2563 image_oracle
+FAIL	geometry3k_test_2563	image_oracle	pred='C'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2564 image_oracle
+FAIL	geometry3k_test_2564	image_oracle	pred='C'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2565 image_oracle
+OK	geometry3k_test_2565	image_oracle	pred='A'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2566 image_oracle
+OK	geometry3k_test_2566	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2567 image_oracle
+FAIL	geometry3k_test_2567	image_oracle	pred='C'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2568 image_oracle
+FAIL	geometry3k_test_2568	image_oracle	pred='B'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2569 image_oracle
+FAIL	geometry3k_test_2569	image_oracle	pred='C'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2570 image_oracle
+OK	geometry3k_test_2570	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=8
+CALL geometry3k_test_2571 image_oracle
+OK	geometry3k_test_2571	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2572 image_oracle
+FAIL	geometry3k_test_2572	image_oracle	pred='C'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2573 image_oracle
+FAIL	geometry3k_test_2573	image_oracle	pred='C'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2574 image_oracle
+OK	geometry3k_test_2574	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2575 image_oracle
+FAIL	geometry3k_test_2575	image_oracle	pred='C'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2576 image_oracle
+OK	geometry3k_test_2576	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2577 image_oracle
+OK	geometry3k_test_2577	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=7
+CALL geometry3k_test_2578 image_oracle
+FAIL	geometry3k_test_2578	image_oracle	pred='B'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2579 image_oracle
+OK	geometry3k_test_2579	image_oracle	pred='A'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2580 image_oracle
+OK	geometry3k_test_2580	image_oracle	pred='D'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2581 image_oracle
+FAIL	geometry3k_test_2581	image_oracle	pred='B'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2582 image_oracle
+OK	geometry3k_test_2582	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2583 image_oracle
+FAIL	geometry3k_test_2583	image_oracle	pred='B'	gold='A'	complete=True	new_tokens=5
+CALL geometry3k_test_2584 image_oracle
+OK	geometry3k_test_2584	image_oracle	pred='D'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2585 image_oracle
+FAIL	geometry3k_test_2585	image_oracle	pred='A'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2586 image_oracle
+FAIL	geometry3k_test_2586	image_oracle	pred='B'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2587 image_oracle
+OK	geometry3k_test_2587	image_oracle	pred='D'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2588 image_oracle
+OK	geometry3k_test_2588	image_oracle	pred='D'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2589 image_oracle
+FAIL	geometry3k_test_2589	image_oracle	pred='C'	gold='D'	complete=True	new_tokens=11
+CALL geometry3k_test_2590 image_oracle
+FAIL	geometry3k_test_2590	image_oracle	pred='C'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2591 image_oracle
+OK	geometry3k_test_2591	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2592 image_oracle
+OK	geometry3k_test_2592	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2593 image_oracle
+FAIL	geometry3k_test_2593	image_oracle	pred='B'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2594 image_oracle
+OK	geometry3k_test_2594	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2595 image_oracle
+FAIL	geometry3k_test_2595	image_oracle	pred='B'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2596 image_oracle
+FAIL	geometry3k_test_2596	image_oracle	pred='B'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2597 image_oracle
+OK	geometry3k_test_2597	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2598 image_oracle
+OK	geometry3k_test_2598	image_oracle	pred='A'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2599 image_oracle
+OK	geometry3k_test_2599	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2600 image_oracle
+FAIL	geometry3k_test_2600	image_oracle	pred='B'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2601 image_oracle
+FAIL	geometry3k_test_2601	image_oracle	pred='B'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2602 image_oracle
+OK	geometry3k_test_2602	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2603 image_oracle
+FAIL	geometry3k_test_2603	image_oracle	pred='B'	gold='C'	complete=True	new_tokens=5
+CALL geometry3k_test_2604 image_oracle
+OK	geometry3k_test_2604	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2605 image_oracle
+OK	geometry3k_test_2605	image_oracle	pred='A'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2606 image_oracle
+OK	geometry3k_test_2606	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2607 image_oracle
+OK	geometry3k_test_2607	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2608 image_oracle
+FAIL	geometry3k_test_2608	image_oracle	pred='B'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2609 image_oracle
+OK	geometry3k_test_2609	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2610 image_oracle
+OK	geometry3k_test_2610	image_oracle	pred='A'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2611 image_oracle
+FAIL	geometry3k_test_2611	image_oracle	pred='B'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2612 image_oracle
+OK	geometry3k_test_2612	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2613 image_oracle
+FAIL	geometry3k_test_2613	image_oracle	pred='B'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2614 image_oracle
+OK	geometry3k_test_2614	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2615 image_oracle
+FAIL	geometry3k_test_2615	image_oracle	pred='D'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2616 image_oracle
+OK	geometry3k_test_2616	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2617 image_oracle
+OK	geometry3k_test_2617	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2618 image_oracle
+FAIL	geometry3k_test_2618	image_oracle	pred='B'	gold='C'	complete=True	new_tokens=12
+CALL geometry3k_test_2619 image_oracle
+OK	geometry3k_test_2619	image_oracle	pred='D'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2620 image_oracle
+OK	geometry3k_test_2620	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=11
+CALL geometry3k_test_2621 image_oracle
+OK	geometry3k_test_2621	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2622 image_oracle
+OK	geometry3k_test_2622	image_oracle	pred='A'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2623 image_oracle
+OK	geometry3k_test_2623	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2624 image_oracle
+OK	geometry3k_test_2624	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2625 image_oracle
+FAIL	geometry3k_test_2625	image_oracle	pred='B'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2626 image_oracle
+OK	geometry3k_test_2626	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2627 image_oracle
+FAIL	geometry3k_test_2627	image_oracle	pred='B'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2628 image_oracle
+FAIL	geometry3k_test_2628	image_oracle	pred='B'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2629 image_oracle
+FAIL	geometry3k_test_2629	image_oracle	pred='A'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2630 image_oracle
+FAIL	geometry3k_test_2630	image_oracle	pred='C'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2631 image_oracle
+OK	geometry3k_test_2631	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2632 image_oracle
+OK	geometry3k_test_2632	image_oracle	pred='A'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2633 image_oracle
+FAIL	geometry3k_test_2633	image_oracle	pred='B'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2634 image_oracle
+OK	geometry3k_test_2634	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2635 image_oracle
+FAIL	geometry3k_test_2635	image_oracle	pred='C'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2636 image_oracle
+FAIL	geometry3k_test_2636	image_oracle	pred='B'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2637 image_oracle
+FAIL	geometry3k_test_2637	image_oracle	pred='C'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2638 image_oracle
+FAIL	geometry3k_test_2638	image_oracle	pred='C'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2639 image_oracle
+OK	geometry3k_test_2639	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2640 image_oracle
+FAIL	geometry3k_test_2640	image_oracle	pred='B'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2641 image_oracle
+OK	geometry3k_test_2641	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2642 image_oracle
+FAIL	geometry3k_test_2642	image_oracle	pred='B'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2643 image_oracle
+FAIL	geometry3k_test_2643	image_oracle	pred='B'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2644 image_oracle
+FAIL	geometry3k_test_2644	image_oracle	pred='C'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2645 image_oracle
+FAIL	geometry3k_test_2645	image_oracle	pred='C'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2646 image_oracle
+OK	geometry3k_test_2646	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2647 image_oracle
+FAIL	geometry3k_test_2647	image_oracle	pred='C'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2648 image_oracle
+OK	geometry3k_test_2648	image_oracle	pred='A'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2649 image_oracle
+OK	geometry3k_test_2649	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2650 image_oracle
+OK	geometry3k_test_2650	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2651 image_oracle
+FAIL	geometry3k_test_2651	image_oracle	pred='B'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2652 image_oracle
+FAIL	geometry3k_test_2652	image_oracle	pred='D'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2653 image_oracle
+OK	geometry3k_test_2653	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2654 image_oracle
+OK	geometry3k_test_2654	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2655 image_oracle
+OK	geometry3k_test_2655	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2656 image_oracle
+OK	geometry3k_test_2656	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2657 image_oracle
+OK	geometry3k_test_2657	image_oracle	pred='A'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2658 image_oracle
+OK	geometry3k_test_2658	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2659 image_oracle
+OK	geometry3k_test_2659	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2660 image_oracle
+FAIL	geometry3k_test_2660	image_oracle	pred='D'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2661 image_oracle
+FAIL	geometry3k_test_2661	image_oracle	pred='C'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2662 image_oracle
+FAIL	geometry3k_test_2662	image_oracle	pred='B'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2663 image_oracle
+FAIL	geometry3k_test_2663	image_oracle	pred='B'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2664 image_oracle
+FAIL	geometry3k_test_2664	image_oracle	pred='B'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2665 image_oracle
+FAIL	geometry3k_test_2665	image_oracle	pred='B'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2666 image_oracle
+OK	geometry3k_test_2666	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2667 image_oracle
+FAIL	geometry3k_test_2667	image_oracle	pred='C'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2668 image_oracle
+FAIL	geometry3k_test_2668	image_oracle	pred='B'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2669 image_oracle
+OK	geometry3k_test_2669	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2670 image_oracle
+OK	geometry3k_test_2670	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2671 image_oracle
+FAIL	geometry3k_test_2671	image_oracle	pred='D'	gold='C'	complete=True	new_tokens=6
+CALL geometry3k_test_2672 image_oracle
+OK	geometry3k_test_2672	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2673 image_oracle
+FAIL	geometry3k_test_2673	image_oracle	pred='C'	gold='D'	complete=True	new_tokens=9
+CALL geometry3k_test_2674 image_oracle
+FAIL	geometry3k_test_2674	image_oracle	pred='C'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2675 image_oracle
+OK	geometry3k_test_2675	image_oracle	pred='D'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2676 image_oracle
+OK	geometry3k_test_2676	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2677 image_oracle
+FAIL	geometry3k_test_2677	image_oracle	pred='B'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2678 image_oracle
+OK	geometry3k_test_2678	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2679 image_oracle
+OK	geometry3k_test_2679	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2680 image_oracle
+OK	geometry3k_test_2680	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2681 image_oracle
+OK	geometry3k_test_2681	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2682 image_oracle
+OK	geometry3k_test_2682	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2683 image_oracle
+FAIL	geometry3k_test_2683	image_oracle	pred='B'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2684 image_oracle
+FAIL	geometry3k_test_2684	image_oracle	pred='B'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2685 image_oracle
+FAIL	geometry3k_test_2685	image_oracle	pred='B'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2686 image_oracle
+FAIL	geometry3k_test_2686	image_oracle	pred='B'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2687 image_oracle
+FAIL	geometry3k_test_2687	image_oracle	pred=''	gold='D'	complete=False	new_tokens=2
+CALL geometry3k_test_2688 image_oracle
+FAIL	geometry3k_test_2688	image_oracle	pred='C'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2689 image_oracle
+OK	geometry3k_test_2689	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2690 image_oracle
+FAIL	geometry3k_test_2690	image_oracle	pred='B'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2691 image_oracle
+FAIL	geometry3k_test_2691	image_oracle	pred='B'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2692 image_oracle
+FAIL	geometry3k_test_2692	image_oracle	pred='B'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2693 image_oracle
+OK	geometry3k_test_2693	image_oracle	pred='A'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2694 image_oracle
+OK	geometry3k_test_2694	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2695 image_oracle
+FAIL	geometry3k_test_2695	image_oracle	pred='B'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2696 image_oracle
+OK	geometry3k_test_2696	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2697 image_oracle
+FAIL	geometry3k_test_2697	image_oracle	pred='C'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2698 image_oracle
+OK	geometry3k_test_2698	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2699 image_oracle
+OK	geometry3k_test_2699	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2700 image_oracle
+OK	geometry3k_test_2700	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2701 image_oracle
+FAIL	geometry3k_test_2701	image_oracle	pred='B'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2702 image_oracle
+FAIL	geometry3k_test_2702	image_oracle	pred='B'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2703 image_oracle
+FAIL	geometry3k_test_2703	image_oracle	pred='B'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2704 image_oracle
+OK	geometry3k_test_2704	image_oracle	pred='A'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2705 image_oracle
+FAIL	geometry3k_test_2705	image_oracle	pred='B'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2706 image_oracle
+FAIL	geometry3k_test_2706	image_oracle	pred='B'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2707 image_oracle
+FAIL	geometry3k_test_2707	image_oracle	pred='C'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2708 image_oracle
+FAIL	geometry3k_test_2708	image_oracle	pred='B'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2709 image_oracle
+OK	geometry3k_test_2709	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2710 image_oracle
+OK	geometry3k_test_2710	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2711 image_oracle
+OK	geometry3k_test_2711	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2712 image_oracle
+OK	geometry3k_test_2712	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2713 image_oracle
+FAIL	geometry3k_test_2713	image_oracle	pred='A'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2714 image_oracle
+FAIL	geometry3k_test_2714	image_oracle	pred='B'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2715 image_oracle
+FAIL	geometry3k_test_2715	image_oracle	pred='B'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2716 image_oracle
+FAIL	geometry3k_test_2716	image_oracle	pred='D'	gold='C'	complete=True	new_tokens=12
+CALL geometry3k_test_2717 image_oracle
+FAIL	geometry3k_test_2717	image_oracle	pred='D'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2718 image_oracle
+FAIL	geometry3k_test_2718	image_oracle	pred='B'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2719 image_oracle
+FAIL	geometry3k_test_2719	image_oracle	pred='C'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2720 image_oracle
+FAIL	geometry3k_test_2720	image_oracle	pred='B'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2721 image_oracle
+FAIL	geometry3k_test_2721	image_oracle	pred='C'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2722 image_oracle
+FAIL	geometry3k_test_2722	image_oracle	pred='B'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2723 image_oracle
+OK	geometry3k_test_2723	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2724 image_oracle
+OK	geometry3k_test_2724	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2725 image_oracle
+FAIL	geometry3k_test_2725	image_oracle	pred=''	gold='B'	complete=False	new_tokens=2
+CALL geometry3k_test_2726 image_oracle
+OK	geometry3k_test_2726	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2727 image_oracle
+FAIL	geometry3k_test_2727	image_oracle	pred='C'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2728 image_oracle
+FAIL	geometry3k_test_2728	image_oracle	pred='B'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2729 image_oracle
+OK	geometry3k_test_2729	image_oracle	pred='A'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2730 image_oracle
+OK	geometry3k_test_2730	image_oracle	pred='A'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2731 image_oracle
+OK	geometry3k_test_2731	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2732 image_oracle
+FAIL	geometry3k_test_2732	image_oracle	pred='B'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2733 image_oracle
+OK	geometry3k_test_2733	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2734 image_oracle
+FAIL	geometry3k_test_2734	image_oracle	pred='B'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2735 image_oracle
+OK	geometry3k_test_2735	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2736 image_oracle
+OK	geometry3k_test_2736	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2737 image_oracle
+FAIL	geometry3k_test_2737	image_oracle	pred='B'	gold='D'	complete=True	new_tokens=9
+CALL geometry3k_test_2738 image_oracle
+FAIL	geometry3k_test_2738	image_oracle	pred='A'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2739 image_oracle
+FAIL	geometry3k_test_2739	image_oracle	pred='D'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2740 image_oracle
+OK	geometry3k_test_2740	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2741 image_oracle
+FAIL	geometry3k_test_2741	image_oracle	pred='C'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2742 image_oracle
+FAIL	geometry3k_test_2742	image_oracle	pred='B'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2743 image_oracle
+OK	geometry3k_test_2743	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2744 image_oracle
+FAIL	geometry3k_test_2744	image_oracle	pred='C'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2745 image_oracle
+OK	geometry3k_test_2745	image_oracle	pred='A'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2746 image_oracle
+FAIL	geometry3k_test_2746	image_oracle	pred='B'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2747 image_oracle
+FAIL	geometry3k_test_2747	image_oracle	pred='C'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2748 image_oracle
+FAIL	geometry3k_test_2748	image_oracle	pred='B'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2749 image_oracle
+FAIL	geometry3k_test_2749	image_oracle	pred='C'	gold='D'	complete=True	new_tokens=6
+CALL geometry3k_test_2750 image_oracle
+FAIL	geometry3k_test_2750	image_oracle	pred='C'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2751 image_oracle
+OK	geometry3k_test_2751	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2752 image_oracle
+OK	geometry3k_test_2752	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2753 image_oracle
+FAIL	geometry3k_test_2753	image_oracle	pred='B'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2754 image_oracle
+OK	geometry3k_test_2754	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2755 image_oracle
+FAIL	geometry3k_test_2755	image_oracle	pred='C'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2756 image_oracle
+OK	geometry3k_test_2756	image_oracle	pred='A'	gold='A'	complete=True	new_tokens=8
+CALL geometry3k_test_2757 image_oracle
+FAIL	geometry3k_test_2757	image_oracle	pred='B'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2758 image_oracle
+OK	geometry3k_test_2758	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2759 image_oracle
+OK	geometry3k_test_2759	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2760 image_oracle
+OK	geometry3k_test_2760	image_oracle	pred='A'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2761 image_oracle
+OK	geometry3k_test_2761	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2762 image_oracle
+OK	geometry3k_test_2762	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2763 image_oracle
+OK	geometry3k_test_2763	image_oracle	pred='A'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2764 image_oracle
+OK	geometry3k_test_2764	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2765 image_oracle
+OK	geometry3k_test_2765	image_oracle	pred='D'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2766 image_oracle
+OK	geometry3k_test_2766	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2767 image_oracle
+OK	geometry3k_test_2767	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2768 image_oracle
+OK	geometry3k_test_2768	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2769 image_oracle
+FAIL	geometry3k_test_2769	image_oracle	pred='B'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2770 image_oracle
+OK	geometry3k_test_2770	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2771 image_oracle
+FAIL	geometry3k_test_2771	image_oracle	pred='B'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2772 image_oracle
+OK	geometry3k_test_2772	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2773 image_oracle
+FAIL	geometry3k_test_2773	image_oracle	pred='B'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2774 image_oracle
+FAIL	geometry3k_test_2774	image_oracle	pred='B'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2775 image_oracle
+FAIL	geometry3k_test_2775	image_oracle	pred='B'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2776 image_oracle
+FAIL	geometry3k_test_2776	image_oracle	pred='A'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2777 image_oracle
+OK	geometry3k_test_2777	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2778 image_oracle
+FAIL	geometry3k_test_2778	image_oracle	pred='B'	gold='D'	complete=True	new_tokens=6
+CALL geometry3k_test_2779 image_oracle
+OK	geometry3k_test_2779	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2780 image_oracle
+FAIL	geometry3k_test_2780	image_oracle	pred='A'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2781 image_oracle
+OK	geometry3k_test_2781	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2782 image_oracle
+OK	geometry3k_test_2782	image_oracle	pred='A'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2783 image_oracle
+FAIL	geometry3k_test_2783	image_oracle	pred='C'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2784 image_oracle
+OK	geometry3k_test_2784	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2785 image_oracle
+OK	geometry3k_test_2785	image_oracle	pred='D'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2786 image_oracle
+FAIL	geometry3k_test_2786	image_oracle	pred='C'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2787 image_oracle
+OK	geometry3k_test_2787	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2788 image_oracle
+OK	geometry3k_test_2788	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2789 image_oracle
+OK	geometry3k_test_2789	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2790 image_oracle
+FAIL	geometry3k_test_2790	image_oracle	pred='B'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2791 image_oracle
+FAIL	geometry3k_test_2791	image_oracle	pred='A'	gold='D'	complete=True	new_tokens=5
+CALL geometry3k_test_2792 image_oracle
+FAIL	geometry3k_test_2792	image_oracle	pred='B'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2793 image_oracle
+OK	geometry3k_test_2793	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2794 image_oracle
+OK	geometry3k_test_2794	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2795 image_oracle
+OK	geometry3k_test_2795	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2796 image_oracle
+FAIL	geometry3k_test_2796	image_oracle	pred='C'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2797 image_oracle
+FAIL	geometry3k_test_2797	image_oracle	pred='A'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2798 image_oracle
+FAIL	geometry3k_test_2798	image_oracle	pred='B'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2799 image_oracle
+FAIL	geometry3k_test_2799	image_oracle	pred='C'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2800 image_oracle
+FAIL	geometry3k_test_2800	image_oracle	pred='B'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2801 image_oracle
+FAIL	geometry3k_test_2801	image_oracle	pred='C'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2802 image_oracle
+FAIL	geometry3k_test_2802	image_oracle	pred='A'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2803 image_oracle
+OK	geometry3k_test_2803	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=9
+CALL geometry3k_test_2804 image_oracle
+FAIL	geometry3k_test_2804	image_oracle	pred='B'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2805 image_oracle
+OK	geometry3k_test_2805	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2806 image_oracle
+OK	geometry3k_test_2806	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2807 image_oracle
+FAIL	geometry3k_test_2807	image_oracle	pred='B'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2808 image_oracle
+OK	geometry3k_test_2808	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2809 image_oracle
+OK	geometry3k_test_2809	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2810 image_oracle
+OK	geometry3k_test_2810	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2811 image_oracle
+OK	geometry3k_test_2811	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2812 image_oracle
+FAIL	geometry3k_test_2812	image_oracle	pred='C'	gold='D'	complete=True	new_tokens=7
+CALL geometry3k_test_2813 image_oracle
+FAIL	geometry3k_test_2813	image_oracle	pred='B'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2814 image_oracle
+OK	geometry3k_test_2814	image_oracle	pred='A'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2815 image_oracle
+OK	geometry3k_test_2815	image_oracle	pred='D'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2816 image_oracle
+OK	geometry3k_test_2816	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2817 image_oracle
+OK	geometry3k_test_2817	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2818 image_oracle
+OK	geometry3k_test_2818	image_oracle	pred='A'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2819 image_oracle
+OK	geometry3k_test_2819	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2820 image_oracle
+FAIL	geometry3k_test_2820	image_oracle	pred='B'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2821 image_oracle
+OK	geometry3k_test_2821	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2822 image_oracle
+OK	geometry3k_test_2822	image_oracle	pred='A'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2823 image_oracle
+FAIL	geometry3k_test_2823	image_oracle	pred='C'	gold='B'	complete=True	new_tokens=7
+CALL geometry3k_test_2824 image_oracle
+OK	geometry3k_test_2824	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2825 image_oracle
+OK	geometry3k_test_2825	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2826 image_oracle
+FAIL	geometry3k_test_2826	image_oracle	pred='A'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2827 image_oracle
+FAIL	geometry3k_test_2827	image_oracle	pred='C'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2828 image_oracle
+OK	geometry3k_test_2828	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2829 image_oracle
+FAIL	geometry3k_test_2829	image_oracle	pred='B'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2830 image_oracle
+FAIL	geometry3k_test_2830	image_oracle	pred='B'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2831 image_oracle
+OK	geometry3k_test_2831	image_oracle	pred='A'	gold='A'	complete=True	new_tokens=7
+CALL geometry3k_test_2832 image_oracle
+OK	geometry3k_test_2832	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2833 image_oracle
+OK	geometry3k_test_2833	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2834 image_oracle
+FAIL	geometry3k_test_2834	image_oracle	pred='A'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2835 image_oracle
+FAIL	geometry3k_test_2835	image_oracle	pred='B'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2836 image_oracle
+OK	geometry3k_test_2836	image_oracle	pred='A'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2837 image_oracle
+FAIL	geometry3k_test_2837	image_oracle	pred='B'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2838 image_oracle
+OK	geometry3k_test_2838	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2839 image_oracle
+OK	geometry3k_test_2839	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2840 image_oracle
+FAIL	geometry3k_test_2840	image_oracle	pred='B'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2841 image_oracle
+FAIL	geometry3k_test_2841	image_oracle	pred='C'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2842 image_oracle
+OK	geometry3k_test_2842	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2843 image_oracle
+OK	geometry3k_test_2843	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2844 image_oracle
+FAIL	geometry3k_test_2844	image_oracle	pred='C'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2845 image_oracle
+OK	geometry3k_test_2845	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2846 image_oracle
+OK	geometry3k_test_2846	image_oracle	pred='D'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2847 image_oracle
+FAIL	geometry3k_test_2847	image_oracle	pred='B'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2848 image_oracle
+FAIL	geometry3k_test_2848	image_oracle	pred='B'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2849 image_oracle
+OK	geometry3k_test_2849	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2850 image_oracle
+FAIL	geometry3k_test_2850	image_oracle	pred='B'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2851 image_oracle
+OK	geometry3k_test_2851	image_oracle	pred='D'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2852 image_oracle
+OK	geometry3k_test_2852	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2853 image_oracle
+OK	geometry3k_test_2853	image_oracle	pred='D'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2854 image_oracle
+FAIL	geometry3k_test_2854	image_oracle	pred='B'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2855 image_oracle
+OK	geometry3k_test_2855	image_oracle	pred='A'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2856 image_oracle
+OK	geometry3k_test_2856	image_oracle	pred='A'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2857 image_oracle
+OK	geometry3k_test_2857	image_oracle	pred='D'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2858 image_oracle
+OK	geometry3k_test_2858	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2859 image_oracle
+OK	geometry3k_test_2859	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2860 image_oracle
+FAIL	geometry3k_test_2860	image_oracle	pred='B'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2861 image_oracle
+OK	geometry3k_test_2861	image_oracle	pred='A'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2862 image_oracle
+FAIL	geometry3k_test_2862	image_oracle	pred='C'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2863 image_oracle
+FAIL	geometry3k_test_2863	image_oracle	pred='B'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2864 image_oracle
+FAIL	geometry3k_test_2864	image_oracle	pred='C'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2865 image_oracle
+FAIL	geometry3k_test_2865	image_oracle	pred='B'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2866 image_oracle
+FAIL	geometry3k_test_2866	image_oracle	pred='B'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2867 image_oracle
+FAIL	geometry3k_test_2867	image_oracle	pred='B'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2868 image_oracle
+OK	geometry3k_test_2868	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2869 image_oracle
+FAIL	geometry3k_test_2869	image_oracle	pred='A'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2870 image_oracle
+OK	geometry3k_test_2870	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2871 image_oracle
+OK	geometry3k_test_2871	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2872 image_oracle
+OK	geometry3k_test_2872	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2873 image_oracle
+FAIL	geometry3k_test_2873	image_oracle	pred='B'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2874 image_oracle
+OK	geometry3k_test_2874	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2875 image_oracle
+OK	geometry3k_test_2875	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2876 image_oracle
+OK	geometry3k_test_2876	image_oracle	pred='A'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2877 image_oracle
+OK	geometry3k_test_2877	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2878 image_oracle
+OK	geometry3k_test_2878	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2879 image_oracle
+FAIL	geometry3k_test_2879	image_oracle	pred='B'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2880 image_oracle
+OK	geometry3k_test_2880	image_oracle	pred='D'	gold='D'	complete=True	new_tokens=7
+CALL geometry3k_test_2881 image_oracle
+OK	geometry3k_test_2881	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2882 image_oracle
+OK	geometry3k_test_2882	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2883 image_oracle
+OK	geometry3k_test_2883	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2884 image_oracle
+OK	geometry3k_test_2884	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2885 image_oracle
+OK	geometry3k_test_2885	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2886 image_oracle
+FAIL	geometry3k_test_2886	image_oracle	pred='B'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2887 image_oracle
+FAIL	geometry3k_test_2887	image_oracle	pred='A'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2888 image_oracle
+OK	geometry3k_test_2888	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2889 image_oracle
+OK	geometry3k_test_2889	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2890 image_oracle
+OK	geometry3k_test_2890	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2891 image_oracle
+OK	geometry3k_test_2891	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2892 image_oracle
+FAIL	geometry3k_test_2892	image_oracle	pred='B'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2893 image_oracle
+FAIL	geometry3k_test_2893	image_oracle	pred='C'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2894 image_oracle
+OK	geometry3k_test_2894	image_oracle	pred='D'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2895 image_oracle
+OK	geometry3k_test_2895	image_oracle	pred='D'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2896 image_oracle
+FAIL	geometry3k_test_2896	image_oracle	pred='B'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2897 image_oracle
+FAIL	geometry3k_test_2897	image_oracle	pred='C'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2898 image_oracle
+FAIL	geometry3k_test_2898	image_oracle	pred='C'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2899 image_oracle
+OK	geometry3k_test_2899	image_oracle	pred='A'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2900 image_oracle
+OK	geometry3k_test_2900	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2901 image_oracle
+OK	geometry3k_test_2901	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2902 image_oracle
+OK	geometry3k_test_2902	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2903 image_oracle
+FAIL	geometry3k_test_2903	image_oracle	pred='B'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2904 image_oracle
+OK	geometry3k_test_2904	image_oracle	pred='D'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2905 image_oracle
+OK	geometry3k_test_2905	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2906 image_oracle
+OK	geometry3k_test_2906	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2907 image_oracle
+FAIL	geometry3k_test_2907	image_oracle	pred='C'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2908 image_oracle
+FAIL	geometry3k_test_2908	image_oracle	pred='C'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2909 image_oracle
+FAIL	geometry3k_test_2909	image_oracle	pred='C'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2910 image_oracle
+FAIL	geometry3k_test_2910	image_oracle	pred='C'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2911 image_oracle
+OK	geometry3k_test_2911	image_oracle	pred='D'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2912 image_oracle
+OK	geometry3k_test_2912	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2913 image_oracle
+OK	geometry3k_test_2913	image_oracle	pred='D'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2914 image_oracle
+OK	geometry3k_test_2914	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2915 image_oracle
+OK	geometry3k_test_2915	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2916 image_oracle
+OK	geometry3k_test_2916	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2917 image_oracle
+OK	geometry3k_test_2917	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2918 image_oracle
+FAIL	geometry3k_test_2918	image_oracle	pred='B'	gold='C'	complete=True	new_tokens=8
+CALL geometry3k_test_2919 image_oracle
+FAIL	geometry3k_test_2919	image_oracle	pred='B'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2920 image_oracle
+OK	geometry3k_test_2920	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2921 image_oracle
+FAIL	geometry3k_test_2921	image_oracle	pred='C'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2922 image_oracle
+FAIL	geometry3k_test_2922	image_oracle	pred='C'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2923 image_oracle
+FAIL	geometry3k_test_2923	image_oracle	pred='B'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2924 image_oracle
+FAIL	geometry3k_test_2924	image_oracle	pred='A'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2925 image_oracle
+OK	geometry3k_test_2925	image_oracle	pred='D'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2926 image_oracle
+OK	geometry3k_test_2926	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2927 image_oracle
+OK	geometry3k_test_2927	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2928 image_oracle
+FAIL	geometry3k_test_2928	image_oracle	pred='B'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2929 image_oracle
+FAIL	geometry3k_test_2929	image_oracle	pred='B'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2930 image_oracle
+OK	geometry3k_test_2930	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2931 image_oracle
+FAIL	geometry3k_test_2931	image_oracle	pred='B'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2932 image_oracle
+OK	geometry3k_test_2932	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2933 image_oracle
+OK	geometry3k_test_2933	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2934 image_oracle
+OK	geometry3k_test_2934	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2935 image_oracle
+OK	geometry3k_test_2935	image_oracle	pred='A'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2936 image_oracle
+OK	geometry3k_test_2936	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2937 image_oracle
+OK	geometry3k_test_2937	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2938 image_oracle
+OK	geometry3k_test_2938	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2939 image_oracle
+FAIL	geometry3k_test_2939	image_oracle	pred='B'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2940 image_oracle
+FAIL	geometry3k_test_2940	image_oracle	pred='C'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2941 image_oracle
+OK	geometry3k_test_2941	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2942 image_oracle
+OK	geometry3k_test_2942	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2943 image_oracle
+OK	geometry3k_test_2943	image_oracle	pred='D'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2944 image_oracle
+FAIL	geometry3k_test_2944	image_oracle	pred='A'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2945 image_oracle
+OK	geometry3k_test_2945	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2946 image_oracle
+OK	geometry3k_test_2946	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2947 image_oracle
+OK	geometry3k_test_2947	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2948 image_oracle
+FAIL	geometry3k_test_2948	image_oracle	pred='B'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2949 image_oracle
+OK	geometry3k_test_2949	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2950 image_oracle
+FAIL	geometry3k_test_2950	image_oracle	pred='C'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2951 image_oracle
+FAIL	geometry3k_test_2951	image_oracle	pred='D'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2952 image_oracle
+OK	geometry3k_test_2952	image_oracle	pred='D'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2953 image_oracle
+OK	geometry3k_test_2953	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2954 image_oracle
+OK	geometry3k_test_2954	image_oracle	pred='D'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2955 image_oracle
+FAIL	geometry3k_test_2955	image_oracle	pred='C'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2956 image_oracle
+OK	geometry3k_test_2956	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2957 image_oracle
+OK	geometry3k_test_2957	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=8
+CALL geometry3k_test_2958 image_oracle
+FAIL	geometry3k_test_2958	image_oracle	pred='D'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2959 image_oracle
+FAIL	geometry3k_test_2959	image_oracle	pred='A'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2960 image_oracle
+OK	geometry3k_test_2960	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2961 image_oracle
+OK	geometry3k_test_2961	image_oracle	pred='D'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2962 image_oracle
+FAIL	geometry3k_test_2962	image_oracle	pred='B'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2963 image_oracle
+FAIL	geometry3k_test_2963	image_oracle	pred='B'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2964 image_oracle
+OK	geometry3k_test_2964	image_oracle	pred='A'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2965 image_oracle
+FAIL	geometry3k_test_2965	image_oracle	pred='B'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2966 image_oracle
+FAIL	geometry3k_test_2966	image_oracle	pred='C'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2967 image_oracle
+FAIL	geometry3k_test_2967	image_oracle	pred='C'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2968 image_oracle
+OK	geometry3k_test_2968	image_oracle	pred='A'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2969 image_oracle
+OK	geometry3k_test_2969	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2970 image_oracle
+OK	geometry3k_test_2970	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2971 image_oracle
+OK	geometry3k_test_2971	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2972 image_oracle
+OK	geometry3k_test_2972	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2973 image_oracle
+FAIL	geometry3k_test_2973	image_oracle	pred='C'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2974 image_oracle
+FAIL	geometry3k_test_2974	image_oracle	pred='C'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2975 image_oracle
+OK	geometry3k_test_2975	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2976 image_oracle
+OK	geometry3k_test_2976	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2977 image_oracle
+FAIL	geometry3k_test_2977	image_oracle	pred='B'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2978 image_oracle
+FAIL	geometry3k_test_2978	image_oracle	pred='C'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2979 image_oracle
+OK	geometry3k_test_2979	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2980 image_oracle
+OK	geometry3k_test_2980	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2981 image_oracle
+OK	geometry3k_test_2981	image_oracle	pred='C'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2982 image_oracle
+FAIL	geometry3k_test_2982	image_oracle	pred='C'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2983 image_oracle
+OK	geometry3k_test_2983	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=5
+CALL geometry3k_test_2984 image_oracle
+FAIL	geometry3k_test_2984	image_oracle	pred='B'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2985 image_oracle
+FAIL	geometry3k_test_2985	image_oracle	pred='A'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2986 image_oracle
+FAIL	geometry3k_test_2986	image_oracle	pred='B'	gold='C'	complete=True	new_tokens=8
+CALL geometry3k_test_2987 image_oracle
+OK	geometry3k_test_2987	image_oracle	pred='A'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2988 image_oracle
+FAIL	geometry3k_test_2988	image_oracle	pred='C'	gold='D'	complete=True	new_tokens=2
+CALL geometry3k_test_2989 image_oracle
+OK	geometry3k_test_2989	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2990 image_oracle
+FAIL	geometry3k_test_2990	image_oracle	pred='B'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2991 image_oracle
+FAIL	geometry3k_test_2991	image_oracle	pred='B'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2992 image_oracle
+OK	geometry3k_test_2992	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2993 image_oracle
+OK	geometry3k_test_2993	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2994 image_oracle
+FAIL	geometry3k_test_2994	image_oracle	pred='B'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_2995 image_oracle
+OK	geometry3k_test_2995	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2996 image_oracle
+OK	geometry3k_test_2996	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2997 image_oracle
+FAIL	geometry3k_test_2997	image_oracle	pred='B'	gold='C'	complete=True	new_tokens=2
+CALL geometry3k_test_2998 image_oracle
+OK	geometry3k_test_2998	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_2999 image_oracle
+OK	geometry3k_test_2999	image_oracle	pred='B'	gold='B'	complete=True	new_tokens=2
+CALL geometry3k_test_3000 image_oracle
+OK	geometry3k_test_3000	image_oracle	pred='A'	gold='A'	complete=True	new_tokens=2
+CALL geometry3k_test_3001 image_oracle
+FAIL	geometry3k_test_3001	image_oracle	pred='D'	gold='C'	complete=True	new_tokens=2
+{
+  "variants": {
+    "raw": {
+      "n": 0,
+      "complete": 0,
+      "correct": 0,
+      "accuracy_on_complete": 0.0,
+      "errors": 0,
+      "truncated": 0,
+      "missing_answer_line": 0
+    },
+    "image_gdp": {
+      "n": 0,
+      "complete": 0,
+      "correct": 0,
+      "accuracy_on_complete": 0.0,
+      "errors": 0,
+      "truncated": 0,
+      "missing_answer_line": 0
+    },
+    "image_oracle": {
+      "n": 601,
+      "complete": 598,
+      "correct": 318,
+      "accuracy_on_complete": 0.5317725752508361,
+      "errors": 0,
+      "truncated": 0,
+      "missing_answer_line": 3
+    },
+    "image_focus": {
+      "n": 0,
+      "complete": 0,
+      "correct": 0,
+      "accuracy_on_complete": 0.0,
+      "errors": 0,
+      "truncated": 0,
+      "missing_answer_line": 0
+    }
+  },
+  "pairwise": {
+    "image_gdp_vs_raw": {
+      "variant_win": 0,
+      "variant_loss": 0,
+      "both_correct": 0,
+      "both_wrong": 0,
+      "incomplete_pair": 601
+    },
+    "image_oracle_vs_raw": {
+      "variant_win": 0,
+      "variant_loss": 0,
+      "both_correct": 0,
+      "both_wrong": 0,
+      "incomplete_pair": 601
+    },
+    "image_focus_vs_raw": {
+      "variant_win": 0,
+      "variant_loss": 0,
+      "both_correct": 0,
+      "both_wrong": 0,
+      "incomplete_pair": 601
+    }
+  }
+}

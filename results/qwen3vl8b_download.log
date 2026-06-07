@@ -1,0 +1,37 @@
+/home/ubuntu/miniforge3/envs/qwen/lib/python3.11/site-packages/huggingface_hub/commands/download.py:141: FutureWarning: Ignoring --local-dir-use-symlinks. Downloading to a local directory does not use symlinks anymore.
+  warnings.warn(
+[33m⚠️  Warning: 'huggingface-cli download' is deprecated. Use 'hf download' instead.[0m
+Fetching 16 files:   0%|          | 0/16 [00:00<?, ?it/s]Downloading 'model-00002-of-00004.safetensors' to '/home/ubuntu/models/Qwen3-VL-8B-Instruct/.cache/huggingface/download/t9msAuTjAZjuQnmzGOwTjiptvIU=.8be88fb5501e4d5719a6d4cc212e6a13480330e74f3e8c77daa1a68f199106b5.incomplete'
+Downloading '.gitattributes' to '/home/ubuntu/models/Qwen3-VL-8B-Instruct/.cache/huggingface/download/wPaCkH-WbT7GsmxMKKrNZTV4nSM=.a6344aac8c09253b3b630fb776ae94478aa0275b.incomplete'
+Downloading 'model-00001-of-00004.safetensors' to '/home/ubuntu/models/Qwen3-VL-8B-Instruct/.cache/huggingface/download/IO4xwqmZYzFmxznkwkiNSBwO1H0=.d5d0aef0eb170fc7453a296c43c0849a56f510555d3588e4fd662bb35490aefa.incomplete'
+Downloading 'merges.txt' to '/home/ubuntu/models/Qwen3-VL-8B-Instruct/.cache/huggingface/download/PtHk0z_I45atnj23IIRhTExwT3w=.20024bfe7c83998e9aeaf98a0cd6a2ce6306c2f0.incomplete'
+Download complete. Moving file to /home/ubuntu/models/Qwen3-VL-8B-Instruct/.gitattributes
+Fetching 16 files:   6%|▋         | 1/16 [00:00<00:04,  3.62it/s]Downloading 'generation_config.json' to '/home/ubuntu/models/Qwen3-VL-8B-Instruct/.cache/huggingface/download/3EVKVggOldJcKSsGjSdoUCN1AyQ=.e116347d7ef42621c7a5957f82c015c38d939c1f.incomplete'
+Download complete. Moving file to /home/ubuntu/models/Qwen3-VL-8B-Instruct/merges.txt
+Downloading 'README.md' to '/home/ubuntu/models/Qwen3-VL-8B-Instruct/.cache/huggingface/download/Xn7B-BWUGOee2Y6hCZtEhtFu4BE=.06fb2c8220b4fb51ccca87dd694ef9d240c36745.incomplete'
+Download complete. Moving file to /home/ubuntu/models/Qwen3-VL-8B-Instruct/generation_config.json
+Download complete. Moving file to /home/ubuntu/models/Qwen3-VL-8B-Instruct/README.md
+Downloading 'config.json' to '/home/ubuntu/models/Qwen3-VL-8B-Instruct/.cache/huggingface/download/8_PA_wEVGiVa2goH2H4KQOQpvVY=.0e2df614c5fe1ad2b6b540c8625bebf2d7ec43ca.incomplete'
+Download complete. Moving file to /home/ubuntu/models/Qwen3-VL-8B-Instruct/config.json
+Downloading 'chat_template.json' to '/home/ubuntu/models/Qwen3-VL-8B-Instruct/.cache/huggingface/download/BqEbVjUtvDkrcHAfaoo906xJg7Y=.1081bacf1af7c7c6de4a585ce02cd0fd34e382da.incomplete'
+Download complete. Moving file to /home/ubuntu/models/Qwen3-VL-8B-Instruct/chat_template.json
+Downloading 'model-00003-of-00004.safetensors' to '/home/ubuntu/models/Qwen3-VL-8B-Instruct/.cache/huggingface/download/DaGOU-KRMVrY0aYktrsE34tL0Bs=.83de00eafe6e0d57ccd009dbcf71c9974d74df2f016c27afb7e95aafd16b2192.incomplete'
+Downloading 'model-00004-of-00004.safetensors' to '/home/ubuntu/models/Qwen3-VL-8B-Instruct/.cache/huggingface/download/-dFtyT7kcgbTHt1cy9JKqruJCR4=.0a88b98e9f96270973f567e6a2c103ede6ccdf915ca3075e21c755604d0377a5.incomplete'
+Downloading 'preprocessor_config.json' to '/home/ubuntu/models/Qwen3-VL-8B-Instruct/.cache/huggingface/download/PYH5dHjks7Ei0Yd3X0Z8xIwsCNQ=.2ea84a437d448ff71b08df68fdd949d5cc4ebb64.incomplete'
+Download complete. Moving file to /home/ubuntu/models/Qwen3-VL-8B-Instruct/preprocessor_config.json
+Downloading 'tokenizer.json' to '/home/ubuntu/models/Qwen3-VL-8B-Instruct/.cache/huggingface/download/HgM_lKo9sdSCfRtVg7MMFS7EKqo=.c6cc1014128b19d1fc46b1d30a23e3b1d35db421.incomplete'
+Downloading 'tokenizer_config.json' to '/home/ubuntu/models/Qwen3-VL-8B-Instruct/.cache/huggingface/download/vzaExXFZNBay89bvlQv-ZcI6BTg=.d3d3763207692c78780f4bf42d4dadf49a5c8012.incomplete'
+Download complete. Moving file to /home/ubuntu/models/Qwen3-VL-8B-Instruct/tokenizer_config.json
+Download complete. Moving file to /home/ubuntu/models/Qwen3-VL-8B-Instruct/tokenizer.json
+Downloading 'model.safetensors.index.json' to '/home/ubuntu/models/Qwen3-VL-8B-Instruct/.cache/huggingface/download/yVzAsSxRSINSz-tQbpx-TLpfkLU=.5857ec62530eb589b1876034dd5386f1d98131a6.incomplete'
+Download complete. Moving file to /home/ubuntu/models/Qwen3-VL-8B-Instruct/model.safetensors.index.json
+Downloading 'video_preprocessor_config.json' to '/home/ubuntu/models/Qwen3-VL-8B-Instruct/.cache/huggingface/download/7uK9jxGLvsg8Gxgsd_3Bi0MthgM=.3ba673a5ad7d4d13f54155ecd38b2a94a6dac8fe.incomplete'
+Download complete. Moving file to /home/ubuntu/models/Qwen3-VL-8B-Instruct/video_preprocessor_config.json
+Downloading 'vocab.json' to '/home/ubuntu/models/Qwen3-VL-8B-Instruct/.cache/huggingface/download/j3m-Hy6QvBddw8RXA1uSWl1AJ0c=.4783fe10ac3adce15ac8f358ef5462739852c569.incomplete'
+Download complete. Moving file to /home/ubuntu/models/Qwen3-VL-8B-Instruct/vocab.json
+Download complete. Moving file to /home/ubuntu/models/Qwen3-VL-8B-Instruct/model-00004-of-00004.safetensors
+Download complete. Moving file to /home/ubuntu/models/Qwen3-VL-8B-Instruct/model-00002-of-00004.safetensors
+Download complete. Moving file to /home/ubuntu/models/Qwen3-VL-8B-Instruct/model-00001-of-00004.safetensors
+Fetching 16 files:  44%|████▍     | 7/16 [20:54<28:04, 187.21s/it]Download complete. Moving file to /home/ubuntu/models/Qwen3-VL-8B-Instruct/model-00003-of-00004.safetensors
+Fetching 16 files:  56%|█████▋    | 9/16 [21:12<15:37, 133.90s/it]Fetching 16 files: 100%|██████████| 16/16 [21:12<00:00, 79.51s/it]
+/home/ubuntu/models/Qwen3-VL-8B-Instruct

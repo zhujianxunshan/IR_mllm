@@ -1,0 +1,108 @@
+{
+  "accuracy": {
+    "raw": {
+      "correct": 25,
+      "complete": 50,
+      "accuracy": 0.5
+    },
+    "oracle_full": {
+      "correct": 25,
+      "complete": 50,
+      "accuracy": 0.5
+    },
+    "oracle_compact": {
+      "correct": 24,
+      "complete": 50,
+      "accuracy": 0.48
+    },
+    "oracle_topk3": {
+      "correct": 26,
+      "complete": 50,
+      "accuracy": 0.52
+    },
+    "oracle_corrupt_warned": {
+      "correct": 26,
+      "complete": 50,
+      "accuracy": 0.52
+    },
+    "oracle_corrupt_trusted": {
+      "correct": 24,
+      "complete": 50,
+      "accuracy": 0.48
+    }
+  },
+  "pairwise_vs_raw": {
+    "oracle_full": {
+      "variant_win": 1,
+      "variant_loss": 1,
+      "both_correct": 24,
+      "both_wrong": 24,
+      "incomplete": 0,
+      "win_examples": [
+        "geometry3k_test_2421"
+      ],
+      "loss_examples": [
+        "geometry3k_test_2448"
+      ]
+    },
+    "oracle_compact": {
+      "variant_win": 0,
+      "variant_loss": 1,
+      "both_correct": 24,
+      "both_wrong": 25,
+      "incomplete": 0,
+      "win_examples": [],
+      "loss_examples": [
+        "geometry3k_test_2440"
+      ]
+    },
+    "oracle_topk3": {
+      "variant_win": 1,
+      "variant_loss": 0,
+      "both_correct": 25,
+      "both_wrong": 24,
+      "incomplete": 0,
+      "win_examples": [
+        "geometry3k_test_2418"
+      ],
+      "loss_examples": []
+    },
+    "oracle_corrupt_warned": {
+      "variant_win": 1,
+      "variant_loss": 0,
+      "both_correct": 25,
+      "both_wrong": 24,
+      "incomplete": 0,
+      "win_examples": [
+        "geometry3k_test_2418"
+      ],
+      "loss_examples": []
+    },
+    "oracle_corrupt_trusted": {
+      "variant_win": 0,
+      "variant_loss": 1,
+      "both_correct": 24,
+      "both_wrong": 25,
+      "incomplete": 0,
+      "win_examples": [],
+      "loss_examples": [
+        "geometry3k_test_2448"
+      ]
+    }
+  },
+  "warned_vs_trusted": {
+    "warned_only_correct": 2,
+    "trusted_only_correct": 0,
+    "both_correct": 24,
+    "both_wrong": 24
+  },
+  "warned_vs_trusted_ids": {
+    "warned_only_correct": [
+      "geometry3k_test_2418",
+      "geometry3k_test_2448"
+    ],
+    "trusted_only_correct": [],
+    "both_correct": [],
+    "both_wrong": []
+  }
+}

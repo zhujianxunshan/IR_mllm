@@ -1,0 +1,179 @@
+{
+  "variants": {
+    "raw": {
+      "n": 1,
+      "complete": 1,
+      "correct": 1,
+      "accuracy_on_complete": 1.0,
+      "all_sample_accuracy": 1.0,
+      "errors": 0,
+      "truncated": 0,
+      "missing_answer_line": 0,
+      "avg_duration_s": 4.966926574707031
+    },
+    "oracle_full": {
+      "n": 1,
+      "complete": 1,
+      "correct": 1,
+      "accuracy_on_complete": 1.0,
+      "all_sample_accuracy": 1.0,
+      "errors": 0,
+      "truncated": 0,
+      "missing_answer_line": 0,
+      "avg_duration_s": 5.355405569076538
+    },
+    "oracle_natural": {
+      "n": 1,
+      "complete": 1,
+      "correct": 1,
+      "accuracy_on_complete": 1.0,
+      "all_sample_accuracy": 1.0,
+      "errors": 0,
+      "truncated": 0,
+      "missing_answer_line": 0,
+      "avg_duration_s": 4.417219877243042
+    },
+    "geoguide_minimal": {
+      "n": 1,
+      "complete": 1,
+      "correct": 1,
+      "accuracy_on_complete": 1.0,
+      "all_sample_accuracy": 1.0,
+      "errors": 0,
+      "truncated": 0,
+      "missing_answer_line": 0,
+      "avg_duration_s": 4.406162261962891
+    },
+    "geoguide_theorem": {
+      "n": 1,
+      "complete": 1,
+      "correct": 1,
+      "accuracy_on_complete": 1.0,
+      "all_sample_accuracy": 1.0,
+      "errors": 0,
+      "truncated": 0,
+      "missing_answer_line": 0,
+      "avg_duration_s": 4.668982267379761
+    },
+    "geoguide_stepplan": {
+      "n": 1,
+      "complete": 1,
+      "correct": 1,
+      "accuracy_on_complete": 1.0,
+      "all_sample_accuracy": 1.0,
+      "errors": 0,
+      "truncated": 0,
+      "missing_answer_line": 0,
+      "avg_duration_s": 4.730626344680786
+    },
+    "geoguide_optioncheck": {
+      "n": 1,
+      "complete": 1,
+      "correct": 1,
+      "accuracy_on_complete": 1.0,
+      "all_sample_accuracy": 1.0,
+      "errors": 0,
+      "truncated": 0,
+      "missing_answer_line": 0,
+      "avg_duration_s": 5.323823928833008
+    },
+    "geoguide_hybrid": {
+      "n": 1,
+      "complete": 1,
+      "correct": 1,
+      "accuracy_on_complete": 1.0,
+      "all_sample_accuracy": 1.0,
+      "errors": 0,
+      "truncated": 0,
+      "missing_answer_line": 0,
+      "avg_duration_s": 5.65072774887085
+    }
+  },
+  "pairwise_vs_raw": {
+    "oracle_full": {
+      "other_win": 0,
+      "other_loss": 0,
+      "both_correct": 1,
+      "both_wrong": 0,
+      "incomplete_pair": 0,
+      "net": 0,
+      "examples": {
+        "other_win": [],
+        "other_loss": []
+      }
+    },
+    "oracle_natural": {
+      "other_win": 0,
+      "other_loss": 0,
+      "both_correct": 1,
+      "both_wrong": 0,
+      "incomplete_pair": 0,
+      "net": 0,
+      "examples": {
+        "other_win": [],
+        "other_loss": []
+      }
+    },
+    "geoguide_minimal": {
+      "other_win": 0,
+      "other_loss": 0,
+      "both_correct": 1,
+      "both_wrong": 0,
+      "incomplete_pair": 0,
+      "net": 0,
+      "examples": {
+        "other_win": [],
+        "other_loss": []
+      }
+    },
+    "geoguide_theorem": {
+      "other_win": 0,
+      "other_loss": 0,
+      "both_correct": 1,
+      "both_wrong": 0,
+      "incomplete_pair": 0,
+      "net": 0,
+      "examples": {
+        "other_win": [],
+        "other_loss": []
+      }
+    },
+    "geoguide_stepplan": {
+      "other_win": 0,
+      "other_loss": 0,
+      "both_correct": 1,
+      "both_wrong": 0,
+      "incomplete_pair": 0,
+      "net": 0,
+      "examples": {
+        "other_win": [],
+        "other_loss": []
+      }
+    },
+    "geoguide_optioncheck": {
+      "other_win": 0,
+      "other_loss": 0,
+      "both_correct": 1,
+      "both_wrong": 0,
+      "incomplete_pair": 0,
+      "net": 0,
+      "examples": {
+        "other_win": [],
+        "other_loss": []
+      }
+    },
+    "geoguide_hybrid": {
+      "other_win": 0,
+      "other_loss": 0,
+      "both_correct": 1,
+      "both_wrong": 0,
+      "incomplete_pair": 0,
+      "net": 0,
+      "examples": {
+        "other_win": [],
+        "other_loss": []
+      }
+    }
+  },
+  "n_unique_ids": 1
+}

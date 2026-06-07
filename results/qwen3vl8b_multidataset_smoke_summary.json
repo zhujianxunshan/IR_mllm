@@ -1,0 +1,102 @@
+{
+  "datasets": {
+    "Geometry3K-150": {
+      "variants": {
+        "raw": {
+          "n": 3,
+          "complete": 3,
+          "correct": 2,
+          "accuracy": 0.6666666666666666,
+          "avg_duration_s": 6.204334417978923,
+          "errors": 0
+        },
+        "structured_facts": {
+          "n": 3,
+          "complete": 3,
+          "correct": 2,
+          "accuracy": 0.6666666666666666,
+          "avg_duration_s": 6.577830950419108,
+          "errors": 0
+        },
+        "geoguide_solver": {
+          "n": 3,
+          "complete": 3,
+          "correct": 2,
+          "accuracy": 0.6666666666666666,
+          "avg_duration_s": 7.141285339991252,
+          "errors": 0
+        },
+        "geoguide_cautious": {
+          "n": 3,
+          "complete": 3,
+          "correct": 1,
+          "accuracy": 0.3333333333333333,
+          "avg_duration_s": 7.442213932673137,
+          "errors": 0
+        }
+      },
+      "pairwise_vs_raw": {
+        "structured_facts": {
+          "win": 0,
+          "loss": 0,
+          "net": 0,
+          "both_correct": 2,
+          "both_wrong": 1,
+          "incomplete": 0,
+          "examples": {
+            "win": [],
+            "loss": []
+          }
+        },
+        "geoguide_solver": {
+          "win": 0,
+          "loss": 0,
+          "net": 0,
+          "both_correct": 2,
+          "both_wrong": 1,
+          "incomplete": 0,
+          "examples": {
+            "win": [],
+            "loss": []
+          }
+        },
+        "geoguide_cautious": {
+          "win": 0,
+          "loss": 1,
+          "net": -1,
+          "both_correct": 1,
+          "both_wrong": 1,
+          "incomplete": 0,
+          "examples": {
+            "win": [],
+            "loss": [
+              "geometry3k_test_2768"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "overall": {
+    "raw": {
+      "n": 3,
+      "correct": 2,
+      "accuracy": 0.6666666666666666
+    },
+    "structured_facts": {
+      "n": 3,
+      "correct": 2,
+      "accuracy": 0.6666666666666666
+    },
+    "geoguide_solver": {
+      "n": 3,
+      "correct": 2,
+      "accuracy": 0.6666666666666666
+    },
+    "geoguide_cautious": {
+      "n": 3,
+      "correct": 1,
+      "accuracy": 0.3333333333333333
+    }
+  }
+}

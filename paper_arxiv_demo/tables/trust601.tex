@@ -1,0 +1,18 @@
+\begin{table}[t]
+\centering
+\caption{Trust-calibration study on the full Geometry3K test split (601 problems). Full oracle structure is not automatically helpful; warning/cautious framing reduces some harm.}
+\label{tab:trust601}
+\small
+\begin{tabular}{lrrrr}
+\toprule
+Variant & Correct / N & Acc. & Wins vs raw & Losses vs raw \\
+\midrule
+raw & 325 / 601 & 54.08 & -- & -- \\
+oracle\_full & 318 / 601 & 52.91 & 14 & 19 \\
+oracle\_topk6\_cautious & 325 / 601 & 54.08 & 14 & 14 \\
+oracle\_topk6\_trusted & 323 / 601 & 53.74 & 15 & 17 \\
+oracle\_corrupt\_warned & 320 / 601 & 53.24 & 11 & 16 \\
+oracle\_corrupt\_trusted & 314 / 601 & 52.25 & 12 & 23 \\
+\bottomrule
+\end{tabular}
+\end{table}

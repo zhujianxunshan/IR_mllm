@@ -1,0 +1,16 @@
+{
+  "model": "Qwen/Qwen3-1.7B",
+  "train": "construction_plan_data/gdp_to_plan/train.jsonl",
+  "val": "construction_plan_data/gdp_to_plan/val.jsonl",
+  "outdir": "plan_generator_runs/gdp_to_plan_qwen17b_lora_8ep",
+  "max_length": 1536,
+  "batch_size": 1,
+  "grad_accum": 8,
+  "epochs": 8.0,
+  "lr": 0.0002,
+  "warmup_ratio": 0.05,
+  "lora_r": 16,
+  "lora_alpha": 32,
+  "save_every": 25,
+  "eval_every": 10
+}

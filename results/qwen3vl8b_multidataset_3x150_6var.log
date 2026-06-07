@@ -1,0 +1,270 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:05<00:16,  5.50s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:12<00:12,  6.33s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:19<00:06,  6.65s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:21<00:00,  4.97s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:21<00:00,  5.46s/it]
+CALL Geometry3K-150 geometry3k_test_2992 raw
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+OK	Geometry3K-150	geometry3k_test_2992	raw	pred='B'	gold='B'	complete=True	duration_s=4.97
+CALL Geometry3K-150 geometry3k_test_2992 structured_facts
+OK	Geometry3K-150	geometry3k_test_2992	structured_facts	pred='B'	gold='B'	complete=True	duration_s=5.07
+CALL Geometry3K-150 geometry3k_test_2992 perception_graph
+OK	Geometry3K-150	geometry3k_test_2992	perception_graph	pred='B'	gold='B'	complete=True	duration_s=5.42
+CALL Geometry3K-150 geometry3k_test_2992 construction_plan
+OK	Geometry3K-150	geometry3k_test_2992	construction_plan	pred='B'	gold='B'	complete=True	duration_s=5.77
+CALL Geometry3K-150 geometry3k_test_2992 geoguide_solver
+OK	Geometry3K-150	geometry3k_test_2992	geoguide_solver	pred='B'	gold='B'	complete=True	duration_s=6.03
+CALL Geometry3K-150 geometry3k_test_2992 geoguide_cautious
+OK	Geometry3K-150	geometry3k_test_2992	geoguide_cautious	pred='B'	gold='B'	complete=True	duration_s=5.74
+CALL Geometry3K-150 geometry3k_test_2768 raw
+OK	Geometry3K-150	geometry3k_test_2768	raw	pred='B'	gold='B'	complete=True	duration_s=6.73
+CALL Geometry3K-150 geometry3k_test_2768 structured_facts
+OK	Geometry3K-150	geometry3k_test_2768	structured_facts	pred='B'	gold='B'	complete=True	duration_s=7.66
+CALL Geometry3K-150 geometry3k_test_2768 perception_graph
+OK	Geometry3K-150	geometry3k_test_2768	perception_graph	pred='B'	gold='B'	complete=True	duration_s=7.98
+CALL Geometry3K-150 geometry3k_test_2768 construction_plan
+OK	Geometry3K-150	geometry3k_test_2768	construction_plan	pred='B'	gold='B'	complete=True	duration_s=8.32
+CALL Geometry3K-150 geometry3k_test_2768 geoguide_solver
+OK	Geometry3K-150	geometry3k_test_2768	geoguide_solver	pred='B'	gold='B'	complete=True	duration_s=8.04
+CALL Geometry3K-150 geometry3k_test_2768 geoguide_cautious
+FAIL	Geometry3K-150	geometry3k_test_2768	geoguide_cautious	pred='D'	gold='B'	complete=True	duration_s=8.59
+CALL Geometry3K-150 geometry3k_test_2637 raw
+FAIL	Geometry3K-150	geometry3k_test_2637	raw	pred='C'	gold='A'	complete=True	duration_s=6.46
+CALL Geometry3K-150 geometry3k_test_2637 structured_facts
+FAIL	Geometry3K-150	geometry3k_test_2637	structured_facts	pred='C'	gold='A'	complete=True	duration_s=6.75
+CALL Geometry3K-150 geometry3k_test_2637 perception_graph
+FAIL	Geometry3K-150	geometry3k_test_2637	perception_graph	pred='C'	gold='A'	complete=True	duration_s=7.07
+CALL Geometry3K-150 geometry3k_test_2637 construction_plan
+FAIL	Geometry3K-150	geometry3k_test_2637	construction_plan	pred='C'	gold='A'	complete=True	duration_s=7.41
+CALL Geometry3K-150 geometry3k_test_2637 geoguide_solver
+FAIL	Geometry3K-150	geometry3k_test_2637	geoguide_solver	pred='C'	gold='A'	complete=True	duration_s=7.12
+CALL Geometry3K-150 geometry3k_test_2637 geoguide_cautious
+FAIL	Geometry3K-150	geometry3k_test_2637	geoguide_cautious	pred='C'	gold='A'	complete=True	duration_s=7.69
+CALL Geometry3K-150 geometry3k_test_2961 raw
+OK	Geometry3K-150	geometry3k_test_2961	raw	pred='D'	gold='D'	complete=True	duration_s=8.95
+CALL Geometry3K-150 geometry3k_test_2961 structured_facts
+OK	Geometry3K-150	geometry3k_test_2961	structured_facts	pred='D'	gold='D'	complete=True	duration_s=9.30
+CALL Geometry3K-150 geometry3k_test_2961 perception_graph
+OK	Geometry3K-150	geometry3k_test_2961	perception_graph	pred='D'	gold='D'	complete=True	duration_s=9.65
+CALL Geometry3K-150 geometry3k_test_2961 construction_plan
+OK	Geometry3K-150	geometry3k_test_2961	construction_plan	pred='D'	gold='D'	complete=True	duration_s=9.98
+CALL Geometry3K-150 geometry3k_test_2961 geoguide_solver
+OK	Geometry3K-150	geometry3k_test_2961	geoguide_solver	pred='D'	gold='D'	complete=True	duration_s=9.65
+CALL Geometry3K-150 geometry3k_test_2961 geoguide_cautious
+OK	Geometry3K-150	geometry3k_test_2961	geoguide_cautious	pred='D'	gold='D'	complete=True	duration_s=10.00
+CALL Geometry3K-150 geometry3k_test_2964 raw
+OK	Geometry3K-150	geometry3k_test_2964	raw	pred='A'	gold='A'	complete=True	duration_s=7.38
+CALL Geometry3K-150 geometry3k_test_2964 structured_facts
+FAIL	Geometry3K-150	geometry3k_test_2964	structured_facts	pred='C'	gold='A'	complete=True	duration_s=8.05
+CALL Geometry3K-150 geometry3k_test_2964 perception_graph
+OK	Geometry3K-150	geometry3k_test_2964	perception_graph	pred='A'	gold='A'	complete=True	duration_s=8.38
+CALL Geometry3K-150 geometry3k_test_2964 construction_plan
+OK	Geometry3K-150	geometry3k_test_2964	construction_plan	pred='A'	gold='A'	complete=True	duration_s=9.04
+CALL Geometry3K-150 geometry3k_test_2964 geoguide_solver
+OK	Geometry3K-150	geometry3k_test_2964	geoguide_solver	pred='A'	gold='A'	complete=True	duration_s=8.67
+CALL Geometry3K-150 geometry3k_test_2964 geoguide_cautious
+OK	Geometry3K-150	geometry3k_test_2964	geoguide_cautious	pred='A'	gold='A'	complete=True	duration_s=9.02
+CALL Geometry3K-150 geometry3k_test_2587 raw
+OK	Geometry3K-150	geometry3k_test_2587	raw	pred='D'	gold='D'	complete=True	duration_s=5.31
+CALL Geometry3K-150 geometry3k_test_2587 structured_facts
+OK	Geometry3K-150	geometry3k_test_2587	structured_facts	pred='D'	gold='D'	complete=True	duration_s=5.89
+CALL Geometry3K-150 geometry3k_test_2587 perception_graph
+OK	Geometry3K-150	geometry3k_test_2587	perception_graph	pred='D'	gold='D'	complete=True	duration_s=6.25
+CALL Geometry3K-150 geometry3k_test_2587 construction_plan
+OK	Geometry3K-150	geometry3k_test_2587	construction_plan	pred='D'	gold='D'	complete=True	duration_s=6.90
+CALL Geometry3K-150 geometry3k_test_2587 geoguide_solver
+OK	Geometry3K-150	geometry3k_test_2587	geoguide_solver	pred='D'	gold='D'	complete=True	duration_s=6.83
+CALL Geometry3K-150 geometry3k_test_2587 geoguide_cautious
+OK	Geometry3K-150	geometry3k_test_2587	geoguide_cautious	pred='D'	gold='D'	complete=True	duration_s=6.90
+CALL Geometry3K-150 geometry3k_test_2873 raw
+OK	Geometry3K-150	geometry3k_test_2873	raw	pred='C'	gold='C'	complete=True	duration_s=4.17
+CALL Geometry3K-150 geometry3k_test_2873 structured_facts
+OK	Geometry3K-150	geometry3k_test_2873	structured_facts	pred='C'	gold='C'	complete=True	duration_s=4.47
+CALL Geometry3K-150 geometry3k_test_2873 perception_graph
+FAIL	Geometry3K-150	geometry3k_test_2873	perception_graph	pred='B'	gold='C'	complete=True	duration_s=4.77
+CALL Geometry3K-150 geometry3k_test_2873 construction_plan
+OK	Geometry3K-150	geometry3k_test_2873	construction_plan	pred='C'	gold='C'	complete=True	duration_s=5.15
+CALL Geometry3K-150 geometry3k_test_2873 geoguide_solver
+OK	Geometry3K-150	geometry3k_test_2873	geoguide_solver	pred='C'	gold='C'	complete=True	duration_s=4.80
+CALL Geometry3K-150 geometry3k_test_2873 geoguide_cautious
+OK	Geometry3K-150	geometry3k_test_2873	geoguide_cautious	pred='C'	gold='C'	complete=True	duration_s=5.15
+CALL Geometry3K-150 geometry3k_test_2607 raw
+OK	Geometry3K-150	geometry3k_test_2607	raw	pred='B'	gold='B'	complete=True	duration_s=4.94
+CALL Geometry3K-150 geometry3k_test_2607 structured_facts
+OK	Geometry3K-150	geometry3k_test_2607	structured_facts	pred='B'	gold='B'	complete=True	duration_s=5.49
+CALL Geometry3K-150 geometry3k_test_2607 perception_graph
+OK	Geometry3K-150	geometry3k_test_2607	perception_graph	pred='B'	gold='B'	complete=True	duration_s=5.88
+CALL Geometry3K-150 geometry3k_test_2607 construction_plan
+OK	Geometry3K-150	geometry3k_test_2607	construction_plan	pred='B'	gold='B'	complete=True	duration_s=6.20
+CALL Geometry3K-150 geometry3k_test_2607 geoguide_solver
+OK	Geometry3K-150	geometry3k_test_2607	geoguide_solver	pred='B'	gold='B'	complete=True	duration_s=5.90
+CALL Geometry3K-150 geometry3k_test_2607 geoguide_cautious
+OK	Geometry3K-150	geometry3k_test_2607	geoguide_cautious	pred='B'	gold='B'	complete=True	duration_s=6.47
+CALL Geometry3K-150 geometry3k_test_2721 raw
+FAIL	Geometry3K-150	geometry3k_test_2721	raw	pred='C'	gold='D'	complete=True	duration_s=10.99
+CALL Geometry3K-150 geometry3k_test_2721 structured_facts
+FAIL	Geometry3K-150	geometry3k_test_2721	structured_facts	pred='C'	gold='D'	complete=True	duration_s=11.37
+CALL Geometry3K-150 geometry3k_test_2721 perception_graph
+FAIL	Geometry3K-150	geometry3k_test_2721	perception_graph	pred='C'	gold='D'	complete=True	duration_s=11.96
+CALL Geometry3K-150 geometry3k_test_2721 construction_plan
+FAIL	Geometry3K-150	geometry3k_test_2721	construction_plan	pred='C'	gold='D'	complete=True	duration_s=12.32
+CALL Geometry3K-150 geometry3k_test_2721 geoguide_solver
+FAIL	Geometry3K-150	geometry3k_test_2721	geoguide_solver	pred='C'	gold='D'	complete=True	duration_s=12.00
+CALL Geometry3K-150 geometry3k_test_2721 geoguide_cautious
+OK	Geometry3K-150	geometry3k_test_2721	geoguide_cautious	pred='D'	gold='D'	complete=True	duration_s=12.59
+CALL Geometry3K-150 geometry3k_test_2670 raw
+OK	Geometry3K-150	geometry3k_test_2670	raw	pred='B'	gold='B'	complete=True	duration_s=4.69
+CALL Geometry3K-150 geometry3k_test_2670 structured_facts
+OK	Geometry3K-150	geometry3k_test_2670	structured_facts	pred='B'	gold='B'	complete=True	duration_s=5.60
+CALL Geometry3K-150 geometry3k_test_2670 perception_graph
+OK	Geometry3K-150	geometry3k_test_2670	perception_graph	pred='B'	gold='B'	complete=True	duration_s=5.92
+CALL Geometry3K-150 geometry3k_test_2670 construction_plan
+OK	Geometry3K-150	geometry3k_test_2670	construction_plan	pred='B'	gold='B'	complete=True	duration_s=6.58
+CALL Geometry3K-150 geometry3k_test_2670 geoguide_solver
+OK	Geometry3K-150	geometry3k_test_2670	geoguide_solver	pred='B'	gold='B'	complete=True	duration_s=5.98
+CALL Geometry3K-150 geometry3k_test_2670 geoguide_cautious
+OK	Geometry3K-150	geometry3k_test_2670	geoguide_cautious	pred='B'	gold='B'	complete=True	duration_s=6.36
+CALL Geometry3K-150 geometry3k_test_2489 raw
+FAIL	Geometry3K-150	geometry3k_test_2489	raw	pred='B'	gold='A'	complete=True	duration_s=9.65
+CALL Geometry3K-150 geometry3k_test_2489 structured_facts
+FAIL	Geometry3K-150	geometry3k_test_2489	structured_facts	pred='B'	gold='A'	complete=True	duration_s=10.02
+CALL Geometry3K-150 geometry3k_test_2489 perception_graph
+FAIL	Geometry3K-150	geometry3k_test_2489	perception_graph	pred='B'	gold='A'	complete=True	duration_s=10.32
+CALL Geometry3K-150 geometry3k_test_2489 construction_plan
+FAIL	Geometry3K-150	geometry3k_test_2489	construction_plan	pred='B'	gold='A'	complete=True	duration_s=10.61
+CALL Geometry3K-150 geometry3k_test_2489 geoguide_solver
+FAIL	Geometry3K-150	geometry3k_test_2489	geoguide_solver	pred='B'	gold='A'	complete=True	duration_s=10.60
+CALL Geometry3K-150 geometry3k_test_2489 geoguide_cautious
+FAIL	Geometry3K-150	geometry3k_test_2489	geoguide_cautious	pred='B'	gold='A'	complete=True	duration_s=10.95
+CALL Geometry3K-150 geometry3k_test_2428 raw
+OK	Geometry3K-150	geometry3k_test_2428	raw	pred='B'	gold='B'	complete=True	duration_s=4.57
+CALL Geometry3K-150 geometry3k_test_2428 structured_facts
+OK	Geometry3K-150	geometry3k_test_2428	structured_facts	pred='B'	gold='B'	complete=True	duration_s=5.49
+CALL Geometry3K-150 geometry3k_test_2428 perception_graph
+OK	Geometry3K-150	geometry3k_test_2428	perception_graph	pred='B'	gold='B'	complete=True	duration_s=5.86
+CALL Geometry3K-150 geometry3k_test_2428 construction_plan
+OK	Geometry3K-150	geometry3k_test_2428	construction_plan	pred='B'	gold='B'	complete=True	duration_s=6.55
+CALL Geometry3K-150 geometry3k_test_2428 geoguide_solver
+OK	Geometry3K-150	geometry3k_test_2428	geoguide_solver	pred='B'	gold='B'	complete=True	duration_s=6.17
+CALL Geometry3K-150 geometry3k_test_2428 geoguide_cautious
+OK	Geometry3K-150	geometry3k_test_2428	geoguide_cautious	pred='B'	gold='B'	complete=True	duration_s=6.76
+CALL Geometry3K-150 geometry3k_test_2485 raw
+OK	Geometry3K-150	geometry3k_test_2485	raw	pred='C'	gold='C'	complete=True	duration_s=4.21
+CALL Geometry3K-150 geometry3k_test_2485 structured_facts
+OK	Geometry3K-150	geometry3k_test_2485	structured_facts	pred='C'	gold='C'	complete=True	duration_s=4.51
+CALL Geometry3K-150 geometry3k_test_2485 perception_graph
+OK	Geometry3K-150	geometry3k_test_2485	perception_graph	pred='C'	gold='C'	complete=True	duration_s=4.79
+CALL Geometry3K-150 geometry3k_test_2485 construction_plan
+OK	Geometry3K-150	geometry3k_test_2485	construction_plan	pred='C'	gold='C'	complete=True	duration_s=5.45
+CALL Geometry3K-150 geometry3k_test_2485 geoguide_solver
+OK	Geometry3K-150	geometry3k_test_2485	geoguide_solver	pred='C'	gold='C'	complete=True	duration_s=5.13
+CALL Geometry3K-150 geometry3k_test_2485 geoguide_cautious
+OK	Geometry3K-150	geometry3k_test_2485	geoguide_cautious	pred='C'	gold='C'	complete=True	duration_s=5.43
+CALL Geometry3K-150 geometry3k_test_2626 raw
+OK	Geometry3K-150	geometry3k_test_2626	raw	pred='C'	gold='C'	complete=True	duration_s=4.36
+CALL Geometry3K-150 geometry3k_test_2626 structured_facts
+OK	Geometry3K-150	geometry3k_test_2626	structured_facts	pred='C'	gold='C'	complete=True	duration_s=4.70
+CALL Geometry3K-150 geometry3k_test_2626 perception_graph
+OK	Geometry3K-150	geometry3k_test_2626	perception_graph	pred='C'	gold='C'	complete=True	duration_s=4.97
+CALL Geometry3K-150 geometry3k_test_2626 construction_plan
+FAIL	Geometry3K-150	geometry3k_test_2626	construction_plan	pred='D'	gold='C'	complete=True	duration_s=5.70
+CALL Geometry3K-150 geometry3k_test_2626 geoguide_solver
+FAIL	Geometry3K-150	geometry3k_test_2626	geoguide_solver	pred='D'	gold='C'	complete=True	duration_s=5.33
+CALL Geometry3K-150 geometry3k_test_2626 geoguide_cautious
+FAIL	Geometry3K-150	geometry3k_test_2626	geoguide_cautious	pred='D'	gold='C'	complete=True	duration_s=5.97
+CALL Geometry3K-150 geometry3k_test_2910 raw
+FAIL	Geometry3K-150	geometry3k_test_2910	raw	pred='C'	gold='D'	complete=True	duration_s=4.29
+CALL Geometry3K-150 geometry3k_test_2910 structured_facts
+FAIL	Geometry3K-150	geometry3k_test_2910	structured_facts	pred='C'	gold='D'	complete=True	duration_s=4.31
+CALL Geometry3K-150 geometry3k_test_2910 perception_graph
+FAIL	Geometry3K-150	geometry3k_test_2910	perception_graph	pred='C'	gold='D'	complete=True	duration_s=4.94
+CALL Geometry3K-150 geometry3k_test_2910 construction_plan
+FAIL	Geometry3K-150	geometry3k_test_2910	construction_plan	pred='C'	gold='D'	complete=True	duration_s=5.30
+CALL Geometry3K-150 geometry3k_test_2910 geoguide_solver
+FAIL	Geometry3K-150	geometry3k_test_2910	geoguide_solver	pred='C'	gold='D'	complete=True	duration_s=5.28
+CALL Geometry3K-150 geometry3k_test_2910 geoguide_cautious
+FAIL	Geometry3K-150	geometry3k_test_2910	geoguide_cautious	pred='C'	gold='D'	complete=True	duration_s=5.60
+CALL Geometry3K-150 geometry3k_test_2473 raw
+FAIL	Geometry3K-150	geometry3k_test_2473	raw	pred='B'	gold='A'	complete=True	duration_s=10.31
+CALL Geometry3K-150 geometry3k_test_2473 structured_facts
+FAIL	Geometry3K-150	geometry3k_test_2473	structured_facts	pred='B'	gold='A'	complete=True	duration_s=10.72
+CALL Geometry3K-150 geometry3k_test_2473 perception_graph
+FAIL	Geometry3K-150	geometry3k_test_2473	perception_graph	pred='B'	gold='A'	complete=True	duration_s=11.05
+CALL Geometry3K-150 geometry3k_test_2473 construction_plan
+FAIL	Geometry3K-150	geometry3k_test_2473	construction_plan	pred='B'	gold='A'	complete=True	duration_s=11.40
+CALL Geometry3K-150 geometry3k_test_2473 geoguide_solver
+FAIL	Geometry3K-150	geometry3k_test_2473	geoguide_solver	pred='B'	gold='A'	complete=True	duration_s=11.35
+CALL Geometry3K-150 geometry3k_test_2473 geoguide_cautious
+FAIL	Geometry3K-150	geometry3k_test_2473	geoguide_cautious	pred='B'	gold='A'	complete=True	duration_s=11.65
+CALL Geometry3K-150 geometry3k_test_2444 raw
+FAIL	Geometry3K-150	geometry3k_test_2444	raw	pred='C'	gold='A'	complete=True	duration_s=5.98
+CALL Geometry3K-150 geometry3k_test_2444 structured_facts
+FAIL	Geometry3K-150	geometry3k_test_2444	structured_facts	pred='C'	gold='A'	complete=True	duration_s=5.77
+CALL Geometry3K-150 geometry3k_test_2444 perception_graph
+FAIL	Geometry3K-150	geometry3k_test_2444	perception_graph	pred='C'	gold='A'	complete=True	duration_s=6.64
+CALL Geometry3K-150 geometry3k_test_2444 construction_plan
+FAIL	Geometry3K-150	geometry3k_test_2444	construction_plan	pred='C'	gold='A'	complete=True	duration_s=7.02
+CALL Geometry3K-150 geometry3k_test_2444 geoguide_solver
+FAIL	Geometry3K-150	geometry3k_test_2444	geoguide_solver	pred='C'	gold='A'	complete=True	duration_s=6.68
+CALL Geometry3K-150 geometry3k_test_2444 geoguide_cautious
+FAIL	Geometry3K-150	geometry3k_test_2444	geoguide_cautious	pred='C'	gold='A'	complete=True	duration_s=7.19
+CALL Geometry3K-150 geometry3k_test_2594 raw
+OK	Geometry3K-150	geometry3k_test_2594	raw	pred='B'	gold='B'	complete=True	duration_s=4.11
+CALL Geometry3K-150 geometry3k_test_2594 structured_facts
+OK	Geometry3K-150	geometry3k_test_2594	structured_facts	pred='B'	gold='B'	complete=True	duration_s=4.66
+CALL Geometry3K-150 geometry3k_test_2594 perception_graph
+OK	Geometry3K-150	geometry3k_test_2594	perception_graph	pred='B'	gold='B'	complete=True	duration_s=5.03
+CALL Geometry3K-150 geometry3k_test_2594 construction_plan
+OK	Geometry3K-150	geometry3k_test_2594	construction_plan	pred='B'	gold='B'	complete=True	duration_s=5.41
+CALL Geometry3K-150 geometry3k_test_2594 geoguide_solver
+OK	Geometry3K-150	geometry3k_test_2594	geoguide_solver	pred='B'	gold='B'	complete=True	duration_s=5.11
+CALL Geometry3K-150 geometry3k_test_2594 geoguide_cautious
+OK	Geometry3K-150	geometry3k_test_2594	geoguide_cautious	pred='B'	gold='B'	complete=True	duration_s=5.69
+CALL Geometry3K-150 geometry3k_test_2614 raw
+OK	Geometry3K-150	geometry3k_test_2614	raw	pred='B'	gold='B'	complete=True	duration_s=5.67
+CALL Geometry3K-150 geometry3k_test_2614 structured_facts
+OK	Geometry3K-150	geometry3k_test_2614	structured_facts	pred='B'	gold='B'	complete=True	duration_s=5.97
+CALL Geometry3K-150 geometry3k_test_2614 perception_graph
+OK	Geometry3K-150	geometry3k_test_2614	perception_graph	pred='B'	gold='B'	complete=True	duration_s=6.31
+CALL Geometry3K-150 geometry3k_test_2614 construction_plan
+OK	Geometry3K-150	geometry3k_test_2614	construction_plan	pred='B'	gold='B'	complete=True	duration_s=6.68
+CALL Geometry3K-150 geometry3k_test_2614 geoguide_solver
+OK	Geometry3K-150	geometry3k_test_2614	geoguide_solver	pred='B'	gold='B'	complete=True	duration_s=6.34
+CALL Geometry3K-150 geometry3k_test_2614 geoguide_cautious
+OK	Geometry3K-150	geometry3k_test_2614	geoguide_cautious	pred='B'	gold='B'	complete=True	duration_s=6.94
+CALL Geometry3K-150 geometry3k_test_2762 raw
+OK	Geometry3K-150	geometry3k_test_2762	raw	pred='B'	gold='B'	complete=True	duration_s=26.33
+CALL Geometry3K-150 geometry3k_test_2762 structured_facts
+OK	Geometry3K-150	geometry3k_test_2762	structured_facts	pred='B'	gold='B'	complete=True	duration_s=26.78
+CALL Geometry3K-150 geometry3k_test_2762 perception_graph
+OK	Geometry3K-150	geometry3k_test_2762	perception_graph	pred='B'	gold='B'	complete=True	duration_s=27.07
+CALL Geometry3K-150 geometry3k_test_2762 construction_plan
+OK	Geometry3K-150	geometry3k_test_2762	construction_plan	pred='B'	gold='B'	complete=True	duration_s=27.74
+CALL Geometry3K-150 geometry3k_test_2762 geoguide_solver
+OK	Geometry3K-150	geometry3k_test_2762	geoguide_solver	pred='B'	gold='B'	complete=True	duration_s=27.35
+CALL Geometry3K-150 geometry3k_test_2762 geoguide_cautious
+OK	Geometry3K-150	geometry3k_test_2762	geoguide_cautious	pred='B'	gold='B'	complete=True	duration_s=27.50
+CALL Geometry3K-150 geometry3k_test_2785 raw
+OK	Geometry3K-150	geometry3k_test_2785	raw	pred='D'	gold='D'	complete=True	duration_s=9.88
+CALL Geometry3K-150 geometry3k_test_2785 structured_facts
+OK	Geometry3K-150	geometry3k_test_2785	structured_facts	pred='D'	gold='D'	complete=True	duration_s=10.55
+CALL Geometry3K-150 geometry3k_test_2785 perception_graph
+OK	Geometry3K-150	geometry3k_test_2785	perception_graph	pred='D'	gold='D'	complete=True	duration_s=11.33
+CALL Geometry3K-150 geometry3k_test_2785 construction_plan
+OK	Geometry3K-150	geometry3k_test_2785	construction_plan	pred='D'	gold='D'	complete=True	duration_s=11.95
+CALL Geometry3K-150 geometry3k_test_2785 geoguide_solver
+OK	Geometry3K-150	geometry3k_test_2785	geoguide_solver	pred='D'	gold='D'	complete=True	duration_s=11.64
+CALL Geometry3K-150 geometry3k_test_2785 geoguide_cautious
+OK	Geometry3K-150	geometry3k_test_2785	geoguide_cautious	pred='D'	gold='D'	complete=True	duration_s=11.54
+CALL Geometry3K-150 geometry3k_test_2413 raw
+FAIL	Geometry3K-150	geometry3k_test_2413	raw	pred='C'	gold='B'	complete=True	duration_s=4.15
+CALL Geometry3K-150 geometry3k_test_2413 structured_facts
+FAIL	Geometry3K-150	geometry3k_test_2413	structured_facts	pred='C'	gold='B'	complete=True	duration_s=4.68
+CALL Geometry3K-150 geometry3k_test_2413 perception_graph
+FAIL	Geometry3K-150	geometry3k_test_2413	perception_graph	pred='C'	gold='B'	complete=True	duration_s=5.02
+CALL Geometry3K-150 geometry3k_test_2413 construction_plan
+FAIL	Geometry3K-150	geometry3k_test_2413	construction_plan	pred='C'	gold='B'	complete=True	duration_s=5.53
+CALL Geometry3K-150 geometry3k_test_2413 geoguide_solver
+FAIL	Geometry3K-150	geometry3k_test_2413	geoguide_solver	pred='C'	gold='B'	complete=True	duration_s=5.05
+CALL Geometry3K-150 geometry3k_test_2413 geoguide_cautious
+FAIL	Geometry3K-150	geometry3k_test_2413	geoguide_cautious	pred='C'	gold='B'	complete=True	duration_s=5.40
+CALL Geometry3K-150 geometry3k_test_2729 raw
+OK	Geometry3K-150	geometry3k_test_2729	raw	pred='A'	gold='A'	complete=True	duration_s=4.84
+CALL Geometry3K-150 geometry3k_test_2729 structured_facts

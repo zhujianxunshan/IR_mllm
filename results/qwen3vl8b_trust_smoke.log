@@ -1,0 +1,125 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:05<00:16,  5.51s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:12<00:12,  6.36s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:19<00:06,  6.68s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:21<00:00,  4.99s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:21<00:00,  5.48s/it]
+CALL geometry3k_test_2401 oracle_topk6_cautious
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+OK	geometry3k_test_2401	oracle_topk6_cautious	pred='B'	gold='B'	complete=True	new_tokens=2	duration_s=5.52
+CALL geometry3k_test_2401 oracle_topk3_trusted
+OK	geometry3k_test_2401	oracle_topk3_trusted	pred='B'	gold='B'	complete=True	new_tokens=2	duration_s=4.39
+CALL geometry3k_test_2401 oracle_topk6_trusted
+OK	geometry3k_test_2401	oracle_topk6_trusted	pred='B'	gold='B'	complete=True	new_tokens=2	duration_s=4.68
+CALL geometry3k_test_2401 oracle_corrupt_warned
+OK	geometry3k_test_2401	oracle_corrupt_warned	pred='B'	gold='B'	complete=True	new_tokens=2	duration_s=4.66
+CALL geometry3k_test_2401 oracle_corrupt_trusted
+OK	geometry3k_test_2401	oracle_corrupt_trusted	pred='B'	gold='B'	complete=True	new_tokens=2	duration_s=4.66
+{
+  "variants": {
+    "oracle_topk6_cautious": {
+      "n": 1,
+      "complete": 1,
+      "correct": 1,
+      "accuracy_on_complete": 1.0,
+      "all_sample_accuracy": 1.0,
+      "errors": 0,
+      "truncated": 0,
+      "missing_answer_line": 0
+    },
+    "oracle_topk3_trusted": {
+      "n": 1,
+      "complete": 1,
+      "correct": 1,
+      "accuracy_on_complete": 1.0,
+      "all_sample_accuracy": 1.0,
+      "errors": 0,
+      "truncated": 0,
+      "missing_answer_line": 0
+    },
+    "oracle_topk6_trusted": {
+      "n": 1,
+      "complete": 1,
+      "correct": 1,
+      "accuracy_on_complete": 1.0,
+      "all_sample_accuracy": 1.0,
+      "errors": 0,
+      "truncated": 0,
+      "missing_answer_line": 0
+    },
+    "oracle_corrupt_warned": {
+      "n": 1,
+      "complete": 1,
+      "correct": 1,
+      "accuracy_on_complete": 1.0,
+      "all_sample_accuracy": 1.0,
+      "errors": 0,
+      "truncated": 0,
+      "missing_answer_line": 0
+    },
+    "oracle_corrupt_trusted": {
+      "n": 1,
+      "complete": 1,
+      "correct": 1,
+      "accuracy_on_complete": 1.0,
+      "all_sample_accuracy": 1.0,
+      "errors": 0,
+      "truncated": 0,
+      "missing_answer_line": 0
+    }
+  },
+  "pairwise_vs_raw": {
+    "oracle_topk6_cautious": {
+      "variant_win": 0,
+      "variant_loss": 0,
+      "both_correct": 0,
+      "both_wrong": 0,
+      "incomplete_pair": 1,
+      "examples": {
+        "variant_win": [],
+        "variant_loss": []
+      }
+    },
+    "oracle_topk3_trusted": {
+      "variant_win": 0,
+      "variant_loss": 0,
+      "both_correct": 0,
+      "both_wrong": 0,
+      "incomplete_pair": 1,
+      "examples": {
+        "variant_win": [],
+        "variant_loss": []
+      }
+    },
+    "oracle_topk6_trusted": {
+      "variant_win": 0,
+      "variant_loss": 0,
+      "both_correct": 0,
+      "both_wrong": 0,
+      "incomplete_pair": 1,
+      "examples": {
+        "variant_win": [],
+        "variant_loss": []
+      }
+    },
+    "oracle_corrupt_warned": {
+      "variant_win": 0,
+      "variant_loss": 0,
+      "both_correct": 0,
+      "both_wrong": 0,
+      "incomplete_pair": 1,
+      "examples": {
+        "variant_win": [],
+        "variant_loss": []
+      }
+    },
+    "oracle_corrupt_trusted": {
+      "variant_win": 0,
+      "variant_loss": 0,
+      "both_correct": 0,
+      "both_wrong": 0,
+      "incomplete_pair": 1,
+      "examples": {
+        "variant_win": [],
+        "variant_loss": []
+      }
+    }
+  },
+  "n_unique_ids": 1
+}

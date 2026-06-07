@@ -1,0 +1,49 @@
+{
+  "variants": {
+    "oracle_corrupt_warned": {
+      "n": 50,
+      "complete": 50,
+      "correct": 26,
+      "accuracy_on_complete": 0.52,
+      "all_sample_accuracy": 0.52,
+      "errors": 0,
+      "truncated": 0,
+      "missing_answer_line": 0
+    },
+    "oracle_corrupt_trusted": {
+      "n": 50,
+      "complete": 50,
+      "correct": 24,
+      "accuracy_on_complete": 0.48,
+      "all_sample_accuracy": 0.48,
+      "errors": 0,
+      "truncated": 0,
+      "missing_answer_line": 0
+    }
+  },
+  "pairwise_vs_raw": {
+    "oracle_corrupt_warned": {
+      "variant_win": 0,
+      "variant_loss": 0,
+      "both_correct": 0,
+      "both_wrong": 0,
+      "incomplete_pair": 50,
+      "examples": {
+        "variant_win": [],
+        "variant_loss": []
+      }
+    },
+    "oracle_corrupt_trusted": {
+      "variant_win": 0,
+      "variant_loss": 0,
+      "both_correct": 0,
+      "both_wrong": 0,
+      "incomplete_pair": 50,
+      "examples": {
+        "variant_win": [],
+        "variant_loss": []
+      }
+    }
+  },
+  "n_unique_ids": 50
+}

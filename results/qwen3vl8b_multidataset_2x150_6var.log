@@ -1,0 +1,20 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:05<00:16,  5.55s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:12<00:12,  6.45s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:19<00:06,  6.80s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:22<00:00,  5.07s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:22<00:00,  5.57s/it]
+CALL Geometry3K-150 geometry3k_test_2992 raw
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+OK	Geometry3K-150	geometry3k_test_2992	raw	pred='B'	gold='B'	complete=True	duration_s=4.97
+CALL Geometry3K-150 geometry3k_test_2992 structured_facts
+OK	Geometry3K-150	geometry3k_test_2992	structured_facts	pred='B'	gold='B'	complete=True	duration_s=5.01
+CALL Geometry3K-150 geometry3k_test_2992 perception_graph
+OK	Geometry3K-150	geometry3k_test_2992	perception_graph	pred='B'	gold='B'	complete=True	duration_s=5.36
+CALL Geometry3K-150 geometry3k_test_2992 construction_plan
+OK	Geometry3K-150	geometry3k_test_2992	construction_plan	pred='B'	gold='B'	complete=True	duration_s=5.71
+CALL Geometry3K-150 geometry3k_test_2992 geoguide_solver
+OK	Geometry3K-150	geometry3k_test_2992	geoguide_solver	pred='B'	gold='B'	complete=True	duration_s=6.04
+CALL Geometry3K-150 geometry3k_test_2992 geoguide_cautious
+OK	Geometry3K-150	geometry3k_test_2992	geoguide_cautious	pred='B'	gold='B'	complete=True	duration_s=5.68
+CALL Geometry3K-150 geometry3k_test_2768 raw
+OK	Geometry3K-150	geometry3k_test_2768	raw	pred='B'	gold='B'	complete=True	duration_s=6.68
+CALL Geometry3K-150 geometry3k_test_2768 structured_facts
+OK	Geometry3K-150	geometry3k_test_2768	structured_facts	pred='B'	gold='B'	complete=True	duration_s=7.63
+CALL Geometry3K-150 geometry3k_test_2768 perception_graph

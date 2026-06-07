@@ -1,0 +1,15 @@
+\begin{table}[t]
+\centering
+\caption{Downstream Qwen3-VL evaluation on 200 Geometry3K problems with available GDP parses. The generated construction plan is produced automatically from GDP parse + question + choices by the LoRA generator.}
+\label{tab:downstream200}
+\small
+\begin{tabular}{lrrrr}
+\toprule
+Variant & Correct / N & Complete & Accuracy & Avg. sec. \\
+\midrule
+raw & 106 / 200 & 200 / 200 & 53.0 & 7.41 \\
+image+GDP & 104 / 200 & 192 / 200 & 52.0 & 8.06 \\
+image+generated construction plan & 108 / 200 & 200 / 200 & 54.0 & 8.91 \\
+\bottomrule
+\end{tabular}
+\end{table}

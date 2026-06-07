@@ -1,0 +1,101 @@
+{
+  "variants": {
+    "raw": {
+      "n": 1,
+      "complete": 1,
+      "correct": 1,
+      "accuracy_on_complete": 1.0,
+      "all_sample_accuracy": 1.0,
+      "errors": 0,
+      "truncated": 0,
+      "missing_answer_line": 0
+    },
+    "oracle_full": {
+      "n": 1,
+      "complete": 1,
+      "correct": 1,
+      "accuracy_on_complete": 1.0,
+      "all_sample_accuracy": 1.0,
+      "errors": 0,
+      "truncated": 0,
+      "missing_answer_line": 0
+    },
+    "oracle_compact": {
+      "n": 1,
+      "complete": 1,
+      "correct": 1,
+      "accuracy_on_complete": 1.0,
+      "all_sample_accuracy": 1.0,
+      "errors": 0,
+      "truncated": 0,
+      "missing_answer_line": 0
+    },
+    "oracle_topk3": {
+      "n": 1,
+      "complete": 1,
+      "correct": 1,
+      "accuracy_on_complete": 1.0,
+      "all_sample_accuracy": 1.0,
+      "errors": 0,
+      "truncated": 0,
+      "missing_answer_line": 0
+    },
+    "oracle_corrupt": {
+      "n": 1,
+      "complete": 1,
+      "correct": 1,
+      "accuracy_on_complete": 1.0,
+      "all_sample_accuracy": 1.0,
+      "errors": 0,
+      "truncated": 0,
+      "missing_answer_line": 0
+    }
+  },
+  "pairwise_vs_raw": {
+    "oracle_full": {
+      "variant_win": 0,
+      "variant_loss": 0,
+      "both_correct": 1,
+      "both_wrong": 0,
+      "incomplete_pair": 0,
+      "examples": {
+        "variant_win": [],
+        "variant_loss": []
+      }
+    },
+    "oracle_compact": {
+      "variant_win": 0,
+      "variant_loss": 0,
+      "both_correct": 1,
+      "both_wrong": 0,
+      "incomplete_pair": 0,
+      "examples": {
+        "variant_win": [],
+        "variant_loss": []
+      }
+    },
+    "oracle_topk3": {
+      "variant_win": 0,
+      "variant_loss": 0,
+      "both_correct": 1,
+      "both_wrong": 0,
+      "incomplete_pair": 0,
+      "examples": {
+        "variant_win": [],
+        "variant_loss": []
+      }
+    },
+    "oracle_corrupt": {
+      "variant_win": 0,
+      "variant_loss": 0,
+      "both_correct": 1,
+      "both_wrong": 0,
+      "incomplete_pair": 0,
+      "examples": {
+        "variant_win": [],
+        "variant_loss": []
+      }
+    }
+  },
+  "n_unique_ids": 1
+}

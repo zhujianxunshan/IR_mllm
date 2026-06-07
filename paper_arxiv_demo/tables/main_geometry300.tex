@@ -1,0 +1,19 @@
+\begin{table}[t]
+\centering
+\caption{Same-split comparison on Geometry3K-300 with Qwen3-VL-8B. All structured variants include the original image except where noted.}
+\label{tab:main-geometry300}
+\small
+\begin{tabular}{lrrrr}
+\toprule
+Variant & Image & Source of structure & Correct / N & Acc. \\
+\midrule
+raw & yes & none & 158 / 300 & 52.67 \\
+image+GDP & yes & GDP-4B automatic parse & 154 / 300 & 51.33 \\
+structured\_facts & yes & Geometry3K oracle predicates, ranked & 161 / 300 & 53.67 \\
+perception\_graph & yes & Oracle predicates, perception buckets & 158 / 300 & 52.67 \\
+construction\_plan & yes & Oracle predicates + construction/theorem cues & 167 / 300 & 55.67 \\
+geoguide\_solver & yes & Solver-style guidance & 160 / 300 & 53.33 \\
+geoguide\_cautious & yes & Solver-style, conflict-cautious & 157 / 300 & 52.33 \\
+\bottomrule
+\end{tabular}
+\end{table}

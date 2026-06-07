@@ -1,0 +1,124 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:05<00:16,  5.49s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:12<00:12,  6.33s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:19<00:06,  6.65s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:21<00:00,  4.97s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:21<00:00,  5.46s/it]
+CALL geometry3k_test_2401 raw
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+OK	geometry3k_test_2401	raw	pred='B'	gold='B'	complete=True	new_tokens=2	duration_s=4.95
+CALL geometry3k_test_2401 oracle_full
+OK	geometry3k_test_2401	oracle_full	pred='B'	gold='B'	complete=True	new_tokens=2	duration_s=5.36
+CALL geometry3k_test_2401 oracle_natural
+OK	geometry3k_test_2401	oracle_natural	pred='B'	gold='B'	complete=True	new_tokens=2	duration_s=4.44
+CALL geometry3k_test_2401 geoguide_minimal
+OK	geometry3k_test_2401	geoguide_minimal	pred='B'	gold='B'	complete=True	new_tokens=2	duration_s=4.43
+CALL geometry3k_test_2401 geoguide_theorem
+OK	geometry3k_test_2401	geoguide_theorem	pred='B'	gold='B'	complete=True	new_tokens=2	duration_s=4.68
+CALL geometry3k_test_2401 geoguide_stepplan
+OK	geometry3k_test_2401	geoguide_stepplan	pred='B'	gold='B'	complete=True	new_tokens=2	duration_s=4.73
+CALL geometry3k_test_2401 geoguide_optioncheck
+OK	geometry3k_test_2401	geoguide_optioncheck	pred='B'	gold='B'	complete=True	new_tokens=5	duration_s=5.32
+CALL geometry3k_test_2401 geoguide_hybrid
+OK	geometry3k_test_2401	geoguide_hybrid	pred='B'	gold='B'	complete=True	new_tokens=2	duration_s=5.66
+CALL geometry3k_test_2402 raw
+OK	geometry3k_test_2402	raw	pred='A'	gold='A'	complete=True	new_tokens=2	duration_s=4.50
+CALL geometry3k_test_2402 oracle_full
+OK	geometry3k_test_2402	oracle_full	pred='A'	gold='A'	complete=True	new_tokens=2	duration_s=7.01
+CALL geometry3k_test_2402 oracle_natural
+OK	geometry3k_test_2402	oracle_natural	pred='A'	gold='A'	complete=True	new_tokens=2	duration_s=5.07
+CALL geometry3k_test_2402 geoguide_minimal
+OK	geometry3k_test_2402	geoguide_minimal	pred='A'	gold='A'	complete=True	new_tokens=2	duration_s=5.05
+CALL geometry3k_test_2402 geoguide_theorem
+OK	geometry3k_test_2402	geoguide_theorem	pred='A'	gold='A'	complete=True	new_tokens=2	duration_s=5.41
+CALL geometry3k_test_2402 geoguide_stepplan
+OK	geometry3k_test_2402	geoguide_stepplan	pred='A'	gold='A'	complete=True	new_tokens=2	duration_s=5.72
+CALL geometry3k_test_2402 geoguide_optioncheck
+OK	geometry3k_test_2402	geoguide_optioncheck	pred='A'	gold='A'	complete=True	new_tokens=5	duration_s=6.03
+CALL geometry3k_test_2402 geoguide_hybrid
+OK	geometry3k_test_2402	geoguide_hybrid	pred='A'	gold='A'	complete=True	new_tokens=2	duration_s=6.36
+CALL geometry3k_test_2403 raw
+FAIL	geometry3k_test_2403	raw	pred='B'	gold='A'	complete=True	new_tokens=8	duration_s=5.00
+CALL geometry3k_test_2403 oracle_full
+FAIL	geometry3k_test_2403	oracle_full	pred='B'	gold='A'	complete=True	new_tokens=8	duration_s=6.99
+CALL geometry3k_test_2403 oracle_natural
+FAIL	geometry3k_test_2403	oracle_natural	pred='B'	gold='A'	complete=True	new_tokens=2	duration_s=5.06
+CALL geometry3k_test_2403 geoguide_minimal
+FAIL	geometry3k_test_2403	geoguide_minimal	pred='B'	gold='A'	complete=True	new_tokens=8	duration_s=5.36
+CALL geometry3k_test_2403 geoguide_theorem
+FAIL	geometry3k_test_2403	geoguide_theorem	pred='B'	gold='A'	complete=True	new_tokens=8	duration_s=5.60
+CALL geometry3k_test_2403 geoguide_stepplan
+FAIL	geometry3k_test_2403	geoguide_stepplan	pred='B'	gold='A'	complete=True	new_tokens=8	duration_s=5.63
+CALL geometry3k_test_2403 geoguide_optioncheck
+FAIL	geometry3k_test_2403	geoguide_optioncheck	pred='B'	gold='A'	complete=True	new_tokens=11	duration_s=6.21
+CALL geometry3k_test_2403 geoguide_hybrid
+FAIL	geometry3k_test_2403	geoguide_hybrid	pred='B'	gold='A'	complete=True	new_tokens=8	duration_s=6.63
+CALL geometry3k_test_2404 raw
+FAIL	geometry3k_test_2404	raw	pred='A'	gold='B'	complete=True	new_tokens=2	duration_s=4.16
+CALL geometry3k_test_2404 oracle_full
+FAIL	geometry3k_test_2404	oracle_full	pred='A'	gold='B'	complete=True	new_tokens=2	duration_s=6.45
+CALL geometry3k_test_2404 oracle_natural
+FAIL	geometry3k_test_2404	oracle_natural	pred='A'	gold='B'	complete=True	new_tokens=2	duration_s=5.13
+CALL geometry3k_test_2404 geoguide_minimal
+FAIL	geometry3k_test_2404	geoguide_minimal	pred='A'	gold='B'	complete=True	new_tokens=2	duration_s=4.84
+CALL geometry3k_test_2404 geoguide_theorem
+FAIL	geometry3k_test_2404	geoguide_theorem	pred='A'	gold='B'	complete=True	new_tokens=2	duration_s=5.16
+CALL geometry3k_test_2404 geoguide_stepplan
+FAIL	geometry3k_test_2404	geoguide_stepplan	pred='A'	gold='B'	complete=True	new_tokens=5	duration_s=5.50
+CALL geometry3k_test_2404 geoguide_optioncheck
+FAIL	geometry3k_test_2404	geoguide_optioncheck	pred='A'	gold='B'	complete=True	new_tokens=5	duration_s=5.86
+CALL geometry3k_test_2404 geoguide_hybrid
+FAIL	geometry3k_test_2404	geoguide_hybrid	pred='A'	gold='B'	complete=True	new_tokens=5	duration_s=6.50
+CALL geometry3k_test_2405 raw
+FAIL	geometry3k_test_2405	raw	pred='C'	gold='D'	complete=True	new_tokens=2	duration_s=9.51
+CALL geometry3k_test_2405 oracle_full
+FAIL	geometry3k_test_2405	oracle_full	pred='C'	gold='D'	complete=True	new_tokens=2	duration_s=12.55
+CALL geometry3k_test_2405 oracle_natural
+FAIL	geometry3k_test_2405	oracle_natural	pred='C'	gold='D'	complete=True	new_tokens=2	duration_s=10.14
+CALL geometry3k_test_2405 geoguide_minimal
+FAIL	geometry3k_test_2405	geoguide_minimal	pred='C'	gold='D'	complete=True	new_tokens=2	duration_s=9.80
+CALL geometry3k_test_2405 geoguide_theorem
+FAIL	geometry3k_test_2405	geoguide_theorem	pred='C'	gold='D'	complete=True	new_tokens=2	duration_s=10.17
+CALL geometry3k_test_2405 geoguide_stepplan
+FAIL	geometry3k_test_2405	geoguide_stepplan	pred='C'	gold='D'	complete=True	new_tokens=2	duration_s=10.48
+CALL geometry3k_test_2405 geoguide_optioncheck
+FAIL	geometry3k_test_2405	geoguide_optioncheck	pred='C'	gold='D'	complete=True	new_tokens=2	duration_s=10.47
+CALL geometry3k_test_2405 geoguide_hybrid
+FAIL	geometry3k_test_2405	geoguide_hybrid	pred='C'	gold='D'	complete=True	new_tokens=2	duration_s=11.26
+CALL geometry3k_test_2406 raw
+FAIL	geometry3k_test_2406	raw	pred='B'	gold='A'	complete=True	new_tokens=2	duration_s=9.87
+CALL geometry3k_test_2406 oracle_full
+FAIL	geometry3k_test_2406	oracle_full	pred='B'	gold='A'	complete=True	new_tokens=2	duration_s=12.24
+CALL geometry3k_test_2406 oracle_natural
+FAIL	geometry3k_test_2406	oracle_natural	pred='B'	gold='A'	complete=True	new_tokens=2	duration_s=10.65
+CALL geometry3k_test_2406 geoguide_minimal
+FAIL	geometry3k_test_2406	geoguide_minimal	pred='B'	gold='A'	complete=True	new_tokens=2	duration_s=10.25
+CALL geometry3k_test_2406 geoguide_theorem
+FAIL	geometry3k_test_2406	geoguide_theorem	pred='B'	gold='A'	complete=True	new_tokens=2	duration_s=10.58
+CALL geometry3k_test_2406 geoguide_stepplan
+FAIL	geometry3k_test_2406	geoguide_stepplan	pred='B'	gold='A'	complete=True	new_tokens=2	duration_s=10.69
+CALL geometry3k_test_2406 geoguide_optioncheck
+FAIL	geometry3k_test_2406	geoguide_optioncheck	pred='B'	gold='A'	complete=True	new_tokens=5	duration_s=11.32
+CALL geometry3k_test_2406 geoguide_hybrid
+FAIL	geometry3k_test_2406	geoguide_hybrid	pred='B'	gold='A'	complete=True	new_tokens=2	duration_s=11.53
+CALL geometry3k_test_2407 raw
+FAIL	geometry3k_test_2407	raw	pred='B'	gold='C'	complete=True	new_tokens=2	duration_s=9.65
+CALL geometry3k_test_2407 oracle_full
+FAIL	geometry3k_test_2407	oracle_full	pred='B'	gold='C'	complete=True	new_tokens=2	duration_s=12.40
+CALL geometry3k_test_2407 oracle_natural
+FAIL	geometry3k_test_2407	oracle_natural	pred='B'	gold='C'	complete=True	new_tokens=2	duration_s=10.37
+CALL geometry3k_test_2407 geoguide_minimal
+FAIL	geometry3k_test_2407	geoguide_minimal	pred='B'	gold='C'	complete=True	new_tokens=2	duration_s=9.98
+CALL geometry3k_test_2407 geoguide_theorem
+FAIL	geometry3k_test_2407	geoguide_theorem	pred='B'	gold='C'	complete=True	new_tokens=6	duration_s=10.37
+CALL geometry3k_test_2407 geoguide_stepplan
+FAIL	geometry3k_test_2407	geoguide_stepplan	pred=''	gold='C'	complete=False	new_tokens=32	duration_s=12.98
+CALL geometry3k_test_2407 geoguide_optioncheck
+FAIL	geometry3k_test_2407	geoguide_optioncheck	pred='B'	gold='C'	complete=True	new_tokens=5	duration_s=10.93
+CALL geometry3k_test_2407 geoguide_hybrid
+FAIL	geometry3k_test_2407	geoguide_hybrid	pred=''	gold='C'	complete=False	new_tokens=32	duration_s=13.94
+CALL geometry3k_test_2408 raw
+FAIL	geometry3k_test_2408	raw	pred='A'	gold='C'	complete=True	new_tokens=2	duration_s=8.96
+CALL geometry3k_test_2408 oracle_full
+FAIL	geometry3k_test_2408	oracle_full	pred='B'	gold='C'	complete=True	new_tokens=2	duration_s=11.44
+CALL geometry3k_test_2408 oracle_natural
+FAIL	geometry3k_test_2408	oracle_natural	pred='B'	gold='C'	complete=True	new_tokens=2	duration_s=9.35
+CALL geometry3k_test_2408 geoguide_minimal
+FAIL	geometry3k_test_2408	geoguide_minimal	pred='A'	gold='C'	complete=True	new_tokens=6	duration_s=9.67
+CALL geometry3k_test_2408 geoguide_theorem

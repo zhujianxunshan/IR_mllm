@@ -1,0 +1,248 @@
+{
+  "variants": {
+    "raw": {
+      "n": 601,
+      "complete": 601,
+      "correct": 325,
+      "accuracy_on_complete": 0.540765391014975,
+      "all_sample_accuracy": 0.540765391014975,
+      "errors": 0,
+      "truncated": 0,
+      "missing_answer_line": 0
+    },
+    "oracle_full": {
+      "n": 601,
+      "complete": 598,
+      "correct": 318,
+      "accuracy_on_complete": 0.5317725752508361,
+      "all_sample_accuracy": 0.5291181364392679,
+      "errors": 0,
+      "truncated": 0,
+      "missing_answer_line": 3
+    },
+    "oracle_topk3": {
+      "n": 601,
+      "complete": 598,
+      "correct": 317,
+      "accuracy_on_complete": 0.5301003344481605,
+      "all_sample_accuracy": 0.5274542429284526,
+      "errors": 0,
+      "truncated": 3,
+      "missing_answer_line": 3
+    },
+    "oracle_topk6_cautious": {
+      "n": 601,
+      "complete": 599,
+      "correct": 325,
+      "accuracy_on_complete": 0.5425709515859767,
+      "all_sample_accuracy": 0.540765391014975,
+      "errors": 0,
+      "truncated": 2,
+      "missing_answer_line": 2
+    },
+    "oracle_topk3_trusted": {
+      "n": 601,
+      "complete": 599,
+      "correct": 324,
+      "accuracy_on_complete": 0.5409015025041736,
+      "all_sample_accuracy": 0.5391014975041597,
+      "errors": 0,
+      "truncated": 2,
+      "missing_answer_line": 2
+    },
+    "oracle_topk6_trusted": {
+      "n": 601,
+      "complete": 601,
+      "correct": 323,
+      "accuracy_on_complete": 0.5374376039933444,
+      "all_sample_accuracy": 0.5374376039933444,
+      "errors": 0,
+      "truncated": 0,
+      "missing_answer_line": 0
+    },
+    "oracle_corrupt_warned": {
+      "n": 601,
+      "complete": 601,
+      "correct": 320,
+      "accuracy_on_complete": 0.5324459234608985,
+      "all_sample_accuracy": 0.5324459234608985,
+      "errors": 0,
+      "truncated": 0,
+      "missing_answer_line": 0
+    },
+    "oracle_corrupt_trusted": {
+      "n": 601,
+      "complete": 601,
+      "correct": 314,
+      "accuracy_on_complete": 0.5224625623960066,
+      "all_sample_accuracy": 0.5224625623960066,
+      "errors": 0,
+      "truncated": 0,
+      "missing_answer_line": 0
+    }
+  },
+  "pairwise_vs_raw": {
+    "oracle_full": {
+      "variant_win": 14,
+      "variant_loss": 19,
+      "both_correct": 304,
+      "both_wrong": 261,
+      "incomplete_pair": 3,
+      "examples": {
+        "variant_win": [
+          "geometry3k_test_2421",
+          "geometry3k_test_2452",
+          "geometry3k_test_2527",
+          "geometry3k_test_2604",
+          "geometry3k_test_2653"
+        ],
+        "variant_loss": [
+          "geometry3k_test_2448",
+          "geometry3k_test_2539",
+          "geometry3k_test_2561",
+          "geometry3k_test_2568",
+          "geometry3k_test_2578"
+        ]
+      }
+    },
+    "oracle_topk3": {
+      "variant_win": 11,
+      "variant_loss": 19,
+      "both_correct": 306,
+      "both_wrong": 262,
+      "incomplete_pair": 3,
+      "examples": {
+        "variant_win": [
+          "geometry3k_test_2418",
+          "geometry3k_test_2601",
+          "geometry3k_test_2604",
+          "geometry3k_test_2625",
+          "geometry3k_test_2635"
+        ],
+        "variant_loss": [
+          "geometry3k_test_2486",
+          "geometry3k_test_2493",
+          "geometry3k_test_2539",
+          "geometry3k_test_2561",
+          "geometry3k_test_2568"
+        ]
+      }
+    },
+    "oracle_topk6_cautious": {
+      "variant_win": 14,
+      "variant_loss": 14,
+      "both_correct": 311,
+      "both_wrong": 260,
+      "incomplete_pair": 2,
+      "examples": {
+        "variant_win": [
+          "geometry3k_test_2407",
+          "geometry3k_test_2463",
+          "geometry3k_test_2558",
+          "geometry3k_test_2635",
+          "geometry3k_test_2645"
+        ],
+        "variant_loss": [
+          "geometry3k_test_2539",
+          "geometry3k_test_2568",
+          "geometry3k_test_2646",
+          "geometry3k_test_2694",
+          "geometry3k_test_2775"
+        ]
+      }
+    },
+    "oracle_topk3_trusted": {
+      "variant_win": 15,
+      "variant_loss": 16,
+      "both_correct": 309,
+      "both_wrong": 259,
+      "incomplete_pair": 2,
+      "examples": {
+        "variant_win": [
+          "geometry3k_test_2418",
+          "geometry3k_test_2463",
+          "geometry3k_test_2552",
+          "geometry3k_test_2567",
+          "geometry3k_test_2601"
+        ],
+        "variant_loss": [
+          "geometry3k_test_2440",
+          "geometry3k_test_2486",
+          "geometry3k_test_2493",
+          "geometry3k_test_2561",
+          "geometry3k_test_2568"
+        ]
+      }
+    },
+    "oracle_topk6_trusted": {
+      "variant_win": 15,
+      "variant_loss": 17,
+      "both_correct": 308,
+      "both_wrong": 261,
+      "incomplete_pair": 0,
+      "examples": {
+        "variant_win": [
+          "geometry3k_test_2463",
+          "geometry3k_test_2549",
+          "geometry3k_test_2558",
+          "geometry3k_test_2604",
+          "geometry3k_test_2635"
+        ],
+        "variant_loss": [
+          "geometry3k_test_2440",
+          "geometry3k_test_2539",
+          "geometry3k_test_2568",
+          "geometry3k_test_2578",
+          "geometry3k_test_2612"
+        ]
+      }
+    },
+    "oracle_corrupt_warned": {
+      "variant_win": 11,
+      "variant_loss": 16,
+      "both_correct": 309,
+      "both_wrong": 265,
+      "incomplete_pair": 0,
+      "examples": {
+        "variant_win": [
+          "geometry3k_test_2418",
+          "geometry3k_test_2463",
+          "geometry3k_test_2558",
+          "geometry3k_test_2604",
+          "geometry3k_test_2635"
+        ],
+        "variant_loss": [
+          "geometry3k_test_2539",
+          "geometry3k_test_2565",
+          "geometry3k_test_2568",
+          "geometry3k_test_2570",
+          "geometry3k_test_2640"
+        ]
+      }
+    },
+    "oracle_corrupt_trusted": {
+      "variant_win": 12,
+      "variant_loss": 23,
+      "both_correct": 302,
+      "both_wrong": 264,
+      "incomplete_pair": 0,
+      "examples": {
+        "variant_win": [
+          "geometry3k_test_2463",
+          "geometry3k_test_2527",
+          "geometry3k_test_2558",
+          "geometry3k_test_2604",
+          "geometry3k_test_2635"
+        ],
+        "variant_loss": [
+          "geometry3k_test_2448",
+          "geometry3k_test_2539",
+          "geometry3k_test_2543",
+          "geometry3k_test_2556",
+          "geometry3k_test_2565"
+        ]
+      }
+    }
+  },
+  "n_unique_ids": 601
+}

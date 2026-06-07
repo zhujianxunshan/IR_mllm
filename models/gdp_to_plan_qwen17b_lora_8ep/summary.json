@@ -1,0 +1,7 @@
+{
+  "global_step": 264,
+  "final_val_loss": 0.21272544666296905,
+  "final_val_ppl": 1.2370449697908827,
+  "train_rows": 264,
+  "val_rows": 36
+}

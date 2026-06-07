@@ -1,0 +1,250 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:40<02:00, 40.31s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:48<00:42, 21.34s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:55<00:14, 14.93s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:59<00:00, 10.37s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:59<00:00, 14.76s/it]
+CALL geometry3k_test_2401 raw
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+OK	geometry3k_test_2401	raw	pred='B'	gold='B'	steer=None	follow=False	complete=True	duration_s=4.98
+CALL geometry3k_test_2401 clean_topk6_cautious
+OK	geometry3k_test_2401	clean_topk6_cautious	pred='B'	gold='B'	steer=None	follow=False	complete=True	duration_s=4.68
+CALL geometry3k_test_2401 steer_A_trusted
+FAIL	geometry3k_test_2401	steer_A_trusted	pred='A'	gold='B'	steer='A'	follow=True	complete=True	duration_s=4.68
+CALL geometry3k_test_2401 steer_B_trusted
+OK	geometry3k_test_2401	steer_B_trusted	pred='B'	gold='B'	steer='B'	follow=True	complete=True	duration_s=4.71
+CALL geometry3k_test_2401 steer_C_trusted
+OK	geometry3k_test_2401	steer_C_trusted	pred='B'	gold='B'	steer='C'	follow=False	complete=True	duration_s=4.95
+CALL geometry3k_test_2401 steer_D_trusted
+OK	geometry3k_test_2401	steer_D_trusted	pred='B'	gold='B'	steer='D'	follow=False	complete=True	duration_s=4.98
+CALL geometry3k_test_2401 steer_wrong_trusted
+OK	geometry3k_test_2401	steer_wrong_trusted	pred='B'	gold='B'	steer='C'	follow=False	complete=True	duration_s=4.94
+CALL geometry3k_test_2401 steer_wrong_selfverify
+OK	geometry3k_test_2401	steer_wrong_selfverify	pred='B'	gold='B'	steer='C'	follow=False	complete=True	duration_s=4.99
+{
+  "variants": {
+    "raw": {
+      "n": 1,
+      "complete": 1,
+      "correct": 1,
+      "accuracy_on_complete": 1.0,
+      "all_sample_accuracy": 1.0,
+      "errors": 0,
+      "truncated": 0,
+      "missing_answer_line": 0,
+      "avg_duration_s": 4.9774370193481445,
+      "steer_follow_rate": null,
+      "raw_correct_steered_wrong": 0
+    },
+    "clean_topk6_cautious": {
+      "n": 1,
+      "complete": 1,
+      "correct": 1,
+      "accuracy_on_complete": 1.0,
+      "all_sample_accuracy": 1.0,
+      "errors": 0,
+      "truncated": 0,
+      "missing_answer_line": 0,
+      "avg_duration_s": 4.679380178451538,
+      "steer_follow_rate": null,
+      "raw_correct_steered_wrong": 0
+    },
+    "steer_A_trusted": {
+      "n": 1,
+      "complete": 1,
+      "correct": 0,
+      "accuracy_on_complete": 0.0,
+      "all_sample_accuracy": 0.0,
+      "errors": 0,
+      "truncated": 0,
+      "missing_answer_line": 0,
+      "avg_duration_s": 4.678844690322876,
+      "steer_follow_rate": 1.0,
+      "raw_correct_steered_wrong": 1
+    },
+    "steer_B_trusted": {
+      "n": 1,
+      "complete": 1,
+      "correct": 1,
+      "accuracy_on_complete": 1.0,
+      "all_sample_accuracy": 1.0,
+      "errors": 0,
+      "truncated": 0,
+      "missing_answer_line": 0,
+      "avg_duration_s": 4.713520765304565,
+      "steer_follow_rate": 1.0,
+      "raw_correct_steered_wrong": 0
+    },
+    "steer_C_trusted": {
+      "n": 1,
+      "complete": 1,
+      "correct": 1,
+      "accuracy_on_complete": 1.0,
+      "all_sample_accuracy": 1.0,
+      "errors": 0,
+      "truncated": 0,
+      "missing_answer_line": 0,
+      "avg_duration_s": 4.954046726226807,
+      "steer_follow_rate": 0.0,
+      "raw_correct_steered_wrong": 0
+    },
+    "steer_D_trusted": {
+      "n": 1,
+      "complete": 1,
+      "correct": 1,
+      "accuracy_on_complete": 1.0,
+      "all_sample_accuracy": 1.0,
+      "errors": 0,
+      "truncated": 0,
+      "missing_answer_line": 0,
+      "avg_duration_s": 4.982404947280884,
+      "steer_follow_rate": 0.0,
+      "raw_correct_steered_wrong": 0
+    },
+    "steer_wrong_trusted": {
+      "n": 1,
+      "complete": 1,
+      "correct": 1,
+      "accuracy_on_complete": 1.0,
+      "all_sample_accuracy": 1.0,
+      "errors": 0,
+      "truncated": 0,
+      "missing_answer_line": 0,
+      "avg_duration_s": 4.942672252655029,
+      "steer_follow_rate": 0.0,
+      "raw_correct_steered_wrong": 0
+    },
+    "steer_wrong_selfverify": {
+      "n": 1,
+      "complete": 1,
+      "correct": 1,
+      "accuracy_on_complete": 1.0,
+      "all_sample_accuracy": 1.0,
+      "errors": 0,
+      "truncated": 0,
+      "missing_answer_line": 0,
+      "avg_duration_s": 4.991675138473511,
+      "steer_follow_rate": 0.0,
+      "raw_correct_steered_wrong": 0
+    }
+  },
+  "pairwise_vs_raw": {
+    "clean_topk6_cautious": {
+      "other_win": 0,
+      "other_loss": 0,
+      "both_correct": 1,
+      "both_wrong": 0,
+      "incomplete_pair": 0,
+      "net": 0,
+      "examples": {
+        "other_win": [],
+        "other_loss": []
+      }
+    },
+    "steer_A_trusted": {
+      "other_win": 0,
+      "other_loss": 1,
+      "both_correct": 0,
+      "both_wrong": 0,
+      "incomplete_pair": 0,
+      "net": -1,
+      "examples": {
+        "other_win": [],
+        "other_loss": [
+          "geometry3k_test_2401"
+        ]
+      }
+    },
+    "steer_B_trusted": {
+      "other_win": 0,
+      "other_loss": 0,
+      "both_correct": 1,
+      "both_wrong": 0,
+      "incomplete_pair": 0,
+      "net": 0,
+      "examples": {
+        "other_win": [],
+        "other_loss": []
+      }
+    },
+    "steer_C_trusted": {
+      "other_win": 0,
+      "other_loss": 0,
+      "both_correct": 1,
+      "both_wrong": 0,
+      "incomplete_pair": 0,
+      "net": 0,
+      "examples": {
+        "other_win": [],
+        "other_loss": []
+      }
+    },
+    "steer_D_trusted": {
+      "other_win": 0,
+      "other_loss": 0,
+      "both_correct": 1,
+      "both_wrong": 0,
+      "incomplete_pair": 0,
+      "net": 0,
+      "examples": {
+        "other_win": [],
+        "other_loss": []
+      }
+    },
+    "steer_wrong_trusted": {
+      "other_win": 0,
+      "other_loss": 0,
+      "both_correct": 1,
+      "both_wrong": 0,
+      "incomplete_pair": 0,
+      "net": 0,
+      "examples": {
+        "other_win": [],
+        "other_loss": []
+      }
+    },
+    "steer_wrong_selfverify": {
+      "other_win": 0,
+      "other_loss": 0,
+      "both_correct": 1,
+      "both_wrong": 0,
+      "incomplete_pair": 0,
+      "net": 0,
+      "examples": {
+        "other_win": [],
+        "other_loss": []
+      }
+    }
+  },
+  "steering": {
+    "steer_A_trusted": {
+      "target_label": "A",
+      "follow_count": 1,
+      "n_complete": 1,
+      "follow_rate": 1.0,
+      "target_is_wrong_count": 1,
+      "wrong_target_follow_count": 1
+    },
+    "steer_B_trusted": {
+      "target_label": "B",
+      "follow_count": 1,
+      "n_complete": 1,
+      "follow_rate": 1.0,
+      "target_is_wrong_count": 0,
+      "wrong_target_follow_count": 0
+    },
+    "steer_C_trusted": {
+      "target_label": "C",
+      "follow_count": 0,
+      "n_complete": 1,
+      "follow_rate": 0.0,
+      "target_is_wrong_count": 1,
+      "wrong_target_follow_count": 0
+    },
+    "steer_D_trusted": {
+      "target_label": "D",
+      "follow_count": 0,
+      "n_complete": 1,
+      "follow_rate": 0.0,
+      "target_is_wrong_count": 1,
+      "wrong_target_follow_count": 0
+    }
+  },
+  "n_unique_ids": 1
+}
