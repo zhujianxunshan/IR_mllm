@@ -13,6 +13,21 @@
 
 ## 主要实验结论
 
+### Safe compact theorem-route generator
+
+最新 Geometry3K held-out 200 下游评测：
+
+| 条件 | 正确数 | 总数 | 准确率 | 相对 raw 修正 | 相对 raw 带偏 |
+|---|---:|---:|---:|---:|---:|
+| image_only | 104 | 200 | 52.0% | -- | -- |
+| old_route | 109 | 200 | 54.5% | 15 | 10 |
+| compact_route | 112 | 200 | 56.0% | 12 | 4 |
+| compact_route_qc | 108 | 200 | 54.0% | 7 | 3 |
+| confidence_route | 109 | 200 | 54.5% | 14 | 9 |
+| confidence_route_qc | 107 | 199 | 53.5% | 11 | 8 |
+
+主要结论是：短、去重、目标相关的 theorem route 比较有用。`compact_route` 将 raw Qwen3-VL 从 52.0% 提高到 56.0%，同时把旧 route generator 造成的带偏样例从 10 个降到 4 个。
+
 ### GDP-to-theorem-route generator
 
 训练数据来自 FormalGeo theorem sequences：
@@ -51,6 +66,9 @@ Geometry3K-200 下游结果：
 
 GitHub 仓库中包含派生实验数据、splits、GDP parses、实验输出和 LoRA adapter。远程服务器上更大的第三方原始数据包没有直接放入 GitHub，原因是体积较大且可能有再分发限制。
 
-后续计划把较大的原始数据、派生数据和模型参数放到 Hugging Face，并在本仓库中补充下载链接。
+较大的模型和数据/结果文件同步到 Hugging Face：
+
+- 模型/LoRA adapters：<https://huggingface.co/shiyunliu/IR_mllm>
+- 数据与实验结果：<https://huggingface.co/datasets/shiyunliu/IR_mllm_dataset>
 
 详细文件清单见 `MANIFEST.md`。

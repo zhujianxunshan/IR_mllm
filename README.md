@@ -15,6 +15,21 @@ Chinese README: [`README_zh.md`](README_zh.md)
 
 ## Main Results Snapshot
 
+### Safe compact theorem-route generator
+
+Latest Geometry3K held-out 200 downstream evaluation:
+
+| Variant | Correct | Total | Accuracy | Win vs raw | Loss vs raw |
+|---|---:|---:|---:|---:|---:|
+| image_only | 104 | 200 | 52.0% | -- | -- |
+| old_route | 109 | 200 | 54.5% | 15 | 10 |
+| compact_route | 112 | 200 | 56.0% | 12 | 4 |
+| compact_route_qc | 108 | 200 | 54.0% | 7 | 3 |
+| confidence_route | 109 | 200 | 54.5% | 14 | 9 |
+| confidence_route_qc | 107 | 199 | 53.5% | 11 | 8 |
+
+The main finding is that short, deduplicated theorem routes are more useful than longer unconstrained routes. The compact route generator improves raw Qwen3-VL accuracy by +4.0 points and reduces route-induced losses from 10 cases under the older route generator to 4 cases.
+
 ### GDP-to-theorem-route generator
 
 - Training source: FormalGeo theorem sequences.
@@ -47,5 +62,12 @@ Geometry3K-200 downstream:
 ## Large External Data
 
 The remote server also contained larger third-party raw archives, including MathVista and FormalGeo source archives. They are intentionally not committed here because they are large and may have redistribution constraints. This repository keeps the derived experiment splits, parses, outputs, and model adapters needed to inspect and reproduce the reported experiments. The derived data directories are stored as zip archives under `data_artifacts/` to avoid committing thousands of small files.
+
+## Hugging Face Artifacts
+
+Large and model-oriented artifacts are mirrored on Hugging Face:
+
+- Model/adapters: <https://huggingface.co/shiyunliu/IR_mllm>
+- Datasets/results: <https://huggingface.co/datasets/shiyunliu/IR_mllm_dataset>
 
 See `MANIFEST.md` for a detailed inventory and omitted large-file notes.

@@ -1,0 +1,104 @@
+{
+  "variants": {
+    "image_only": {
+      "n": 200,
+      "complete": 200,
+      "correct": 104,
+      "accuracy": 0.52,
+      "avg_duration_s": 7.357522779703141
+    },
+    "old_route": {
+      "n": 200,
+      "complete": 200,
+      "correct": 109,
+      "accuracy": 0.545,
+      "avg_duration_s": 8.085270072221755
+    },
+    "compact_route": {
+      "n": 200,
+      "complete": 200,
+      "correct": 112,
+      "accuracy": 0.56,
+      "avg_duration_s": 7.780690029859543
+    },
+    "compact_route_qc": {
+      "n": 200,
+      "complete": 200,
+      "correct": 108,
+      "accuracy": 0.54,
+      "avg_duration_s": 7.715567128658295
+    },
+    "confidence_route": {
+      "n": 200,
+      "complete": 200,
+      "correct": 109,
+      "accuracy": 0.545,
+      "avg_duration_s": 7.92189756989479
+    },
+    "confidence_route_qc": {
+      "n": 200,
+      "complete": 199,
+      "correct": 107,
+      "accuracy": 0.535,
+      "avg_duration_s": 7.974283425807953
+    }
+  },
+  "pairwise_vs_image_only": {
+    "old_route": {
+      "win": 15,
+      "loss": 10,
+      "net": 5,
+      "both_correct": 94,
+      "both_wrong": 81
+    },
+    "compact_route": {
+      "win": 12,
+      "loss": 4,
+      "net": 8,
+      "both_correct": 100,
+      "both_wrong": 84
+    },
+    "compact_route_qc": {
+      "win": 7,
+      "loss": 3,
+      "net": 4,
+      "both_correct": 101,
+      "both_wrong": 89
+    },
+    "confidence_route": {
+      "win": 14,
+      "loss": 9,
+      "net": 5,
+      "both_correct": 95,
+      "both_wrong": 82
+    },
+    "confidence_route_qc": {
+      "win": 11,
+      "loss": 8,
+      "net": 3,
+      "both_correct": 96,
+      "both_wrong": 85
+    }
+  },
+  "route_qc": {
+    "old_route": {
+      "discard": 27,
+      "low_confidence": 33,
+      "avg_steps": 2.985,
+      "max_steps": 30
+    },
+    "compact_route": {
+      "discard": 73,
+      "low_confidence": 0,
+      "avg_steps": 1.285,
+      "max_steps": 3
+    },
+    "confidence_route": {
+      "discard": 0,
+      "low_confidence": 192,
+      "avg_steps": 2.21,
+      "max_steps": 4
+    }
+  },
+  "n_unique_ids": 200
+}

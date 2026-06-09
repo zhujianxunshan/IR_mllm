@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.5.4)  7 JUN 2026 11:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.5.4)  10 JUN 2026 00:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -815,14 +815,14 @@ al/texlive/2026/texmf-dist/fonts/enc/dvips/base/8r.enc}]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 72.
  [2] (./tables/main_geometry300.tex)
-<figures/main_geometry300_accuracy.pdf, id=88, 591.8913pt x 274.626pt>
+<figures/main_geometry300_accuracy.pdf, id=92, 591.8913pt x 274.626pt>
 File: figures/main_geometry300_accuracy.pdf Graphic file (type pdf)
 <use figures/main_geometry300_accuracy.pdf>
 Package pdftex.def Info: figures/main_geometry300_accuracy.pdf  used on input l
 ine 100.
 (pdftex.def)             Requested size: 413.3867pt x 191.80527pt.
 (./tables/pairwise_geometry300.tex) [3] (./tables/trust601.tex)
-<figures/trust601_accuracy.pdf, id=110, 578.16pt x 274.626pt>
+<figures/trust601_accuracy.pdf, id=114, 578.16pt x 274.626pt>
 File: figures/trust601_accuracy.pdf Graphic file (type pdf)
 <use figures/trust601_accuracy.pdf>
 Package pdftex.def Info: figures/trust601_accuracy.pdf  used on input line 116.
@@ -830,22 +830,22 @@ Package pdftex.def Info: figures/trust601_accuracy.pdf  used on input line 116.
 (pdftex.def)             Requested size: 403.9896pt x 191.89326pt.
 
 (./tables/steer200.tex [4 <./figures/main_geometry300_accuracy.pdf>])
-<figures/answer_steering.pdf, id=166, 614.295pt x 281.85298pt>
+<figures/answer_steering.pdf, id=170, 614.295pt x 281.85298pt>
 File: figures/answer_steering.pdf Graphic file (type pdf)
 <use figures/answer_steering.pdf>
 Package pdftex.def Info: figures/answer_steering.pdf  used on input line 130.
 (pdftex.def)             Requested size: 422.77664pt x 193.97987pt.
-<figures/geometry3k_2783.png, id=167, 433.62pt x 428.60126pt>
+<figures/geometry3k_2783.png, id=171, 433.62pt x 428.60126pt>
 File: figures/geometry3k_2783.png Graphic file (type png)
 <use figures/geometry3k_2783.png>
 Package pdftex.def Info: figures/geometry3k_2783.png  used on input line 141.
 (pdftex.def)             Requested size: 108.04164pt x 106.79034pt.
-<figures/geometry3k_2556.png, id=169, 157.33781pt x 121.95563pt>
+<figures/geometry3k_2556.png, id=173, 157.33781pt x 121.95563pt>
 File: figures/geometry3k_2556.png Graphic file (type png)
 <use figures/geometry3k_2556.png>
 Package pdftex.def Info: figures/geometry3k_2556.png  used on input line 145.
 (pdftex.def)             Requested size: 108.04164pt x 83.74564pt.
-<figures/geometry3k_2565.png, id=170, 223.58531pt x 112.16907pt>
+<figures/geometry3k_2565.png, id=174, 223.58531pt x 112.16907pt>
 File: figures/geometry3k_2565.png Graphic file (type png)
 <use figures/geometry3k_2565.png>
 Package pdftex.def Info: figures/geometry3k_2565.png  used on input line 149.
@@ -855,7 +855,7 @@ Underfull \hbox (badness 1817) in paragraph at lines 150--150
 []\OT1/ptm/m/n/10 (c) |2565: tan-gent ra-tio.
  []
 
-<figures/geometry3k_2539.png, id=171, 508.90125pt x 468.75125pt>
+<figures/geometry3k_2539.png, id=175, 508.90125pt x 468.75125pt>
 File: figures/geometry3k_2539.png Graphic file (type png)
 <use figures/geometry3k_2539.png>
 Package pdftex.def Info: figures/geometry3k_2539.png  used on input line 153.
@@ -863,14 +863,14 @@ Package pdftex.def Info: figures/geometry3k_2539.png  used on input line 153.
 [5 <./figures/trust601_accuracy.pdf>] [6 <./figures/answer_steering.pdf> <./fig
 ures/geometry3k_2783.png> <./figures/geometry3k_2556.png> <./figures/geometry3k
 _2565.png> <./figures/geometry3k_2539.png>]
-<figures/generator_training_curve.pdf, id=291, 534.79799pt x 274.626pt>
+<figures/generator_training_curve.pdf, id=295, 534.79799pt x 274.626pt>
 File: figures/generator_training_curve.pdf Graphic file (type pdf)
 <use figures/generator_training_curve.pdf>
 Package pdftex.def Info: figures/generator_training_curve.pdf  used on input li
 ne 237.
 (pdftex.def)             Requested size: 385.20255pt x 197.81018pt.
  [7] (./tables/downstream200.tex)
-<figures/downstream200_accuracy.pdf, id=303, 491.436pt x 260.17201pt>
+<figures/downstream200_accuracy.pdf, id=307, 491.436pt x 260.17201pt>
 File: figures/downstream200_accuracy.pdf Graphic file (type pdf)
 <use figures/downstream200_accuracy.pdf>
 Package pdftex.def Info: figures/downstream200_accuracy.pdf  used on input line
@@ -878,7 +878,7 @@ Package pdftex.def Info: figures/downstream200_accuracy.pdf  used on input line
 (pdftex.def)             Requested size: 366.40834pt x 193.98915pt.
 
 (./tables/downstream200_pairwise.tex)
-<figures/downstream200_pairwise.pdf, id=304, 476.98201pt x 260.17201pt>
+<figures/downstream200_pairwise.pdf, id=308, 476.98201pt x 260.17201pt>
 File: figures/downstream200_pairwise.pdf Graphic file (type pdf)
 <use figures/downstream200_pairwise.pdf>
 Package pdftex.def Info: figures/downstream200_pairwise.pdf  used on input line
@@ -912,22 +912,22 @@ ML/cmm/m/it/10.95 ;  [] \OMS/cmsy/m/n/10.95 ! []\OML/cmm/m/it/10.95 :
  []
 
 [9 <./figures/downstream200_accuracy.pdf>] [10 <./figures/downstream200_pairwis
-e.pdf>] [11] [12] (./main.aux)
+e.pdf>] [11] [12] [13] (./main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 3A3521935845EA8C419D3C93E45A2DB1;2522.
+(rerunfilecheck)             Checksum: E13970891FBDF8B7D718FF94CAA0ABA1;2736.
  ) 
 Here is how much of TeX's memory you used:
- 25112 strings out of 467525
- 461552 string characters out of 5418983
- 981151 words of memory out of 5000000
- 53513 multiletter control sequences out of 15000+600000
- 653681 words of font info for 101 fonts, out of 8000000 for 9000
+ 25119 strings out of 467525
+ 461646 string characters out of 5418983
+ 981352 words of memory out of 5000000
+ 53516 multiletter control sequences out of 15000+600000
+ 655307 words of font info for 103 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,9n,94p,1509b,1994s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,9n,94p,1484b,1994s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 ></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
 </usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
@@ -937,10 +937,10 @@ sr/local/texlive/2026/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb></usr/local
 /2026/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2026/texm
 f-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2026/texmf-dist/fon
 ts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (12 pages, 295921 bytes).
+Output written on main.pdf (13 pages, 298236 bytes).
 PDF statistics:
- 544 PDF objects out of 1000 (max. 8388607)
- 253 compressed objects within 3 object streams
- 97 named destinations out of 1000 (max. 500000)
- 175 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 554 PDF objects out of 1000 (max. 8388607)
+ 262 compressed objects within 3 object streams
+ 100 named destinations out of 1000 (max. 500000)
+ 183 words of extra memory for PDF output out of 10000 (max. 10000000)
 

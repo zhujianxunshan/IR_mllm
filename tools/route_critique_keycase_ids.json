@@ -1,0 +1,41 @@
+{
+  "route_loss": [
+    "geometry3k_test_2440",
+    "geometry3k_test_2486",
+    "geometry3k_test_2570",
+    "geometry3k_test_2592",
+    "geometry3k_test_2599",
+    "geometry3k_test_2623",
+    "geometry3k_test_2640",
+    "geometry3k_test_2682",
+    "geometry3k_test_2700",
+    "geometry3k_test_2758",
+    "geometry3k_test_2775",
+    "geometry3k_test_2811",
+    "geometry3k_test_2822",
+    "geometry3k_test_2845"
+  ],
+  "route_win": [
+    "geometry3k_test_2411",
+    "geometry3k_test_2418",
+    "geometry3k_test_2452",
+    "geometry3k_test_2455",
+    "geometry3k_test_2521",
+    "geometry3k_test_2539",
+    "geometry3k_test_2550",
+    "geometry3k_test_2569",
+    "geometry3k_test_2573",
+    "geometry3k_test_2604",
+    "geometry3k_test_2615",
+    "geometry3k_test_2688",
+    "geometry3k_test_2697",
+    "geometry3k_test_2738",
+    "geometry3k_test_2796",
+    "geometry3k_test_2869",
+    "geometry3k_test_2876",
+    "geometry3k_test_2889",
+    "geometry3k_test_2922",
+    "geometry3k_test_2966",
+    "geometry3k_test_2985"
+  ]
+}

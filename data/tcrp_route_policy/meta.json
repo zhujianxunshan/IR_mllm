@@ -1,0 +1,21 @@
+{
+  "train": 80,
+  "val": 20,
+  "test": 200,
+  "decision_counts_train": {
+    "use_gdp_only": 1,
+    "use_gdp_route_selective": 8,
+    "use_image_first": 61,
+    "use_image_only": 2,
+    "use_route_cautious": 3,
+    "use_route_only": 3,
+    "use_structured_text_cautious": 2
+  },
+  "decision_counts_val": {
+    "use_gdp_route_selective": 1,
+    "use_image_first": 14,
+    "use_image_only": 1,
+    "use_route_only": 1,
+    "use_structured_text_cautious": 3
+  }
+}

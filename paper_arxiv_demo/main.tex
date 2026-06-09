@@ -24,7 +24,7 @@
 \maketitle
 
 \begin{abstract}
-Intermediate structured language is often proposed as a bridge between diagram perception and symbolic reasoning in geometry question answering. Our experiments show a more nuanced picture. On a 300-problem Geometry3K split with Qwen3-VL-8B, appending GDP-4B automatic geometry language to the original image reduces accuracy from 52.67\% to 51.33\%, while a construction-aware oracle-guided language improves accuracy to 55.67\%. However, on the full 601-problem Geometry3K test split, even Geometry3K oracle formal predicates do not robustly improve the model: full oracle structure reaches 52.91\% against 54.08\% raw, and a filtered cautious top-6 version only ties raw. Stress tests further reveal that trusted but wrong answer-implying structure can reduce accuracy to 7.5\% and is followed about 90\% of the time. The latest experiment therefore moves from verbose structure to compact theorem-route guidance. We train a Qwen3-1.7B LoRA route generator from GDP-4B automatic parses to FormalGeo theorem sequences, then feed the generated route to Qwen3-VL with the original image. On Geometry3K-150, generated theorem routes improve accuracy from 50.67\% raw to 54.67\%, with 16 raw errors fixed and 10 raw-correct cases broken. A running FormalGeo-200 checkpoint shows the same positive direction, but is not yet final. The current conclusion is specific: theorem-route priors are promising, but only when generation and trust calibration reduce structure-induced losses.
+Intermediate structured language is often proposed as a bridge between diagram perception and symbolic reasoning in geometry question answering. Our experiments show a more nuanced picture. On a 300-problem Geometry3K split with Qwen3-VL-8B, appending GDP-4B automatic geometry language to the original image reduces accuracy from 52.67\% to 51.33\%, while a construction-aware oracle-guided language improves accuracy to 55.67\%. However, on the full 601-problem Geometry3K test split, even Geometry3K oracle formal predicates do not robustly improve the model: full oracle structure reaches 52.91\% against 54.08\% raw, and a filtered cautious top-6 version only ties raw. Stress tests further reveal that trusted but wrong answer-implying structure can reduce accuracy to 7.5\% and is followed about 90\% of the time. The latest experiment therefore moves from verbose structure to compact theorem-route guidance. We train Qwen3-1.7B LoRA route generators from GDP-4B automatic parses to FormalGeo theorem sequences, then feed the generated route to Qwen3-VL with the original image. On a 200-problem Geometry3K held-out evaluation, the compact route generator improves Qwen3-VL from 52.0\% raw to 56.0\%, while reducing route-induced losses from 10 cases under the older route generator to 4 cases. The current conclusion is specific: theorem-route priors are promising, but only when generation and trust calibration reduce structure-induced losses.
 \end{abstract}
 
 \section{Motivation}
@@ -331,6 +331,32 @@ image + generated theorem route & 82 & 150 & 54.67\% & 8.67s \\
 
 The pairwise result is important: generated theorem routes fix 16 raw errors, break 10 raw-correct cases, keep 66 cases both correct, and leave 58 cases both wrong. The net pairwise gain is therefore +6. This is a stronger and cleaner signal than the earlier 200-problem generated construction-plan result, because the route generator is trained from explicit theorem-sequence supervision rather than only from rule-created pseudo-labels.
 
+\subsection{Safe Compact Route Experiment}
+The Geometry3K-150 experiment showed that route hints can help, but it also exposed a failure mode: a route generator may repeat a theorem many times or present an over-confident but poorly matched route. We therefore trained two additional route generators and evaluated six variants on a held-out 200-problem Geometry3K set. The first generator, \texttt{compact\_route}, is trained to emit at most three deduplicated theorem steps. The second generator, \texttt{confidence\_route}, adds explicit route-quality fields, but in practice tends to mark most routes as low confidence.
+
+\begin{table}[t]
+\centering
+\caption{Safe route experiment on 200 held-out Geometry3K problems. \texttt{compact\_route} gives the best accuracy and the smallest route-induced loss among non-filtered route methods.}
+\label{tab:safe-route200}
+\small
+\begin{tabular}{lcccc}
+\toprule
+Condition & Correct & Accuracy & Win & Loss \\
+\midrule
+image only & 104/200 & 52.0\% & -- & -- \\
+old route & 109/200 & 54.5\% & 15 & 10 \\
+compact route & 112/200 & 56.0\% & 12 & 4 \\
+compact route + QC & 108/200 & 54.0\% & 7 & 3 \\
+confidence route & 109/200 & 54.5\% & 14 & 9 \\
+confidence route + QC & 107/199 & 53.5\% & 11 & 8 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The result supports a sharper claim than ``route is useful.'' The useful improvement comes from making the route short and non-repetitive. The older route generator reaches 54.5\% but breaks 10 raw-correct answers; the compact generator reaches 56.0\% and breaks only 4. A hard QC filter further lowers losses from 4 to 3, but also discards helpful routes, reducing wins from 12 to 7 and accuracy from 56.0\% to 54.0\%. This suggests that future trust control should be a fine-grained verifier or route rewriter rather than a simple discard rule.
+
+The route-quality statistics explain why. The older route generator has an average of 2.985 steps and a maximum of 30 steps, including cases where the same theorem is repeated many times. The compact generator reduces the average to 1.285 steps and caps the maximum at 3. The confidence-aware generator caps length at 4, but marks 192/200 routes as low confidence, making the confidence label too conservative to be useful as a selector. The practical lesson is that source-side route quality control---deduplication, length control, and target binding---is more effective than adding a coarse confidence tag after generation.
+
 \begin{table}[t]
 \centering
 \caption{FormalGeo-200 downstream checkpoint. This run was still active at the time of writing, so these are partial numbers from about 70 completed problems, not final results.}
@@ -370,9 +396,9 @@ The following theorem route is a hypothesis for solving the geometry problem.
 With the raw image-only input, Qwen3-VL answers C. With the generated theorem route added to the same image and question, Qwen3-VL answers D. This is a representative positive case: the intermediate language does not give the final answer, but it narrows the model's search to the relevant parallel-angle and segment-addition route.
 
 \section{Limitations}
-These are demo-stage experiments. The best construction language still uses oracle annotations and rules for pseudo-label creation, and the first automatic construction-plan generator is trained on only 264 GDP-to-plan examples. The theorem-route generator uses stronger FormalGeo supervision, but it is still evaluated on small downstream subsets: Geometry3K-150 is complete, while FormalGeo-200 was still running at this checkpoint. Some result files store correctness but not full model outputs, limiting qualitative error reconstruction. The GDP reproduction is not guaranteed to match every paper condition exactly, including model choice, prompt details, parser version, and dataset preprocessing. Finally, MathVista results show that geometry-specific construction cues may not transfer cleanly to broader visual reasoning tasks.
+These are demo-stage experiments. The best construction language still uses oracle annotations and rules for pseudo-label creation, and the first automatic construction-plan generator is trained on only 264 GDP-to-plan examples. The theorem-route generator uses stronger FormalGeo supervision, and the latest safe-route evaluation is complete on 200 Geometry3K problems, but the full 601-problem route comparison is still running. Some result files store correctness but not full model outputs, limiting qualitative error reconstruction. The GDP reproduction is not guaranteed to match every paper condition exactly, including model choice, prompt details, parser version, and dataset preprocessing. Finally, MathVista results show that geometry-specific construction cues may not transfer cleanly to broader visual reasoning tasks.
 
 \section{Conclusion}
-The useful conclusion is not that intermediate geometry language always improves MLLMs. In our experiments, naive or automatic structure often fails, full oracle formal logic can hurt, and trusted wrong structure can strongly mislead the model. The positive signal is more specific: target-conditioned construction and theorem guidance can improve accuracy when derived from reliable annotations or theorem-sequence supervision. The first GDP-to-construction-plan generator gives a small +1.0 point gain on Geometry3K-200. The newer GDP-to-theorem-route generator gives a clearer +4.0 point gain on Geometry3K-150, fixing 16 raw errors while breaking 10 raw-correct cases, and a running FormalGeo checkpoint shows a similar positive direction. The next research step is to make theorem-route generation fact-faithful and trust-calibrated so that it preserves route benefits while reducing structure-induced losses.
+The useful conclusion is not that intermediate geometry language always improves MLLMs. In our experiments, naive or automatic structure often fails, full oracle formal logic can hurt, and trusted wrong structure can strongly mislead the model. The positive signal is more specific: target-conditioned construction and theorem guidance can improve accuracy when derived from reliable annotations or theorem-sequence supervision. The first GDP-to-construction-plan generator gives a small +1.0 point gain on Geometry3K-200. The newer GDP-to-theorem-route line gives a clearer result: compact routes improve a held-out 200-problem Geometry3K evaluation from 52.0\% to 56.0\%, while reducing route-induced losses from 10 to 4 relative to the older route generator. The next research step is to make theorem-route generation fact-faithful and trust-calibrated so that it preserves route benefits while reducing structure-induced losses.
 
 \end{document}

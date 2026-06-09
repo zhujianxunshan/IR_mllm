@@ -1,0 +1,443 @@
+#!/usr/bin/env python3
+from __future__ import annotations
+
+import argparse
+import json
+import re
+import time
+from collections import defaultdict
+from pathlib import Path
+from typing import Any
+
+
+VARIANTS = (
+    "image_only",
+    "question_text_only",
+    "image_gdp",
+    "image_gdp_trusted",
+    "image_gdp_cautious",
+    "image_gdp_selfverify",
+    "image_route",
+    "image_route_selfverify",
+    "image_route_trusted",
+    "image_route_cautious",
+    "image_gdp_route",
+    "image_gdp_route_selective",
+    "image_gdp_route_conflict_aware",
+    "image_gdp_route_trusted",
+    "image_gdp_route_cautious",
+    "image_oracle_nl",
+    "image_oracle_trusted",
+    "image_oracle_cautious",
+    "image_oracle_route",
+    "image_oracle_route_selective",
+    "image_oracle_gdp_conflict_aware",
+    "gdp_text_only",
+    "route_text_only",
+    "gdp_route_text_only",
+    "oracle_text_only",
+    "oracle_route_text_only",
+)
+
+
+def read_jsonl(path: Path) -> list[dict[str, Any]]:
+    return [json.loads(line) for line in path.read_text(encoding="utf-8").splitlines() if line.strip()]
+
+
+def append_jsonl(path: Path, row: dict[str, Any]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("a", encoding="utf-8") as f:
+        f.write(json.dumps(row, ensure_ascii=False) + "\n")
+        f.flush()
+
+
+def normalize_answer(text: str, valid_letters: str = "ABCDE") -> str:
+    letter_class = re.escape(valid_letters)
+    matches = re.findall(rf"ANSWER\s*[:：]\s*([{letter_class}])\b", text or "", flags=re.I)
+    if matches:
+        return matches[-1].upper()
+    matches = re.findall(rf"(?:option|choice|answer)\s*(?:is|:|：)?\s*([{letter_class}])\b", text or "", flags=re.I)
+    if matches:
+        return matches[-1].upper()
+    stripped = (text or "").strip()
+    if re.fullmatch(rf"[{letter_class}]", stripped, flags=re.I):
+        return stripped.upper()
+    prefix = re.match(rf"^\s*([{letter_class}])\s*[.)．。:：]", stripped, flags=re.I)
+    return prefix.group(1).upper() if prefix else ""
+
+
+def route_prompt(row: dict[str, Any], gdp_text: str) -> str:
+    choices = row.get("choices") or []
+    choice_text = "\n".join(f"{chr(65 + i)}. {choice}" for i, choice in enumerate(choices))
+    return f"""You are a theorem-route generator for geometry problems.
+Given the problem text, answer choices, and an automatic diagram parse, predict a compact theorem route that may help a multimodal model solve the problem.
+
+Important:
+- Do not choose an option.
+- Do not solve the problem numerically.
+- Do not output the final answer.
+- Output only [THEOREM ROUTE], optional [RAW THEOREM SEQUENCE], and [USE POLICY].
+
+Question:
+{row.get("question", "")}
+
+Choices:
+{choice_text}
+
+GDP-4B automatic diagram parse:
+{gdp_text}
+"""
+
+
+def generate_route(row: dict[str, Any], gdp_text: str, tok: Any, model: Any, max_new_tokens: int) -> str:
+    import torch
+
+    prompt = f"<|im_start|>user\n{route_prompt(row, gdp_text).strip()}<|im_end|>\n<|im_start|>assistant\n"
+    enc = tok(prompt, return_tensors="pt").to(model.device)
+    with torch.no_grad():
+        out = model.generate(
+            **enc,
+            max_new_tokens=max_new_tokens,
+            do_sample=False,
+            pad_token_id=tok.pad_token_id,
+            eos_token_id=tok.eos_token_id,
+        )
+    return tok.decode(out[0][enc["input_ids"].shape[1] :], skip_special_tokens=True)
+
+
+def build_messages(row: dict[str, Any], variant: str, gdp_text: str, route: str, image_path: Path) -> list[dict[str, Any]]:
+    choices = row.get("choices") or []
+    choice_text = "\n".join(f"{chr(65 + i)}. {choice}" for i, choice in enumerate(choices))
+    valid_letters = "/".join(chr(65 + i) for i in range(len(choices)))
+    extras: list[str] = []
+    has_image = not variant.endswith("_text_only")
+    oracle_text = str(row.get("natural_language") or "").strip()
+    if variant in {
+        "image_gdp",
+        "image_gdp_trusted",
+        "image_gdp_cautious",
+        "image_gdp_selfverify",
+        "image_gdp_route",
+        "gdp_text_only",
+        "gdp_route_text_only",
+        "image_gdp_route_selective",
+        "image_gdp_route_conflict_aware",
+        "image_gdp_route_trusted",
+        "image_gdp_route_cautious",
+        "image_oracle_gdp_conflict_aware",
+    }:
+        gdp_policy = "Use it only as auxiliary evidence; trust the image and question if there is conflict."
+        if variant == "image_gdp_trusted":
+            gdp_policy = "Treat it as a highly reliable parser output unless it directly contradicts the image."
+        elif variant == "image_gdp_cautious":
+            gdp_policy = "Treat it as low-confidence. Use only relations directly relevant to the target."
+        elif variant == "image_gdp_selfverify":
+            gdp_policy = "Before using any parsed relation, verify that the relation is visible or implied by the image and question."
+        extras.append(
+            f"GDP-4B automatic geometric parsing output. {gdp_policy}\n"
+            f"<GDP_PARSE>\n{gdp_text}\n</GDP_PARSE>"
+        )
+    if variant in {
+        "image_route",
+        "image_gdp_route",
+        "route_text_only",
+        "gdp_route_text_only",
+        "image_route_selfverify",
+        "image_route_trusted",
+        "image_route_cautious",
+        "image_gdp_route_selective",
+        "image_gdp_route_conflict_aware",
+        "image_gdp_route_trusted",
+        "image_gdp_route_cautious",
+        "image_oracle_route",
+        "image_oracle_route_selective",
+        "oracle_route_text_only",
+    }:
+        route_header = "Generated theorem-route hypothesis."
+        route_policy = "Use it only after checking the image and question; ignore it if it conflicts with visible geometry."
+        if variant == "image_route_selfverify":
+            route_policy = (
+                "Before choosing an answer, explicitly verify whether each theorem family is supported by the image. "
+                "If support is weak or absent, ignore the route and solve from the image."
+            )
+        elif variant == "image_route_trusted":
+            route_policy = (
+                "Treat this route as a highly reliable expert hint, but still return only the final answer letter."
+            )
+        elif variant == "image_route_cautious":
+            route_policy = (
+                "Treat this route as a low-confidence hint. Use it only if it is directly supported by visible labels and relations."
+            )
+        elif variant == "image_gdp_route_selective":
+            route_policy = (
+                "Selectively use GDP facts and theorem route only when they are relevant to the target. "
+                "Ignore irrelevant facts even if they are correct."
+            )
+        elif variant == "image_gdp_route_conflict_aware":
+            route_policy = (
+                "First check for conflict among the image, GDP parse, and theorem route. "
+                "If there is conflict, prefer the original image and problem text over generated text."
+            )
+        elif variant == "image_gdp_route_trusted":
+            route_policy = (
+                "Treat both GDP facts and the theorem route as strong expert hints, but still return only the final answer letter."
+            )
+        elif variant == "image_gdp_route_cautious":
+            route_policy = (
+                "Treat both GDP facts and the theorem route as low-confidence hints. "
+                "Use them only when they are directly relevant and visually supported."
+            )
+        elif variant == "image_oracle_route_selective":
+            route_policy = (
+                "Use the oracle facts and route selectively. Prefer facts and theorems directly tied to the target quantity."
+            )
+        extras.append(
+            f"{route_header} {route_policy}\n"
+            f"<THEOREM_ROUTE>\n{route}\n</THEOREM_ROUTE>"
+        )
+    if variant in {
+        "image_oracle_nl",
+        "image_oracle_trusted",
+        "image_oracle_cautious",
+        "image_oracle_route",
+        "image_oracle_route_selective",
+        "image_oracle_gdp_conflict_aware",
+        "oracle_text_only",
+        "oracle_route_text_only",
+    }:
+        oracle_policy = "These are oracle-style annotations, but may include facts irrelevant to the target."
+        if variant == "image_oracle_trusted":
+            oracle_policy = "Treat these annotations as reliable geometry facts."
+        elif variant == "image_oracle_cautious":
+            oracle_policy = "Use only a small subset of annotations directly relevant to the target."
+        elif variant == "image_oracle_gdp_conflict_aware":
+            oracle_policy = "Compare these oracle facts with GDP facts and the image. Prefer image and oracle facts over GDP when they conflict."
+        extras.append(
+            f"Geometry3K dataset-provided structured diagram facts. {oracle_policy}\n"
+            f"<ORACLE_GEOMETRY_FACTS>\n{oracle_text}\n</ORACLE_GEOMETRY_FACTS>"
+        )
+    extra = "\n\n".join(extras) if extras else "No additional structured context is provided."
+    text_only_notice = ""
+    if not has_image:
+        text_only_notice = (
+            "\nNo image is provided in this condition. Answer using only the problem text, choices, and additional structured context. "
+            "If the structured context is insufficient, still choose the most plausible option.\n"
+        )
+    prompt = f"""Solve this geometry multiple-choice problem.{text_only_notice}
+
+Question:
+{row.get("question", "")}
+
+Choices:
+{choice_text}
+
+Additional context:
+{extra}
+
+Return exactly one line and nothing else:
+ANSWER: X
+
+X must be one of {valid_letters}."""
+    content: list[dict[str, str]] = []
+    if has_image:
+        content.append({"type": "image", "image": str(image_path.resolve())})
+    content.append({"type": "text", "text": prompt})
+    return [{"role": "user", "content": content}]
+
+
+def summarize(results: list[dict[str, Any]], variants: tuple[str, ...]) -> dict[str, Any]:
+    by_variant: dict[str, list[dict[str, Any]]] = defaultdict(list)
+    by_id: dict[str, dict[str, dict[str, Any]]] = defaultdict(dict)
+    for r in results:
+        by_variant[r["variant"]].append(r)
+        by_id[str(r["id"])][r["variant"]] = r
+
+    out: dict[str, Any] = {"variants": {}, "pairwise_vs_image_only": {}, "n_unique_ids": len(by_id)}
+    for variant in variants:
+        items = by_variant.get(variant, [])
+        complete = [r for r in items if r.get("complete_response") and not r.get("error")]
+        correct = [r for r in complete if r.get("correct")]
+        out["variants"][variant] = {
+            "n": len(items),
+            "complete": len(complete),
+            "correct": len(correct),
+            "accuracy": len(correct) / len(items) if items else 0.0,
+            "accuracy_on_complete": len(correct) / len(complete) if complete else 0.0,
+            "avg_duration_s": sum(float(r.get("duration_s", 0.0)) for r in items) / len(items) if items else 0.0,
+            "errors": sum(1 for r in items if r.get("error")),
+        }
+    for variant in variants:
+        if variant == "image_only":
+            continue
+        win = loss = both_correct = both_wrong = incomplete = 0
+        for pair in by_id.values():
+            base, other = pair.get("image_only"), pair.get(variant)
+            if not base or not other or not base.get("complete_response") or not other.get("complete_response"):
+                incomplete += 1
+            elif other.get("correct") and not base.get("correct"):
+                win += 1
+            elif base.get("correct") and not other.get("correct"):
+                loss += 1
+            elif base.get("correct") and other.get("correct"):
+                both_correct += 1
+            else:
+                both_wrong += 1
+        out["pairwise_vs_image_only"][variant] = {
+            "win": win,
+            "loss": loss,
+            "net": win - loss,
+            "both_correct": both_correct,
+            "both_wrong": both_wrong,
+            "incomplete": incomplete,
+        }
+    return out
+
+
+def main() -> None:
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--dataset", type=Path, default=Path("multidataset_2x300_eval.jsonl"))
+    ap.add_argument("--gdp", type=Path, default=Path("gdp4b_geometry300_parse.jsonl"))
+    ap.add_argument("--base-model", default="Qwen/Qwen3-1.7B")
+    ap.add_argument("--adapter", type=Path, required=True)
+    ap.add_argument("--qwen-vl-model", default="~/models/Qwen3-VL-8B-Instruct")
+    ap.add_argument("--route-cache", type=Path, default=Path("geometry3k_matched_fourway_route_cache.jsonl"))
+    ap.add_argument("--out", type=Path, default=Path("qwen3vl8b_geometry3k_matched_fourway.jsonl"))
+    ap.add_argument("--summary", type=Path, default=Path("qwen3vl8b_geometry3k_matched_fourway_summary.json"))
+    ap.add_argument("--limit", type=int, default=300)
+    ap.add_argument("--route-max-new-tokens", type=int, default=220)
+    ap.add_argument("--answer-max-new-tokens", type=int, default=32)
+    ap.add_argument("--load-in-4bit", action="store_true")
+    ap.add_argument("--only-generate-routes", action="store_true")
+    ap.add_argument("--skip-route-generation", action="store_true")
+    args = ap.parse_args()
+
+    rows = [r for r in read_jsonl(args.dataset) if r.get("dataset") == "Geometry3K-300"]
+    gdp_by_id: dict[str, str] = {}
+    for item in read_jsonl(args.gdp):
+        if item.get("error") is None:
+            gdp_by_id[str(item["id"])] = item.get("gdp_text") or item.get("gdp_response") or ""
+    rows = [r for r in rows if str(r["id"]) in gdp_by_id][: args.limit]
+
+    import torch
+    from peft import PeftModel
+    from transformers import AutoModelForCausalLM, AutoProcessor, AutoTokenizer, BitsAndBytesConfig, Qwen3VLForConditionalGeneration
+
+    route_by_id: dict[str, str] = {}
+    if args.route_cache.exists():
+        for item in read_jsonl(args.route_cache):
+            route_by_id[str(item["id"])] = item.get("generated_route", "")
+
+    missing_routes = [r for r in rows if str(r["id"]) not in route_by_id]
+    if missing_routes and not args.skip_route_generation:
+        tok = AutoTokenizer.from_pretrained(args.adapter, trust_remote_code=True, local_files_only=True)
+        if tok.pad_token_id is None:
+            tok.pad_token = tok.eos_token
+        quant = BitsAndBytesConfig(load_in_4bit=True, bnb_4bit_compute_dtype=torch.bfloat16, bnb_4bit_quant_type="nf4")
+        base = AutoModelForCausalLM.from_pretrained(
+            args.base_model,
+            trust_remote_code=True,
+            local_files_only=True,
+            quantization_config=quant,
+            device_map="auto",
+        )
+        gen_model = PeftModel.from_pretrained(base, args.adapter)
+        gen_model.eval()
+        for row in missing_routes:
+            rid = str(row["id"])
+            started = time.time()
+            route = generate_route(row, gdp_by_id[rid], tok, gen_model, args.route_max_new_tokens)
+            route_by_id[rid] = route
+            append_jsonl(args.route_cache, {"id": rid, "generated_route": route, "duration_s": time.time() - started})
+            print(f"ROUTE\t{rid}\tchars={len(route)}", flush=True)
+        del gen_model, base
+        torch.cuda.empty_cache()
+    if args.only_generate_routes:
+        print(json.dumps({"route_cache": str(args.route_cache), "requested": len(rows), "cached": len(route_by_id)}, ensure_ascii=False, indent=2))
+        return
+    missing_after = [str(r["id"]) for r in rows if str(r["id"]) not in route_by_id]
+    if missing_after:
+        raise RuntimeError(f"Missing generated routes for {len(missing_after)} examples; rerun without --skip-route-generation first.")
+
+    model_name = str(Path(args.qwen_vl_model).expanduser()) if args.qwen_vl_model.startswith("~") else args.qwen_vl_model
+    kwargs: dict[str, Any] = {"device_map": "auto", "trust_remote_code": True, "torch_dtype": "auto"}
+    if args.load_in_4bit:
+        kwargs["quantization_config"] = BitsAndBytesConfig(
+            load_in_4bit=True,
+            bnb_4bit_compute_dtype=torch.bfloat16,
+            bnb_4bit_use_double_quant=True,
+            bnb_4bit_quant_type="nf4",
+        )
+    processor = AutoProcessor.from_pretrained(model_name, trust_remote_code=True)
+    vlm = Qwen3VLForConditionalGeneration.from_pretrained(model_name, **kwargs)
+    vlm.eval()
+    eos = vlm.generation_config.eos_token_id
+    eos_ids = set(eos) if isinstance(eos, list) else ({int(eos)} if eos is not None else set())
+
+    done: set[tuple[str, str]] = set()
+    results: list[dict[str, Any]] = []
+    if args.out.exists():
+        for item in read_jsonl(args.out):
+            results.append(item)
+            done.add((str(item["id"]), item["variant"]))
+
+    for row in rows:
+        rid = str(row["id"])
+        image_path = Path(str(row["image"]))
+        for variant in VARIANTS:
+            if (rid, variant) in done:
+                continue
+            started = time.time()
+            text = ""
+            error = None
+            new_len = 0
+            truncated = False
+            try:
+                messages = build_messages(row, variant, gdp_by_id[rid], route_by_id.get(rid, ""), image_path)
+                inputs = processor.apply_chat_template(
+                    messages,
+                    tokenize=True,
+                    add_generation_prompt=True,
+                    return_dict=True,
+                    return_tensors="pt",
+                ).to(vlm.device)
+                with torch.inference_mode():
+                    generated = vlm.generate(**inputs, max_new_tokens=args.answer_max_new_tokens, do_sample=False)
+                trimmed = [out_ids[len(in_ids) :] for in_ids, out_ids in zip(inputs.input_ids, generated)]
+                new_tokens = trimmed[0].tolist()
+                new_len = len(new_tokens)
+                truncated = new_len >= args.answer_max_new_tokens and (not eos_ids or new_tokens[-1] not in eos_ids)
+                text = processor.batch_decode(trimmed, skip_special_tokens=True, clean_up_tokenization_spaces=False)[0]
+            except Exception as exc:  # noqa: BLE001
+                error = str(exc)
+            valid_letters = "".join(chr(65 + i) for i in range(len(row.get("choices") or []))) or "ABCDE"
+            pred = normalize_answer(text, valid_letters)
+            complete = error is None and not truncated and pred != ""
+            correct = complete and pred == str(row["answer"]).strip().upper()
+            rec = {
+                "dataset": "Geometry3K-matched",
+                "id": rid,
+                "variant": variant,
+                "answer": row["answer"],
+                "prediction": pred,
+                "correct": correct,
+                "complete_response": complete,
+                "truncated": truncated,
+                "new_tokens": new_len,
+                "duration_s": time.time() - started,
+                "raw_response": text,
+                "error": error,
+                "gdp_text_chars": len(gdp_by_id[rid]),
+                "generated_route": route_by_id.get(rid, "") if "route" in variant else "",
+            }
+            append_jsonl(args.out, rec)
+            results.append(rec)
+            done.add((rid, variant))
+            print(f"{'OK' if correct else 'FAIL'}\t{rid}\t{variant}\tpred={pred}\tgold={row['answer']}\tduration_s={rec['duration_s']:.2f}", flush=True)
+
+    summary = summarize(results, VARIANTS)
+    args.summary.write_text(json.dumps(summary, ensure_ascii=False, indent=2), encoding="utf-8")
+    print(json.dumps(summary, ensure_ascii=False, indent=2), flush=True)
+
+
+if __name__ == "__main__":
+    main()
