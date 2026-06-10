@@ -22,7 +22,7 @@
 \maketitle
 
 \begin{abstract}
-几何题中的中间结构化语言常被认为可以连接“图形感知”和“符号推理”。我们的实验显示，结论要更谨慎：结构化语言不是天然有用，关键在于它是否可靠、是否和目标相关，以及模型是否应该相信它。在 300 题 Geometry3K 子集上，给 Qwen3-VL-8B 添加 GDP-4B 自动几何语言后，准确率从 raw 的 52.67\% 降到 51.33\%；而使用基于 Geometry3K 标注和规则生成的 construction-aware oracle 语言，准确率提高到 55.67\%。但在完整 601 题 Geometry3K 测试集上，即使是 Geometry3K oracle formal predicates 也不能稳定提升模型：full oracle structure 为 52.91\%，低于 raw 的 54.08\%；经过筛选的 cautious top-6 版本也只是与 raw 持平。压力测试进一步说明，若把错误结构化语言包装成“可信事实”，模型会严重被带偏：错误答案引导条件下准确率降到 7.5\%，模型约 90\% 的时候会跟随错误结构。因此，最新实验从“更长的结构描述”转向“更紧凑的定理路线提示”：我们用 FormalGeo 的 theorem sequence 监督训练 Qwen3-1.7B LoRA route generator，让它从 GDP-4B 自动解析生成可能的定理路线，再把原始图像、题干和 generated route 一起输入 Qwen3-VL。在 200 题 Geometry3K held-out 评测中，compact route generator 将 Qwen3-VL 从 raw 的 52.0\% 提高到 56.0\%，同时把旧 route generator 造成的 route-induced loss 从 10 个样例降到 4 个样例。当前结论更具体：定理路线先验有潜力，但必须配合生成可靠性和信任校准，减少结构语言带来的错误引导。
+几何题中的中间结构化语言常被认为可以连接“图形感知”和“符号推理”。我们的实验显示，结论要更谨慎：结构化语言不是天然有用，关键在于它是否可靠、是否和目标相关，以及模型是否应该相信它。在 300 题 Geometry3K 子集上，给 Qwen3-VL-8B 添加 GDP-4B 自动几何语言后，准确率从 raw 的 52.67\% 降到 51.33\%；而使用基于 Geometry3K 标注和规则生成的 construction-aware oracle 语言，准确率提高到 55.67\%。但在完整 601 题 Geometry3K 测试集上，即使是 Geometry3K oracle formal predicates 也不能稳定提升模型：full oracle structure 为 52.91\%，低于 raw 的 54.08\%；经过筛选的 cautious top-6 版本也只是与 raw 持平。压力测试进一步说明，若把错误结构化语言包装成“可信事实”，模型会严重被带偏：错误答案引导条件下准确率降到 7.5\%，模型约 90\% 的时候会跟随错误结构。因此，最新实验从“更长的结构描述”转向“更紧凑的定理路线提示”：我们用 FormalGeo 的 theorem sequence 监督训练 Qwen3-1.7B LoRA route generator，让它从 GDP-4B 自动解析生成可能的定理路线，再把原始图像、题干和 generated route 一起输入 Qwen3-VL。在完整 601 题 Geometry3K route 评测中，compact route generator 将 Qwen3-VL 从 raw 的 53.74\% 提高到 55.57\%，同时把旧 route generator 造成的 route-induced loss 从 34 个样例降到 16 个样例。当前结论更具体：定理路线先验有潜力，但必须配合生成可靠性和信任校准，减少结构语言带来的错误引导。
 \end{abstract}
 
 \section{研究动机}
@@ -482,9 +482,9 @@ The following theorem route is a hypothesis for solving the geometry problem.
 在 raw image-only 输入下，Qwen3-VL 回答 C；加入 generated theorem route 后，同一张图和同一题干下 Qwen3-VL 回答 D。这个例子说明中间语言并没有直接给出答案，而是把搜索空间收缩到 parallel-angle 和 segment-addition 这条更相关的路线。
 
 \section{局限性}
-这些仍是 demo-stage 实验。当前最强的 construction language 依赖 oracle 标注和规则生成 pseudo-label；第一个自动 construction-plan generator 只用了 264 个 GDP-to-plan 训练样例。新的 theorem-route generator 使用了更强的 FormalGeo theorem-sequence 监督，最新 safe-route 实验已经在 200 道 Geometry3K 题上完成，但 601 题 full-test route 对比仍在远程运行。部分结果文件只保存 correctness，没有完整模型输出，限制了更细的错误重构。GDP 复现实验也不能保证和原论文条件完全一致，包括模型选择、prompt、parser 版本和数据预处理。最后，MathVista 结果说明，几何专门的 construction cues 不一定能迁移到更广泛的视觉推理任务。
+这些仍是 demo-stage 实验。当前最强的 construction language 依赖 oracle 标注和规则生成 pseudo-label；第一个自动 construction-plan generator 只用了 264 个 GDP-to-plan 训练样例。新的 theorem-route generator 使用了更强的 FormalGeo theorem-sequence 监督，但目前仍是 adapter 生成提示、再交给 MLLM 解题，而不是端到端训练的 MLLM。部分结果文件只保存 correctness，没有完整模型输出，限制了更细的错误重构。GDP 复现实验也不能保证和原论文条件完全一致，包括模型选择、prompt、parser 版本和数据预处理。最后，MathVista 结果说明，几何专门的 construction cues 不一定能迁移到更广泛的视觉推理任务。
 
 \section{结论}
-当前最重要的结论不是“中间几何语言总能提升 MLLM”。相反，我们看到：朴素结构和自动结构经常失败，完整 oracle formal logic 也可能有害，而被包装成可信事实的错误结构会强烈误导模型。正向信号更具体：当结构语言是目标条件化、定理导向，并且来自可靠标注或 theorem-sequence 监督时，它才可能提升准确率。第一个 GDP-to-construction-plan generator 在 Geometry3K-200 上只有 +1.0 个百分点的小幅收益；新的 GDP-to-theorem-route 方向给出了更清楚的结果：compact route 在 200 道 Geometry3K held-out 题上把准确率从 52.0\% 提高到 56.0\%，并且相对旧 route generator 将 route-induced loss 从 10 降到 4。下一步应把重点放在 fact-faithful 和 trust-calibrated theorem-route generation 上，让模型保留路线提示的收益，同时减少结构语言诱发的错误。
+当前最重要的结论不是“中间几何语言总能提升 MLLM”。相反，我们看到：朴素结构和自动结构经常失败，完整 oracle formal logic 也可能有害，而被包装成可信事实的错误结构会强烈误导模型。正向信号更具体：当结构语言是目标条件化、定理导向，并且来自可靠标注或 theorem-sequence 监督时，它才可能提升准确率。第一个 GDP-to-construction-plan generator 在 Geometry3K-200 上只有 +1.0 个百分点的小幅收益；新的 GDP-to-theorem-route 方向给出了更清楚的结果：compact route 在完整 601 题 Geometry3K route 评测中把准确率从 53.74\% 提高到 55.57\%，并且相对旧 route generator 将 route-induced loss 从 34 降到 16。下一步应把重点放在 fact-faithful 和 trust-calibrated theorem-route generation 上，让模型保留路线提示的收益，同时减少结构语言诱发的错误。
 
 \end{document}

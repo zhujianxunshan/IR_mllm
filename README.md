@@ -30,6 +30,16 @@ Latest Geometry3K held-out 200 downstream evaluation:
 
 The main finding is that short, deduplicated theorem routes are more useful than longer unconstrained routes. The compact route generator improves raw Qwen3-VL accuracy by +4.0 points and reduces route-induced losses from 10 cases under the older route generator to 4 cases.
 
+Full Geometry3K-601 downstream evaluation:
+
+| Variant | Correct | Total | Accuracy | Win vs raw | Loss vs raw |
+|---|---:|---:|---:|---:|---:|
+| image_only | 323 | 601 | 53.74% | -- | -- |
+| old_route | 329 | 601 | 54.74% | 40 | 34 |
+| compact_route | 334 | 601 | 55.57% | 27 | 16 |
+
+The 601-problem run confirms the same direction at a larger scale: compact routes give the best accuracy and reduce route-induced loss from 34 to 16 compared with the older route generator. The compact generator also constrains route length more aggressively (`avg_steps=1.18`, `max_steps=3`) than the older route generator (`avg_steps=3.07`, `max_steps=30`).
+
 ### GDP-to-theorem-route generator
 
 - Training source: FormalGeo theorem sequences.
@@ -63,11 +73,11 @@ Geometry3K-200 downstream:
 
 The remote server also contained larger third-party raw archives, including MathVista and FormalGeo source archives. They are intentionally not committed here because they are large and may have redistribution constraints. This repository keeps the derived experiment splits, parses, outputs, and model adapters needed to inspect and reproduce the reported experiments. The derived data directories are stored as zip archives under `data_artifacts/` to avoid committing thousands of small files.
 
-## Hugging Face Artifacts
+## External Artifacts
 
-Large and model-oriented artifacts are mirrored on Hugging Face:
+Hugging Face upload was paused at the user's request. The current local archive keeps the final adapters and experiment results:
 
-- Model/adapters: <https://huggingface.co/shiyunliu/IR_mllm>
-- Datasets/results: <https://huggingface.co/datasets/shiyunliu/IR_mllm_dataset>
+- Local final adapters: `/Users/gsy/Desktop/topic/local_model_adapters`
+- Local result archive: `/Users/gsy/Desktop/topic/archive_upload/remote_topic_results`
 
 See `MANIFEST.md` for a detailed inventory and omitted large-file notes.

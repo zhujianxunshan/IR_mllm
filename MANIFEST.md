@@ -1,6 +1,6 @@
 # Artifact Manifest
 
-Generated on 2026-06-07 from remote server `ubuntu@43.128.112.148:~/topic_results` and local paper directory `/Users/gsy/Desktop/topic/paper_arxiv_demo`.
+Generated from remote server `ubuntu@43.128.112.148:~/topic_results` and local paper directory `/Users/gsy/Desktop/topic/paper_arxiv_demo`. Updated after the Geometry3K-601 safe-route evaluation completed on 2026-06-10.
 
 ## Included In GitHub
 
@@ -42,6 +42,9 @@ All included model adapter files are below GitHub's 100 MB single-file limit and
 - `qwen3vl8b_trust_full_601_summary.json`
 - `qwen3vl8b_trust_stress_200_summary.json`
 - `qwen3vl8b_answer_steer_200_summary.json`
+- `results/safe_route_601/qwen3vl8b_safe_route_test601_raw_old_compact_summary.json`
+- `results/safe_route_601/qwen3vl8b_safe_route_test601_raw_old_compact.jsonl`
+- `results/safe_route_601/safe_route_compact_geometry3k_test601.jsonl`
 - logs for the corresponding runs.
 
 ### Paper Demo
@@ -60,7 +63,7 @@ The following raw third-party archives existed on the remote server but are not 
 - `datasets/formalgeo/formalgeo7k_v2.tar.gz`: about 521 MB.
 - Other full raw dataset archives under `datasets/`.
 
-Reason: these files are large, not necessary for inspecting the experiment outputs, and may have dataset-specific redistribution terms. For long-term archival, place them in Hugging Face Hub, Zenodo, or object storage, then add stable URLs here.
+Reason: these files are large, not necessary for inspecting the experiment outputs, and may have dataset-specific redistribution terms. For long-term archival, place them in Hugging Face Hub, Zenodo, or object storage, then add stable URLs here. Hugging Face upload was paused at the user's request; the current full local archive is kept under `/Users/gsy/Desktop/topic/archive_upload/remote_topic_results`, with final local adapters under `/Users/gsy/Desktop/topic/local_model_adapters`.
 
 ## Remote Paused Process
 

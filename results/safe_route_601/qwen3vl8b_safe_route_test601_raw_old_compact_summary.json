@@ -1,0 +1,56 @@
+{
+  "variants": {
+    "image_only": {
+      "n": 601,
+      "complete": 601,
+      "correct": 323,
+      "accuracy": 0.5374376039933444,
+      "avg_duration_s": 7.551550217357134
+    },
+    "old_route": {
+      "n": 601,
+      "complete": 601,
+      "correct": 329,
+      "accuracy": 0.5474209650582362,
+      "avg_duration_s": 8.259293783920974
+    },
+    "compact_route": {
+      "n": 601,
+      "complete": 601,
+      "correct": 334,
+      "accuracy": 0.5557404326123128,
+      "avg_duration_s": 7.976247103559396
+    }
+  },
+  "pairwise_vs_image_only": {
+    "old_route": {
+      "win": 40,
+      "loss": 34,
+      "net": 6,
+      "both_correct": 289,
+      "both_wrong": 238
+    },
+    "compact_route": {
+      "win": 27,
+      "loss": 16,
+      "net": 11,
+      "both_correct": 307,
+      "both_wrong": 251
+    }
+  },
+  "route_qc": {
+    "old_route": {
+      "discard": 74,
+      "low_confidence": 96,
+      "avg_steps": 3.0732113144758735,
+      "max_steps": 30
+    },
+    "compact_route": {
+      "discard": 248,
+      "low_confidence": 0,
+      "avg_steps": 1.1846921797004992,
+      "max_steps": 3
+    }
+  },
+  "n_unique_ids": 601
+}

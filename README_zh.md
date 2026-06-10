@@ -28,6 +28,16 @@
 
 主要结论是：短、去重、目标相关的 theorem route 比较有用。`compact_route` 将 raw Qwen3-VL 从 52.0% 提高到 56.0%，同时把旧 route generator 造成的带偏样例从 10 个降到 4 个。
 
+完整 Geometry3K-601 下游评测：
+
+| 条件 | 正确数 | 总数 | 准确率 | 相对 raw 修正 | 相对 raw 带偏 |
+|---|---:|---:|---:|---:|---:|
+| image_only | 323 | 601 | 53.74% | -- | -- |
+| old_route | 329 | 601 | 54.74% | 40 | 34 |
+| compact_route | 334 | 601 | 55.57% | 27 | 16 |
+
+601 题结果确认了同一趋势：`compact_route` 准确率最高，并且相比旧 route generator，将 route-induced loss 从 34 降到 16。它也更强地约束 route 长度，`avg_steps=1.18`、`max_steps=3`，而旧 route generator 为 `avg_steps=3.07`、`max_steps=30`。
+
 ### GDP-to-theorem-route generator
 
 训练数据来自 FormalGeo theorem sequences：
@@ -66,9 +76,9 @@ Geometry3K-200 下游结果：
 
 GitHub 仓库中包含派生实验数据、splits、GDP parses、实验输出和 LoRA adapter。远程服务器上更大的第三方原始数据包没有直接放入 GitHub，原因是体积较大且可能有再分发限制。
 
-较大的模型和数据/结果文件同步到 Hugging Face：
+Hugging Face 上传已根据用户要求暂停。当前本机已经保存最终 adapter 和实验结果：
 
-- 模型/LoRA adapters：<https://huggingface.co/shiyunliu/IR_mllm>
-- 数据与实验结果：<https://huggingface.co/datasets/shiyunliu/IR_mllm_dataset>
+- 本机最终 adapter：`/Users/gsy/Desktop/topic/local_model_adapters`
+- 本机结果归档：`/Users/gsy/Desktop/topic/archive_upload/remote_topic_results`
 
 详细文件清单见 `MANIFEST.md`。
