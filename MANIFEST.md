@@ -1,82 +1,71 @@
 # Artifact Manifest
 
-Generated from remote server `ubuntu@43.128.112.148:~/topic_results` and local paper directory `/Users/gsy/Desktop/topic/paper_arxiv_demo`. Updated after the Geometry3K-601 safe-route evaluation completed on 2026-06-10.
+This repository is the cleaned GitHub package for **Selective Exposure of Intermediate Geometry Language**. It contains paper sources, scripts, derived data, adapters, and result snapshots needed to inspect and reproduce the main claims.
 
-## Included In GitHub
+## Paper
 
-### Code
-
-- `tools/gdp4b_formalgeo_parse.py`: GDP-4B parser runner for FormalGeo images.
-- `tools/make_formalgeo_route_data.py`: builds route-generator SFT data from FormalGeo theorem sequences and GDP parses.
-- `tools/train_qwen_plan_lora.py`: Qwen3-1.7B LoRA SFT trainer.
-- `tools/qwen3vl_geometry3k_generated_route_eval.py`: Geometry3K downstream image-only vs image+generated-route evaluator.
-- `tools/qwen3vl_formalgeo_generated_route_eval.py`: FormalGeo downstream evaluator for image-only, generated route, and oracle route.
-- Additional earlier experiment scripts for construction-plan, GDP, trust, and multidataset evaluations are also preserved in `tools/`.
-
-### Data
-
-- `data_artifacts/formalgeo_route_data.zip`: FormalGeo route-generator SFT data, including 600 train, 100 validation, 200 downstream test examples, 900 GDP-4B parses, parser input rows, and 900 resized FormalGeo images.
-- `data_artifacts/construction_plan_data.zip`: earlier construction-plan pseudo-label data.
-- `data_artifacts/geometry3k_data.zip`: Geometry3K downstream data artifact used by the evaluation scripts.
-
-### Models
-
-- `models/formalgeo_route_qwen17b_lora/final/`: final LoRA adapter for GDP-parse-to-theorem-route generation.
-- `models/formalgeo_route_qwen17b_lora/config.json`: training config.
-- `models/formalgeo_route_qwen17b_lora/summary.json`: training summary.
-- `models/gdp_to_plan_qwen17b_lora_8ep/final/`: final LoRA adapter for earlier GDP-to-construction-plan generation.
-- `models/gdp_to_plan_qwen17b_lora_8ep/config.json`: training config.
-- `models/gdp_to_plan_qwen17b_lora_8ep/summary.json`: training summary.
-
-All included model adapter files are below GitHub's 100 MB single-file limit and are committed directly with Git.
-
-### Results
-
-`results/` contains root-level experiment outputs copied from the remote server, including:
-
-- `qwen3vl8b_geometry3k_generated_route150_summary.json`
-- `qwen3vl8b_geometry3k_generated_route150.jsonl`
-- `qwen3vl8b_formalgeo_generated_route200.jsonl`
-- `formalgeo_generated_route_cache_300.jsonl`
-- `qwen3vl8b_generated_plan_downstream200_3var_summary.json`
-- `qwen3vl8b_trust_full_601_summary.json`
-- `qwen3vl8b_trust_stress_200_summary.json`
-- `qwen3vl8b_answer_steer_200_summary.json`
-- `results/safe_route_601/qwen3vl8b_safe_route_test601_raw_old_compact_summary.json`
-- `results/safe_route_601/qwen3vl8b_safe_route_test601_raw_old_compact.jsonl`
-- `results/safe_route_601/safe_route_compact_geometry3k_test601.jsonl`
-- logs for the corresponding runs.
-
-### Paper Demo
-
-- `paper_arxiv_demo/main.tex`: English arXiv-style demo.
-- `paper_arxiv_demo/main_zh.tex`: Chinese arXiv-style demo.
+- `paper_arxiv_demo/main.tex`: English paper draft.
+- `paper_arxiv_demo/main_zh.tex`: Chinese paper draft.
 - `paper_arxiv_demo/main.pdf`: compiled English PDF.
 - `paper_arxiv_demo/main_zh.pdf`: compiled Chinese PDF.
-- `paper_arxiv_demo/figures/`, `paper_arxiv_demo/tables/`, `paper_arxiv_demo/results_snapshot/`.
+- `paper_arxiv_demo/figures/`: paper figures, including selective-exposure overview, win/loss decomposition, compact-route cross-model results, route help/harm examples, and candidate comparisons.
+- `paper_arxiv_demo/tables/`: LaTeX tables for earlier Geometry3K trust experiments.
+- `paper_arxiv_demo/results_snapshot/`: compact result snapshots used by the paper.
+
+## Code
+
+- `tools/make_formalgeo_route_data.py`: build route-generator SFT examples from FormalGeo theorem sequences and GDP parses.
+- `tools/train_qwen_plan_lora.py`: Qwen3-1.7B LoRA SFT trainer.
+- `tools/qwen3vl_geometry3k_generated_route_eval.py`: Geometry3K generated-route downstream evaluator.
+- `tools/qwen3vl_formalgeo_generated_route_eval.py`: FormalGeo downstream evaluator.
+- `tools/qwen3vl_route_verifier_601_eval.py`: route-verifier downstream evaluator.
+- `tools/qwen3vl_safe_route_eval.py`: compact/safe-route downstream evaluator.
+- `tools/make_route_verifier_data.py`, `tools/make_route_verifier_601_data.py`: route usefulness/verifier data builders.
+- `target_binding_verifier/`: balanced target-binding verifier data/training launcher.
+
+## Included Derived Data
+
+- `data_artifacts/formalgeo_route_data.zip`: FormalGeo route-generator SFT data, GDP parses, parser rows, and resized images.
+- `data_artifacts/construction_plan_data.zip`: earlier construction-plan pseudo-label data.
+- `data_artifacts/geometry3k_data.zip`: Geometry3K downstream data artifact.
+- `data/tcrp_route_policy/`: small split/id metadata used by route-policy experiments.
+
+## Included Models
+
+- `models/formalgeo_route_qwen17b_lora/final/`: LoRA adapter for GDP-parse-to-theorem-route generation.
+- `models/formalgeo_route_qwen17b_lora/config.json`, `summary.json`: training metadata.
+- `models/gdp_to_plan_qwen17b_lora_8ep/final/`: earlier LoRA adapter for GDP-to-construction-plan generation.
+
+All adapter files are below GitHub's 100 MB single-file limit and are committed directly.
+
+## Included Result Snapshots
+
+Representative files:
+
+- `results/generated_route_policy_geoqa271_summary.json`: GeoQA271 raw/route/heuristic-policy route result.
+- `results/generated_route_trust_ablation_geoqa120_summary.json`: GeoQA120 presentation-interface ablation.
+- `results/generated_route_equation_candidates_geoqa220_summary.json`: GeoQA220 theorem/equation candidate comparison.
+- `results/generated_route_cascade_gate_geoqa271_summary.json`: strict-gate and cascade ablation.
+- `results/safe_route_601/qwen3vl8b_safe_route_test601_raw_old_compact_summary.json`: Geometry3K-601 compact-route result.
+- `results/qwen3vl8b_route_verifier_downstream200_4var_summary.json`: preliminary verifier downstream result.
+- `results/qwen3vl8b_route_verifier_extra100_4var_summary.json`: extra verifier downstream result.
+- `results/target_binding_verifier_601_summary.json`: first target-binding verifier summary.
 
 ## Omitted Large Raw Archives
 
-The following raw third-party archives existed on the remote server but are not committed:
+The following raw third-party archives existed in earlier remote workspaces but are not committed:
 
-- `datasets/mathvista/images.zip`: about 866 MB.
-- `datasets/formalgeo/formalgeo7k_v2.tar.gz`: about 521 MB.
-- Other full raw dataset archives under `datasets/`.
+- MathVista image archive.
+- FormalGeo full raw archive.
+- Full downloaded model checkpoints for Qwen3-VL and GDP-4B.
 
-Reason: these files are large, not necessary for inspecting the experiment outputs, and may have dataset-specific redistribution terms. For long-term archival, place them in Hugging Face Hub, Zenodo, or object storage, then add stable URLs here. Hugging Face upload was paused at the user's request; the current full local archive is kept under `/Users/gsy/Desktop/topic/archive_upload/remote_topic_results`, with final local adapters under `/Users/gsy/Desktop/topic/local_model_adapters`.
+Reasons: large size, possible redistribution constraints, and redundant availability from original dataset/model providers. The repository keeps derived splits, parses, outputs, and adapters needed to inspect the paper results.
 
-## Remote Paused Process
+## Remote Notes
 
-At the time this package was created, the FormalGeo-200 downstream run was paused:
+Historical remote servers used during the experiments included:
 
-```text
-PID: 1036088
-Command: python tools/qwen3vl_formalgeo_generated_route_eval.py ...
-Output file: qwen3vl8b_formalgeo_generated_route200.jsonl
-```
+- `ubuntu@43.128.112.148`
+- `ubuntu@43.166.7.63`
 
-Resume on the remote server with:
-
-```bash
-kill -CONT 1036088
-```
+The current repository is designed so that a new host can reproduce the workflow from the committed scripts and [docs/TARGET_BINDING_VERIFIER_REPRO.md](docs/TARGET_BINDING_VERIFIER_REPRO.md), assuming access to required base models and source datasets.

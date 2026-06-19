@@ -1,0 +1,74 @@
+{
+  "n_candidates": 400,
+  "decision_counts": {
+    "route_optional": 79,
+    "use_image_first": 316,
+    "reject_route": 4,
+    "use_route": 1
+  },
+  "ece_helpfulness": 0.11337500000000056,
+  "by_route_kind": {
+    "old_route": {
+      "candidate_counts": {
+        "neutral": 182,
+        "harmful": 8,
+        "helpful": 10
+      },
+      "strict_gate": {
+        "n": 200,
+        "correct": 109,
+        "accuracy": 0.545,
+        "win": 0,
+        "loss": 0,
+        "net": 0,
+        "both_correct": 109,
+        "both_wrong": 91,
+        "acceptance_rate": 0.005,
+        "accepted": 1
+      },
+      "cautious_gate": {
+        "n": 200,
+        "correct": 109,
+        "accuracy": 0.545,
+        "win": 2,
+        "loss": 2,
+        "net": 0,
+        "both_correct": 107,
+        "both_wrong": 89,
+        "acceptance_rate": 0.23,
+        "accepted": 46
+      }
+    },
+    "compact_route": {
+      "candidate_counts": {
+        "neutral": 187,
+        "harmful": 8,
+        "helpful": 5
+      },
+      "strict_gate": {
+        "n": 200,
+        "correct": 109,
+        "accuracy": 0.545,
+        "win": 0,
+        "loss": 0,
+        "net": 0,
+        "both_correct": 109,
+        "both_wrong": 91,
+        "acceptance_rate": 0.0,
+        "accepted": 0
+      },
+      "cautious_gate": {
+        "n": 200,
+        "correct": 110,
+        "accuracy": 0.55,
+        "win": 2,
+        "loss": 1,
+        "net": 1,
+        "both_correct": 108,
+        "both_wrong": 89,
+        "acceptance_rate": 0.17,
+        "accepted": 34
+      }
+    }
+  }
+}

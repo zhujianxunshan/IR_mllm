@@ -1,0 +1,70 @@
+\begin{thebibliography}{10}
+
+\bibitem{lu2021intergps}
+Pan Lu, Ran Gong, Shibiao Jiang, Liang Qiu, Siyuan Huang, Xiaodan Liang, and
+  Song-Chun Zhu.
+\newblock Inter-{GPS}: Interpretable geometry problem solving with formal
+  language and symbolic reasoning.
+\newblock In {\em Proceedings of ACL-IJCNLP}, 2021.
+
+\bibitem{chen2021geoqa}
+Jiaqi Chen, Jianheng Tang, Jinghui Qin, Xiaodan Liang, Lingbo Liu, Eric Xing,
+  and Liang Lin.
+\newblock {GeoQA}: A geometric question answering benchmark towards multimodal
+  numerical reasoning.
+\newblock In {\em Findings of ACL}, 2021.
+
+\bibitem{zhang2023formalgeo}
+Ming-Liang Zhang, Fei Yin, Yunsong Zhou, and Cheng-Lin Liu.
+\newblock {FormalGeo}: An extensible formalized framework for olympiad
+  geometric problem solving.
+\newblock {\em arXiv preprint arXiv:2310.18021}, 2023.
+
+\bibitem{zhang2024dfegps}
+Ming-Liang Zhang, Fei Yin, Yunsong Zhou, and Cheng-Lin Liu.
+\newblock Diagram formalization enhanced multi-modal geometry problem solving.
+\newblock {\em arXiv preprint arXiv:2409.04214}, 2024.
+
+\bibitem{wang2026geoparsing}
+Peijie Wang, Ming-Liang Zhang, Jun Cao, Chao Deng, Dekang Ran, Hongda Sun,
+  Pi~Bu, Xuan Zhang, Yingyao Wang, Jun Song, Bo~Zheng, Fei Yin, and Cheng-Lin
+  Liu.
+\newblock Geoparsing: Diagram parsing for plane and solid geometry with a
+  unified formal language.
+\newblock {\em arXiv preprint arXiv:2604.11600}, 2026.
+
+\bibitem{lu2023mathvista}
+Pan Lu, Hritik Bansal, Tony Xia, Jiacheng Liu, Chunyuan Li, Hannaneh
+  Hajishirzi, Hao Cheng, Kai-Wei Chang, Michel Galley, and Jianfeng Gao.
+\newblock {MathVista}: Evaluating mathematical reasoning of foundation models
+  in visual contexts.
+\newblock {\em arXiv preprint arXiv:2310.02255}, 2023.
+
+\bibitem{zhang2022pgdp}
+Ming-Liang Zhang, Fei Yin, Yuxuan Hao, and Cheng-Lin Liu.
+\newblock Plane geometry diagram parsing.
+\newblock In {\em Proceedings of IJCAI}, 2022.
+
+\bibitem{xia2025geox}
+Renqiu Xia, Mingsheng Li, Hancheng Ye, Wenjie Wu, Hongbin Zhou, Jiakang Yuan,
+  Tianshuo Peng, Xinyu Cai, Xiangchao Yan, Bin Wang, Conghui He, Botian Shi,
+  Tao Chen, Junchi Yan, and Bo~Zhang.
+\newblock {GeoX}: Geometric problem solving through unified formalized
+  vision-language pre-training.
+\newblock In {\em Proceedings of ICLR}, 2025.
+
+\bibitem{zhang2025mavis}
+Renrui Zhang, Xinyu Wei, Dongzhi Jiang, Ziyu Guo, Yichi Zhang, Chengzhuo Tong,
+  Jiaming Liu, Aojun Zhou, Bin Wei, Pan Lu, Kai-Wei Chang, Yu~Qiao, Peng Gao,
+  and Hongsheng Li.
+\newblock {MAVIS}: Mathematical visual instruction tuning with an automatic
+  data engine.
+\newblock In {\em Proceedings of ICLR}, 2025.
+
+\bibitem{cho2025geodano}
+Seunghyuk Cho, Zhenyue Qin, Yang Liu, Youngbin Choi, Seungbeom Lee, and Dongwoo
+  Kim.
+\newblock {GeoDANO}: Geometric {VLM} with domain agnostic vision encoder.
+\newblock {\em arXiv preprint arXiv:2505.17856}, 2025.
+
+\end{thebibliography}

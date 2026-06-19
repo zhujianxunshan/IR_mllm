@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.5.4)  10 JUN 2026 11:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.5.4)  19 JUN 2026 13:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -357,51 +357,17 @@ Package caption Info: New subtype `subfigure' on input line 238.
 Package caption Info: New subtype `subtable' on input line 238.
 \c@subtable=\count320
 )
-(/usr/local/texlive/2026/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count321
-\lst@gtempboxa=\box56
-\lst@token=\toks25
-\lst@length=\count322
-\lst@currlwidth=\dimen195
-\lst@column=\count323
-\lst@pos=\count324
-\lst@lostspace=\dimen196
-\lst@width=\dimen197
-\lst@newlines=\count325
-\lst@lineno=\count326
-\lst@maxwidth=\dimen198
-
-(/usr/local/texlive/2026/texmf-dist/tex/latex/listings/lstpatch.sty
-File: lstpatch.sty 2025/11/14 1.11b (Carsten Heinz)
-)
-(/usr/local/texlive/2026/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2025/11/14 1.11b (Carsten Heinz)
-\c@lstnumber=\count327
-\lst@skipnumbers=\count328
-\lst@framebox=\box57
-)
-(/usr/local/texlive/2026/texmf-dist/tex/latex/listings/listings.cfg
-File: listings.cfg 2025/11/14 1.11b listings configuration
-))
-Package: listings 2025/11/14 1.11b (Carsten Heinz)
-
-==> First Aid for listings.sty no longer applied!
-    Expected:
-        2024/09/23 1.10c (Carsten Heinz)
-    but found:
-        2025/11/14 1.11b (Carsten Heinz)
-    so I'm assuming it got fixed.
 (/usr/local/texlive/2026/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
 (/usr/local/texlive/2026/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
 (/usr/local/texlive/2026/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
 (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.te
 x
-\pgfutil@everybye=\toks26
-\pgfutil@tempdima=\dimen199
-\pgfutil@tempdimb=\dimen256
+\pgfutil@everybye=\toks25
+\pgfutil@tempdima=\dimen195
+\pgfutil@tempdimb=\dimen196
 )
 (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
-\pgfutil@abb=\box58
+\pgfutil@abb=\box56
 ) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
 (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/pgf.revision.tex)
 Package: pgfrcs 2025-08-29 v3.1.11a (3.1.11a)
@@ -413,33 +379,33 @@ Package: pgf 2025-08-29 v3.1.11a (3.1.11a)
 (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
 Package: pgfsys 2025-08-29 v3.1.11a (3.1.11a)
 (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks27
-\pgfkeys@temptoks=\toks28
+\pgfkeys@pathtoks=\toks26
+\pgfkeys@temptoks=\toks27
 
 (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfil
 tered.code.tex
-\pgfkeys@tmptoks=\toks29
+\pgfkeys@tmptoks=\toks28
 ))
-\pgf@x=\dimen257
-\pgf@y=\dimen258
-\pgf@xa=\dimen259
-\pgf@ya=\dimen260
-\pgf@xb=\dimen261
-\pgf@yb=\dimen262
-\pgf@xc=\dimen263
-\pgf@yc=\dimen264
-\pgf@xd=\dimen265
-\pgf@yd=\dimen266
+\pgf@x=\dimen197
+\pgf@y=\dimen198
+\pgf@xa=\dimen199
+\pgf@ya=\dimen256
+\pgf@xb=\dimen257
+\pgf@yb=\dimen258
+\pgf@xc=\dimen259
+\pgf@yc=\dimen260
+\pgf@xd=\dimen261
+\pgf@yd=\dimen262
 \w@pgf@writea=\write3
 \r@pgf@reada=\read2
-\c@pgf@counta=\count329
-\c@pgf@countb=\count330
-\c@pgf@countc=\count331
-\c@pgf@countd=\count332
-\t@pgf@toka=\toks30
-\t@pgf@tokb=\toks31
-\t@pgf@tokc=\toks32
-\pgf@sys@id@count=\count333
+\c@pgf@counta=\count321
+\c@pgf@countb=\count322
+\c@pgf@countc=\count323
+\c@pgf@countd=\count324
+\t@pgf@toka=\toks29
+\t@pgf@tokb=\toks30
+\t@pgf@tokc=\toks31
+\pgf@sys@id@count=\count325
 
 (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2025-08-29 v3.1.11a (3.1.11a)
@@ -457,8 +423,8 @@ File: pgfsys-common-pdf.def 2025-08-29 v3.1.11a (3.1.11a)
 (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.
 code.tex
 File: pgfsyssoftpath.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfsyssoftpath@smallbuffer@items=\count334
-\pgfsyssoftpath@bigbuffer@items=\count335
+\pgfsyssoftpath@smallbuffer@items=\count326
+\pgfsyssoftpath@bigbuffer@items=\count327
 )
 (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.
 code.tex
@@ -469,12 +435,12 @@ Package: pgfcore 2025-08-29 v3.1.11a (3.1.11a)
 (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
 (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
 (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen267
-\pgfmath@count=\count336
-\pgfmath@box=\box59
-\pgfmath@toks=\toks33
-\pgfmath@stack@operand=\toks34
-\pgfmath@stack@operation=\toks35
+\pgfmath@dimen=\dimen263
+\pgfmath@count=\count328
+\pgfmath@box=\box57
+\pgfmath@toks=\toks32
+\pgfmath@stack@operand=\toks33
+\pgfmath@stack@operation=\toks34
 )
 (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.
 tex)
@@ -496,57 +462,57 @@ code.tex)
 erarithmetics.code.tex)
 (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex)
 (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count337
+\c@pgfmathroundto@lastzeros=\count329
 )) (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
 (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.co
 de.tex
 File: pgfcorepoints.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@picminx=\dimen268
-\pgf@picmaxx=\dimen269
-\pgf@picminy=\dimen270
-\pgf@picmaxy=\dimen271
-\pgf@pathminx=\dimen272
-\pgf@pathmaxx=\dimen273
-\pgf@pathminy=\dimen274
-\pgf@pathmaxy=\dimen275
-\pgf@xx=\dimen276
-\pgf@xy=\dimen277
-\pgf@yx=\dimen278
-\pgf@yy=\dimen279
-\pgf@zx=\dimen280
-\pgf@zy=\dimen281
+\pgf@picminx=\dimen264
+\pgf@picmaxx=\dimen265
+\pgf@picminy=\dimen266
+\pgf@picmaxy=\dimen267
+\pgf@pathminx=\dimen268
+\pgf@pathmaxx=\dimen269
+\pgf@pathminy=\dimen270
+\pgf@pathmaxy=\dimen271
+\pgf@xx=\dimen272
+\pgf@xy=\dimen273
+\pgf@yx=\dimen274
+\pgf@yy=\dimen275
+\pgf@zx=\dimen276
+\pgf@zy=\dimen277
 )
 (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconst
 ruct.code.tex
 File: pgfcorepathconstruct.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@path@lastx=\dimen282
-\pgf@path@lasty=\dimen283
+\pgf@path@lastx=\dimen278
+\pgf@path@lasty=\dimen279
 )
 (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage
 .code.tex
 File: pgfcorepathusage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@shorten@end@additional=\dimen284
-\pgf@shorten@start@additional=\dimen285
+\pgf@shorten@end@additional=\dimen280
+\pgf@shorten@start@additional=\dimen281
 )
 (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.co
 de.tex
 File: pgfcorescopes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfpic=\box60
-\pgf@hbox=\box61
-\pgf@layerbox@main=\box62
-\pgf@picture@serial@count=\count338
+\pgfpic=\box58
+\pgf@hbox=\box59
+\pgf@layerbox@main=\box60
+\pgf@picture@serial@count=\count330
 )
 (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicst
 ate.code.tex
 File: pgfcoregraphicstate.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgflinewidth=\dimen286
+\pgflinewidth=\dimen282
 )
 (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransform
 ations.code.tex
 File: pgfcoretransformations.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@pt@x=\dimen287
-\pgf@pt@y=\dimen288
-\pgf@pt@temp=\dimen289
+\pgf@pt@x=\dimen283
+\pgf@pt@y=\dimen284
+\pgf@pt@temp=\dimen285
 )
 (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.cod
 e.tex
@@ -563,14 +529,14 @@ File: pgfcorepathprocessing.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.co
 de.tex
 File: pgfcorearrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfarrowsep=\dimen290
+\pgfarrowsep=\dimen286
 )
 (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.cod
 e.tex
 File: pgfcoreshade.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@max=\dimen291
-\pgf@sys@shading@range@num=\count339
-\pgf@shadingcount=\count340
+\pgf@max=\dimen287
+\pgf@sys@shading@range@num=\count331
+\pgf@shadingcount=\count332
 )
 (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.cod
 e.tex
@@ -579,7 +545,7 @@ File: pgfcoreimage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.
 code.tex
 File: pgfcoreexternal.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfexternal@startupbox=\box63
+\pgfexternal@startupbox=\box61
 )
 (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.co
 de.tex
@@ -600,7 +566,7 @@ File: pgfcorerdf.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.cod
 e.tex
 File: pgfmoduleshapes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfnodeparttextbox=\box64
+\pgfnodeparttextbox=\box62
 )
 (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.
 tex
@@ -609,8 +575,8 @@ File: pgfmoduleplot.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 (/usr/local/texlive/2026/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
 -0-65.sty
 Package: pgfcomp-version-0-65 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@nodesepstart=\dimen292
-\pgf@nodesepend=\dimen293
+\pgf@nodesepstart=\dimen288
+\pgf@nodesepend=\dimen289
 )
 (/usr/local/texlive/2026/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
 -1-18.sty
@@ -623,10 +589,10 @@ Package: pgfcomp-version-1-18 2025-08-29 v3.1.11a (3.1.11a)
 (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
 (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
 Package: pgffor 2025-08-29 v3.1.11a (3.1.11a)
-\pgffor@iter=\dimen294
-\pgffor@skip=\dimen295
-\pgffor@stack=\toks36
-\pgffor@toks=\toks37
+\pgffor@iter=\dimen290
+\pgffor@skip=\dimen291
+\pgffor@stack=\toks35
+\pgffor@toks=\toks36
 ))
 (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.cod
 e.tex
@@ -635,34 +601,34 @@ Package: tikz 2025-08-29 v3.1.11a (3.1.11a)
 (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothan
 dlers.code.tex
 File: pgflibraryplothandlers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@plot@mark@count=\count341
-\pgfplotmarksize=\dimen296
+\pgf@plot@mark@count=\count333
+\pgfplotmarksize=\dimen292
 )
-\tikz@lastx=\dimen297
-\tikz@lasty=\dimen298
-\tikz@lastxsaved=\dimen299
-\tikz@lastysaved=\dimen300
-\tikz@lastmovetox=\dimen301
-\tikz@lastmovetoy=\dimen302
-\tikzleveldistance=\dimen303
-\tikzsiblingdistance=\dimen304
-\tikz@figbox=\box65
-\tikz@figbox@bg=\box66
-\tikz@tempbox=\box67
-\tikz@tempbox@bg=\box68
-\tikztreelevel=\count342
-\tikznumberofchildren=\count343
-\tikznumberofcurrentchild=\count344
-\tikz@fig@count=\count345
+\tikz@lastx=\dimen293
+\tikz@lasty=\dimen294
+\tikz@lastxsaved=\dimen295
+\tikz@lastysaved=\dimen296
+\tikz@lastmovetox=\dimen297
+\tikz@lastmovetoy=\dimen298
+\tikzleveldistance=\dimen299
+\tikzsiblingdistance=\dimen300
+\tikz@figbox=\box63
+\tikz@figbox@bg=\box64
+\tikz@tempbox=\box65
+\tikz@tempbox@bg=\box66
+\tikztreelevel=\count334
+\tikznumberofchildren=\count335
+\tikznumberofcurrentchild=\count336
+\tikz@fig@count=\count337
 
 (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.cod
 e.tex
 File: pgfmodulematrix.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfmatrixcurrentrow=\count346
-\pgfmatrixcurrentcolumn=\count347
-\pgf@matrix@numberofcolumns=\count348
+\pgfmatrixcurrentrow=\count338
+\pgfmatrixcurrentcolumn=\count339
+\pgf@matrix@numberofcolumns=\count340
 )
-\tikz@expandcount=\count349
+\tikz@expandcount=\count341
 
 (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarytopaths.code.tex
@@ -671,10 +637,10 @@ File: tikzlibrarytopaths.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.
 meta.code.tex
 File: pgflibraryarrows.meta.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfarrowinset=\dimen305
-\pgfarrowlength=\dimen306
-\pgfarrowwidth=\dimen307
-\pgfarrowlinewidth=\dimen308
+\pgfarrowinset=\dimen301
+\pgfarrowlength=\dimen302
+\pgfarrowwidth=\dimen303
+\pgfarrowlinewidth=\dimen304
 )
 (/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarypositioning.code.tex
@@ -684,46 +650,38 @@ File: tikzlibrarypositioning.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 s/tikzlibraryfit.code.tex
 File: tikzlibraryfit.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )
-(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
-s/tikzlibraryshapes.misc.code.tex
-File: tikzlibraryshapes.misc.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-
-(/usr/local/texlive/2026/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibrary
-shapes.misc.code.tex
-File: pgflibraryshapes.misc.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-))
-Package hyperref Info: Option `colorlinks' set `true' on input line 15.
+Package hyperref Info: Option `colorlinks' set `true' on input line 14.
 LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 2
-3.
+1.
 
 (/usr/local/texlive/2026/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 (/usr/local/texlive/2026/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count350
+\l__color_backend_stack_int=\count342
 )
 (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -761,17 +719,17 @@ LaTeX Font Info:    ... okay on input line 23.
 
 (/usr/local/texlive/2026/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count351
-\scratchdimen=\dimen309
-\scratchbox=\box69
-\nofMPsegments=\count352
-\nofMParguments=\count353
-\everyMPshowfont=\toks38
-\MPscratchCnt=\count354
-\MPscratchDim=\dimen310
-\MPnumerator=\count355
-\makeMPintoPDFobject=\count356
-\everyMPtoPDFconversion=\toks39
+\scratchcounter=\count343
+\scratchdimen=\dimen305
+\scratchbox=\box67
+\nofMPsegments=\count344
+\nofMParguments=\count345
+\everyMPshowfont=\toks37
+\MPscratchCnt=\count346
+\MPscratchDim=\dimen306
+\MPnumerator=\count347
+\makeMPintoPDFobject=\count348
+\everyMPtoPDFconversion=\toks38
 ) (/usr/local/texlive/2026/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -781,166 +739,199 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring ON on input line 23.
+Package hyperref Info: Link coloring ON on input line 21.
 
 (./main.out) (./main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
 Package caption Info: Begin \AtBeginDocument code.
-Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count357
-LaTeX Font Info:    Trying to load font information for U+msa on input line 25.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 23.
 
 
 (/usr/local/texlive/2026/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 25.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 23.
 
 
 (/usr/local/texlive/2026/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 3
-3.
+Overfull \hbox (2.71552pt too wide) in paragraph at lines 33--34
+[]\OT1/ptm/m/n/10.95 We study three in-creas-ingly action-oriented units: \OT1/
+ptm/m/it/10.95 struc-tured facts\OT1/ptm/m/n/10.95 , \OT1/ptm/m/it/10.95 com-pa
+ct the-o-rem routes\OT1/ptm/m/n/10.95 , and \OT1/ptm/m/it/10.95 theorem-
+ []
 
-(/usr/local/texlive/2026/texmf-dist/tex/latex/psnfss/ot1pcr.fd
-File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-) [1
+[1
 
 {/usr/local/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/loc
 al/texlive/2026/texmf-dist/fonts/enc/dvips/base/8r.enc}]
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 72.
- [2] (./tables/main_geometry300.tex)
-<figures/main_geometry300_accuracy.pdf, id=92, 591.8913pt x 274.626pt>
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 3
+6.
+
+(/usr/local/texlive/2026/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+)
+Underfull \hbox (badness 1320) in paragraph at lines 63--63
+[]\OT1/ptm/m/n/10 missing per-cep-tion, but no
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--64
+[]\OT1/ptm/m/n/10 short theorem-action se-
+ []
+
+
+Underfull \hbox (badness 4303) in paragraph at lines 64--64
+[]\OT1/ptm/m/n/10 no the-o-rem plan-ning, but
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--65
+[]\OT1/ptm/m/n/10 GeoQA271 and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 65--65
+[]\OT1/ptm/m/n/10 Theorem-equation can-di-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 65--66
+[]\OT1/ptm/m/n/10 GeoQA220/271
+ []
+
+
+Overfull \hbox (1.0216pt too wide) in paragraph at lines 59--68
+ [][] 
+ []
+
+<figures/compact_route_core_result.pdf, id=77, 3412.75pt x 2328.7pt>
+File: figures/compact_route_core_result.pdf Graphic file (type pdf)
+<use figures/compact_route_core_result.pdf>
+Package pdftex.def Info: figures/compact_route_core_result.pdf  used on input l
+ine 72.
+(pdftex.def)             Requested size: 460.35791pt x 314.1122pt.
+[2] [3] [4 <./figures/compact_route_core_result.pdf>]
+Overfull \hbox (2.1624pt too wide) in paragraph at lines 126--127
+ []\OT1/ptm/b/n/10.95 Verified-policy route.[] \OT1/ptm/m/n/10.95 The main `ver
+ified-policy' set-ting is a lightweight route-level heuris-tic, not a learned
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 143--143
+[]\OT1/ptm/m/n/10 GeoQA271 route ex-per-i-ment and
+ []
+
+
+Underfull \hbox (badness 2042) in paragraph at lines 144--144
+[]\OT1/ptm/m/n/10 Compact routes are use-ful theorem-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 144--144
+[]\OT1/ptm/m/n/10 GeoQA271, Geometry3K-601, and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 144--144
+\OT1/ptm/m/n/10 cross-model PGPS9K+Geometry3K
+ []
+
+
+Underfull \hbox (badness 2635) in paragraph at lines 145--145
+[]\OT1/ptm/m/n/10 GeoQA120/220/271 ex-po-sure ex-per-i-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 145--146
+[]\OT1/ptm/m/n/10 Accuracy, win/loss,
+ []
+
+<figures/win_loss_decomposition.pdf, id=133, 515.32712pt x 220.01823pt>
+File: figures/win_loss_decomposition.pdf Graphic file (type pdf)
+<use figures/win_loss_decomposition.pdf>
+Package pdftex.def Info: figures/win_loss_decomposition.pdf  used on input line
+ 152.
+(pdftex.def)             Requested size: 413.3867pt x 176.49825pt.
+[5]
+<figures/main_geometry300_accuracy.pdf, id=141, 591.8913pt x 274.626pt>
 File: figures/main_geometry300_accuracy.pdf Graphic file (type pdf)
 <use figures/main_geometry300_accuracy.pdf>
 Package pdftex.def Info: figures/main_geometry300_accuracy.pdf  used on input l
-ine 100.
-(pdftex.def)             Requested size: 413.3867pt x 191.80527pt.
-(./tables/pairwise_geometry300.tex) [3] (./tables/trust601.tex)
-<figures/trust601_accuracy.pdf, id=114, 578.16pt x 274.626pt>
-File: figures/trust601_accuracy.pdf Graphic file (type pdf)
-<use figures/trust601_accuracy.pdf>
-Package pdftex.def Info: figures/trust601_accuracy.pdf  used on input line 116.
-
-(pdftex.def)             Requested size: 403.9896pt x 191.89326pt.
-
-(./tables/steer200.tex [4 <./figures/main_geometry300_accuracy.pdf>])
-<figures/answer_steering.pdf, id=170, 614.295pt x 281.85298pt>
-File: figures/answer_steering.pdf Graphic file (type pdf)
-<use figures/answer_steering.pdf>
-Package pdftex.def Info: figures/answer_steering.pdf  used on input line 130.
-(pdftex.def)             Requested size: 422.77664pt x 193.97987pt.
-<figures/geometry3k_2783.png, id=171, 433.62pt x 428.60126pt>
-File: figures/geometry3k_2783.png Graphic file (type png)
-<use figures/geometry3k_2783.png>
-Package pdftex.def Info: figures/geometry3k_2783.png  used on input line 141.
-(pdftex.def)             Requested size: 108.04164pt x 106.79034pt.
-<figures/geometry3k_2556.png, id=173, 157.33781pt x 121.95563pt>
-File: figures/geometry3k_2556.png Graphic file (type png)
-<use figures/geometry3k_2556.png>
-Package pdftex.def Info: figures/geometry3k_2556.png  used on input line 145.
-(pdftex.def)             Requested size: 108.04164pt x 83.74564pt.
-<figures/geometry3k_2565.png, id=174, 223.58531pt x 112.16907pt>
-File: figures/geometry3k_2565.png Graphic file (type png)
-<use figures/geometry3k_2565.png>
-Package pdftex.def Info: figures/geometry3k_2565.png  used on input line 149.
-(pdftex.def)             Requested size: 108.04164pt x 54.20338pt.
-
-Underfull \hbox (badness 1817) in paragraph at lines 150--150
-[]\OT1/ptm/m/n/10 (c) |2565: tan-gent ra-tio.
- []
-
-<figures/geometry3k_2539.png, id=175, 508.90125pt x 468.75125pt>
-File: figures/geometry3k_2539.png Graphic file (type png)
-<use figures/geometry3k_2539.png>
-Package pdftex.def Info: figures/geometry3k_2539.png  used on input line 153.
-(pdftex.def)             Requested size: 108.04164pt x 99.51355pt.
-[5 <./figures/trust601_accuracy.pdf>] [6 <./figures/answer_steering.pdf> <./fig
-ures/geometry3k_2783.png> <./figures/geometry3k_2556.png> <./figures/geometry3k
-_2565.png> <./figures/geometry3k_2539.png>]
-<figures/generator_training_curve.pdf, id=295, 534.79799pt x 274.626pt>
-File: figures/generator_training_curve.pdf Graphic file (type pdf)
-<use figures/generator_training_curve.pdf>
-Package pdftex.def Info: figures/generator_training_curve.pdf  used on input li
-ne 237.
-(pdftex.def)             Requested size: 385.20255pt x 197.81018pt.
- [7] (./tables/downstream200.tex)
-<figures/downstream200_accuracy.pdf, id=307, 491.436pt x 260.17201pt>
-File: figures/downstream200_accuracy.pdf Graphic file (type pdf)
-<use figures/downstream200_accuracy.pdf>
-Package pdftex.def Info: figures/downstream200_accuracy.pdf  used on input line
- 249.
-(pdftex.def)             Requested size: 366.40834pt x 193.98915pt.
-
-(./tables/downstream200_pairwise.tex)
-<figures/downstream200_pairwise.pdf, id=308, 476.98201pt x 260.17201pt>
-File: figures/downstream200_pairwise.pdf Graphic file (type pdf)
-<use figures/downstream200_pairwise.pdf>
-Package pdftex.def Info: figures/downstream200_pairwise.pdf  used on input line
- 258.
-(pdftex.def)             Requested size: 366.40834pt x 199.86063pt.
- [8 <./figures/generator_training_curve.pdf>]
-Overfull \hbox (13.0375pt too wide) in paragraph at lines 265--266
- []\OT1/ptm/b/n/10.95 Example flips.[] \OT1/ptm/m/n/10.95 Gen-er-ated con-struc
--tion plans fix raw er-rors on prob-lems such as \OT1/pcr/m/n/10.95 geometry3k[
-]test[]2771\OT1/ptm/m/n/10.95 ,
- []
-
-
-Overfull \hbox (1.9352pt too wide) in paragraph at lines 265--266
-\OT1/pcr/m/n/10.95 geometry3k[]test[]2971\OT1/ptm/m/n/10.95 , and \OT1/pcr/m/n/
-10.95 geometry3k[]test[]2887\OT1/ptm/m/n/10.95 . They also still harm some raw-
-correct cases,
- []
-
-
-Overfull \hbox (5.29845pt too wide) in paragraph at lines 265--266
-\OT1/ptm/m/n/10.95 in-clud-ing \OT1/pcr/m/n/10.95 geometry3k[]test[]2873\OT1/pt
-m/m/n/10.95 , \OT1/pcr/m/n/10.95 geometry3k[]test[]2717\OT1/ptm/m/n/10.95 , and
- \OT1/pcr/m/n/10.95 geometry3k[]test[]2561\OT1/ptm/m/n/10.95 . This
- []
-
-
-Overfull \hbox (88.87946pt too wide) detected at line 273
-[] \OMS/cmsy/m/n/10.95 ! []\OML/cmm/m/it/10.95 ;  [] \OMS/cmsy/m/n/10.95 ! []\O
-ML/cmm/m/it/10.95 ;  [] \OMS/cmsy/m/n/10.95 ! []\OML/cmm/m/it/10.95 :
- []
-
-[9 <./figures/downstream200_accuracy.pdf>] [10 <./figures/downstream200_pairwis
-e.pdf>] [11] [12] [13] (./main.aux)
+ine 179.
+(pdftex.def)             Requested size: 385.20255pt x 178.72687pt.
+ [6 <./figures/win_loss_decomposition.pdf>]
+<figures/compact_route_multimodel_accuracy.pdf, id=199, 417.71056pt x 221.71394
+pt>
+File: figures/compact_route_multimodel_accuracy.pdf Graphic file (type pdf)
+<use figures/compact_route_multimodel_accuracy.pdf>
+Package pdftex.def Info: figures/compact_route_multimodel_accuracy.pdf  used on
+ input line 228.
+(pdftex.def)             Requested size: 403.9896pt x 214.43977pt.
+<figures/gdp_route_cross_dataset_400.pdf, id=200, 520.34402pt x 231.26399pt>
+File: figures/gdp_route_cross_dataset_400.pdf Graphic file (type pdf)
+<use figures/gdp_route_cross_dataset_400.pdf>
+Package pdftex.def Info: figures/gdp_route_cross_dataset_400.pdf  used on input
+ line 280.
+(pdftex.def)             Requested size: 403.9896pt x 179.55943pt.
+ [7 <./figures/main_geometry300_accuracy.pdf>]
+<figures/route_help_harm_cases.pdf, id=262, 523.23483pt x 393.14879pt>
+File: figures/route_help_harm_cases.pdf Graphic file (type pdf)
+<use figures/route_help_harm_cases.pdf>
+Package pdftex.def Info: figures/route_help_harm_cases.pdf  used on input line 
+291.
+(pdftex.def)             Requested size: 413.3867pt x 310.61414pt.
+ [8 <./figures/compact_route_multimodel_accuracy.pdf>]
+<figures/route_candidate_trust_summary.pdf, id=284, 751.56596pt x 308.44917pt>
+File: figures/route_candidate_trust_summary.pdf Graphic file (type pdf)
+<use figures/route_candidate_trust_summary.pdf>
+Package pdftex.def Info: figures/route_candidate_trust_summary.pdf  used on inp
+ut line 323.
+(pdftex.def)             Requested size: 413.3867pt x 169.65697pt.
+<figures/geoqa220_equation_candidates.pdf, id=285, 520.34402pt x 260.17201pt>
+File: figures/geoqa220_equation_candidates.pdf Graphic file (type pdf)
+<use figures/geoqa220_equation_candidates.pdf>
+Package pdftex.def Info: figures/geoqa220_equation_candidates.pdf  used on inpu
+t line 351.
+(pdftex.def)             Requested size: 403.9896pt x 202.00438pt.
+ [9]
+[10 <./figures/gdp_route_cross_dataset_400.pdf>] [11 <./figures/route_help_harm
+_cases.pdf>] [12 <./figures/route_candidate_trust_summary.pdf>] [13 <./figures/
+geoqa220_equation_candidates.pdf>] (./main.bbl [14]) [15] (./main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: E13970891FBDF8B7D718FF94CAA0ABA1;2736.
+(rerunfilecheck)             Checksum: E8B5528728702D55AF15D067E9F0C17A;3011.
  ) 
 Here is how much of TeX's memory you used:
- 25119 strings out of 467525
- 461646 string characters out of 5418983
- 981354 words of memory out of 5000000
- 53516 multiletter control sequences out of 15000+600000
- 655307 words of font info for 103 fonts, out of 8000000 for 9000
+ 23083 strings out of 467525
+ 430281 string characters out of 5418983
+ 834764 words of memory out of 5000000
+ 51547 multiletter control sequences out of 15000+600000
+ 653930 words of font info for 100 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,9n,94p,1477b,1994s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
-></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
-</usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
-usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></u
-sr/local/texlive/2026/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb></usr/local
-/texlive/2026/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive
-/2026/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2026/texm
-f-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2026/texmf-dist/fon
-ts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (13 pages, 298195 bytes).
+ 84i,10n,94p,1626b,562s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
+</usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
+/usr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></u
+sr/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
+/local/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/lo
+cal/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/loc
+al/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr
+/local/texlive/2026/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/tex
+live/2026/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2026/
+texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (15 pages, 1076571 bytes).
 PDF statistics:
- 554 PDF objects out of 1000 (max. 8388607)
- 262 compressed objects within 3 object streams
- 100 named destinations out of 1000 (max. 500000)
- 183 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 548 PDF objects out of 1000 (max. 8388607)
+ 265 compressed objects within 3 object streams
+ 68 named destinations out of 1000 (max. 500000)
+ 157 words of extra memory for PDF output out of 10000 (max. 10000000)
 

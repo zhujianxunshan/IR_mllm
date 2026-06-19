@@ -1,0 +1,140 @@
+{
+  "n": 400,
+  "overall": {
+    "variants": {
+      "image_only": {
+        "n": 400,
+        "correct": 193,
+        "accuracy": 0.4825,
+        "complete": 400,
+        "avg_duration_s": 6.474885247349739
+      },
+      "gdp_route": {
+        "n": 400,
+        "correct": 191,
+        "accuracy": 0.4775,
+        "complete": 400,
+        "avg_duration_s": 6.559025653600693
+      },
+      "gdp_route_qc": {
+        "n": 400,
+        "correct": 193,
+        "accuracy": 0.4825,
+        "complete": 400,
+        "avg_duration_s": 6.520375474095345
+      }
+    },
+    "pairwise_vs_image_only": {
+      "gdp_route": {
+        "win": 12,
+        "loss": 14,
+        "net": -2,
+        "both_correct": 179,
+        "both_wrong": 195,
+        "incomplete": 0
+      },
+      "gdp_route_qc": {
+        "win": 10,
+        "loss": 10,
+        "net": 0,
+        "both_correct": 183,
+        "both_wrong": 197,
+        "incomplete": 0
+      }
+    }
+  },
+  "by_dataset": {
+    "pgps9k": {
+      "variants": {
+        "image_only": {
+          "n": 200,
+          "correct": 104,
+          "accuracy": 0.52,
+          "complete": 200,
+          "avg_duration_s": 6.3597933185100555
+        },
+        "gdp_route": {
+          "n": 200,
+          "correct": 103,
+          "accuracy": 0.515,
+          "complete": 200,
+          "avg_duration_s": 6.450197713375092
+        },
+        "gdp_route_qc": {
+          "n": 200,
+          "correct": 105,
+          "accuracy": 0.525,
+          "complete": 200,
+          "avg_duration_s": 6.404758794307709
+        }
+      },
+      "pairwise_vs_image_only": {
+        "gdp_route": {
+          "win": 5,
+          "loss": 6,
+          "net": -1,
+          "both_correct": 98,
+          "both_wrong": 91,
+          "incomplete": 0
+        },
+        "gdp_route_qc": {
+          "win": 5,
+          "loss": 4,
+          "net": 1,
+          "both_correct": 100,
+          "both_wrong": 91,
+          "incomplete": 0
+        }
+      }
+    },
+    "geometry3k": {
+      "variants": {
+        "image_only": {
+          "n": 200,
+          "correct": 89,
+          "accuracy": 0.445,
+          "complete": 200,
+          "avg_duration_s": 6.589977176189422
+        },
+        "gdp_route": {
+          "n": 200,
+          "correct": 88,
+          "accuracy": 0.44,
+          "complete": 200,
+          "avg_duration_s": 6.667853593826294
+        },
+        "gdp_route_qc": {
+          "n": 200,
+          "correct": 88,
+          "accuracy": 0.44,
+          "complete": 200,
+          "avg_duration_s": 6.63599215388298
+        }
+      },
+      "pairwise_vs_image_only": {
+        "gdp_route": {
+          "win": 7,
+          "loss": 8,
+          "net": -1,
+          "both_correct": 81,
+          "both_wrong": 104,
+          "incomplete": 0
+        },
+        "gdp_route_qc": {
+          "win": 5,
+          "loss": 6,
+          "net": -1,
+          "both_correct": 83,
+          "both_wrong": 106,
+          "incomplete": 0
+        }
+      }
+    }
+  },
+  "route_qc": {
+    "discard": 167,
+    "low_confidence": 315,
+    "avg_steps": 5.5825,
+    "max_steps": 13
+  }
+}

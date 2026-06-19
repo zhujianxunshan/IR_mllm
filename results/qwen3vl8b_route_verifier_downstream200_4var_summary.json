@@ -1,0 +1,79 @@
+{
+  "variants": {
+    "image_only": {
+      "n": 200,
+      "complete": 200,
+      "correct": 104,
+      "accuracy": 0.52,
+      "accuracy_on_complete": 0.52,
+      "avg_duration_s": 7.3766806292533875,
+      "errors": 0
+    },
+    "image_route": {
+      "n": 200,
+      "complete": 200,
+      "correct": 110,
+      "accuracy": 0.55,
+      "accuracy_on_complete": 0.55,
+      "avg_duration_s": 8.155725768804551,
+      "errors": 0
+    },
+    "verifier_filter": {
+      "n": 200,
+      "complete": 200,
+      "correct": 104,
+      "accuracy": 0.52,
+      "accuracy_on_complete": 0.52,
+      "avg_duration_s": 7.371631797552109,
+      "errors": 0
+    },
+    "verifier_rewrite": {
+      "n": 200,
+      "complete": 200,
+      "correct": 105,
+      "accuracy": 0.525,
+      "accuracy_on_complete": 0.525,
+      "avg_duration_s": 7.853108736276627,
+      "errors": 0
+    }
+  },
+  "pairwise_vs_image_only": {
+    "image_route": {
+      "win": 16,
+      "loss": 10,
+      "net": 6,
+      "both_correct": 94,
+      "both_wrong": 80,
+      "incomplete": 0
+    },
+    "verifier_filter": {
+      "win": 0,
+      "loss": 0,
+      "net": 0,
+      "both_correct": 104,
+      "both_wrong": 96,
+      "incomplete": 0
+    },
+    "verifier_rewrite": {
+      "win": 4,
+      "loss": 3,
+      "net": 1,
+      "both_correct": 101,
+      "both_wrong": 92,
+      "incomplete": 0
+    }
+  },
+  "route_harm_reduction": {
+    "verifier_filter": {
+      "route_win_retained": 0,
+      "route_loss_reduced_by": 10,
+      "net_delta_vs_route": -6
+    },
+    "verifier_rewrite": {
+      "route_win_retained": 4,
+      "route_loss_reduced_by": 7,
+      "net_delta_vs_route": -5
+    }
+  },
+  "n_unique_ids": 200
+}
